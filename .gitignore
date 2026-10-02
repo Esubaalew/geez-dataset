@@ -1,0 +1,7 @@
+.DS_Store
+*.tmp
+_probe*
+*chunk*
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
