@@ -9,6 +9,8 @@ A curated computational dataset for Classical Ge'ez natural language processing,
 This dataset is compiled and curated from primary philological and lexicographical authorities of the Ethiopian traditional school:
 1. **Aleqa Kidane Wold Kifle (1872–1944)**: *Mets'hafe Sewasew Weges Wemezgebe Qalat Haddis* («መጽሐፈ ሰዋስው ወግስ ወመዝገበ ቃላት ሐዲስ») — Comprehensive Ge'ez-Amharic dictionary and grammatical treatise (published 1948 E.C. / 1955 A.D., Artistic Printing Press, Addis Ababa).
 2. **Kesis Desta Tekle Wold (1901–1986)**: *Rbahe Asma'e We-Anqets* («ርባሐ አስማእ ወአንቀጽ / ርእሰ ስም ወአንቀጽ») — Authoritative Ge'ez manual of noun declensions, broken plurals, and full verbal conjugation matrices across all 10 grammatical persons (1946 E.C.).
+3. **Liqe Liqawunt Yared Shiferaw (ሊቀ ሊቃውንት ያሬድ ሽፈራው)**: *Mets'hafe Ges Wesewasew* («መጽሐፈ ግስ ወሰዋስው») — Authoritative 422-page modern traditional treatise on Ge'ez verbal classification, weak verbs (*ሆህያተ ድካም*), and complex stem derivations.
+4. **Classical Yaredic Tradition**: *Merho Ges Wesewasew Ze-Yared* («መርኆ ግስ ወሰዋስው ዘያሬድ») — Comprehensive traditional manual of verbal inflection across all 10 grammatical persons and irregular classes (511 pages).
 
 ---
 
@@ -18,12 +20,16 @@ This dataset is compiled and curated from primary philological and lexicographic
 | :--- | :--- | :--- | :--- |
 | **`dictionary.jsonl`** | **13,234** | ~9.4 MB | Consolidated Ge'ez lemmas with inferred roots, POS, definitions, and citations. |
 | **`parallel_pairs.jsonl`** | **13,234** | ~5.2 MB | Aligned Ge'ez headword and definition/gloss pairs for translation modeling. |
+| **`output/yared_shiferaw_pages.jsonl`** | **422** | ~1.5 MB | Extracted page-by-page structured grammatical text from Liqe Liqawunt Yared Shiferaw. |
+| **`output/yared_shiferaw_corpus.txt`** | **90,699 words** | ~1.2 MB | Clean compiled textual corpus for language model pretraining and tokenizer vocabularies. |
+| **`scans/merho_ges_511/`** | **509** | ~41 MB | Complete page scans of the traditional verbal paradigm manual (*Merho Ges*). |
 | **`morphology.jsonl`** | **208** | ~392 KB | Grammatical paradigms, pronoun tables, noun declensions, and conjugation matrices. |
 | **`errata.jsonl`** | **12** | ~2.1 KB | Reconciled orthographic and philological errata table from Page 909. |
 | **`output/synthetic_morphology_train.jsonl`** | **145,088** | ~26.7 MB | Bidirectional synthetic morphological training targets ($\text{features} \to \text{surface}$). |
 | **`output/extended_paradigms.jsonl`** | **3,968** | ~15.9 MB | Exhaustive verbal paradigm tables generated across all 64 template combinations. |
 | **`output/noun_patterns.json`** | **13** | ~13.8 KB | Extracted Ge'ez nominal and broken plural templates. |
 | **`output/quality_scores.jsonl`** | **13,234** | ~645 KB | Algorithmic quality confidence ratings (0.0 to 1.0) and anomaly detection flags. |
+| **`sources/`** | **6 volumes** | ~486 MB | Local archive library of reference PDFs and source facsimiles (see `sources/README.md`). |
 
 ---
 

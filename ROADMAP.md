@@ -19,6 +19,9 @@ This document outlines key technical milestones and planned extensions for the C
 
 - [x] **Triliteral & Quadriliteral Root Inference:** Compute consonantal skeletons across 13,234 dictionary headwords.
 - [x] **Rule-Based Conjugation Matrix Generation:** Generate ~145,000 synthetic inflectional pairs from 2,267 verified verbal roots.
+- [x] **Yared Shiferaw Treatise Ingestion:** Extract 422 pages and 90,699 words of Liqe Liqawunt Yared Shiferaw's *Mets'hafe Ges Wesewasew* for deep verbal classification and weak verb (*ሆህያተ ድካም*) modeling.
+- [x] **Traditional Paradigm Manual Archival:** Extract 509 full-page scan images from *Merho Ges Wesewasew Ze-Yared* into `scans/merho_ges_511/`.
+- [x] **Primary Source Library:** Establish central reference library in `sources/` cataloging 5 foundational philological volumes.
 - [ ] **Weak Verb Allomorphy Modeling:** Formalize phonological contraction rules for initial, medial, and final glides ($w, y$) and gutturals ($h, ḥ, ḫ, ', ‘$).
 - [ ] **Broken Plural Template Catalog:** Expand the catalog of 13 major nominal broken plural templates (`noun_patterns.json`) to cover irregular construct-state declensions.
 
