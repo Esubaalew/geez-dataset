@@ -108,3 +108,40 @@ print(json.dumps(sample, ensure_ascii=False, indent=2))
 
 This dataset is released under the **Apache License 2.0**.  
 When using this dataset for research or model training, please cite the underlying lexicographical works of Aleqa Kidane Wold Kifle and Kesis Desta Tekle Wold.
+
+---
+
+## Philological Glossary & Scribal Conventions
+
+To facilitate machine learning, natural language processing, and human research, the dataset adheres to and documents the traditional scribal abbreviations and lexicographical conventions established by Aleqa Kidane Wold Kifle:
+
+### 1. Biblical & Liturgical Citation Abbreviations (የመጻሕፍት ምህፃረ ቃላት)
+* **`መኅ` / `መኃ`:** *መሓልየ መሓልይ* (Song of Songs / Canticles).
+* **`መዝ`:** *መዝሙረ ዳዊት* (Psalms of David).
+* **`ኦሪ` / `ኦ`:** *ኦሪት* (Pentateuch / Torah; e.g., `ኦ.ዘፍ` = Genesis, `ኦ.ዘጸ` = Exodus).
+* **`ኢሳ`:** *ትንቢተ ኢሳይያስ* (Book of Isaiah).
+* **`ወን` / `ወ`:** *ወንጌል* (Gospel; e.g., `ወ.ማቴ` = Matthew, `ወ.ዮሐ` = John).
+* **`ስንክ`:** *መጽሐፈ ስንክሳር* (Synaxarium).
+* **`ሃይ.አበ`:** *ሃይማኖተ አበው* (Faith of the Fathers).
+* **`ቀለ`:** *ቀሌምንጦስ* (Pseudo-Clementine literature / Qalementos).
+* **`ዜና.አይ`:** *ዜና አይሁድ* (Josippon / History of the Jews).
+
+### 2. Comparative Semitic Cognate Markers (የቋንቋዎች ንጽጽር)
+* **`ዕብ`:** *በዕብራይስጥ* (Biblical Hebrew cognate / etymological comparison).
+* **`ዐረ`:** *በዐረብኛ* (Classical Arabic cognate).
+* **`ሱር`:** *በሶርያ / በሱርስት* (Classical Syriac / Aramaic cognate).
+* **`ጽር`:** *በጽርዕ / በግሪክ* (Greek loanword or parallel term).
+* **`ላቲ`:** *በላቲን* (Latin parallel).
+* **`ቁብ`:** *በቁብጥ* (Coptic parallel).
+
+### 3. Structural & Grammatical Terminology (የሰዋስውና የመዝገበ ቃላት ቃላት)
+* **`—` (ጭረት / መስመር):** Ditto mark denoting continuation of the preceding headword/root family.
+* **`ንዑስ` / `[ንዑስ]`:** Sub-entry representing an inflected stem, verbal noun, or derived idiom belonging to the governing root.
+* **`እይ` / `ተመልከት` / `ዕርኢ`:** Cross-reference marker directing the reader to consult another headword or primary root.
+* **`አስደራጊ` / `ተደራጊ` / `አድራጊ`:** Morphological stem indicators (Causative, Passive/Reflexive, and Active Participle respectively).
+
+### 4. Punctuation Delimiters (ሥርዓተ ነጥቦች)
+* **`፡` (`U+1361`):** *ሁለት ነጥብ* (Ethiopic word divider).
+* **`።` (`U+1362`):** *አራት ነጥብ* (Ethiopic full stop / sentence boundary).
+* **`፤` (`U+1364`):** *ድርብ ሠረዝ* (Ethiopic semicolon / major clausal pause).
+* **`፥` (`U+1363`):** *ነጠላ ሠረዝ* (Ethiopic comma / list delimiter).
