@@ -25,7 +25,7 @@ This dataset is compiled and curated from primary philological and lexicographic
 | **`scans/merho_ges_511/`** | **509** | ~41 MB | Complete page scans of the traditional verbal paradigm manual (*Merho Ges*). |
 | **`morphology.jsonl`** | **208** | ~392 KB | Grammatical paradigms, pronoun tables, noun declensions, and conjugation matrices. |
 | **`errata.jsonl`** | **12** | ~2.1 KB | Reconciled orthographic and philological errata table from Page 909. |
-| **`output/synthetic_morphology_train.jsonl`** | **145,088** | ~26.7 MB | Bidirectional synthetic morphological training targets ($\text{features} \to \text{surface}$). |
+| **`output/synthetic_morphology_train.jsonl`** | **196,936** | ~36.2 MB | Bidirectional synthetic morphological training targets ($\text{features} \to \text{surface}$). |
 | **`output/extended_paradigms.jsonl`** | **3,968** | ~15.9 MB | Exhaustive verbal paradigm tables generated across all 64 template combinations. |
 | **`output/noun_patterns.json`** | **13** | ~13.8 KB | Extracted Ge'ez nominal and broken plural templates. |
 | **`output/quality_scores.jsonl`** | **13,234** | ~645 KB | Algorithmic quality confidence ratings (0.0 to 1.0) and anomaly detection flags. |
