@@ -1,76 +1,113 @@
-# Classical Ge'ez Lexical, Morphological, and Parallel Corpus
+# geez-dataset
 
-A comprehensive computational linguistic dataset for Classical Ge'ez natural language processing, root-and-pattern morphological analysis, and Ge'ez-to-Amharic machine translation.
+Classical Ge'ez lexical, morphological, and parallel data. Private repo.
 
----
+## Layout
 
-## 1. Canonical Dataset Architecture (`data/`)
-
-All curated, deduplicated, and production datasets are structured under `data/`:
-
-### A. Morphological Paradigms (`data/paradigms/` — ርባሕ ወአንቀጽ)
-* **`synthetic_morphology_train.jsonl`** (**98,128 records** | 17.2 MB): Cleaned bidirectional synthetic training pairs. Features full verb-type compatibility (0.00% cross-type corruption) and classical glide contractions (e.g., $q-w-m \to$ ቆመ, $m-w-t \to$ ሞተ, $s-y-m \to$ ሤመ).
-* **`synthetic_morphology_analyze.jsonl`** (**98,128 records** | 17.2 MB): Inverse analysis target mapping inflected surface words back to roots and grammatical features.
-* **`merho_ges_gold_train.jsonl`** (**3,194 authentic forms** across 1,169 roots): Authentic church conjugation matrices across past, present, subjunctive, and imperative moods.
-* **`merho_ges_gold_val.jsonl`** (**394 forms**): Held-out validation split for in-training zero-shot evaluation on unseen roots.
-* **`merho_ges_gold_test.jsonl`** (**586 forms**): Strict, uncompromised evaluation benchmark with **0.00% surface form leakage** against train/val.
-* **`merho_ges_gold_all.jsonl`** (**4,041 table rows** | 2.0 MB): Master reference of all 1,375 extracted root tables from *Merho Ges*.
-
-### B. Lexicon & Dictionaries (`data/lexicon/` — መዝገበ ቃላት)
-* **`classical_dictionary_kidane_wold.jsonl`** (**13,234 entries** | 10.0 MB): Master classical dictionary from Aleqa Kidane Wold Kifle. Contains inferred roots with the corrected initial-`አ` disambiguation rule (278 previously corrupted roots restored to valid triliterals).
-* **`modern_geez_amharic_dictionary.jsonl`** (**1,722 entries** | 390 KB): Clean 1-to-1 vocabulary dictionary from the 102-page *Rbahe Asma'e We-Anqets*, featuring 881 verbs and 826 nouns with modern Amharic glosses.
-
-### C. Bilingual Parallel Data (`data/parallel/`)
-* **`true_parallel_pairs.jsonl`** (**2,780 pairs**): High-precision Ge'ez-to-Amharic parallel sentences filtered with a 5-feature linguistic discriminator (eliminating the legacy 33% preposition mislabel defect).
-* **`uncertain_pairs.jsonl`** (**9,066 entries**): Short 1–2 word glosses, isolated noun definitions, and entries lacking complex verbal syntax.
-
-### D. Monolingual & Explanatory Corpora (`data/corpora/` — ድርሰት / ንባብ)
-* **`yared_shiferaw_corpus.txt`** (**90,699 words** | 610 KB): Full continuous grammatical and morphological text from Liqe Liqawunt Yared Shiferaw (422 pages).
-* **`merho_ges_prose_rules.txt`** (**717 records** | 703 KB): Extracted historical and grammatical prose commentaries from *Merho Ges*.
-* **`geez_geez_monolingual.jsonl`** (**1,388 passages**): Ge'ez definitional texts salvaged from mislabeled dictionary segments.
-* **`phrasebook_pairs.jsonl`** (**218 phrases**): Contextual parallel idioms from the final pages of *Rbahe Asma'e We-Anqets*.
-
----
-
-## 2. Provenance & Source Authorities
-
-This repository is grounded in primary philological volumes from the Ethiopian scholarly tradition:
-1. **Aleqa Kidane Wold Kifle (1872–1944)**: *Mets'hafe Sewasew Weges Wemezgebe Qalat Haddis* («መጽሐፈ ሰዋስው ወግስ ወመዝገበ ቃላት ሐዲስ») — Comprehensive Ge'ez-Amharic dictionary (1948 E.C., 716 print pages, 13,234 entries).
-2. **Traditional School Tradition / Kidane Wold Kifle**: *Rbahe Asma'e We-Anqets* («ርባሐ አስማእ ወአንቀጽ») — 102-page manual of nominal declensions, verbal classes, and parallel phrase pairs.
-3. **Liqe Liqawunt Yared Shiferaw (ሊቀ ሊቃውንት ያሬድ ሽፈራው)**: *Mets'hafe Ges Wesewasew* («መጽሐፈ ግስ ወሰዋስው») — 422-page modern traditional treatise on verbal classification and weak verbs (*ሆህያተ ድካም*).
-4. **Traditional Church Curriculum**: *Merho Ges Wesewasew Ze-Yared* («መርኆ ግስ ወሰዋስው ዘያሬድ») — Complete 509-page manual of verbal conjugation matrices across all 10 grammatical persons and gates (*ርባሕ ወአንቀጽ*).
-
----
-
-## 3. Data Quality & Auditing History
-
-* **Weak Verb Phonological Contraction:** Generator applies classical Semitic glide contractions ($aw \to o, ay \to e, əw \to u$) so hollow roots generate authentic forms (`ቆመ`, `ሞተ`, `ሤመ`, `ይቁም`).
-* **Root-Type Compatibility:** The synthetic generator loop checks root-pattern compatibility (`if ptype != rtype: continue`), preventing cross-class corruption.
-* **Root-Initial `አ` Disambiguation:** 278 previously truncated roots were restored to valid triliterals (`አበኃ` $\to$ `a-b-kh`, `አበወ` $\to$ `a-b-w`) by verifying consonant counts and 2nd-radical vowel orders.
-* **Zero Leakage Split:** All *Merho Ges* test records are partitioned by canonical 1st-order Ethiopic root, ensuring 0.00% surface form leakage between train and test.
-
----
-
-## 4. Usage in Python
-
-```python
-import json
-
-# Load canonical dictionary
-with open("data/lexicon/classical_dictionary_kidane_wold.jsonl", "r", encoding="utf-8") as f:
-    dictionary = [json.loads(line) for line in f]
-
-print(f"Loaded {len(dictionary)} dictionary entries.")
-
-# Load held-out gold test paradigms
-with open("data/paradigms/merho_ges_gold_test.jsonl", "r", encoding="utf-8") as f:
-    test_paradigms = [json.loads(line) for line in f]
-
-print(f"Loaded {len(test_paradigms)} held-out gold paradigm records.")
+```
+geez-dataset/
+├── data/
+│   ├── paradigms/        training + gold morphology (canonical)
+│   ├── lexicon/          dictionaries and verb triples
+│   ├── parallel/         Ge'ez–Amharic sentence pairs
+│   ├── corpora/          monolingual / prose text
+│   └── *.jsonl, *.txt    older combined files from build_canonical_dataset.py (see below)
+├── output/               generator and run_all.py output; paradigm files mirror data/paradigms/
+├── scans/                page images (keep; private)
+│   ├── sewasew_1_192/    Kidane Wold dictionary, pages 1–192 (192 GIF)
+│   ├── merho_ges_511/    Merho Ges (509 JPG)
+│   └── page_618.gif, page_909.gif
+├── sources/              source notes (README.md; the PDFs are not in git)
+├── scripts/              extraction scripts (OCR / ingestion of the scans)
+├── docs/
+│   └── extraction_methods.md
+├── dictionary.jsonl      Kidane Wold dictionary, read by the generator and analyzer (see below)
+├── morphology.jsonl      208 Merho Ges records, read by run_all.py
+├── errata.jsonl          12 Kidane Wold errata rows
+├── build_canonical_dataset.py
+└── run_all.py
 ```
 
----
+Do not put new training files at the repo root. Prefer `data/…`.
 
-## License
+## `data/paradigms/` (use these for training)
 
-This dataset is released under the **Apache License 2.0**.
+| File | Rows | Role |
+|------|------|------|
+| `synthetic_morphology_train.jsonl` | 217,417 | Synthetic generate training (sha256 `7973b501bb41421b34a19aa6f06ff6a4b4807f7eb67c1d78683da02be0893e45`) |
+| `synthetic_morphology_analyze.jsonl` | 217,417 | Same pairs, analyze direction |
+| `merho_ges_gold_train.jsonl` | 1,110 | Merho Ges gold train tables |
+| `merho_ges_gold_train_tense_filled.jsonl` | 1,110 | Same + tense filled from real sources where possible |
+| `merho_ges_gold_train_tense_sources.jsonl` | 876 | Where each filled tense came from |
+| `merho_ges_gold_val.jsonl` | 140 | Val |
+| `merho_ges_gold_test.jsonl` | 212 | Held-out test (do not train on this) |
+| `merho_ges_gold_all.jsonl` | 1,462 | All extracted Merho Ges tables |
+
+Each synthetic line is `{"features": {...}, "surface_form": "..."}` (the analyze file uses `"analysis"` instead of `"features"`). The training script turns the 1,110 gold-train tables into 3,322 gold-train pairs.
+
+**Tenses in synthetic train:** past 75,505 · present 60,848 · subjunctive 59,103 · imperative 21,961.
+
+- **past** = perfect (ቀተለ)
+- **present** = imperfect (ይቀትል)
+- **subjunctive** = subjunctive and jussive merged (ይቅትል)
+- **imperative** (ቅትል)
+
+**Verb classes in synthetic train** (pairs):
+
+| Internal `verb_type` | Class (traditional model) | Example (perfect ፡ present ፡ subjunctive) | Pairs |
+|---|---|---|---:|
+| `strong_A` | Type A · ቀተለ | ቀተለ ፡ ይቀትል ፡ ይቅትል (also ይግበር shape; middle guttural: መሐለ ፡ ይምሕል ፡ ይምሐል) | 194,874 |
+| `strong_B` | Type B · ቀደሰ | ቀደሰ ፡ ይቄድስ ፡ ይቀድስ | 170 |
+| `strong_C` | Type C · ባረከ | ባረከ ፡ ይባርክ ፡ ይባርክ | 544 |
+| `strong_D` | Type D · ጽሕቀ (middle guttural, 6th-order first letter in the perfect) | ጽሕቀ ፡ ይጽሕቅ ፡ ይጽሐቅ; ስእለ ፡ ይስእል ፡ ይስአል | 204 |
+| `quadriliteral` | ተንበለ (four radicals) | ደንገፀ ፡ ይደነግፅ ፡ ይደንግፅ | 10,983 |
+| `weak_middle` | hollow (middle w/y) | ሞተ ፡ ይመውት ፡ ይሙት; ሤመ ፡ ይሠይም ፡ ይሢም | 7,469 |
+| `weak_initial` | first w/y | ወለደ ፡ ይወልድ ፡ ይለድ; ወረደ ፡ ይወርድ ፡ ይረድ | 2,935 |
+| `weak_final` | final-w ተለወ · final-y ሰትየ | ተለወ ፡ ይተሉ ፡ ይትሉ; ሰትየ ፡ ይሰቲ ፡ ይስተይ | 238 |
+
+Ordinary middle-guttural verbs like መሐለ are Type A, not Type D. Type D is only the ጽሕቀ / ስእለ pattern (6th-order first letter in the perfect).
+
+**Stems:** basic (ቀተለ), causative አ- (አቅተለ), passive ተ- (ተቀትለ), aste አስተ- (አስተቅተለ).
+
+Guttural-initial present takes የ-/ተ-/አ-/ነ- in every person (የኀድግ); the subjunctive keeps ይ- (ይኅድግ).
+
+Grammar rules used to build the synthetic set live in the morphology repo: [`docs/grammar_rules.md`](https://github.com/esubaalew/geez-morphology/blob/main/docs/grammar_rules.md).
+
+## `data/lexicon/`
+
+| File | Rows | Role |
+|------|------|------|
+| `classical_dictionary_kidane_wold.jsonl` | 13,234 | Kidane Wold classical dictionary |
+| `modern_geez_amharic_dictionary.jsonl` | 1,722 | Modern Ge'ez–Amharic glossary |
+| `kidane_wold_verb_triples.jsonl` | 262 | Accepted perfect ፡ imperfect ፡ subjunctive |
+| `kidane_wold_verb_triples_rejected.jsonl` | 326 | Rejected (OCR / radical mismatch) |
+| `kidane_wold_root_fixes.jsonl` | 955 | Root-letter repair log |
+
+## `data/parallel/` and `data/corpora/`
+
+- `parallel/true_parallel_pairs.jsonl` — 2,780 high-precision pairs
+- `parallel/uncertain_pairs.jsonl` — 9,066 short / uncertain glosses
+- `corpora/` — Yared Shiferaw text, Merho Ges prose, monolingual Ge'ez, phrasebook
+
+## Other files (kept because code reads them)
+
+- Root `dictionary.jsonl` is byte-identical to `data/lexicon/classical_dictionary_kidane_wold.jsonl` and `output/dictionary_with_roots.jsonl`. The generator, the analyzer, `run_all.py` and `build_canonical_dataset.py` read it, so it stays. Edit the dictionary in `data/lexicon/` only.
+- `morphology.jsonl` is read by `run_all.py`. `errata.jsonl` holds Kidane Wold errata (dictionary work in progress).
+- The `*.db` extraction databases are local only (not in git).
+- `data/merho_ges_gold_{train,val,test}.jsonl` are an older split written by `build_canonical_dataset.py`. They differ from `data/paradigms/` and overlap its train roots. Use `data/paradigms/` only.
+- `data/geez_amharic_dictionary.jsonl`, `data/geez_literature_corpus.txt`, `data/verbs_rbha_anqets.jsonl` and `data/true_parallel_pairs.jsonl` also come from `build_canonical_dataset.py`. The generator reads `data/geez_amharic_dictionary.jsonl`.
+- The synthetic generator lives in **geez-morphology-model** (`generate_synthetic_fixed.py`). It writes `output/` and copies the paradigm files to `data/paradigms/`.
+
+## Generate / train / eval (from the model repo)
+
+```bash
+cd ../geez-morphology-model
+source .venv/bin/activate
+python generate_synthetic_fixed.py      # rewrites output/ and data/paradigms/synthetic_*
+python train_byt5_morphology.py         # reads data/paradigms/synthetic_morphology_train.jsonl + gold train
+python evaluate_gold.py --model_dir checkpoints_full   # Merho Ges held-out test
+```
+
+## License / privacy
+
+Apache License 2.0. Repo is private while work is in progress. Dictionary text and scans stay in this private tree; do not publish them.

@@ -1,14 +1,25 @@
+# OS and editor files
 .DS_Store
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Extraction checkpoints (SQLite, local only)
+*.db
+
+# Source PDFs (two are over GitHub's 100 MB limit; kept locally)
+*.pdf
+
+# Page scans not used by the dataset
+scans/modern_dictionary_102/
+
+# Scratch and backups
 *.tmp
 _probe*
 *chunk*
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-*.db
 *.bak*
-*.bak_*
-*.pdf
-scans/modern_dictionary_102/
-*.db
+*.log
 organize_data.py
