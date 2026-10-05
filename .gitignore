@@ -9,3 +9,6 @@ __pycache__/
 *.bak*
 *.bak_*
 *.pdf
+scans/modern_dictionary_102/
+*.db
+organize_data.py
