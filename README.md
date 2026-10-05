@@ -19,6 +19,7 @@ geez-dataset/
 │   └── page_618.gif, page_909.gif
 ├── sources/              source notes (README.md; the PDFs are not in git)
 ├── scripts/              extraction scripts (OCR / ingestion of the scans)
+├── tests/                checks for build_canonical_dataset.py
 ├── docs/
 │   └── extraction_methods.md
 ├── dictionary.jsonl      Kidane Wold dictionary, read by the generator and analyzer (see below)
@@ -95,6 +96,7 @@ Grammar rules used to build the synthetic set live in the morphology repo: [`doc
 - `morphology.jsonl` is read by `run_all.py`. `errata.jsonl` holds Kidane Wold errata (dictionary work in progress).
 - The `*.db` extraction databases are local only (not in git).
 - `data/merho_ges_gold_{train,val,test}.jsonl` are an older split written by `build_canonical_dataset.py`. They differ from `data/paradigms/` and overlap its train roots. Use `data/paradigms/` only.
+- `build_canonical_dataset.py` settles ambiguous Latin letters in the Merho Ges roots from the Ethiopic headword and logs swaps, unsettled cases, the hand override and dropped records in `output/merho_root_review_log.tsv`. Test: `python -m pytest tests/`.
 - `data/geez_amharic_dictionary.jsonl`, `data/geez_literature_corpus.txt`, `data/verbs_rbha_anqets.jsonl` and `data/true_parallel_pairs.jsonl` also come from `build_canonical_dataset.py`. The generator reads `data/geez_amharic_dictionary.jsonl`.
 - The synthetic generator lives in **geez-morphology-model** (`generate_synthetic_fixed.py`). It writes `output/` and copies the paradigm files to `data/paradigms/`.
 
