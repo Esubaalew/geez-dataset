@@ -38,10 +38,10 @@ Do not put new training files at the repo root. Prefer `data/…`.
 | `synthetic_morphology_train.jsonl` | 217,417 | Synthetic generate training (sha256 `7973b501bb41421b34a19aa6f06ff6a4b4807f7eb67c1d78683da02be0893e45`) |
 | `synthetic_morphology_analyze.jsonl` | 217,417 | Same pairs, analyze direction |
 | `merho_ges_gold_train.jsonl` | 1,110 | Merho Ges gold train tables |
-| `merho_ges_gold_train_tense_filled.jsonl` | 1,110 | Same + tense filled from real sources where possible |
+| `merho_ges_gold_train_tense_filled.jsonl` | see the gold section below | Same + tense filled from real sources where possible; corrections written in |
 | `merho_ges_gold_train_tense_sources.jsonl` | 876 | Where each filled tense came from |
-| `merho_ges_gold_val.jsonl` | 140 | Val |
-| `merho_ges_gold_test.jsonl` | 212 | Held-out test (do not train on this) |
+| `merho_ges_gold_val.jsonl` | see the gold section below | Val; corrections written in |
+| `merho_ges_gold_test.jsonl` | see the gold section below | Held-out test (do not train on this); corrections written in |
 | `merho_ges_gold_all.jsonl` | 1,462 | All extracted Merho Ges tables |
 
 Each synthetic line is `{"features": {...}, "surface_form": "..."}` (the analyze file uses `"analysis"` instead of `"features"`). The training script turns the 1,110 gold-train tables into 3,322 gold-train pairs.
@@ -113,3 +113,38 @@ python evaluate_gold.py --model_dir checkpoints_full   # Merho Ges held-out test
 ## License / privacy
 
 Apache License 2.0. Repo is private while work is in progress. Dictionary text and scans stay in this private tree; do not publish them.
+
+<!-- gold-split-moves:start -->
+
+### Merho Ges gold files: corrections written into the files
+
+`merho_ges_gold_train_tense_filled.jsonl`, `merho_ges_gold_val.jsonl` and `merho_ges_gold_test.jsonl` carry the page-checked corrections (from the book scans) and the root decisions in `data/corrections/`, written into the files: there is nothing to apply at load time. They are rebuilt from the files as extracted (git commit `544271a` of this repository); the full change log (old value, new value, page, source and reason of every change) is kept with the project's notes material and is available on request.
+
+- records now: train 1106, val 137, test 219 (1462 in all, none dropped); rows are corrected, never dropped: the only pairs removed are exact duplicates (the same form with the same labels twice in one split; one copy kept, 104 copies removed);
+- changes: 4018 values (duplicate_removed 104, form 196, geez_form 191, gender 270, number 71, object 58, person 637, root 957, root_unsettled 2, row_removed 95, row_split 13, split_move 17, stem 93, tense 637, type 677);
+- `merho_ges_gold_flagged_rows.tsv`: 13 pairs kept in the files but left out of training and scoring, with the reason;
+- a row may carry `root`, `stem`, `type` (noun/adjective), `object` where they differ from the record, and `source_row`/`source_variant` where a cell was split; a record may carry `root_unsettled` (its root is not used; rows with their own root still load);
+- `merho_ges_gold_train.jsonl`, `merho_ges_gold_all.jsonl` and `merho_ges_gold_train_tense_sources.jsonl` are not rewritten (still as extracted).
+
+### Gold records moved between splits (each root in one split)
+
+A root (after all corrections) may appear in one gold split only, so that the val and test scores are on roots the model never saw in gold training. Records that share a root are moved as whole records to the split with most of that root's gold pairs (on a tie the record stays in val/test, and test wins over val). Line numbers are those of the files as extracted (commit `544271a`); moved records are at the end of their new file. The list is rebuilt whenever the corrections change.
+
+- ሀ-ለ-ወ: gold pairs train 1, test 1; moved to test: train line 745 (1 pair). Synthetic training pairs with this root: ሀ-ለ-ወ 0.
+- ሐ-መ-መ: gold pairs train 11, val 4; moved to train: val line 18 (1 pair); val line 19 (3 pairs). Synthetic training pairs with this root: ሐ-መ-መ 134.
+- ረ-አ-የ: gold pairs train 7, val 1; moved to train: val line 112 (1 pair). Synthetic training pairs with this root: ረ-አ-የ 0.
+- ሰ-ነ-አ-ለ: gold pairs train 6, test 2; moved to train: test line 15 (2 pairs). Synthetic training pairs with this root: ሰ-ነ-አ-ለ 0.
+- ቀ-በ-ለ ቈ-በ-ለ: gold pairs train 2, test 2; moved to test: train line 128 (2 pairs). Synthetic training pairs with this root: ቀ-በ-ለ 0, ቈ-በ-ለ 0.
+- በ-ወ-ሐ አ-በ-ሐ: gold pairs train 2, test 5; moved to test: train line 55 (2 pairs). Synthetic training pairs with this root: በ-ወ-ሐ 41, አ-በ-ሐ 0.
+- ተ-በ-ዐ: gold pairs train 3, test 2; moved to train: test line 104 (2 pairs). Synthetic training pairs with this root: ተ-በ-ዐ 0.
+- ተ-የ-ሀ: gold pairs train 1, test 1; moved to test: train line 60 (1 pair). Synthetic training pairs with this root: ተ-የ-ሀ 0.
+- ኀ-ሠ-ሠ ጐ-ሠ-ሠ: gold pairs val 1, test 5; moved to test: val line 26 (1 pair). Synthetic training pairs with this root: ኀ-ሠ-ሠ 0, ጐ-ሠ-ሠ 0.
+- ነ-ወ-መ: gold pairs train 1, val 1; moved to val: train line 212 (1 pair). Synthetic training pairs with this root: ነ-ወ-መ 41.
+- ነ-ዐ-መ ፈ-አ-መ: gold pairs train 1, test 3; moved to test: train line 211 (1 pair). Synthetic training pairs with this root: ነ-ዐ-መ 0, ፈ-አ-መ 34.
+- አ-ኰ-ተ: gold pairs train 1, test 1; moved to test: train line 564 (1 pair). Synthetic training pairs with this root: አ-ኰ-ተ 0.
+- ከ-ረ-በ: gold pairs train 7, val 12; moved to val: train line 1107 (7 pairs). Synthetic training pairs with this root: ከ-ረ-በ 131.
+- ወ-ጸ-አ: gold pairs train 1, test 2; moved to test: train line 672 (1 pair). Synthetic training pairs with this root: ወ-ጸ-አ 0.
+- ዐ-የ-ረ: gold pairs train 1, test 2; moved to test: train line 368 (1 pair). Synthetic training pairs with this root: ዐ-የ-ረ 0.
+- ደ-ኀ-ነ: gold pairs train 4, val 3; moved to train: val line 7 (3 pairs). Synthetic training pairs with this root: ደ-ኀ-ነ 34.
+
+<!-- gold-split-moves:end -->

@@ -1,0 +1,14 @@
+split	gold_file	file_line	record_id	row	source_row	source_variant	form	page	reason	source	extracted_as
+train	merho_ges_gold_train_tense_filled.jsonl	61	939ea1da4a01	2	2	0	ኢትጸብሕ	34	p34: page has ኢትጸብሐ/ኢትጸብሖ before ወእመ ዘተጸብሐከ ኢታውሥእ (2 Kgs 4:29); last letter order unreadable, so form and object unknown; stays out of this run	checked against the printed page	train:63
+train	merho_ges_gold_train_tense_filled.jsonl	256	810684ddd00e	1	1	0	ተመርሳ	97	p97: likely past 3fp (next verb in the quote ይከውና is 3fp) but the subject is not stated	checked against the printed page	train:261
+train	merho_ges_gold_train_tense_filled.jsonl	260	422f4cbf7dac	0	0	0	ሰንኰለሰ	98	red and black forms (ሰንኩረስ, ሰንኩረሳት) look like ረ, not ለ, but Greek synkellos suggests ለ; cannot settle at this resolution; keep out until checked printed p86	flagged_rows.tsv:5	train:265
+train	merho_ges_gold_train_tense_filled.jsonl	269	87f67f0f2a9f	1	1	0	ቅለስ	100	p100: ተቃለሰ ታገለ ቅሉስ ው መስተቃልስ ባዕ ቅ; word sits at the page edge, read from the list pattern (adjective before ው); gold ቅለስ is OCR, not an imperative | not an imperative (reciprocal imperative would be ተቃለስ): it is the ው-form before "ው መስተቃልስ", likely ቅሉስ, but the word is cut at the page edge; keep out until checked printed p88	checked against the printed page; flagged_rows.tsv:6	train:274
+train	merho_ges_gold_train_tense_filled.jsonl	577	096913c336ff	1	1	0	ሠውዓ	193	p193: red headword spellings of ሠወነ (all derived forms have ን: ሥዉን, መሠውን, ሠወንት); root ሠ-ወ-ዐ is an OCR error	checked against the printed page	train:584
+train	merho_ges_gold_train_tense_filled.jsonl	577	096913c336ff	2	2	0	ሠውዖ	193	p193: as ሠውዓ; previous change reverted	checked against the printed page	train:584
+train	merho_ges_gold_train_tense_filled.jsonl	579	abacbe5ce955	1	1	0	ሠየና	193	"p193: a red headword spelling, not ""he ... her""; previous change reverted; spelling unreadable"	checked against the printed page	train:586
+train	merho_ges_gold_train_tense_filled.jsonl	579	abacbe5ce955	2	2	0	ሠይነ	193	p193: one of four red headword spellings of ሠየነ (he urinated); red letters unreadable at scan resolution	checked against the printed page	train:586
+train	merho_ges_gold_train_tense_filled.jsonl	579	abacbe5ce955	3	3	0	ሠየኖ	193	p193: a red headword spelling, not verb + object; previous change reverted; spelling unreadable	checked against the printed page	train:586
+val	merho_ges_gold_val.jsonl	21	959d650806d8	1	1	0	አጠመ	85	form not on p85-86 scan; root ከ-መ-መ cannot fit a form with no ከ; keep out until checked	flagged_rows.tsv:2	val:24
+val	merho_ges_gold_val.jsonl	21	959d650806d8	1	1	1	አጠጠመ	85	same as row 1.0	flagged_rows.tsv:3	val:24
+test	merho_ges_gold_test.jsonl	42	4e8f85ee882f	0	0	0	ተኀሥሡ	93	form not on p92-93 scan (page has ተኃሥሦ, already row 1); 3ms label unconfirmed; keep out until checked	flagged_rows.tsv:4	test:43
+test	merho_ges_gold_test.jsonl	216	a45000c18b94	0	0	0	ተአኵዮ	187	unclear form	checked against the printed page	train:564
