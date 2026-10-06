@@ -120,8 +120,8 @@ Apache License 2.0. Repo is private while work is in progress. Dictionary text a
 
 `merho_ges_gold_train_tense_filled.jsonl`, `merho_ges_gold_val.jsonl` and `merho_ges_gold_test.jsonl` carry the page-checked corrections (from the book scans) and the root decisions in `data/corrections/`, written into the files: there is nothing to apply at load time. They are rebuilt from the files as extracted (git commit `544271a` of this repository); the full change log (old value, new value, page, source and reason of every change) is kept with the project's notes material and is available on request.
 
-- records now: train 1107, val 137, test 218 (1462 in all, none dropped); rows are corrected, never dropped: the only pairs removed are exact duplicates (the same form with the same labels twice in one split; one copy kept, 143 copies removed);
-- changes: 4407 values (duplicate_removed 143, form 213, geez_form 206, gender 294, number 76, object 61, person 686, root 975, root_unsettled 2, row_removed 125, row_split 19, split_move 18, stem 128, tense 735, type 726);
+- records now: train 1106, val 137, test 219 (1462 in all, none dropped); rows are corrected, never dropped: the only pairs removed are exact duplicates (the same form with the same labels twice in one split; one copy kept, 143 copies removed);
+- changes: 4410 values (duplicate_removed 143, form 213, geez_form 206, gender 294, number 76, object 61, person 686, root 977, root_unsettled 2, row_removed 125, row_split 19, split_move 19, stem 128, tense 735, type 726);
 - tense: the files say `subjunctive` where the extraction said `jussive` (one subjunctive label, as in the synthetic data): 48 values changed, 41 copies that became exact duplicates removed;
 - `merho_ges_gold_flagged_rows.tsv`: 18 pairs kept in the files but left out of training and scoring, with the reason;
 - a row may carry `root`, `stem`, `type` (noun/adjective), `object` where they differ from the record, and `source_row`/`source_variant` where a cell was split; a record may carry `root_unsettled` (its root is not used; rows with their own root still load);
@@ -133,6 +133,7 @@ A root (after all corrections) may appear in one gold split only, so that the va
 
 - ሀ-ለ-ወ: gold pairs train 1, test 1; moved to test: train line 745 (1 pair). Synthetic training pairs with this root: ሀ-ለ-ወ 0.
 - ሐ-መ-መ: gold pairs train 11, val 4; moved to train: val line 18 (1 pair); val line 19 (3 pairs). Synthetic training pairs with this root: ሐ-መ-መ 134.
+- ሠ-ረ-የ: gold pairs train 2, test 4; moved to test: train line 872 (2 pairs). Synthetic training pairs with this root: ሠ-ረ-የ 0.
 - ረ-አ-የ: gold pairs train 7, val 1; moved to train: val line 112 (1 pair). Synthetic training pairs with this root: ረ-አ-የ 0.
 - ሰ-ነ-አ-ለ: gold pairs train 6, test 2; moved to train: test line 15 (2 pairs). Synthetic training pairs with this root: ሰ-ነ-አ-ለ 0.
 - ቀ-በ-ለ ቈ-በ-ለ: gold pairs train 2, test 2; moved to test: train line 128 (2 pairs). Synthetic training pairs with this root: ቀ-በ-ለ 0, ቈ-በ-ለ 0.
