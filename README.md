@@ -35,8 +35,8 @@ Do not put new training files at the repo root. Prefer `data/…`.
 
 | File | Rows | Role |
 |------|------|------|
-| `synthetic_morphology_train.jsonl` | 211,007 | Synthetic generate training (sha256 `c9a052863313a7b7f3c9b70f34cd20c6badf5691a5c3f5c90abef20d968ad45c`) |
-| `synthetic_morphology_analyze.jsonl` | 211,007 | Same pairs, analyze direction |
+| `synthetic_morphology_train.jsonl` | 210,635 | Synthetic generate training (sha256 `79f70721940653d9c6096b0dafdcd2baff48222332bfac011daf7be0e4753907`) |
+| `synthetic_morphology_analyze.jsonl` | 210,635 | Same pairs, analyze direction |
 | `merho_ges_gold_train.jsonl` | 1,110 | Merho Ges gold train tables |
 | `merho_ges_gold_train_tense_filled.jsonl` | see the gold section below | Same + tense filled from real sources where possible; corrections written in |
 | `merho_ges_gold_train_tense_sources.jsonl` | 876 | Where each filled tense came from |
@@ -44,11 +44,11 @@ Do not put new training files at the repo root. Prefer `data/…`.
 | `merho_ges_gold_test.jsonl` | see the gold section below | Held-out test (do not train on this); corrections written in |
 | `merho_ges_gold_all.jsonl` | 1,462 | All extracted Merho Ges tables |
 
-`data/synthetic/synthetic_forms_for_val_test_roots.jsonl` (6,410 lines, with its `_analyze` mirror) holds the generated lines whose root is a root of the gold val or test file; they are kept out of the training file so the val and test scores are on roots the model never saw, and the trainer does not read them. The split is redone by `synthetic_heldout.py` in the model repo from the full generator output and the current gold val/test files.
+`data/synthetic/synthetic_forms_for_val_test_roots.jsonl` (6,553 lines, with its `_analyze` mirror) holds the generated lines whose root is a root of the gold val or test file; they are kept out of the training file so the val and test scores are on roots the model never saw, and the trainer does not read them. The split is redone by `synthetic_heldout.py` in the model repo from the full generator output and the current gold val/test files.
 
 Each synthetic line is `{"features": {...}, "surface_form": "..."}` (the analyze file uses `"analysis"` instead of `"features"`). The training script turns the 1,110 gold-train tables into 3,322 gold-train pairs.
 
-**Tenses in synthetic train:** past 73,278 · present 59,080 · subjunctive 57,363 · imperative 21,286.
+**Tenses in synthetic train:** past 73,242 · present 59,208 · subjunctive 56,663 · imperative 21,522.
 
 - **past** = perfect (ቀተለ)
 - **present** = imperfect (ይቀትል)
@@ -59,14 +59,16 @@ Each synthetic line is `{"features": {...}, "surface_form": "..."}` (the analyze
 
 | Internal `verb_type` | Class (traditional model) | Example (perfect ፡ present ፡ subjunctive) | Pairs |
 |---|---|---|---:|
-| `strong_A` | Type A · ቀተለ | ቀተለ ፡ ይቀትል ፡ ይቅትል (also ይግበር shape; middle guttural: መሐለ ፡ ይምሕል ፡ ይምሐል) | 188,851 |
+| `strong_A` | Type A · ቀተለ | ቀተለ ፡ ይቀትል ፡ ይቅትል (also ይግበር shape; middle guttural: መሐለ ፡ ይምሕል ፡ ይምሐል) | 188,582 |
 | `strong_B` | Type B · ቀደሰ | ቀደሰ ፡ ይቄድስ ፡ ይቀድስ | 170 |
 | `strong_C` | Type C · ባረከ | ባረከ ፡ ይባርክ ፡ ይባርክ | 510 |
 | `strong_D` | Type D · ጽሕቀ (middle guttural, 6th-order first letter in the perfect) | ጽሕቀ ፡ ይጽሕቅ ፡ ይጽሐቅ; ስእለ ፡ ይስእል ፡ ይስአል | 204 |
-| `quadriliteral` | ተንበለ (four radicals) | ደንገፀ ፡ ይደነግፅ ፡ ይደንግፅ | 10,890 |
-| `weak_middle` | hollow (middle w/y) | ሞተ ፡ ይመውት ፡ ይሙት; ሤመ ፡ ይሠይም ፡ ይሢም | 7,259 |
-| `weak_initial` | first w/y | ወለደ ፡ ይወልድ ፡ ይለድ; ወረደ ፡ ይወርድ ፡ ይረድ | 2,885 |
+| `quadriliteral` | ተንበለ (four radicals) | ደንገፀ ፡ ይደነግፅ ፡ ይደንግፅ | 10,883 |
+| `weak_middle` | hollow (middle w/y) | ሞተ ፡ ይመውት ፡ ይሙት; ሤመ ፡ ይሠይም ፡ ይሢም | 7,287 |
+| `weak_initial` | first w/y | ወለደ ፡ ይወልድ ፡ ይለድ; ወረደ ፡ ይወርድ ፡ ይረድ | 2,761 |
 | `weak_final` | final-w ተለወ · final-y ሰትየ | ተለወ ፡ ይተሉ ፡ ይትሉ; ሰትየ ፡ ይሰቲ ፡ ይስተይ | 238 |
+
+The Merho Ges class tags the generator uses come from the corrected gold train file, never from the gold train split as extracted.
 
 Ordinary middle-guttural verbs like መሐለ are Type A, not Type D. Type D is only the ጽሕቀ / ስእለ pattern (6th-order first letter in the perfect).
 
