@@ -35,8 +35,8 @@ Do not put new training files at the repo root. Prefer `data/…`.
 
 | File | Rows | Role |
 |------|------|------|
-| `synthetic_morphology_train.jsonl` | 210,635 | Synthetic generate training (sha256 `79f70721940653d9c6096b0dafdcd2baff48222332bfac011daf7be0e4753907`) |
-| `synthetic_morphology_analyze.jsonl` | 210,635 | Same pairs, analyze direction |
+| `synthetic_morphology_train.jsonl` | 210,482 | Synthetic generate training (sha256 `bf3808a727dc88d8e60dfb6c7f7e5697f6a8d12fb530f8f63adfa8cc2f9a7aeb`) |
+| `synthetic_morphology_analyze.jsonl` | 210,482 | Same pairs, analyze direction |
 | `merho_ges_gold_train.jsonl` | see the gold section below | Merho Ges gold train tables: tense filled from real sources where possible; corrections written in |
 | `merho_ges_gold_val.jsonl` | see the gold section below | Val; corrections written in |
 | `merho_ges_gold_test.jsonl` | see the gold section below | Held-out test (do not train on this); corrections written in |
@@ -44,11 +44,11 @@ Do not put new training files at the repo root. Prefer `data/…`.
 
 Only the corrected gold files are kept: the files as extracted (`merho_ges_gold_all.jsonl`, the uncorrected `merho_ges_gold_train.jsonl`, `merho_ges_gold_train_tense_sources.jsonl` and `data/merho_ges_gold_{train,val,test}.jsonl`) were deleted, and `merho_ges_gold_train_tense_filled.jsonl` was renamed `merho_ges_gold_train.jsonl`. They stay in git history (commit `544271a`).
 
-`data/synthetic/synthetic_forms_for_val_test_roots.jsonl` (6,553 lines, with its `_analyze` mirror) holds the generated lines whose root is a root of the gold val or test file; they are kept out of the training file so the val and test scores are on roots the model never saw, and the trainer does not read them. The split is redone by `synthetic_heldout.py` in the model repo from the full generator output and the current gold val/test files.
+`data/synthetic/synthetic_forms_for_val_test_roots.jsonl` (6,495 lines, with its `_analyze` mirror) holds the generated lines whose root is a root of the gold val or test file; they are kept out of the training file so the val and test scores are on roots the model never saw, and the trainer does not read them. The split is redone by `synthetic_heldout.py` in the model repo from the full generator output and the current gold val/test files.
 
 Each synthetic line is `{"features": {...}, "surface_form": "..."}` (the analyze file uses `"analysis"` instead of `"features"`). The training script reads the gold-train pairs from `merho_ges_gold_train.jsonl` (counts in the gold section below).
 
-**Tenses in synthetic train:** past 73,242 · present 59,208 · subjunctive 56,663 · imperative 21,522.
+**Tenses in synthetic train:** past 73,026 · present 59,137 · subjunctive 57,065 · imperative 21,254.
 
 - **past** = perfect (ቀተለ)
 - **present** = imperfect (ይቀትል)
@@ -59,16 +59,18 @@ Each synthetic line is `{"features": {...}, "surface_form": "..."}` (the analyze
 
 | Internal `verb_type` | Class (traditional model) | Example (perfect ፡ present ፡ subjunctive) | Pairs |
 |---|---|---|---:|
-| `strong_A` | Type A · ቀተለ | ቀተለ ፡ ይቀትል ፡ ይቅትል (also ይግበር shape; middle guttural: መሐለ ፡ ይምሕል ፡ ይምሐል) | 188,582 |
+| `strong_A` | Type A · ቀተለ | ቀተለ ፡ ይቀትል ፡ ይቅትል (also ይግበር shape; middle guttural: መሐለ ፡ ይምሕል ፡ ይምሐል) | 188,607 |
 | `strong_B` | Type B · ቀደሰ | ቀደሰ ፡ ይቄድስ ፡ ይቀድስ | 170 |
 | `strong_C` | Type C · ባረከ | ባረከ ፡ ይባርክ ፡ ይባርክ | 510 |
 | `strong_D` | Type D · ጽሕቀ (middle guttural, 6th-order first letter in the perfect) | ጽሕቀ ፡ ይጽሕቅ ፡ ይጽሐቅ; ስእለ ፡ ይስእል ፡ ይስአል | 204 |
-| `quadriliteral` | ተንበለ (four radicals) | ደንገፀ ፡ ይደነግፅ ፡ ይደንግፅ | 10,883 |
-| `weak_middle` | hollow (middle w/y) | ሞተ ፡ ይመውት ፡ ይሙት; ሤመ ፡ ይሠይም ፡ ይሢም | 7,287 |
-| `weak_initial` | first w/y | ወለደ ፡ ይወልድ ፡ ይለድ; ወረደ ፡ ይወርድ ፡ ይረድ | 2,761 |
+| `quadriliteral` | ተንበለ (four radicals) | ደንገፀ ፡ ይደነግፅ ፡ ይደንግፅ | 10,626 |
+| `weak_middle` | hollow (middle w/y) | ሞተ ፡ ይመውት ፡ ይሙት; ሤመ ፡ ይሠይም ፡ ይሢም | 7,288 |
+| `weak_initial` | first w/y | ወለደ ፡ ይወልድ ፡ ይለድ; ወረደ ፡ ይወርድ ፡ ይረድ | 2,839 |
 | `weak_final` | final-w ተለወ · final-y ሰትየ | ተለወ ፡ ይተሉ ፡ ይትሉ; ሰትየ ፡ ይሰቲ ፡ ይስተይ | 238 |
 
 The Merho Ges class tags the generator uses come from the corrected gold train file, never from the gold train split as extracted.
+
+Every random draw in the generator is per root: which base pairs of a root get object and negative forms, which object suffixes, which of those get the ኢ- form, and whether a quadriliteral root is used come from that root's own random stream (seeded with sha256 of the global seed, the purpose and the root). A change to one root changes only that root's lines; every other root's lines stay identical and in the same order.
 
 Ordinary middle-guttural verbs like መሐለ are Type A, not Type D. Type D is only the ጽሕቀ / ስእለ pattern (6th-order first letter in the perfect).
 
@@ -139,7 +141,7 @@ Apache License 2.0. Repo is private while work is in progress. Dictionary text a
 A root (after all corrections) may appear in one gold split only, so that the val and test scores are on roots the model never saw in gold training. Records that share a root are moved as whole records to the split with most of that root's gold pairs (on a tie the record stays in val/test, and test wins over val). Line numbers are those of the files as extracted (commit `544271a`); moved records are at the end of their new file. The list is rebuilt whenever the corrections change.
 
 - ሀ-ለ-ወ: gold pairs train 1, test 1; moved to test: train line 745 (1 pair). Synthetic training pairs with this root: ሀ-ለ-ወ 0.
-- ሐ-መ-መ: gold pairs train 11, val 4; moved to train: val line 18 (1 pair); val line 19 (3 pairs). Synthetic training pairs with this root: ሐ-መ-መ 137.
+- ሐ-መ-መ: gold pairs train 11, val 4; moved to train: val line 18 (1 pair); val line 19 (3 pairs). Synthetic training pairs with this root: ሐ-መ-መ 138.
 - ሠ-ረ-የ: gold pairs train 2, test 4; moved to test: train line 872 (2 pairs). Synthetic training pairs with this root: ሠ-ረ-የ 0.
 - ረ-አ-የ: gold pairs train 7, val 1; moved to train: val line 112 (1 pair). Synthetic training pairs with this root: ረ-አ-የ 0.
 - ሰ-ነ-አ-ለ: gold pairs train 6, test 2; moved to train: test line 15 (2 pairs). Synthetic training pairs with this root: ሰ-ነ-አ-ለ 0.
