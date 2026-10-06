@@ -75,7 +75,9 @@ Each synthetic line is `{"features": {...}, "surface_form": "..."}` (the analyze
 | `kidane_wold_verb_triples_rejected.jsonl` | Rejected triples (OCR / radical mismatch) | 326 | `948395fe41ae` |
 | `kidane_wold_root_fixes.jsonl` | Root-letter repair log | 955 | `856a1ae83fb0` |
 
-### Parallel pairs (`data/parallel/`)
+Headwords, verb forms and definitions in `classical_dictionary_kidane_wold.jsonl` were corrected from the typed Kidane Wold transcription in geezorg/data (https://github.com/geezorg/data, CC BY-SA 4.0, commit 3904462c).
+
+## `data/parallel/` and `data/corpora/`
 
 | File | Contents | Rows | sha256 |
 |---|---|---:|---|
