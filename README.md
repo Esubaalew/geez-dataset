@@ -35,7 +35,7 @@ Do not put new training files at the repo root. Prefer `data/…`.
 
 | File | Rows | Role |
 |------|------|------|
-| `synthetic_morphology_train.jsonl` | 217,417 | Synthetic generate training (sha256 `7973b501bb41421b34a19aa6f06ff6a4b4807f7eb67c1d78683da02be0893e45`) |
+| `synthetic_morphology_train.jsonl` | 217,417 | Synthetic generate training (sha256 `99a12efcaa0eab068371cd98250bd425ea15f40b1d376fbfc9565c493aba4248`) |
 | `synthetic_morphology_analyze.jsonl` | 217,417 | Same pairs, analyze direction |
 | `merho_ges_gold_train.jsonl` | 1,110 | Merho Ges gold train tables |
 | `merho_ges_gold_train_tense_filled.jsonl` | see the gold section below | Same + tense filled from real sources where possible; corrections written in |

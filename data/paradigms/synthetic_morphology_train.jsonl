@@ -122112,10 +122112,10 @@
 {"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "q-r-f"}, "surface_form": "ንቀርፍ"}
 {"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "q-r-f"}, "surface_form": "እቅርፍ"}
 {"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "q-r-f"}, "surface_form": "ንቅርፍ"}
-{"features": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "basic", "verb_type": "strong_C", "root": "q-r-h2"}, "surface_form": "ቃረሐ"}
-{"features": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "basic", "verb_type": "strong_C", "root": "q-r-h2"}, "surface_form": "ቃረሐት"}
-{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "basic", "verb_type": "strong_C", "root": "q-r-h2"}, "surface_form": "ቃረሑ"}
-{"features": {"person": "3", "gender": "f", "number": "p", "tense": "past", "stem": "basic", "verb_type": "strong_C", "root": "q-r-h2"}, "surface_form": "ቃረሓ"}
+{"features": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "basic", "verb_type": "strong_C", "root": "q-r-h2"}, "surface_form": "ቃርሐ"}
+{"features": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "basic", "verb_type": "strong_C", "root": "q-r-h2"}, "surface_form": "ቃርሐት"}
+{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "basic", "verb_type": "strong_C", "root": "q-r-h2"}, "surface_form": "ቃርሑ"}
+{"features": {"person": "3", "gender": "f", "number": "p", "tense": "past", "stem": "basic", "verb_type": "strong_C", "root": "q-r-h2"}, "surface_form": "ቃርሓ"}
 {"features": {"person": "2", "gender": "m", "number": "s", "tense": "past", "stem": "basic", "verb_type": "strong_C", "root": "q-r-h2"}, "surface_form": "ቃረሕከ"}
 {"features": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "basic", "verb_type": "strong_C", "root": "q-r-h2"}, "surface_form": "ቃረሕኪ"}
 {"features": {"person": "1", "gender": "c", "number": "s", "tense": "past", "stem": "basic", "verb_type": "strong_C", "root": "q-r-h2"}, "surface_form": "ቃረሕኩ"}
