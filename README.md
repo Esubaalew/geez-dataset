@@ -84,6 +84,8 @@ Grammar rules used to build the synthetic set live in the morphology repo: [`doc
 | `kidane_wold_verb_triples_rejected.jsonl` | 326 | Rejected (OCR / radical mismatch) |
 | `kidane_wold_root_fixes.jsonl` | 955 | Root-letter repair log |
 
+Headwords, verb forms and definitions in `classical_dictionary_kidane_wold.jsonl` were corrected from the typed Kidane Wold transcription in geezorg/data (https://github.com/geezorg/data, CC BY-SA 4.0, commit 3904462c).
+
 ## `data/parallel/` and `data/corpora/`
 
 - `parallel/true_parallel_pairs.jsonl` — 2,780 high-precision pairs
