@@ -120,9 +120,9 @@ Apache License 2.0. Repo is private while work is in progress. Dictionary text a
 
 `merho_ges_gold_train_tense_filled.jsonl`, `merho_ges_gold_val.jsonl` and `merho_ges_gold_test.jsonl` carry the page-checked corrections (from the book scans) and the root decisions in `data/corrections/`, written into the files: there is nothing to apply at load time. They are rebuilt from the files as extracted (git commit `544271a` of this repository); the full change log (old value, new value, page, source and reason of every change) is kept with the project's notes material and is available on request.
 
-- records now: train 1106, val 137, test 219 (1462 in all, none dropped); rows are corrected, never dropped: the only pairs removed are exact duplicates (the same form with the same labels twice in one split; one copy kept, 104 copies removed);
-- changes: 4018 values (duplicate_removed 104, form 196, geez_form 191, gender 270, number 71, object 58, person 637, root 957, root_unsettled 2, row_removed 95, row_split 13, split_move 17, stem 93, tense 637, type 677);
-- `merho_ges_gold_flagged_rows.tsv`: 13 pairs kept in the files but left out of training and scoring, with the reason;
+- records now: train 1106, val 137, test 219 (1462 in all, none dropped); rows are corrected, never dropped: the only pairs removed are exact duplicates (the same form with the same labels twice in one split; one copy kept, 102 copies removed);
+- changes: 4210 values (duplicate_removed 102, form 205, geez_form 196, gender 285, number 72, object 58, person 672, root 973, root_unsettled 2, row_removed 95, row_split 19, split_move 17, stem 130, tense 672, type 712);
+- `merho_ges_gold_flagged_rows.tsv`: 14 pairs kept in the files but left out of training and scoring, with the reason;
 - a row may carry `root`, `stem`, `type` (noun/adjective), `object` where they differ from the record, and `source_row`/`source_variant` where a cell was split; a record may carry `root_unsettled` (its root is not used; rows with their own root still load);
 - `merho_ges_gold_train.jsonl`, `merho_ges_gold_all.jsonl` and `merho_ges_gold_train_tense_sources.jsonl` are not rewritten (still as extracted).
 
