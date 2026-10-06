@@ -120,11 +120,12 @@ Apache License 2.0. Repo is private while work is in progress. Dictionary text a
 
 `merho_ges_gold_train_tense_filled.jsonl`, `merho_ges_gold_val.jsonl` and `merho_ges_gold_test.jsonl` carry the page-checked corrections (from the book scans) and the root decisions in `data/corrections/`, written into the files: there is nothing to apply at load time. They are rebuilt from the files as extracted (git commit `544271a` of this repository); the full change log (old value, new value, page, source and reason of every change) is kept with the project's notes material and is available on request.
 
-- records now: train 1106, val 137, test 219 (1462 in all, none dropped); rows are corrected, never dropped: the only pairs removed are exact duplicates (the same form with the same labels twice in one split; one copy kept, 143 copies removed);
-- changes: 4426 values (duplicate_removed 143, form 216, geez_form 208, gender 295, number 76, object 61, person 688, root 979, root_unsettled 2, row_removed 125, row_split 20, split_move 19, stem 129, tense 737, type 728);
+- records now: train 1105, val 136, test 219 (1462 as extracted; none dropped, 2 merged into the record they continue on the page, listed in `merged_record_ids`); rows are corrected, never dropped: the only pairs removed are exact duplicates (the same form with the same labels twice in one split; one copy kept, 146 copies removed);
+- changes: 4529 values (duplicate_removed 146, form 244, geez_form 236, gender 298, number 76, object 61, person 694, record_merge 4, root 990, root_unsettled 2, row_removed 128, row_split 20, split_move 19, stem 129, tense 743, title_or_lemma 5, type 734);
 - tense: the files say `subjunctive` where the extraction said `jussive` (one subjunctive label, as in the synthetic data): 48 values changed, 41 copies that became exact duplicates removed;
-- `merho_ges_gold_flagged_rows.tsv`: 18 pairs kept in the files but left out of training and scoring, with the reason;
-- a row may carry `root`, `stem`, `type` (noun/adjective), `object` where they differ from the record, and `source_row`/`source_variant` where a cell was split; a record may carry `root_unsettled` (its root is not used; rows with their own root still load);
+- `merho_ges_gold_flagged_rows.tsv`: 19 pairs kept in the files but left out of training and scoring, with the reason;
+- a row may carry `root`, `stem`, `type` (noun/adjective), `object` where they differ from the record, and `source_row`/`source_variant` where a cell was split; a record may carry `root_unsettled` (its root is not used; rows with their own root still load); a record root may be empty when every row carries its own root (a section heading); rows taken over from a merged record carry `source_record_id` and `source_row`;
+- `record_id`: every record stores a stable id, computed once from its values as extracted (`544271a`): the first 12 hex digits of sha1(`page_number|title_or_lemma|raw_transcription`). It is never recomputed: a corrected `title_or_lemma` or a merge keeps it (a merged record keeps the id of the record it was merged into). The flagged-rows file and the change log name records by it;
 - `merho_ges_gold_train.jsonl`, `merho_ges_gold_all.jsonl` and `merho_ges_gold_train_tense_sources.jsonl` are not rewritten (still as extracted).
 
 ### Gold records moved between splits (each root in one split)
