@@ -37,16 +37,16 @@ Do not put new training files at the repo root. Prefer `data/…`.
 |------|------|------|
 | `synthetic_morphology_train.jsonl` | 210,635 | Synthetic generate training (sha256 `79f70721940653d9c6096b0dafdcd2baff48222332bfac011daf7be0e4753907`) |
 | `synthetic_morphology_analyze.jsonl` | 210,635 | Same pairs, analyze direction |
-| `merho_ges_gold_train.jsonl` | 1,110 | Merho Ges gold train tables |
-| `merho_ges_gold_train_tense_filled.jsonl` | see the gold section below | Same + tense filled from real sources where possible; corrections written in |
-| `merho_ges_gold_train_tense_sources.jsonl` | 876 | Where each filled tense came from |
+| `merho_ges_gold_train.jsonl` | see the gold section below | Merho Ges gold train tables: tense filled from real sources where possible; corrections written in |
 | `merho_ges_gold_val.jsonl` | see the gold section below | Val; corrections written in |
 | `merho_ges_gold_test.jsonl` | see the gold section below | Held-out test (do not train on this); corrections written in |
-| `merho_ges_gold_all.jsonl` | 1,462 | All extracted Merho Ges tables |
+| `merho_ges_gold_flagged_rows.tsv` | see the gold section below | Gold pairs kept in the files but left out of training and scoring |
+
+Only the corrected gold files are kept: the files as extracted (`merho_ges_gold_all.jsonl`, the uncorrected `merho_ges_gold_train.jsonl`, `merho_ges_gold_train_tense_sources.jsonl` and `data/merho_ges_gold_{train,val,test}.jsonl`) were deleted, and `merho_ges_gold_train_tense_filled.jsonl` was renamed `merho_ges_gold_train.jsonl`. They stay in git history (commit `544271a`).
 
 `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` (6,553 lines, with its `_analyze` mirror) holds the generated lines whose root is a root of the gold val or test file; they are kept out of the training file so the val and test scores are on roots the model never saw, and the trainer does not read them. The split is redone by `synthetic_heldout.py` in the model repo from the full generator output and the current gold val/test files.
 
-Each synthetic line is `{"features": {...}, "surface_form": "..."}` (the analyze file uses `"analysis"` instead of `"features"`). The training script turns the 1,110 gold-train tables into 3,322 gold-train pairs.
+Each synthetic line is `{"features": {...}, "surface_form": "..."}` (the analyze file uses `"analysis"` instead of `"features"`). The training script reads the gold-train pairs from `merho_ges_gold_train.jsonl` (counts in the gold section below).
 
 **Tenses in synthetic train:** past 73,242 · present 59,208 · subjunctive 56,663 · imperative 21,522.
 
@@ -101,7 +101,7 @@ Grammar rules used to build the synthetic set live in the morphology repo: [`doc
 - Root `dictionary.jsonl` is byte-identical to `data/lexicon/classical_dictionary_kidane_wold.jsonl` and `output/dictionary_with_roots.jsonl`. The generator, the analyzer, `run_all.py` and `build_canonical_dataset.py` read it, so it stays. Edit the dictionary in `data/lexicon/` only.
 - `morphology.jsonl` is read by `run_all.py`. `errata.jsonl` holds Kidane Wold errata (dictionary work in progress).
 - The `*.db` extraction databases are local only (not in git).
-- `data/merho_ges_gold_{train,val,test}.jsonl` are an older split written by `build_canonical_dataset.py`. They differ from `data/paradigms/` and overlap its train roots. Use `data/paradigms/` only.
+- `build_canonical_dataset.py` with its default `--out_dir` still writes an older, uncorrected gold split to `data/merho_ges_gold_{train,val,test}.jsonl`. Those files were deleted (2026-10-06): do not add them back; run it with `--out_dir /tmp/...`. The gold files are in `data/paradigms/` only.
 - `build_canonical_dataset.py` settles ambiguous Latin letters in the Merho Ges roots from the Ethiopic headword and logs swaps, unsettled cases, the hand override and dropped records in `output/merho_root_review_log.tsv`. Test: `python -m pytest tests/`.
 - `data/geez_amharic_dictionary.jsonl`, `data/geez_literature_corpus.txt`, `data/verbs_rbha_anqets.jsonl` and `data/true_parallel_pairs.jsonl` also come from `build_canonical_dataset.py`. The generator reads `data/geez_amharic_dictionary.jsonl`.
 - The synthetic generator lives in **geez-morphology-model** (`generate_synthetic_fixed.py`). It writes `output/`, copies the paradigm files to `data/paradigms/` and moves the lines with a gold val/test root to `data/synthetic/` (`synthetic_heldout.py`).
@@ -124,7 +124,7 @@ Apache License 2.0. Repo is private while work is in progress. Dictionary text a
 
 ### Merho Ges gold files: corrections written into the files
 
-`merho_ges_gold_train_tense_filled.jsonl`, `merho_ges_gold_val.jsonl` and `merho_ges_gold_test.jsonl` carry the page-checked corrections (from the book scans) and the root decisions in `data/corrections/`, written into the files: there is nothing to apply at load time. They are rebuilt from the files as extracted (git commit `544271a` of this repository); the full change log (old value, new value, page, source and reason of every change) is kept with the project's notes material and is available on request.
+`merho_ges_gold_train.jsonl`, `merho_ges_gold_val.jsonl` and `merho_ges_gold_test.jsonl` carry the page-checked corrections (from the book scans) and the root decisions in `data/corrections/`, written into the files: there is nothing to apply at load time. They are rebuilt from the files as extracted (git commit `544271a` of this repository); the full change log (old value, new value, page, source and reason of every change) is kept with the project's notes material and is available on request.
 
 - records now: train 1105, val 136, test 219 (1462 as extracted; none dropped, 2 merged into the record they continue on the page, listed in `merged_record_ids`); rows are corrected, never dropped: the only pairs removed are exact duplicates (the same form with the same labels twice in one split; one copy kept, 146 copies removed);
 - changes: 4529 values (duplicate_removed 146, form 244, geez_form 236, gender 298, number 76, object 61, person 694, record_merge 4, root 990, root_unsettled 2, row_removed 128, row_split 20, split_move 19, stem 129, tense 743, title_or_lemma 5, type 734);
@@ -132,14 +132,14 @@ Apache License 2.0. Repo is private while work is in progress. Dictionary text a
 - `merho_ges_gold_flagged_rows.tsv`: 19 pairs kept in the files but left out of training and scoring, with the reason;
 - a row may carry `root`, `stem`, `type` (noun/adjective), `object` where they differ from the record, and `source_row`/`source_variant` where a cell was split; a record may carry `root_unsettled` (its root is not used; rows with their own root still load); a record root may be empty when every row carries its own root (a section heading); rows taken over from a merged record carry `source_record_id` and `source_row`;
 - `record_id`: every record stores a stable id, computed once from its values as extracted (`544271a`): the first 12 hex digits of sha1(`page_number|title_or_lemma|raw_transcription`). It is never recomputed: a corrected `title_or_lemma` or a merge keeps it (a merged record keeps the id of the record it was merged into). The flagged-rows file and the change log name records by it;
-- `merho_ges_gold_train.jsonl`, `merho_ges_gold_all.jsonl` and `merho_ges_gold_train_tense_sources.jsonl` are not rewritten (still as extracted).
+- these three files and the flagged-rows list are the only gold files: the uncorrected files as extracted (`merho_ges_gold_all.jsonl`, the extracted `merho_ges_gold_train.jsonl`, `merho_ges_gold_train_tense_sources.jsonl`, `data/merho_ges_gold_{train,val,test}.jsonl`) were deleted and `merho_ges_gold_train_tense_filled.jsonl` was renamed `merho_ges_gold_train.jsonl` (2026-10-06); they stay in git history (`544271a`).
 
 ### Gold records moved between splits (each root in one split)
 
 A root (after all corrections) may appear in one gold split only, so that the val and test scores are on roots the model never saw in gold training. Records that share a root are moved as whole records to the split with most of that root's gold pairs (on a tie the record stays in val/test, and test wins over val). Line numbers are those of the files as extracted (commit `544271a`); moved records are at the end of their new file. The list is rebuilt whenever the corrections change.
 
 - ሀ-ለ-ወ: gold pairs train 1, test 1; moved to test: train line 745 (1 pair). Synthetic training pairs with this root: ሀ-ለ-ወ 0.
-- ሐ-መ-መ: gold pairs train 11, val 4; moved to train: val line 18 (1 pair); val line 19 (3 pairs). Synthetic training pairs with this root: ሐ-መ-መ 134.
+- ሐ-መ-መ: gold pairs train 11, val 4; moved to train: val line 18 (1 pair); val line 19 (3 pairs). Synthetic training pairs with this root: ሐ-መ-መ 137.
 - ሠ-ረ-የ: gold pairs train 2, test 4; moved to test: train line 872 (2 pairs). Synthetic training pairs with this root: ሠ-ረ-የ 0.
 - ረ-አ-የ: gold pairs train 7, val 1; moved to train: val line 112 (1 pair). Synthetic training pairs with this root: ረ-አ-የ 0.
 - ሰ-ነ-አ-ለ: gold pairs train 6, test 2; moved to train: test line 15 (2 pairs). Synthetic training pairs with this root: ሰ-ነ-አ-ለ 0.
