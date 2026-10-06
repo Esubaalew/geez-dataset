@@ -5,7 +5,7 @@ Classical Ge'ez verb morphology data: gold paradigms from Merho Ges, synthetic g
 ## Sources
 
 - **Merho Ges** (*Merho Ges Wesewasew Ze-Yared*): the gold paradigm tables, page-checked against the book scans. Corrections are written into the files; the change log keeps the original values.
-- **Kidane Wold** classical Ge'ez dictionary: OCR text corrected against the scans.
+- **Kidane Wold** classical Ge'ez dictionary: OCR text corrected from geezorg/data commit 3904462c (CC BY-SA 4.0).
 - **Modern Ge'ez-Amharic glossary**: 1,722 entries.
 - **Corpora**: Yared Shiferaw prose, Merho Ges prose, monolingual Ge'ez text, and a Ge'ez-Amharic phrasebook.
 
@@ -25,7 +25,7 @@ geez-dataset/
 │   └── extraction_methods.md
 ├── scripts/              extraction scripts and check_dataset.py
 ├── tests/
-├── dictionary.jsonl      copy of data/lexicon/classical_dictionary_kidane_wold.jsonl (read by the generator)
+├── dictionary.jsonl      Kidane Wold dictionary (read by the generator)
 ├── morphology.jsonl      208 Merho Ges records (read by run_all.py)
 └── errata.jsonl          Kidane Wold errata rows
 ```
@@ -69,7 +69,7 @@ Each synthetic line is `{"features": {...}, "surface_form": "..."}` (the analyze
 
 | File | Contents | Rows | sha256 |
 |---|---|---:|---|
-| `classical_dictionary_kidane_wold.jsonl` | Kidane Wold classical Ge'ez dictionary | 13,234 | `f4f943327539` |
+| `classical_dictionary_kidane_wold.jsonl` | Kidane Wold classical Ge'ez dictionary | 13,234 | `d8d871a9` |
 | `modern_geez_amharic_dictionary.jsonl` | Modern Ge'ez-Amharic glossary | 1,722 | `57bf6a19fc6e3` |
 | `kidane_wold_verb_triples.jsonl` | Accepted perfect : imperfect : subjunctive triples | 262 | `f4f904681823` |
 | `kidane_wold_verb_triples_rejected.jsonl` | Rejected triples (OCR / radical mismatch) | 326 | `948395fe41ae` |
