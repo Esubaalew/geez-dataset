@@ -35,7 +35,7 @@ Do not put new training files at the repo root. Prefer `data/…`.
 
 | File | Rows | Role |
 |------|------|------|
-| `synthetic_morphology_train.jsonl` | 217,417 | Synthetic generate training (sha256 `99a12efcaa0eab068371cd98250bd425ea15f40b1d376fbfc9565c493aba4248`) |
+| `synthetic_morphology_train.jsonl` | 217,417 | Synthetic generate training (sha256 `74fea57275e701532228faf7c5465e7e8bf08f3b7fa161e9da80becd96d5906f`) |
 | `synthetic_morphology_analyze.jsonl` | 217,417 | Same pairs, analyze direction |
 | `merho_ges_gold_train.jsonl` | 1,110 | Merho Ges gold train tables |
 | `merho_ges_gold_train_tense_filled.jsonl` | see the gold section below | Same + tense filled from real sources where possible; corrections written in |
@@ -71,6 +71,8 @@ Ordinary middle-guttural verbs like መሐለ are Type A, not Type D. Type D is 
 **Stems:** basic (ቀተለ), causative አ- (አቅተለ), passive ተ- (ተቀትለ), aste አስተ- (አስተቅተለ).
 
 Guttural-initial present takes የ-/ተ-/አ-/ነ- in every person (የኀድግ); the subjunctive keeps ይ- (ይኅድግ).
+
+Guttural-final past (last radical አ ዐ ሀ ሐ ኀ; Merho p.22 ቃርሐ, ሰምዐ): the 3rd person is short, with the middle radical in the 6th order (ሰምዐ ሰምዐት ሰምዑ ሰምዓ; causative አስምዐ, aste አስተስምዐ; passive ተሰምዐ was already so), and the 1st/2nd person take ā on the middle radical (ሰማዕኩ ሰማዕከ ሰማዕነ; አስማዕኩ, አስተስማዕኩ, ተሰማዕኩ). Same for Type B (ሰብሐ, ሰባሕኩ) and Type C (ቃርሐ, ቃራሕኩ). Quadriliterals and hollow roots (ሞአ, ኖኀ) are unchanged. 10,555 lines of the synthetic files changed (negative and object-suffix copies included); no other line moved.
 
 Grammar rules used to build the synthetic set live in the morphology repo: [`docs/grammar_rules.md`](https://github.com/esubaalew/geez-morphology/blob/main/docs/grammar_rules.md).
 
