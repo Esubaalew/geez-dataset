@@ -1,2 +1,3 @@
 split	gold_file	file_line	record_id	rows	form	page	reason
 val	merho_ges_gold_val.jsonl	116	c7e34a68405f	0;1	ሐገገ	318	the book prints ሐገገ twice (p.306 printed, scan 318) with class marks ቀተ and ቀደ: two conjugation classes of the same spelling, so both rows are real, not an OCR copy
+train	merho_ges_gold_train.jsonl		f10d34272c14;5055ea8c7c7e	193:1;195:0	ርሙም	77	p.77 has two ረመመ entries and both list ርሙም
