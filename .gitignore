@@ -14,8 +14,8 @@ __pycache__/
 # Source PDFs (two are over GitHub's 100 MB limit; kept locally)
 *.pdf
 
-# Page scans not used by the dataset
-scans/modern_dictionary_102/
+# Page scans of the source books (not distributed)
+scans/
 
 # Scratch and backups
 *.tmp
