@@ -27,7 +27,7 @@ Four combined files sit directly under `data/`: `verbs_rbha_anqets.jsonl`, `geez
 
 A root appears in one split. Each record keeps a `record_id`. A `geez_form` may hold more than one spelling, separated by ` / `. Noun and adjective rows have a `type` and no tense.
 
-Eighteen rows are listed in `merho_ges_gold_flagged_rows.tsv`. They stay in the files and stay out of the pairs that load. One repeated pair is listed in `merho_ges_gold_allowed_duplicates.tsv` because the book prints it twice.
+Twenty rows are listed in `merho_ges_gold_flagged_rows.tsv`. They stay in the files and stay out of the pairs that load. One repeated pair is listed in `merho_ges_gold_allowed_duplicates.tsv` because the book prints it twice.
 
 Field reference: [docs/schema.md](docs/schema.md).
 
@@ -80,7 +80,7 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 
 - Rows with no root yet are kept in the files and do not load (1,122 pairs). One record is marked `root_unsettled`.
 - The rows listed in `merho_ges_gold_flagged_rows.tsv` do not load.
-- 7,423 of the 8,610 noun and adjective rows have no Amharic gloss.
+- 7,387 of the 8,572 noun and adjective rows have no Amharic gloss.
 - 104 form cells still carry a parenthesized second spelling or reading; only the part outside the parentheses loads.
 
 ## Loading a gold file
