@@ -34,10 +34,10 @@ Field reference: [docs/schema.md](docs/schema.md).
 
 | File | Lines |
 |---|---:|
-| `data/paradigms/synthetic_morphology_train.jsonl` | 209,951 |
-| `data/paradigms/synthetic_morphology_analyze.jsonl` | 209,951 |
-| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 7,026 |
-| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 7,026 |
+| `data/paradigms/synthetic_morphology_train.jsonl` | 209,815 |
+| `data/paradigms/synthetic_morphology_analyze.jsonl` | 209,815 |
+| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 7,162 |
+| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 7,162 |
 | `data/lexicon/classical_dictionary_kidane_wold.jsonl` | 13,234 |
 | `data/lexicon/modern_geez_amharic_dictionary.jsonl` | 1,722 |
 | `data/lexicon/kidane_wold_verb_triples.jsonl` | 262 |
@@ -79,7 +79,7 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 
 - Rows with no root yet are kept in the files and do not load (1,122 pairs). One record is marked `root_unsettled`.
 - The rows listed in `merho_ges_gold_flagged_rows.tsv` do not load.
-- 7,353 of the 8,538 noun and adjective rows have no Amharic gloss.
+- 7,323 of the 8,508 noun and adjective rows have no Amharic gloss.
 - 104 form cells still carry a parenthesized second spelling or reading; only the part outside the parentheses loads.
 
 ## Loading a gold file
