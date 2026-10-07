@@ -1074,6 +1074,118 @@
 {"surface_form": "ንበውሕ", "analysis": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "present", "verb_type": "weak_middle", "root": "b-w-h2"}}
 {"surface_form": "እቡሕ", "analysis": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "weak_middle", "root": "b-w-h2"}}
 {"surface_form": "ንቡሕ", "analysis": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "weak_middle", "root": "b-w-h2"}}
+{"surface_form": "ድጕጻ", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ደጐጽክን", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትደጕጻ", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትድጕጻ", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ይድጕጻ", "analysis": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ደጐጻ", "analysis": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ይደጕጻ", "analysis": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ድጕጺ", "analysis": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ደጐጽኪ", "analysis": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትደጕጺ", "analysis": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትድጕጺ", "analysis": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትድጕጽ", "analysis": {"gender": "f", "number": "s", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ደጐጸት", "analysis": {"gender": "f", "number": "s", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትደጕጽ", "analysis": {"gender": "f", "number": "s", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ድጕጹ", "analysis": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ደጐጽክሙ", "analysis": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትደጕጹ", "analysis": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትድጕጹ", "analysis": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ይድጕጹ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ደጐጹ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ይደጕጹ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ድጕጽ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ደጐጽከ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትደጕጽ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትድጕጽ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ይድጕጽ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ደጐጸ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ይደጕጽ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጕጸ", "analysis": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጕጸት", "analysis": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጕጹ", "analysis": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጕጻ", "analysis": {"person": "3", "gender": "f", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጐጽከ", "analysis": {"person": "2", "gender": "m", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጐጽኪ", "analysis": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጐጽክሙ", "analysis": {"person": "2", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጐጽክን", "analysis": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጐጽኩ", "analysis": {"person": "1", "gender": "c", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጐጽነ", "analysis": {"person": "1", "gender": "c", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ይትደጐጽ", "analysis": {"person": "3", "gender": "m", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትትደጐጽ", "analysis": {"person": "3", "gender": "f", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ይትደጐጹ", "analysis": {"person": "3", "gender": "m", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ይትደጐጻ", "analysis": {"person": "3", "gender": "f", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትትደጐጺ", "analysis": {"person": "2", "gender": "f", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትትደጐጹ", "analysis": {"person": "2", "gender": "m", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትትደጐጻ", "analysis": {"person": "2", "gender": "f", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "እትደጐጽ", "analysis": {"person": "1", "gender": "c", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ንትደጐጽ", "analysis": {"person": "1", "gender": "c", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጐጸ", "analysis": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጐጸት", "analysis": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጐጹ", "analysis": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጐጻ", "analysis": {"person": "3", "gender": "f", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጐጽከ", "analysis": {"person": "2", "gender": "m", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጐጽኪ", "analysis": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጐጽክሙ", "analysis": {"person": "2", "gender": "m", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጐጽክን", "analysis": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጐጽኩ", "analysis": {"person": "1", "gender": "c", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጐጽነ", "analysis": {"person": "1", "gender": "c", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አስተድጐጸ", "analysis": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አስተድጐጸት", "analysis": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አስተድጐጹ", "analysis": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አስተድጐጻ", "analysis": {"person": "3", "gender": "f", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አስተድጐጽከ", "analysis": {"person": "2", "gender": "m", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አስተድጐጽኪ", "analysis": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አስተድጐጽክሙ", "analysis": {"person": "2", "gender": "m", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አስተድጐጽክን", "analysis": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አስተድጐጽኩ", "analysis": {"person": "1", "gender": "c", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አስተድጐጽነ", "analysis": {"person": "1", "gender": "c", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትትደጐጽ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ይትደጐጽ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትትደጐጽ", "analysis": {"gender": "f", "number": "s", "person": "3", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትትደጐጽ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትትደጐጺ", "analysis": {"gender": "f", "number": "s", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "እትደጐጽ", "analysis": {"gender": "c", "number": "s", "person": "1", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ይትደጐጹ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ይትደጐጻ", "analysis": {"gender": "f", "number": "p", "person": "3", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትትደጐጹ", "analysis": {"gender": "m", "number": "p", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ትትደጐጻ", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ንትደጐጽ", "analysis": {"gender": "c", "number": "p", "person": "1", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጐጽ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጐጺ", "analysis": {"gender": "f", "number": "s", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጐጹ", "analysis": {"gender": "m", "number": "p", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ተደጐጻ", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ያደጕጽ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ታደጕጽ", "analysis": {"gender": "f", "number": "s", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ታደጕጽ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ታደጕጺ", "analysis": {"gender": "f", "number": "s", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አደጕጽ", "analysis": {"gender": "c", "number": "s", "person": "1", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ያደጕጹ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ያደጕጻ", "analysis": {"gender": "f", "number": "p", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ታደጕጹ", "analysis": {"gender": "m", "number": "p", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ታደጕጻ", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ናደጕጽ", "analysis": {"gender": "c", "number": "p", "person": "1", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ያድጕጽ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ታድጕጽ", "analysis": {"gender": "f", "number": "s", "person": "3", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ታድጕጽ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ታድጕጺ", "analysis": {"gender": "f", "number": "s", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጕጽ", "analysis": {"gender": "c", "number": "s", "person": "1", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ያድጕጹ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ያድጕጻ", "analysis": {"gender": "f", "number": "p", "person": "3", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ታድጕጹ", "analysis": {"gender": "m", "number": "p", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ታድጕጻ", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ናድጕጽ", "analysis": {"gender": "c", "number": "p", "person": "1", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጕጽ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጕጺ", "analysis": {"gender": "f", "number": "s", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጕጹ", "analysis": {"gender": "m", "number": "p", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "አድጕጻ", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ደጐጽኩ", "analysis": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ደጐጽነ", "analysis": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "እደጕጽ", "analysis": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ንደጕጽ", "analysis": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "እድጕጽ", "analysis": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
+{"surface_form": "ንድጕጽ", "analysis": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S"}}
 {"surface_form": "ድልጋ", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "d-l-g"}}
 {"surface_form": "ደለግክን", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-l-g"}}
 {"surface_form": "ትደልጋ", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-l-g"}}
@@ -5929,6 +6041,24 @@
 {"surface_form": "ቦሑክሙ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "past", "verb_type": "weak_middle", "root": "b-w-h2", "object_suffix": "ክሙ", "object_person": "2", "object_number": "p", "object_gender": "m", "object": "2mp"}}
 {"surface_form": "ይበውሐከ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "present", "verb_type": "weak_middle", "root": "b-w-h2", "object_suffix": "ከ", "object_person": "2", "object_number": "s", "object_gender": "m", "object": "2ms"}}
 {"surface_form": "ይበውሖ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "present", "verb_type": "weak_middle", "root": "b-w-h2", "object_suffix": "ዎ", "object_person": "3", "object_number": "s", "object_gender": "m", "object": "3ms"}}
+{"surface_form": "ይደጕጻክሙ", "analysis": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ክሙ", "object_person": "2", "object_number": "p", "object_gender": "m", "object": "2mp"}}
+{"surface_form": "ይደጕጻክን", "analysis": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ክን", "object_person": "2", "object_number": "p", "object_gender": "f", "object": "2fp"}}
+{"surface_form": "ድጕጹዎሙ", "analysis": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ሆሙ", "object_person": "3", "object_number": "p", "object_gender": "m", "object": "3mp"}}
+{"surface_form": "ደጐጽኮ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ዎ", "object_person": "3", "object_number": "s", "object_gender": "m", "object": "3ms"}}
+{"surface_form": "ደጐጽኮን", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ሆን", "object_person": "3", "object_number": "p", "object_gender": "f", "object": "3fp"}}
+{"surface_form": "ተደጕጹክሙ", "analysis": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ክሙ", "object_person": "2", "object_number": "p", "object_gender": "m", "object": "2mp"}}
+{"surface_form": "ተደጕጹኒ", "analysis": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ኒ", "object_person": "1", "object_number": "s", "object": "1s"}}
+{"surface_form": "ይትደጐጾ", "analysis": {"person": "3", "gender": "m", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ዎ", "object_person": "3", "object_number": "s", "object_gender": "m", "object": "3ms"}}
+{"surface_form": "ይትደጐጸከ", "analysis": {"person": "3", "gender": "m", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ከ", "object_person": "2", "object_number": "s", "object_gender": "m", "object": "2ms"}}
+{"surface_form": "ንትደጐጾ", "analysis": {"person": "1", "gender": "c", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ዎ", "object_person": "3", "object_number": "s", "object_gender": "m", "object": "3ms"}}
+{"surface_form": "አስተድጐጽኪያ", "analysis": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}}
+{"surface_form": "ትትደጐጸኒ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ኒ", "object_person": "1", "object_number": "s", "object": "1s"}}
+{"surface_form": "ትትደጐጾሙ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ሆሙ", "object_person": "3", "object_number": "p", "object_gender": "m", "object": "3mp"}}
+{"surface_form": "ተደጐጸኒ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ኒ", "object_person": "1", "object_number": "s", "object": "1s"}}
+{"surface_form": "ታድጕጸነ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ነ", "object_person": "1", "object_number": "p", "object": "1p"}}
+{"surface_form": "አድጕጸነ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ነ", "object_person": "1", "object_number": "p", "object": "1p"}}
+{"surface_form": "እድጕጸክን", "analysis": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ክን", "object_person": "2", "object_number": "p", "object_gender": "f", "object": "2fp"}}
+{"surface_form": "እድጕጸክሙ", "analysis": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S", "object_suffix": "ክሙ", "object_person": "2", "object_number": "p", "object_gender": "m", "object": "2mp"}}
 {"surface_form": "ድልጊኒ", "analysis": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "d-l-g", "object_suffix": "ኒ", "object_person": "1", "object_number": "s", "object": "1s"}}
 {"surface_form": "ትደልጎ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-l-g", "object_suffix": "ዎ", "object_person": "3", "object_number": "s", "object_gender": "m", "object": "3ms"}}
 {"surface_form": "ትደልጋ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "d-l-g", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}}
@@ -6777,6 +6907,7 @@
 {"surface_form": "ኢአበሕእ", "analysis": {"gender": "c", "number": "s", "person": "1", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "b-h2-a", "negative": true, "polarity": "negative"}}
 {"surface_form": "ኢትቡሓ", "analysis": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "weak_middle", "root": "b-w-h2", "negative": true, "polarity": "negative"}}
 {"surface_form": "ኢቦሑ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "past", "verb_type": "weak_middle", "root": "b-w-h2", "negative": true, "polarity": "negative"}}
+{"surface_form": "ኢታድጕጽ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "d-gw-S", "negative": true, "polarity": "negative"}}
 {"surface_form": "ኢአድለገ", "analysis": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "d-l-g", "negative": true, "polarity": "negative"}}
 {"surface_form": "ኢትፍአም", "analysis": {"gender": "f", "number": "s", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "f-a-m", "negative": true, "polarity": "negative"}}
 {"surface_form": "ኢፈአሙ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "f-a-m", "negative": true, "polarity": "negative"}}

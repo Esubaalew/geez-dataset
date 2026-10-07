@@ -34,10 +34,10 @@ Field reference: [docs/schema.md](docs/schema.md).
 
 | File | Lines |
 |---|---:|
-| `data/paradigms/synthetic_morphology_train.jsonl` | 210,082 |
-| `data/paradigms/synthetic_morphology_analyze.jsonl` | 210,082 |
-| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 6,895 |
-| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 6,895 |
+| `data/paradigms/synthetic_morphology_train.jsonl` | 209,951 |
+| `data/paradigms/synthetic_morphology_analyze.jsonl` | 209,951 |
+| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 7,026 |
+| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 7,026 |
 | `data/lexicon/classical_dictionary_kidane_wold.jsonl` | 13,234 |
 | `data/lexicon/modern_geez_amharic_dictionary.jsonl` | 1,722 |
 | `data/lexicon/kidane_wold_verb_triples.jsonl` | 262 |
