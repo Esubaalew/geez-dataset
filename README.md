@@ -20,7 +20,7 @@ Four combined files sit directly under `data/`: `verbs_rbha_anqets.jsonl`, `geez
 
 | File | Records |
 |---|---:|
-| `data/paradigms/merho_ges_gold_train.jsonl` | 1,118 |
+| `data/paradigms/merho_ges_gold_train.jsonl` | 1,117 |
 | `data/paradigms/merho_ges_gold_val.jsonl` | 135 |
 | `data/paradigms/merho_ges_gold_test.jsonl` | 219 |
 
@@ -79,7 +79,7 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 
 - Rows with no root yet are kept in the files and do not load (1,122 pairs). One record is marked `root_unsettled`.
 - The rows listed in `merho_ges_gold_flagged_rows.tsv` do not load.
-- 7,358 of the 8,543 noun and adjective rows have no Amharic gloss.
+- 7,353 of the 8,538 noun and adjective rows have no Amharic gloss.
 - 104 form cells still carry a parenthesized second spelling or reading; only the part outside the parentheses loads.
 
 ## Loading a gold file
