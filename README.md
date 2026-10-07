@@ -10,7 +10,6 @@ data/synthetic/     synthetic forms whose roots sit in val or test
 data/lexicon/       Kidane Wold, and the concise Ge'ez–Amharic glossary
 data/parallel/      Ge'ez–Amharic pairs
 data/corpora/       prose and the phrasebook
-data/corrections/   correction tables kept with the gold files
 docs/schema.md      fields in the gold files
 scripts/check_dataset.py
 ```
