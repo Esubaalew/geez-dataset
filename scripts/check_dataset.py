@@ -21,7 +21,8 @@ What "clean" means here (one line per check; ERROR fails the run, NOTE is inform
   9. every row in merho_ges_gold_flagged_rows.tsv points at a real row holding that form;
  10. if data/paradigms/SHA256SUMS exists, every file matches its hash.
 
-Check 7 skips a duplicate listed in merho_ges_gold_allowed_duplicates.tsv (same record, same rows, same form)
+Check 7 skips a duplicate listed in merho_ges_gold_allowed_duplicates.tsv: same record (file_line + rows "0;1"),
+or across records of one split (file_line empty, rows "193:1;195:0")
 and reports a listed pair that is no longer a duplicate.
 
 A "pair" is one form of one row with the labels the row gives it. A row's own root, stem, type and
@@ -258,13 +259,19 @@ def main():
     if os.path.exists(apath):
         with open(apath, encoding="utf-8", newline="") as f:
             for r in csv.DictReader(f, delimiter="	"):
-                allowed.add((r["split"], int(r["file_line"]), r["form"], tuple(sorted(int(x) for x in r["rows"].split(";")))))
+                if ":" in r["rows"]:               # across records: rows "line:row;line:row", file_line empty
+                    allowed.add((r["split"], None, r["form"], tuple(sorted(tuple(int(y) for y in x.split(":")) for x in r["rows"].split(";")))))
+                else:
+                    allowed.add((r["split"], int(r["file_line"]), r["form"], tuple(sorted(int(x) for x in r["rows"].split(";")))))
     used_allowed = set()
     for key, places in pairs.items():
         if len(places) > 1:
             m = [re.match(r"(\w+) line (\d+) row (\d+)$", w) for _, w in places]
-            if all(m) and len({(x.group(1), x.group(2)) for x in m}) == 1:
-                k = (m[0].group(1), int(m[0].group(2)), key[0], tuple(sorted(int(x.group(3)) for x in m)))
+            if all(m) and len({x.group(1) for x in m}) == 1:
+                if len({x.group(2) for x in m}) == 1:
+                    k = (m[0].group(1), int(m[0].group(2)), key[0], tuple(sorted(int(x.group(3)) for x in m)))
+                else:
+                    k = (m[0].group(1), None, key[0], tuple(sorted((int(x.group(2)), int(x.group(3))) for x in m)))
                 if k in allowed:
                     used_allowed.add(k)
                     notes["exact duplicates kept on purpose (" + ALLOWED + ")"] += 1
@@ -274,7 +281,8 @@ def main():
         if len(splits) > 1:
             err("8 splits", f"root {root} is in {', '.join(sorted(splits))}")
     for k in sorted(allowed - used_allowed):
-        err("7 duplicates", f"{ALLOWED}: {k[0]} line {k[1]} rows {k[3]} {k[2]!r} is not a duplicate in the files")
+        where = f"line {k[1]} rows {k[3]}" if k[1] is not None else "rows " + ";".join(f"{a}:{b}" for a, b in k[3])
+        err("7 duplicates", f"{ALLOWED}: {k[0]} {where} {k[2]!r} is not a duplicate in the files")
     for r in flagged_rows:
         k = (r["split"], int(r["file_line"]), int(r["row"]), r["form"])
         if k not in found_flagged:
