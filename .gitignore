@@ -5,6 +5,7 @@
 # Python
 __pycache__/
 *.pyc
+.playwright-cli/
 .venv/
 
 # Extraction checkpoints (SQLite, local only)
@@ -23,10 +24,6 @@ _probe*
 *.bak*
 *.log
 
-# Generator / build output that is not kept in git (2026-10-06): the synthetic files live in
-# data/paradigms/ and data/synthetic/; the root review log is rewritten by build_canonical_dataset.py
-output/synthetic_morphology_train.jsonl
-output/synthetic_morphology_analyze.jsonl
-output/merho_root_review_log.tsv
-output/dictionary_with_roots.jsonl
+# Generator output. The published copies live under data/.
+output/
 organize_data.py

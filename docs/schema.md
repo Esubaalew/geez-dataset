@@ -9,7 +9,7 @@ Required fields (every record has these):
 | Field | Type | Description |
 |---|---|---|
 | `record_id` | string | Stable id: the first 12 hex digits of sha1(`page_number|title_or_lemma|raw_transcription`), computed once from the values as extracted. Never recomputed: a corrected title or a merged record keeps its id. |
-| `category` | string | Record category (`verb_conjugation` in the current files). |
+| `category` | string | `verb_conjugation`, `noun_declension`, `grammatical_rule`, or a lexical record. A record with an empty root is kept, and its rows do not load. |
 | `root` | string | The record's root: 2-5 Ge'ez letters in the 1st order of their series, hyphen-separated (e.g. `ሀ-ለ-ወ`). Empty when every row carries its own root. Not used when `root_unsettled` is set. |
 | `table_data` | array | The paradigm rows (see below). |
 | `page_number` | integer | Printed book page. |
@@ -22,7 +22,7 @@ Optional fields:
 | `stem` | string | The record's stem: the rows' stem when they agree, else the headword row's. One of the stem values below. |
 | `paradigm_class` | string | Traditional class label (e.g. `ቀተለ`). |
 | `amharic_notes` | string | Amharic notes from the book. |
-| `raw_transcription` | string | Raw OCR transcription before correction. |
+| `raw_transcription` | string | The printed entry, in reading order. |
 | `source` | string | Source work. |
 | `root_unsettled` | boolean | When set, the record root is not used; rows with their own root still load. |
 | `source_record_id` | string | On rows taken over from a merged record: the original record's id. |
