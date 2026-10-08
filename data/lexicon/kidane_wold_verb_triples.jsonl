@@ -86,7 +86,7 @@
 {"id": 3755, "headword": "ደገጽ", "triple": ["ደጐጸ", "ይደጕጽ", "ይድጕጽ"], "source": "definition", "verb_class": "type_a", "root": "d-gw-S", "reason": "ይቀትል + ይቅትል", "old_inferred_root": "d-g-S"}
 {"id": 3767, "headword": "ደገረ", "triple": ["ደገረ", "ይደገር", "ይድግር"], "source": "definition", "verb_class": "unclear", "root": null, "reason": "imperfect length 3", "old_inferred_root": "d-g-r"}
 {"id": 3775, "headword": "ደዲቅ", "triple": ["ደደቀ", "ይደድቅ", "ይደድቅ"], "source": "definition", "verb_class": "unclear", "root": "d-d-q", "reason": "imperfect ይቀትል-shaped, subjunctive not matched", "old_inferred_root": "d-y-q"}
-{"id": 3784, "headword": "ዳህምሞ", "triple": ["ዳህመመ", "ይዳሀምም", "ይዳህምም"], "source": "definition", "verb_class": "unclear", "root": null, "reason": "imperfect length 4", "old_inferred_root": "d-kh-m"}
+{"id": 3784, "headword": "ዳህምሞ", "triple": ["ዳህመመ", "ይዳሀምም", "ይዳህምም"], "source": "definition", "verb_class": "unclear", "root": null, "reason": "imperfect length 4", "old_inferred_root": "d-h1-m-m"}
 {"id": 3789, "headword": "ድወይ", "triple": ["ድወየ", "ይድወይ", "ይድወይ"], "source": "definition", "verb_class": "unclear", "root": null, "reason": "imperfect length 3", "old_inferred_root": "d-w-y"}
 {"id": 3794, "headword": "ደዊል", "triple": ["ደወለ", "ይደውል", "ይዱል"], "source": "definition", "verb_class": "hollow", "root": "d-w-l", "reason": "ይቀውም + ይቁም", "old_inferred_root": "d-w-l"}
 {"id": 3802, "headword": "ደውርሀ", "triple": ["ደውርሀ", "ይደወርህ", "ይደውርህ"], "source": "definition", "verb_class": "quadriliteral", "root": "d-w-r-h1", "reason": "ይደንገፅ-shaped", "old_inferred_root": "d-w-r-h1"}
