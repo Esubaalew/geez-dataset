@@ -20,7 +20,8 @@ Optional fields:
 |---|---|---|
 | `title_or_lemma` | string | Headword as printed; may carry `/`-variants. |
 | `stem` | string | The record's stem: the rows' stem when they agree, else the headword row's. One of the stem values below. |
-| `paradigm_class` | string | Traditional class label (e.g. `ቀተለ`). |
+| `paradigm_class` | string or null | Traditional class label: one class head (e.g. `ቀተለ`, `ቀደሰ`, `ባረከ`, `ጦመረ`). Null on noun and grammar records. A few records still carry the label as printed, with more than one class. |
+| `sub_pattern` | string | The sub-class or derived pattern the book files the verb under (e.g. `ተቀተለ`), when there is one. |
 | `amharic_notes` | string | Amharic notes from the book. |
 | `raw_transcription` | string | The printed entry, in reading order. |
 | `source` | string | Source work. |
