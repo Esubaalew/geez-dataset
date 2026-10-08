@@ -20,7 +20,7 @@ Optional fields:
 |---|---|---|
 | `title_or_lemma` | string | Headword as printed; may carry `/`-variants. |
 | `stem` | string | The record's stem: the rows' stem when they agree, else the headword row's. One of the stem values below. |
-| `paradigm_class` | string or null | Traditional class label: one class head (e.g. `ቀተለ`, `ቀደሰ`, `ባረከ`, `ጦመረ`). Null on noun and grammar records. A few records still carry the label as printed, with more than one class. |
+| `paradigm_class` | string or null | Class label printed on the entry: one of the six heads (አርእስት) or a branch (ሠራዊት) of that head. The heads, the branches, and the book's abbreviations are in the README, under "Reading a Merho Ges entry". Null on noun and grammar records. A few records still carry the label as printed, with more than one class. |
 | `sub_pattern` | string | The sub-class or derived pattern the book files the verb under (e.g. `ተቀተለ`), when there is one. |
 | `amharic_notes` | string | Amharic notes from the book. |
 | `raw_transcription` | string | The printed entry, in reading order. |

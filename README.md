@@ -30,6 +30,69 @@ Nineteen rows are listed in `merho_ges_gold_flagged_rows.tsv`. They stay in the 
 
 Field reference: [docs/schema.md](docs/schema.md).
 
+## Reading a Merho Ges entry
+
+The book files every verb under one of six heads (አርእስት). A branch (ሠራዊት) takes the rules of its head. Page 19 states them. ራሱ means the head is its own branch. ሞርቅሐን የመሰለ means that head follows the pattern of ሞርቅሐን.
+
+| አርእስት | ሠራዊት |
+|---|---|
+| ቀተለ | ቀደሰ, ገብረ, ሐተተ |
+| ባረከ | ራሱ |
+| ሴሰየ | አንጌገየ |
+| ክህለ | ራሱ ብቻ |
+| ጦመረ | ሞርቅሐን የመሰለ |
+| ተንበለ | ማህረከ |
+
+A `paradigm_class` in the gold files is the label printed on that entry. It may be the head or a branch.
+
+Beside a form, the book uses the shorts below. The key is printed on pages 16 and 17, headed በምኅጻረ ቃል ለተጻፉ ማብራሪያ. Read the short as the full form in the second column. A paradigm line usually drops the dot the key prints (`ባዕ ቅ` is the key's `ባዕ.ቅ`). The lines write `በብ` where the key prints `ለብ`, and one line writes `ለ፩ ለብ` where the key prints `ለአ ለብ`. The last rows are the heads and branches cut short: `ቀተ` is ቀተለ.
+
+| Short | Full |
+|---|---|
+| ው | ውስጠዘ |
+| በብ | ለብዙኅ |
+| ለሴ | ለሴት |
+| ባዕ ቅ | ባዕድ ቅጽል |
+| መድ | መድበል |
+| ሳ ዘ | ሳቢ ዘር |
+| ጥ ዘ | ጥሬ ዘር |
+| ዘመ ዘ | ዘመድ ዘር |
+| ዘ ው | ዘር ውስጠዘ |
+| ጥ ው | ጥሬ ውስጠዘ |
+| ባዕ ሣ ቅ | ባዕድ ሣልስ ቅጽል |
+| ባዕ ጥ | ባዕድ ጥሬ |
+| ባዕ ጉ | ባዕድ ጉልት |
+| ባዕ ዘ | ባዕድ ዘር |
+| ባዕ ከም | ባዕድ ከምዕላድ |
+| ምዕ ው | ምዕላድ ውስጠዘ |
+| ምዕ | ምዕላድ |
+| ጉል | ጉልት |
+| ለአ ለብ | ለአንድ ለብዙኅ |
+| የሰ ስ | የሰው ስም |
+| አስ አደ | አስማተ አደው |
+| አስ አን | አስማተ አንስት |
+| አስ አህ | አስማተ አህጉር |
+| አብ | አብዛሂ |
+| ጉል ው | ጉልት ውስጠዘ |
+| ጥ ምዕ | ጥሬ ምዕላድ |
+| ጥ ምዕ ው | ጥሬ ምዕላድ ውስጠዘ |
+| ባዕ ዘ ው | ባዕድ ዘር ውስጠዘ |
+| እን | እንዲል |
+| የሁ | የሁሉ |
+| የሴቶ | የሴቶች |
+| አው | አውርድ |
+| ግስ | ግእስ |
+| በቀ | በቁሙ |
+| ቀተ | ቀተለ |
+| ባረ | ባረከ |
+| ክህ | ክህለ |
+| ማህ | ማህረከ |
+| ቀደ | ቀደሰ |
+| ተን | ተንበለ |
+| ሴሰ | ሴሰየ |
+| ጦመ | ጦመረ |
+| ገብ | ገብረ |
+
 ## Other files
 
 | File | Lines |
