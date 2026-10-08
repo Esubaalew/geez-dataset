@@ -145,7 +145,7 @@
 {"id": 1495, "headword": "ወቂሥ", "triple": ["ወቀሠ", "ይወቅሥ", "ይውቅሥ"], "source": "definition", "verb_class": "initial_w_keep", "root": "w-q-s2", "reason": "ይወርስ + ይውርስ", "old_inferred_root": "w-q-s2"}
 {"id": 1504, "headword": "ወቂዕ", "triple": ["ወቅዐ", "ይወቅዕ", "ይቃዕ"], "source": "definition", "verb_class": "initial_w_drop_other", "root": "w-q-a2", "reason": "ይወ.. + subjunctive without w, vowel A", "old_inferred_root": "w-q-s2"}
 {"id": 1624, "headword": "ወቂር", "triple": ["ወቀረ", "ይውቅር", "ይቀር"], "source": "definition", "verb_class": "initial_w_drop", "root": "w-q-r", "reason": "ይወልድ + ይለድ", "old_inferred_root": "w-q-r"}
-{"id": 1634, "headword": "ወሪድ", "triple": ["ወረደ", "ይውርድ", "ይረድ"], "source": "definition", "verb_class": "initial_w_drop", "root": "w-r-d", "reason": "ይወልድ + ይለድ", "old_inferred_root": "w-r-d"}
+{"id": 1634, "headword": "ወሪድ", "triple": ["ወረደ", "ይወርድ", "ይረድ"], "source": "definition", "verb_class": "initial_w_drop", "root": "w-r-d", "reason": "ይወልድ + ይለድ", "old_inferred_root": "w-r-d"}
 {"id": 1714, "headword": "ወሪዝ", "triple": ["ወረዘ", "ይወርዝ", "ይረዝ"], "source": "definition", "verb_class": "initial_w_drop", "root": "w-r-z", "reason": "ይወልድ + ይለድ", "old_inferred_root": "w-r-zh"}
 {"id": 1767, "headword": "ወረየ", "triple": ["ወረየ", "ይወሪ", "ይረይ"], "source": "definition", "verb_class": "unclear", "root": "w-r-y", "reason": "ይሰቲ-shaped, subjunctive not matched", "old_inferred_root": "w-r-y"}
 {"id": 1770, "headword": "ወሪቅ", "triple": ["ወረቀ", "ይወርቅ", "ይረቅ"], "source": "definition", "verb_class": "initial_w_drop", "root": "w-r-q", "reason": "ይወልድ + ይለድ", "old_inferred_root": "w-r-q"}
