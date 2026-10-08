@@ -26,7 +26,7 @@ Four combined files sit directly under `data/`: `verbs_rbha_anqets.jsonl`, `geez
 
 A root appears in one split. Each record keeps a `record_id`. A `geez_form` may hold more than one spelling, separated by ` / `. Noun and adjective rows have a `type` and no tense.
 
-Nineteen rows are listed in `merho_ges_gold_flagged_rows.tsv`. They stay in the files and stay out of the pairs that load. Two repeated pairs are listed in `merho_ges_gold_allowed_duplicates.tsv` because the book prints each of them twice.
+Twenty rows are listed in `merho_ges_gold_flagged_rows.tsv`. They stay in the files and stay out of the pairs that load. Two repeated pairs are listed in `merho_ges_gold_allowed_duplicates.tsv` because the book prints each of them twice.
 
 Field reference: [docs/schema.md](docs/schema.md).
 
@@ -77,10 +77,10 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 
 ## Known limits
 
-- Rows with no root yet are kept in the files and do not load (1,122 pairs). No record is marked `root_unsettled`.
+- Rows with no root yet are kept in the files and do not load (1,130 pairs). No record is marked `root_unsettled`.
 - The rows listed in `merho_ges_gold_flagged_rows.tsv` do not load.
 - 8,095 of the 8,489 noun and adjective rows have no Amharic gloss.
-- 16 form cells still carry a parenthesized second spelling or reading and are left for a later check; only the part outside the parentheses loads.
+- 3 form cells still carry a parenthesized second spelling or reading and are left for a later check; only the part outside the parentheses loads.
 - 19 record titles still carry a parenthesis: they are book section headings printed with parentheses.
 - One dictionary entry (id 7546, page 585) has no root: its definition belongs to the verb መኅፀ, and the two entries were merged. Its `inferred_root` is null in both dictionary files and its `new_root` is null in `kidane_wold_root_fixes.jsonl`; `root_notes` gives the reason, starting with `CHECK`. Its pair was moved from `true_parallel_pairs.jsonl` to `uncertain_pairs.jsonl`, with a `note`.
 
