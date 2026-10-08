@@ -21,7 +21,7 @@ What "clean" means here (one line per check; ERROR fails the run, NOTE is inform
   9. every row in merho_ges_gold_flagged_rows.tsv points at a real row holding that form;
  10. if data/paradigms/SHA256SUMS exists, every file matches its hash;
  11. no root field holds the placeholder "CHECK" (case-sensitive): the gold files and, next to the gold folder,
-     the dictionaries, the Kidane Wold tables, verbs_rbha_anqets.jsonl and the synthetic files. A root field is a
+     the dictionaries, the Kidane Wold tables and the synthetic files. A root field is a
      key named "root" or ending in "_root" (inferred_root, new_root, old_root, ...), at any depth. An unsettled
      root is null, with the reason in root_notes. Other placeholder-like values (an empty string, "TODO", "None",
      "?", "check" in another case, ...) are reported as NOTE lines and do not fail the run.
@@ -65,7 +65,6 @@ RID = re.compile(r"^[0-9a-f]{12}$")
 ROOT_FIELD_FILES = ("geez_amharic_dictionary.jsonl", "lexicon/classical_dictionary_kidane_wold.jsonl",
                     "lexicon/modern_geez_amharic_dictionary.jsonl", "lexicon/kidane_wold_root_fixes.jsonl",
                     "lexicon/kidane_wold_verb_triples.jsonl", "lexicon/kidane_wold_verb_triples_rejected.jsonl",
-                    "verbs_rbha_anqets.jsonl",
                     "paradigms/synthetic_morphology_train.jsonl", "paradigms/synthetic_morphology_analyze.jsonl",
                     "synthetic/synthetic_forms_for_val_test_roots.jsonl",
                     "synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl")

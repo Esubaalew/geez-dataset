@@ -14,7 +14,7 @@ docs/schema.md      fields in the gold files
 scripts/check_dataset.py
 ```
 
-Four combined files sit directly under `data/`: `verbs_rbha_anqets.jsonl`, `geez_amharic_dictionary.jsonl`, `geez_literature_corpus.txt`, and `true_parallel_pairs.jsonl`. They are separate from the split files in `data/parallel/` and `data/corpora/`. Training reads `data/paradigms/`.
+Three combined files sit directly under `data/`: `geez_amharic_dictionary.jsonl`, `geez_literature_corpus.txt`, and `true_parallel_pairs.jsonl`. They are separate from the split files in `data/parallel/` and `data/corpora/`. Training reads `data/paradigms/`.
 
 ## Gold files
 
@@ -49,7 +49,6 @@ Field reference: [docs/schema.md](docs/schema.md).
 | `data/corpora/merho_ges_prose_rules.txt` | 4,818 |
 | `data/corpora/geez_geez_monolingual.jsonl` | 1,388 |
 | `data/corpora/phrasebook_pairs.jsonl` | 218 |
-| `data/verbs_rbha_anqets.jsonl` | 99,519 |
 | `data/geez_amharic_dictionary.jsonl` | 14,956 |
 | `data/geez_literature_corpus.txt` | 6,090 |
 | `data/true_parallel_pairs.jsonl` | 2,997 |
