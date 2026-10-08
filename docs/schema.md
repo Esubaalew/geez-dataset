@@ -64,3 +64,11 @@ Optional fields:
 - A "pair" is one form of one row with the labels the row gives it. No pair appears twice in one split or across splits, except the pairs listed in `merho_ges_gold_allowed_duplicates.tsv`.
 - No root appears in more than one split (train / val / test).
 - Variant notation: a `geez_form` cell like `ሃልሀ / ሀልሀ` holds two variants; a parenthesized note like `form (variant)` is dropped and only `form` loads.
+
+## Root fields in the other files
+
+The checker also reads the root fields of the dictionaries, the Kidane Wold tables, `verbs_rbha_anqets.jsonl` and the synthetic files: every key named `root` or ending in `_root`. None may hold the placeholder `CHECK`.
+
+- `geez_amharic_dictionary.jsonl`, `lexicon/classical_dictionary_kidane_wold.jsonl`: `root` (Ge'ez text from the source; mostly null, sometimes empty), `inferred_root` (Latin root notation, e.g. `q-t-l`), `root_confidence`, `root_notes` (free text: how the root was inferred, or why there is none). An unsettled root is null, and `root_notes` gives the reason; a reason that needs review starts with `CHECK:`.
+- `lexicon/kidane_wold_root_fixes.jsonl`: `id` (dictionary entry), `headword`, `pos`, `old_root`, `new_root`, `method`, `evidence`, and on some rows `root_notes`. A null `new_root` means the entry has no root; `root_notes` says why.
+- `parallel/uncertain_pairs.jsonl`: a row may carry `note`, a free-text reason why it is not a trusted pair.

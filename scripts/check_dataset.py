@@ -19,7 +19,12 @@ What "clean" means here (one line per check; ERROR fails the run, NOTE is inform
   7. no pair (form + all labels) appears twice, in one split or across splits;
   8. no root appears in more than one split (train / val / test);
   9. every row in merho_ges_gold_flagged_rows.tsv points at a real row holding that form;
- 10. if data/paradigms/SHA256SUMS exists, every file matches its hash.
+ 10. if data/paradigms/SHA256SUMS exists, every file matches its hash;
+ 11. no root field holds the placeholder "CHECK" (case-sensitive): the gold files and, next to the gold folder,
+     the dictionaries, the Kidane Wold tables, verbs_rbha_anqets.jsonl and the synthetic files. A root field is a
+     key named "root" or ending in "_root" (inferred_root, new_root, old_root, ...), at any depth. An unsettled
+     root is null, with the reason in root_notes. Other placeholder-like values (an empty string, "TODO", "None",
+     "?", "check" in another case, ...) are reported as NOTE lines and do not fail the run.
 
 Check 7 skips a duplicate listed in merho_ges_gold_allowed_duplicates.tsv: same record (file_line + rows "0;1"),
 or across records of one split (file_line empty, rows "193:1;195:0")
@@ -55,6 +60,18 @@ FLAGGED = "merho_ges_gold_flagged_rows.tsv"
 ALLOWED = "merho_ges_gold_allowed_duplicates.tsv"   # exact duplicates kept on purpose (same form printed twice)
 RECORD_FIELDS = ("record_id", "category", "root", "table_data", "page_number")
 RID = re.compile(r"^[0-9a-f]{12}$")
+
+# check 11: files next to the gold folder whose root fields are checked (paths relative to data/; missing ones are noted)
+ROOT_FIELD_FILES = ("geez_amharic_dictionary.jsonl", "lexicon/classical_dictionary_kidane_wold.jsonl",
+                    "lexicon/modern_geez_amharic_dictionary.jsonl", "lexicon/kidane_wold_root_fixes.jsonl",
+                    "lexicon/kidane_wold_verb_triples.jsonl", "lexicon/kidane_wold_verb_triples_rejected.jsonl",
+                    "verbs_rbha_anqets.jsonl",
+                    "paradigms/synthetic_morphology_train.jsonl", "paradigms/synthetic_morphology_analyze.jsonl",
+                    "synthetic/synthetic_forms_for_val_test_roots.jsonl",
+                    "synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl")
+ROOT_KEY = re.compile(r"^(root|\w+_root)$")
+ROOT_PLACEHOLDER = "CHECK"
+PLACEHOLDER_LIKE = {"", "check", "todo", "tbd", "unknown", "unsettled", "null", "none", "n/a", "na", "?", "??", "-", "--", "x", "xxx"}
 
 LATIN = re.compile(r"[A-Za-z\u00C0-\u024F\u1E00-\u1EFF\u02B0-\u02FF]")
 
@@ -95,6 +112,28 @@ def form_variants(cell):
         if v:
             out.append(v)
     return out
+
+
+def root_fields(obj, path=""):
+    """(key path, value) for every root field (key "root" or "*_root") in a JSON value, at any depth."""
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            p = f"{path}.{k}" if path else k
+            if ROOT_KEY.match(k) and not isinstance(v, (dict, list)):
+                yield p, v
+            else:
+                yield from root_fields(v, p)
+    elif isinstance(obj, list):
+        for v in obj:
+            yield from root_fields(v, path + "[]")
+
+
+def check_root_placeholders(where_file, n, obj, err, odd):
+    for key, v in root_fields(obj):
+        if v == ROOT_PLACEHOLDER:
+            err("11 root placeholders", f"{where_file} line {n}: {key} is {v!r}")
+        elif isinstance(v, str) and v.strip().lower() in PLACEHOLDER_LIKE:
+            odd[(where_file, key, v)] += 1
 
 
 def sha256(path):
@@ -288,6 +327,28 @@ def main():
         if k not in found_flagged:
             err("9 flagged", f"{r['split']} line {r['file_line']} row {r['row']}: form {r['form']!r} not in that row")
 
+    # 11: no root field holds the placeholder CHECK (gold records, then the other files under data/)
+    odd = collections.Counter()                    # (file, key path, value) -> count; reported, not an error
+    for (split, n), rec in sorted(records.items()):
+        check_root_placeholders(GOLD[split], n, rec, err, odd)
+    data_dir = os.path.dirname(os.path.abspath(args.data))
+    for rel in ROOT_FIELD_FILES:
+        path = os.path.join(data_dir, rel)
+        if not os.path.exists(path):
+            notes[f"root placeholder check: {rel} not found, not checked"] += 1
+            continue
+        with open(path, encoding="utf-8") as f:
+            for n, line in enumerate(f, 1):
+                if line.strip():
+                    try:
+                        obj = json.loads(line)
+                    except ValueError:
+                        err("11 root placeholders", f"{rel} line {n}: not JSON")
+                        continue
+                    check_root_placeholders(rel, n, obj, err, odd)
+    for (rel, key, v), c in sorted(odd.items()):
+        notes[f"root field {key} = {v!r} in {rel} (placeholder-like, reported only)"] += c
+
     sums = os.path.join(args.data, "SHA256SUMS")
     if os.path.exists(sums):
         with open(sums, encoding="utf-8") as f:
@@ -304,7 +365,7 @@ def main():
     for k, c in sorted(notes.items()):
         print(f"NOTE  {k}: {c}")
     checks = ["1 records", "2 forms", "3 roots", "4 Latin", "5 labels", "6 nominal", "7 duplicates",
-              "8 splits", "9 flagged", "10 hashes"]
+              "8 splits", "9 flagged", "10 hashes", "11 root placeholders"]
     for c in checks:
         msgs = errors.get(c, [])
         print(f"{'PASS ' if not msgs else 'ERROR'} {c}: {len(msgs)} problem(s)")

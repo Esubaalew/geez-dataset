@@ -260,7 +260,7 @@
 {"id": 7484, "headword": "መዝጐል", "pos": "noun", "old_root": "z-l", "new_root": "z-gw-l", "method": "restored_dropped_letter", "evidence": "headword"}
 {"id": 7505, "headword": "መዝራዕት", "pos": "noun", "old_root": "z-r", "new_root": "z-r-a2", "method": "restored_dropped_letter", "evidence": "headword"}
 {"id": 7542, "headword": "መሐስዕ", "pos": "noun", "old_root": "h2-s", "new_root": "h2-s-a2", "method": "restored_dropped_letter", "evidence": "headword"}
-{"id": 7546, "headword": "ምኡዕ", "pos": "noun", "old_root": "m-a", "new_root": "m-a-a2", "method": "restored_dropped_letter", "evidence": "headword"}
+{"id": 7546, "headword": "ምኡዕ", "pos": "noun", "old_root": "m-a", "new_root": null, "method": "restored_dropped_letter", "evidence": "headword", "root_notes": "CHECK: merged entry, gloss is verb መኅፀ (m-kh-S2)"}
 {"id": 7556, "headword": "ተመጣዒ", "pos": "noun", "old_root": "m-T", "new_root": "m-T-a2", "method": "restored_dropped_letter", "evidence": "headword"}
 {"id": 7558, "headword": "ምጣዒ", "pos": "noun", "old_root": "m-T", "new_root": "m-T-a2", "method": "restored_dropped_letter", "evidence": "headword"}
 {"id": 7747, "headword": "እመልዐ", "pos": "verb", "old_root": "m-l", "new_root": "m-l-a2", "method": "restored_dropped_letter", "evidence": "headword"}

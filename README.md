@@ -43,8 +43,8 @@ Field reference: [docs/schema.md](docs/schema.md).
 | `data/lexicon/kidane_wold_verb_triples.jsonl` | 262 |
 | `data/lexicon/kidane_wold_verb_triples_rejected.jsonl` | 326 |
 | `data/lexicon/kidane_wold_root_fixes.jsonl` | 955 |
-| `data/parallel/true_parallel_pairs.jsonl` | 2,780 |
-| `data/parallel/uncertain_pairs.jsonl` | 9,066 |
+| `data/parallel/true_parallel_pairs.jsonl` | 2,779 |
+| `data/parallel/uncertain_pairs.jsonl` | 9,067 |
 | `data/corpora/yared_shiferaw_corpus.txt` | 1,266 |
 | `data/corpora/merho_ges_prose_rules.txt` | 4,818 |
 | `data/corpora/geez_geez_monolingual.jsonl` | 1,388 |
@@ -52,7 +52,7 @@ Field reference: [docs/schema.md](docs/schema.md).
 | `data/verbs_rbha_anqets.jsonl` | 99,590 |
 | `data/geez_amharic_dictionary.jsonl` | 14,956 |
 | `data/geez_literature_corpus.txt` | 6,090 |
-| `data/true_parallel_pairs.jsonl` | 2,998 |
+| `data/true_parallel_pairs.jsonl` | 2,997 |
 
 A synthetic line is `{"features": {...}, "surface_form": "..."}`. The analyze files use `"analysis"` instead of `"features"`.
 
@@ -82,7 +82,7 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 - 8,095 of the 8,489 noun and adjective rows have no Amharic gloss.
 - 16 form cells still carry a parenthesized second spelling or reading and are left for a later check; only the part outside the parentheses loads.
 - 19 record titles still carry a parenthesis: they are book section headings printed with parentheses.
-- One dictionary entry (id 7546, page 585) has `inferred_root` `CHECK` in `classical_dictionary_kidane_wold.jsonl` and `geez_amharic_dictionary.jsonl`: its root is not settled.
+- One dictionary entry (id 7546, page 585) has no root: its definition belongs to the verb መኅፀ, and the two entries were merged. Its `inferred_root` is null in both dictionary files and its `new_root` is null in `kidane_wold_root_fixes.jsonl`; `root_notes` gives the reason, starting with `CHECK`. Its pair was moved from `true_parallel_pairs.jsonl` to `uncertain_pairs.jsonl`, with a `note`.
 
 ## Loading a gold file
 
@@ -113,7 +113,7 @@ python scripts/check_dataset.py
 python scripts/check_dataset.py --list
 ```
 
-The checker prints how many pairs load. It requires one Ge'ez word per loaded form, a root of 2–5 letters in the first order, labels from the set in `docs/schema.md`, no duplicate pair, and no root in more than one split.
+The checker prints how many pairs load. It requires one Ge'ez word per loaded form, a root of 2–5 letters in the first order, labels from the set in `docs/schema.md`, no duplicate pair, and no root in more than one split. It also fails if any root field in the gold files, the dictionaries, the Kidane Wold tables or the synthetic files holds the placeholder `CHECK`.
 
 ## License
 
