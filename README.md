@@ -43,6 +43,7 @@ Field reference: [docs/schema.md](docs/schema.md).
 | `data/lexicon/kidane_wold_verb_triples.jsonl` | 583 |
 | `data/lexicon/kidane_wold_verb_triples_rejected.jsonl` | 137 |
 | `data/lexicon/kidane_wold_root_fixes.jsonl` | 1,060 |
+| `data/lexicon/book_forms.jsonl` | 14 |
 | `data/parallel/true_parallel_pairs.jsonl` | 2,779 |
 | `data/parallel/uncertain_pairs.jsonl` | 9,067 |
 | `data/corpora/yared_shiferaw_corpus.txt` | 1,266 |
@@ -54,6 +55,8 @@ Field reference: [docs/schema.md](docs/schema.md).
 | `data/true_parallel_pairs.jsonl` | 2,997 |
 
 A synthetic line is `{"features": {...}, "surface_form": "..."}`. The analyze files use `"analysis"` instead of `"features"`.
+
+`data/lexicon/book_forms.jsonl` holds forms copied from the books for five roots that the generator does not conjugate: the Kidane Wold verb triples of ወ-ቀ-የ, ወ-ረ-ወ and ወ-ረ-የ, and the nouns and adjectives that *Mesehaf Gese Wesewasew* (Liqe Liqawunt Yared Shiferaw) prints for መ-ከ-ለ and ሰ-ነ-ገ, which have no printed verb triple. Each row names its book and page. A row with `status` `CHECK` holds a form whose reading is not yet settled.
 
 Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed Kidane Wold transcription in [geezorg/data](https://github.com/geezorg/data) (CC BY-SA 4.0, commit `3904462c`).
 

@@ -65,6 +65,7 @@ RID = re.compile(r"^[0-9a-f]{12}$")
 ROOT_FIELD_FILES = ("geez_amharic_dictionary.jsonl", "lexicon/classical_dictionary_kidane_wold.jsonl",
                     "lexicon/modern_geez_amharic_dictionary.jsonl", "lexicon/kidane_wold_root_fixes.jsonl",
                     "lexicon/kidane_wold_verb_triples.jsonl", "lexicon/kidane_wold_verb_triples_rejected.jsonl",
+                    "lexicon/book_forms.jsonl",
                     "paradigms/synthetic_morphology_train.jsonl", "paradigms/synthetic_morphology_analyze.jsonl",
                     "synthetic/synthetic_forms_for_val_test_roots.jsonl",
                     "synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl")
