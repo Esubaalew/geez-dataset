@@ -77,10 +77,10 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 
 ## Known limits
 
-- Rows with no root yet are kept in the files and do not load (1,122 pairs). One record is marked `root_unsettled`.
+- Rows with no root yet are kept in the files and do not load (1,122 pairs). No record is marked `root_unsettled`.
 - The rows listed in `merho_ges_gold_flagged_rows.tsv` do not load.
 - 8,096 of the 8,490 noun and adjective rows have no Amharic gloss.
-- 23 form cells still carry a parenthesized second spelling or reading and are left for a later check; only the part outside the parentheses loads.
+- 16 form cells still carry a parenthesized second spelling or reading and are left for a later check; only the part outside the parentheses loads.
 
 ## Loading a gold file
 
