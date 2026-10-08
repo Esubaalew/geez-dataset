@@ -81,8 +81,8 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 - The rows listed in `merho_ges_gold_flagged_rows.tsv` do not load.
 - 8,095 of the 8,489 noun and adjective rows have no Amharic gloss.
 - 19 record titles still carry a parenthesis: they are book section headings printed with parentheses.
-- One dictionary entry (id 7546, page 585) has no root: its definition belongs to the verb መኅፀ, and the two entries were merged. Its `inferred_root` is null in both dictionary files and its `new_root` is null in `kidane_wold_root_fixes.jsonl`; `root_notes` gives the reason, starting with `CHECK`. Its pair was moved from `true_parallel_pairs.jsonl` to `uncertain_pairs.jsonl`, with a `note`.
-- 40 more dictionary entries have a null `inferred_root` in both dictionary files by a editors's decision: the root is unclear, or the word is a loan with no Ge'ez root. `root_notes` gives the reason; a reason that needs review starts with `CHECK:`.
+- One dictionary entry (id 7546, page 585) has no root: its definition belongs to the verb መኅፀ, and the two entries were merged. Its `inferred_root` is null in both dictionary files and its `new_root` is null in `kidane_wold_root_fixes.jsonl`; `root_notes` gives the reason. Its pair was moved from `true_parallel_pairs.jsonl` to `uncertain_pairs.jsonl`, with a `note`.
+- 40 more dictionary entries have a null `inferred_root` in both dictionary files: the root is unclear, or the word is a loan with no Ge'ez root. `root_notes` gives the reason.
 
 ## Loading a gold file
 
