@@ -355,7 +355,7 @@
 {"id": 7484, "headword": "መዝጐል", "pos": "noun", "old_root": "z-l", "new_root": "z-gw-l", "method": "restored_dropped_letter", "evidence": "headword"}
 {"id": 7505, "headword": "መዝራዕት", "pos": "noun", "old_root": "z-r", "new_root": "z-r-a2", "method": "restored_dropped_letter", "evidence": "headword"}
 {"id": 7542, "headword": "መሐስዕ", "pos": "noun", "old_root": "h2-s", "new_root": "h2-s-a2", "method": "restored_dropped_letter", "evidence": "headword"}
-{"id": 7546, "headword": "ምኡዕ", "pos": "noun", "old_root": "m-a", "new_root": null, "method": "restored_dropped_letter", "evidence": "headword", "root_notes": "CHECK: merged entry, gloss is verb መኅፀ (m-kh-S2)"}
+{"id": 7546, "headword": "ምኡዕ", "pos": "noun", "old_root": "m-a", "new_root": null, "method": "restored_dropped_letter", "evidence": "headword", "root_notes": "merged entry, gloss is verb መኅፀ (m-kh-S2)"}
 {"id": 7558, "headword": "ምጣዒ", "pos": "noun", "old_root": "m-T", "new_root": "m-T-a2", "method": "restored_dropped_letter", "evidence": "headword"}
 {"id": 7561, "headword": "መጥኖ", "pos": "verb", "old_root": "T-n", "new_root": "m-T-n", "method": "verb_triple", "evidence": "መጠነ ፡ ይሜጥን ፡ ይመጥን"}
 {"id": 7605, "headword": "ሜይን", "pos": "verb", "old_root": "m-y", "new_root": "m-y-n", "method": "verb_triple", "evidence": "ሜነ ፡ ይመይን ፡ ይሚን"}
