@@ -20,13 +20,13 @@ Three combined files sit directly under `data/`: `geez_amharic_dictionary.jsonl`
 
 | File | Records |
 |---|---:|
-| `data/paradigms/merho_ges_gold_train.jsonl` | 1,115 |
+| `data/paradigms/merho_ges_gold_train.jsonl` | 1,116 |
 | `data/paradigms/merho_ges_gold_val.jsonl` | 136 |
-| `data/paradigms/merho_ges_gold_test.jsonl` | 220 |
+| `data/paradigms/merho_ges_gold_test.jsonl` | 219 |
 
 A root appears in one split. Each record keeps a `record_id`. A `geez_form` may hold more than one spelling, separated by ` / `. Noun and adjective rows have a `type` and no tense.
 
-321 rows are listed in `merho_ges_gold_flagged_rows.tsv`. They stay in the files and stay out of the pairs that load. 302 of them come from a comparison with the typed edition of the same book (Yared Shiferaw's Unicode text of መጽሐፈ ግስ ወሰዋስው): forms the book does not print, and rows whose type or gender disagrees with the book's own tag (ባዕ ቅ, በብ, ለሴ). Two repeated pairs are listed in `merho_ges_gold_allowed_duplicates.tsv` because the book prints each of them twice.
+321 rows are listed in `merho_ges_gold_flagged_rows.tsv`. They stay in the files and stay out of the pairs that load. 302 of them come from a comparison with the typed edition of the same book (Yared Shiferaw's Unicode text of መጽሐፈ ግስ ወሰዋስው): forms the book does not print, and rows whose type or gender disagrees with the book's own tag (ባዕ ቅ, በብ, ለሴ). Three repeated pairs are listed in `merho_ges_gold_allowed_duplicates.tsv` because the book prints each of them twice.
 
 Field reference: [docs/schema.md](docs/schema.md).
 
