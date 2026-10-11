@@ -20,13 +20,13 @@ Three combined files sit directly under `data/`: `geez_amharic_dictionary.jsonl`
 
 | File | Records |
 |---|---:|
-| `data/paradigms/merho_ges_gold_train.jsonl` | 1,116 |
+| `data/paradigms/merho_ges_gold_train.jsonl` | 1,115 |
 | `data/paradigms/merho_ges_gold_val.jsonl` | 136 |
-| `data/paradigms/merho_ges_gold_test.jsonl` | 219 |
+| `data/paradigms/merho_ges_gold_test.jsonl` | 220 |
 
 A root appears in one split. Each record keeps a `record_id`. A `geez_form` may hold more than one spelling, separated by ` / `. Noun and adjective rows have a `type` and no tense.
 
-321 rows are listed in `merho_ges_gold_flagged_rows.tsv`. They stay in the files and stay out of the pairs that load. 302 of them come from a comparison with the typed edition of the same book (Yared Shiferaw's Unicode text of መጽሐፈ ግስ ወሰዋስው): forms the book does not print, and rows whose type or gender disagrees with the book's own tag (ባዕ ቅ, በብ, ለሴ). Three repeated pairs are listed in `merho_ges_gold_allowed_duplicates.tsv` because the book prints each of them twice.
+321 rows are listed in `merho_ges_gold_flagged_rows.tsv`. They stay in the files and stay out of the pairs that load. 302 of them come from a comparison with the typed edition of the same book (Yared Shiferaw's Unicode text of መጽሐፈ ግስ ወሰዋስው): forms the book does not print, and rows whose type or gender disagrees with the book's own tag (ባዕ ቅ, በብ, ለሴ). Two repeated pairs are listed in `merho_ges_gold_allowed_duplicates.tsv` because the book prints each of them twice.
 
 Field reference: [docs/schema.md](docs/schema.md).
 
@@ -99,8 +99,8 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 |---|---:|
 | `data/paradigms/synthetic_morphology_train.jsonl` | 125,020 |
 | `data/paradigms/synthetic_morphology_analyze.jsonl` | 125,020 |
-| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 13,350 |
-| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 13,350 |
+| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 17,164 |
+| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 17,164 |
 | `data/lexicon/classical_dictionary_kidane_wold.jsonl` | 13,234 |
 | `data/lexicon/modern_geez_amharic_dictionary.jsonl` | 1,722 |
 | `data/lexicon/kidane_wold_verb_triples.jsonl` | 583 |
