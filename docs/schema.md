@@ -60,6 +60,7 @@ Optional fields:
 ## Loading rules
 
 - A row's own `root`, `stem`, `type`, and `object` override the record's.
+- A printed cell with two forms of different stems is split into one row per form (`source_variant`), each with its own `stem`; the record `stem` is the stem of the first row, and a verb row without a `stem` of its own takes the record's.
 - Nouns and adjectives carry no verb labels (`tense`, `person`, `object`).
 - Rows listed in `merho_ges_gold_flagged_rows.tsv`, rows with an empty root, and records marked `root_unsettled` are kept in the files but do not load for training or scoring.
 - A "pair" is one form of one row with the labels the row gives it. No pair appears twice in one split or across splits, except the pairs listed in `merho_ges_gold_allowed_duplicates.tsv`.

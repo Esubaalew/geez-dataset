@@ -37,9 +37,7 @@ book-only root with its class mark.
 
 ## Roots of the teaching-book verbs
 
-Teaching books often print no root. `work_1010_full/lemma_roots.tsv` gives each lemma a root with its evidence: the gold
-record titled with the lemma, a gold form, other rows of the books, or the lemma minus its prefix when that matches one
-gold root, plus five hand-set roots listed in `apply_lemma_roots_1010.py`. No other tool is used.
+Teaching books often print no root. Each lemma gets a root with its evidence: the gold record titled with the lemma, a gold form, other rows of the books, or the lemma minus its prefix when that matches one gold root, plus five roots set by hand. The evidence is in the row's `evidence` field. The evidence of every root is stated per row; a root is never taken from a tool or a model.
 
 ## Labels read from the order of the page
 
@@ -50,14 +48,12 @@ person) and its whole table has no failing row. The rest stay `CHECK`.
 
 ## Tables checked against the scan
 
-A table page whose every form and label agrees with the printed page loads as a unit (`work_1010_full/page_verified.tsv`:
-book, page, root, the rows kept back). Four small tables sit beside it, each row checked on the scan:
+A table page whose every form and label agrees with the printed page loads as a unit. Further rows were checked on the scan one by one:
 
-- `object_fixes.tsv`: the object suffix read from the form where the printed row order is shifted;
-- `possessor_pages.tsv`: in a possessive-suffix table of an adjective the suffix pronoun is the `possessor`, and the
-  base word keeps its own gender and number;
-- `label_fixes.tsv`: labels read from a printed paradigm and its glosses (ርባሐ p.60, the ከፈለ forms with ኢ-), and the
-  few printed misprints or misreadings corrected (`new_form`; the printed spelling stays in `evidence`);
+- the object suffix read from the form where the printed row order is shifted;
+- in a possessive-suffix table of an adjective the suffix pronoun is the `possessor`, and the base word keeps its own gender and number;
+- labels read from a printed paradigm and its glosses (ርባሐ p.60, the ከፈለ forms with ኢ-), and the few printed misprints or misreadings corrected (the printed spelling stays in `evidence`);
+- forms the book prints wrongly (slips in a printed table) or that are exercise answers, not words: held out as `CHECK` or `EXCLUDED`, never corrected;
 - spelling lists with no tense, person or stem (ርባሐ pp.59–62: the vowel orders of a root, pairs of look-alike
   verbs) are `EXCLUDED`.
 
@@ -77,3 +73,7 @@ decides: the present of ኀደገ-type verbs has ኀ, the subjunctive and the im
 `dataset_loader.load_unified(dataset_dir, split, sources=("book",))` returns the rows that load (status `""`) as pairs;
 `dataset_loader.target_text` writes the target of every class (the shapes are in its docstring), and
 `analyzer.parse_neural_output` reads them back.
+
+## Counts
+
+24,299 rows. Rows that load: gold 10,726 (train 8,060, val 1,154, test 1,512); other books 8,758 (train 7,904, val 393, test 461).

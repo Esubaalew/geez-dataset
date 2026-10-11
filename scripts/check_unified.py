@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Check data/unified/geez_morphology_rows.jsonl (written by build_unified.py).
+# SPDX-License-Identifier: Apache-2.0
+"""Check data/unified/geez_morphology_rows.jsonl (the build script that writes it is not part of this repository).
 
   1 fields      every row has exactly the documented fields, ids are unique
   2 labels      word_class, stem, tense, person/gender/number, object, possessor, status, split are from the documented lists,

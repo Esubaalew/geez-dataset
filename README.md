@@ -2,16 +2,24 @@
 
 Classical Ge'ez morphology. The gold files are paradigms from *Merho Ges Wesewasew Ze-Yared* (መርሐ ግስ ወሰዋሰው ዘያሬድ), read from the printed book. The rest of the repository is lexicon, Ge'ez–Amharic pairs, prose, and synthetic paradigms.
 
+## Version
+
+2.0.0. The previous version is the tag `v1` (commit `337cdf0`). Differences: [docs/CHANGES.md](docs/CHANGES.md).
+
 ## Layout
 
 ```
 data/paradigms/     gold splits, and synthetic forms used in training
+data/unified/       every labelled form of every book in one row schema, with splits
 data/synthetic/     synthetic forms whose roots sit in val or test
 data/lexicon/       Kidane Wold, and the concise Ge'ez–Amharic glossary
 data/parallel/      Ge'ez–Amharic pairs
 data/corpora/       prose and the phrasebook
 docs/schema.md      fields in the gold files
-scripts/check_dataset.py
+docs/CHANGES.md     differences from v1
+docs/DATASHEET.md   contents, method, intended use, limits
+scripts/check_dataset.py   checks the gold files and the other data files
+scripts/check_unified.py   checks data/unified
 ```
 
 Three combined files sit directly under `data/`: `geez_amharic_dictionary.jsonl`, `geez_literature_corpus.txt`, and `true_parallel_pairs.jsonl`. They are separate from the split files in `data/parallel/` and `data/corpora/`. Training reads `data/paradigms/`.
@@ -20,13 +28,13 @@ Three combined files sit directly under `data/`: `geez_amharic_dictionary.jsonl`
 
 | File | Records |
 |---|---:|
-| `data/paradigms/merho_ges_gold_train.jsonl` | 1,115 |
+| `data/paradigms/merho_ges_gold_train.jsonl` | 1,116 |
 | `data/paradigms/merho_ges_gold_val.jsonl` | 136 |
-| `data/paradigms/merho_ges_gold_test.jsonl` | 220 |
+| `data/paradigms/merho_ges_gold_test.jsonl` | 219 |
 
 A root appears in one split. Each record keeps a `record_id`. A `geez_form` may hold more than one spelling, separated by ` / `. Noun and adjective rows have a `type` and no tense.
 
-321 rows are listed in `merho_ges_gold_flagged_rows.tsv`. They stay in the files and stay out of the pairs that load. 302 of them come from a comparison with the typed edition of the same book (Yared Shiferaw's Unicode text of መጽሐፈ ግስ ወሰዋስው): forms the book does not print, and rows whose type or gender disagrees with the book's own tag (ባዕ ቅ, በብ, ለሴ). Two repeated pairs are listed in `merho_ges_gold_allowed_duplicates.tsv` because the book prints each of them twice.
+323 rows are listed in `merho_ges_gold_flagged_rows.tsv`. They stay in the files and stay out of the pairs that load. 302 of them come from a comparison with the typed edition of the same book (Yared Shiferaw's Unicode text of መጽሐፈ ግስ ወሰዋስው): forms the book does not print, and rows whose type or gender disagrees with the book's own tag (ባዕ ቅ, በብ, ለሴ). Two repeated pairs are listed in `merho_ges_gold_allowed_duplicates.tsv` because the book prints each of them twice.
 
 Field reference: [docs/schema.md](docs/schema.md).
 
@@ -97,8 +105,8 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 
 | File | Lines |
 |---|---:|
-| `data/paradigms/synthetic_morphology_train.jsonl` | 125,020 |
-| `data/paradigms/synthetic_morphology_analyze.jsonl` | 125,020 |
+| `data/paradigms/synthetic_morphology_train.jsonl` | 121,206 |
+| `data/paradigms/synthetic_morphology_analyze.jsonl` | 121,206 |
 | `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 17,164 |
 | `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 17,164 |
 | `data/lexicon/classical_dictionary_kidane_wold.jsonl` | 13,234 |
@@ -106,7 +114,7 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 | `data/lexicon/kidane_wold_verb_triples.jsonl` | 583 |
 | `data/lexicon/kidane_wold_verb_triples_rejected.jsonl` | 137 |
 | `data/lexicon/kidane_wold_root_fixes.jsonl` | 1,060 |
-| `data/lexicon/book_forms.jsonl` | 14,118 |
+| `data/lexicon/book_forms.jsonl` | 14,110 |
 | `data/parallel/true_parallel_pairs.jsonl` | 2,779 |
 | `data/parallel/uncertain_pairs.jsonl` | 9,067 |
 | `data/corpora/yared_shiferaw_corpus.txt` | 1,266 |
@@ -115,6 +123,8 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 | `data/corpora/phrasebook_pairs.jsonl` | 218 |
 | `data/geez_amharic_dictionary.jsonl` | 14,956 |
 | `data/geez_literature_corpus.txt` | 6,090 |
+| `data/unified/geez_morphology_rows.jsonl` | 24,299 |
+| `data/unified/book_root_splits.tsv` | 256 |
 | `data/true_parallel_pairs.jsonl` | 2,997 |
 
 A synthetic line is `{"features": {...}, "surface_form": "..."}`. The analyze files use `"analysis"` instead of `"features"`.
@@ -122,6 +132,17 @@ A synthetic line is `{"features": {...}, "surface_form": "..."}`. The analyze fi
 `data/lexicon/book_forms.jsonl` holds forms printed in the books other than the Merho Ges gold, in the gold label set: *ርባሐ ስም ወአንቀጽ* (አለቃ ደስታ ተክለ ወልድ, 1946 E.C.), the grammar tables and the dictionary of Kidane Wold, the teaching books ፍሬ ግእዝ, የግእዝ መማሪያ (Year 1) and ግዕዝ ቋንቋ ፪, and the first 14 rows (Kidane Wold triples of ወ-ቀ-የ, ወ-ረ-ወ, ወ-ረ-የ; *Mesehaf Gese Wesewasew* nouns and adjectives of መ-ከ-ለ and ሰ-ነ-ገ). Each row names its book and printed page. The root is the book's own (paradigm head, printed triple, derived-stem section), or the root of the gold record with the same headword; it is never inferred. `status` is empty for a row that loads, `CHECK` for a reading or label that is not settled or a type the training target has no slot for (infinitives, gerunds, forms with a possessive suffix), `CONFLICT` when the gold gives the same form another root, and `NO_ROOT`. `split` is `heldout` when the root or the form is a gold val/test one: those rows are never trained on and score the model on forms from other books; the rest are `train`.
 
 Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed Kidane Wold transcription in [geezorg/data](https://github.com/geezorg/data) (CC BY-SA 4.0, commit `3904462c`).
+
+## Unified rows
+
+`data/unified/geez_morphology_rows.jsonl` holds 24,299 labelled forms in one schema: the gold paradigm rows and the rows of six other books (ርባሐ ስም ወአንቀጽ, Kidane Wold's tables and dictionary, the typed Mesehaf Gese Wesewasew, ፍሬ ግእዝ, የግእዝ መማሪያ, ግዕዝ ቋንቋ ፪). Every row names its book and page. A row that does not load keeps its `status` and the reason. Fields, statuses and the split rule: [data/unified/README.md](data/unified/README.md).
+
+| Rows | train | val | test | not loaded |
+|---|---:|---:|---:|---:|
+| gold (Merho Ges) | 8,060 | 1,154 | 1,512 | 1,381 |
+| other books | 7,904 | 393 | 461 | 3,434 |
+
+Not loaded, other books: `NO_ROOT` 2,443, `CHECK` 571, `EXCLUDED` 420. Not loaded, gold: `NO_ROOT` 1,059, `FLAGGED` 322.
 
 ## Sources
 
@@ -141,6 +162,10 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 - Split rule: a root appears in only one of train, val, and test.
 
 ## Known limits
+
+- Only the Merho Ges gold is checked page by page. Rows of the other books are read by hand and by rule from scans and typed editions; `CHECK` rows are the readings not settled.
+- A Kidane Wold derivative whose root no other book gives is class `nominal`, in train only.
+- Spelling twins (ሐ-በ-ለ / ኀ-በ-ለ, ቀ-ጸ-ለ / ቈ-ጸ-ለ and the like) count as different roots for the split; 19 such pairs sit in different splits.
 
 - Rows with no root yet are kept in the files and do not load (1,129 pairs). No record is marked `root_unsettled`.
 - The rows listed in `merho_ges_gold_flagged_rows.tsv` do not load.
@@ -176,13 +201,15 @@ Skip a row when `(split, file_line, row)` is in `flagged`.
 ```bash
 python scripts/check_dataset.py
 python scripts/check_dataset.py --list
+python scripts/check_unified.py .
+cd data && sha256sum -c SHA256SUMS
 ```
 
 The checker prints how many pairs load. It requires one Ge'ez word per loaded form, a root of 2–5 letters in the first order, labels from the set in `docs/schema.md`, no duplicate pair, and no root in more than one split. It also fails if any root field in the gold files, the dictionaries, the Kidane Wold tables or the synthetic files holds the placeholder `CHECK`.
 
 ## License
 
-The files under `data/` are licensed under CC BY-SA 4.0 (see [LICENSE-DATA](LICENSE-DATA)). `scripts/check_dataset.py` is licensed under the Apache License 2.0 (see [LICENSE](LICENSE)).
+The files under `data/` are licensed under CC BY-SA 4.0 (see [LICENSE-DATA](LICENSE-DATA)). `scripts/check_dataset.py` and `scripts/check_unified.py` are licensed under the Apache License 2.0 (see [LICENSE](LICENSE)).
 
 ## Citation
 
