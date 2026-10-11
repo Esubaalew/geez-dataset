@@ -99,8 +99,8 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 |---|---:|
 | `data/paradigms/synthetic_morphology_train.jsonl` | 125,020 |
 | `data/paradigms/synthetic_morphology_analyze.jsonl` | 125,020 |
-| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 13,350 |
-| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 13,350 |
+| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 17,164 |
+| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 17,164 |
 | `data/lexicon/classical_dictionary_kidane_wold.jsonl` | 13,234 |
 | `data/lexicon/modern_geez_amharic_dictionary.jsonl` | 1,722 |
 | `data/lexicon/kidane_wold_verb_triples.jsonl` | 583 |
