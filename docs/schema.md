@@ -66,6 +66,10 @@ Optional fields:
 - No root appears in more than one split (train / val / test).
 - Variant notation: a `geez_form` cell like `ሃልሀ / ሀልሀ` holds two variants; a parenthesized note like `form (variant)` is dropped and only `form` loads.
 
+## The unified file (all books)
+
+`data/unified/geez_morphology_rows.jsonl` holds the gold paradigm rows and the rows of every other book, one schema. It has more classes than the gold paradigm files above: `verb`, `noun`, `adjective`, `nominal` (Kidane Wold's headwords, which print no noun or adjective label), `infinitive`, `gerund`, `verbal_noun`, and the rootless function-word classes (`pronoun`, `preposition`, `particle`, `numeral`, `demonstrative`, `adverb`), plus the slots `possessor` and `negated`. `scripts/check_dataset.py` checks only the gold paradigm files (`verb`, `noun`, `adjective`); `scripts/check_unified.py` checks the unified file. The fields, statuses, split rule and the checked-table files are in `data/unified/README.md`.
+
 ## Root fields in the other files
 
 The checker also reads the root fields of the dictionaries, the Kidane Wold tables and the synthetic files: every key named `root` or ending in `_root`. None may hold the placeholder `CHECK`.
