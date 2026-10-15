@@ -8,7 +8,7 @@ book-only root with its class mark.
 
 | field | meaning |
 |---|---|
-| `id` | `u000001`, in file order |
+| `id` | `u000001`, in file order; new rows are appended and existing ids never change |
 | `form` | one Ge'ez word |
 | `root` | first-order letters joined by `-`; `null` for words without a root |
 | `word_class` | `verb`, `noun`, `adjective`, `infinitive`, `gerund` (ቦዝ, converb), `verbal_noun`, `pronoun`, `demonstrative`, `preposition`, `particle`, `numeral`, `adverb`, `nominal` (a noun or adjective of Kidane Wold's dictionary: the book prints no class) |
@@ -79,6 +79,14 @@ decides: the present of ኀደገ-type verbs has ኀ, the subjunctive and the im
 Rows with `source_ref` `data/books/<book>/forms.jsonl:<line>` come from the entry lists of these two books. `page` is the scan page. A verb row is `CHECK`: the lists give no tense or person. A noun or adjective loads when the entry prints its root and the form has a number; without a root it is `NO_ROOT`. A row that repeats a form and labels already in the file is `EXCLUDED`. A row without a root takes the split of the rows of the same spelling, twin letters merged (gold rows keep theirs); when the entry's headword is the root of those rows, the row takes that root too.
 Splits follow the rules above. A root that already has a split keeps it; a root that differs from a split root only by a twin letter (ሀ/ሐ/ኀ, ሰ/ሠ, ጸ/ፀ, አ/ዐ) or a labiovelar takes that split; the new book-only roots are split by the 8% / 8% rule among themselves and added to `book_root_splits.tsv`.
 
+## Yared Shiferaw's Mesehaf Gese Wesewasew
+
+Rows with `source_ref` `data/books/yared_shiferaw/forms.jsonl:<line>` come from the entries of this verb book; `page` is the printed page. Forms of entries whose reading is not settled and forms that cannot be read on the scan are left out. The roots are the book's own, letter for letter: a labialized letter stays apart from the plain one (ቈ-ጸ-ረ and ቀ-ጸ-ረ, ኰ-ረ-ጸ and ከ-ረ-ጸ are four roots). The rows follow the rules of the entry lists above, with these differences:
+
+- a root that already has a split keeps it; every root first found in this book is in train (275 roots added to `book_root_splits.tsv`);
+- twin letters are only compared, never merged into the root: a row whose root differs from a val/test root only by a twin letter or a labiovelar stays `CHECK`;
+- a row whose form is a gold val/test form under a train root is `EXCLUDED`; a row whose spelling already loads in another split under another root stays `CHECK`. Rows already in the file are not changed.
+
 ## Counts
 
-29,987 rows. Rows that load: gold 10,817 (train 8,104, val 1,165, test 1,548); other books 9,002 (train 8,083, val 422, test 497).
+42,623 rows. Rows that load: gold 10,817 (train 8,104, val 1,165, test 1,548); other books 10,548 (train 9,335, val 541, test 672).

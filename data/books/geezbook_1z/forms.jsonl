@@ -1815,3 +1815,6 @@
 {"form": "ሞቀሰ", "root": "መ-ቀ-ሰ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 53, "split": "train"}
 {"form": "ሠለሰ", "root": "ሠ-ለ-ሰ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 53, "split": "train"}
 {"form": "ሰኮሰ", "root": "ሰ-ከ-ሰ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 53, "split": "train"}
+{"form": "ኮጱ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 25, "split": "train"}
+{"form": "ኤኀ", "root": null, "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 37, "split": "train"}
+{"form": "ዘኅዝኀ", "root": "ዘ-ኀ-ዘ-ኀ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 37, "split": "train"}

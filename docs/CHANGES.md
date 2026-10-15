@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,104 / 1,165 / 1,548 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 8,083 / 422 / 497 |
-| unified rows | 24,352 | 29,987 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 9,335 / 541 / 672 |
+| unified rows | 24,352 | 42,623 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -74,6 +74,12 @@ A form cell with two forms of different stems is split into one row per form (`s
 - አልቦ (root አ-ለ-በ) is in train with the other forms of its entry.
 - Kidane Wold p. 403: the subjunctive of ወረወ is ይውሩ (the page breaks it across a line; it was read as ውሩ).
 - Merho Ges p. 284 (record `269827c0b68e`, ሠቀየ / ሣቀየ): class ባረከ, as ፍሬ ግእዝ p. 40 gives it.
+- የግዕዝ መማሪያ: three readings settled on the scan and added at the end of its file (lines 1,818-1,820): ኮጱ (p. 25), ኤኀ (p. 37) and ዘኅዝኀ (p. 37, fourth letter ኀ). Five forms whose reading is not settled are still left out.
+
+## Yared Shiferaw's Mesehaf Gese Wesewasew
+
+- The entries of the verb book *Mesehaf Gese Wesewasew* by Yared Shiferaw are in `data/books/yared_shiferaw/forms.jsonl` (12,633 forms of 2,659 entries) and appended to `data/unified/` (ids u029988-u042623; 12,633 rows of this book; 1,546 load: train 1,252, val 119, test 175). Forms of entries whose reading is not settled and forms that cannot be read on the scan are left out. No existing row or id changed.
+- Roots keep the book's spelling; labialized letters are distinct (ቈ-ጸ-ረ ≠ ቀ-ጸ-ረ, ኰ-ረ-ጸ ≠ ከ-ረ-ጸ). 275 roots found only in this book are added to `data/unified/book_root_splits.tsv`, all in train. Rows whose root differs from a val/test root only by a twin letter (ነ-ፀ-ፈ, ሰ-ገ-ዐ, መ-ዘ-ገ-ለ, ኈ-ሠ-ሠ, ቈ-ረ-በ) do not load.
 
 ## README
 
