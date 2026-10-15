@@ -79,7 +79,8 @@ A form cell with two forms of different stems is split into one row per form (`s
 ## Yared Shiferaw's Mesehaf Gese Wesewasew
 
 - The entries of the verb book *Mesehaf Gese Wesewasew* by Yared Shiferaw are in `data/books/yared_shiferaw/forms.jsonl` (12,633 forms of 2,659 entries) and appended to `data/unified/` (ids u029988-u042623; 12,633 rows of this book; 1,546 load: train 1,252, val 119, test 175). Forms of entries whose reading is not settled and forms that cannot be read on the scan are left out. No existing row or id changed.
-- Roots keep the book's spelling; labialized letters are distinct (ቈ-ጸ-ረ ≠ ቀ-ጸ-ረ, ኰ-ረ-ጸ ≠ ከ-ረ-ጸ). 275 roots found only in this book are added to `data/unified/book_root_splits.tsv`, all in train. Rows whose root differs from a val/test root only by a twin letter (ነ-ፀ-ፈ, ሰ-ገ-ዐ, መ-ዘ-ገ-ለ, ኈ-ሠ-ሠ, ቈ-ረ-በ) do not load.
+- Roots keep the book's spelling; labialized letters are distinct (ቈ-ጸ-ረ ≠ ቀ-ጸ-ረ, ኰ-ረ-ጸ ≠ ከ-ረ-ጸ). 275 roots found only in this book are added to `data/unified/book_root_splits.tsv`: 274 in train, ቈ-ረ-በ in test. Rows whose root differs from a val/test root only by a twin letter (ነ-ፀ-ፈ, ሰ-ገ-ዐ, መ-ዘ-ገ-ለ, ኈ-ሠ-ሠ, ቈ-ረ-በ) do not load.
+- Rows held back as `CHECK` sit in the same split as the other rows of their root: ሐበለ (ሐ-በ-ለ, geezbook_1z) moves from test to train, and the 9 ቈ-ረ-በ rows of this book move from train to test, beside ቈረበ of ፍሬ ግእዝ.
 
 ## Ge'ez verb list
 

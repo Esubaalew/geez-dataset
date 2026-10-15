@@ -83,7 +83,7 @@ Splits follow the rules above. A root that already has a split keeps it; a root 
 
 Rows with `source_ref` `data/books/yared_shiferaw/forms.jsonl:<line>` come from the entries of this verb book; `page` is the printed page. Forms of entries whose reading is not settled and forms that cannot be read on the scan are left out. The roots are the book's own, letter for letter: a labialized letter stays apart from the plain one (ቈ-ጸ-ረ and ቀ-ጸ-ረ, ኰ-ረ-ጸ and ከ-ረ-ጸ are four roots). The rows follow the rules of the entry lists above, with these differences:
 
-- a root that already has a split keeps it; every root first found in this book is in train (275 roots added to `book_root_splits.tsv`);
+- a root that already has a split keeps it; every root first found in this book is in train (275 roots added to `book_root_splits.tsv`), except ቈ-ረ-በ, which is in test with ቈረበ of ፍሬ ግእዝ;
 - twin letters are only compared, never merged into the root: a row whose root differs from a val/test root only by a twin letter or a labiovelar stays `CHECK`;
 - a row whose form is a gold val/test form under a train root is `EXCLUDED`; a row whose spelling already loads in another split under another root stays `CHECK`. Rows already in the file are not changed.
 

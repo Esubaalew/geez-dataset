@@ -453,7 +453,7 @@ root	stratum	rows	split
 ቀ-ፈ-ዘ	nominal/nomark	4	train
 ቀ-ፈ-ጸ	nominal/nomark	6	train
 ቈ-ለ-ፈ	nominal/nomark	16	train
-ቈ-ረ-በ	nominal/nomark	9	train
+ቈ-ረ-በ	nominal/nomark	9	test
 ቈ-ረ-ጸ-ጸ	nominal/nomark	4	train
 ቈ-ቀ-ዐ	nominal/nomark	5	train
 በ-ሀ-መ	nominal/nomark	10	train
