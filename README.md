@@ -11,6 +11,7 @@ Classical Ge'ez morphology. The gold files are paradigms from *Merho Ges Wesewas
 ```
 data/paradigms/     gold splits, and synthetic forms used in training
 data/unified/       every labelled form of every book in one row schema, with splits
+data/books/         the forms of ፍሬ ግእዝ and የግዕዝ መማሪያ (ለይኩን ብርሃኑ), one form per line
 data/synthetic/     synthetic forms whose roots sit in val or test
 data/lexicon/       Kidane Wold, and the concise Ge'ez–Amharic glossary
 data/parallel/      Ge'ez–Amharic pairs
@@ -105,10 +106,10 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 
 | File | Lines |
 |---|---:|
-| `data/paradigms/synthetic_morphology_train.jsonl` | 121,092 |
-| `data/paradigms/synthetic_morphology_analyze.jsonl` | 121,092 |
-| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 17,164 |
-| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 17,164 |
+| `data/paradigms/synthetic_morphology_train.jsonl` | 120,685 |
+| `data/paradigms/synthetic_morphology_analyze.jsonl` | 120,685 |
+| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 17,571 |
+| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 17,571 |
 | `data/lexicon/classical_dictionary_kidane_wold.jsonl` | 13,234 |
 | `data/lexicon/modern_geez_amharic_dictionary.jsonl` | 1,722 |
 | `data/lexicon/kidane_wold_verb_triples.jsonl` | 583 |
@@ -123,26 +124,30 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 | `data/corpora/phrasebook_pairs.jsonl` | 218 |
 | `data/geez_amharic_dictionary.jsonl` | 14,956 |
 | `data/geez_literature_corpus.txt` | 6,090 |
-| `data/unified/geez_morphology_rows.jsonl` | 24,131 |
-| `data/unified/book_root_splits.tsv` | 254 |
+| `data/unified/geez_morphology_rows.jsonl` | 29,987 |
+| `data/books/fre_geez/forms.jsonl` | 4,039 |
+| `data/books/geezbook_1z/forms.jsonl` | 1,817 |
+| `data/unified/book_root_splits.tsv` | 336 |
 | `data/true_parallel_pairs.jsonl` | 2,997 |
 
 A synthetic line is `{"features": {...}, "surface_form": "..."}`. The analyze files use `"analysis"` instead of `"features"`.
 
 `data/lexicon/book_forms.jsonl` holds forms printed in the books other than the Merho Ges gold, in the gold label set: *ርባሐ ስም ወአንቀጽ* (አለቃ ደስታ ተክለ ወልድ, 1946 E.C.), the grammar tables and the dictionary of Kidane Wold, the teaching books ፍሬ ግእዝ, የግእዝ መማሪያ (Year 1) and ግዕዝ ቋንቋ ፪, and the first 14 rows (Kidane Wold triples of ወ-ቀ-የ, ወ-ረ-ወ, ወ-ረ-የ; *Mesehaf Gese Wesewasew* nouns and adjectives of መ-ከ-ለ and ሰ-ነ-ገ). Each row names its book and printed page. The root is the book's own (paradigm head, printed triple, derived-stem section), or the root of the gold record with the same headword; it is never inferred. `status` is empty for a row that loads, `CHECK` for a reading or label that is not settled or a type the training target has no slot for (infinitives, gerunds, forms with a possessive suffix), `CONFLICT` when the gold gives the same form another root, and `NO_ROOT`. `split` is `heldout` when the root or the form is a gold val/test one: those rows are never trained on and score the model on forms from other books; the rest are `train`.
 
+`data/books/<book>/forms.jsonl` lists every form of the entry lists of ፍሬ ግእዝ (4,039 forms of 2,105 entries) and የግዕዝ መማሪያ by ለይኩን ብርሃኑ (1,817 forms of 1,751 entries). A line has `form`, `root` (as printed in the entry, or null), `pos`, `number`, `gender`, `class` (the paradigm class), `book`, `page` (scan page; one scan page holds two printed pages) and `split`. The same forms are rows of `data/unified/` with `source_ref` pointing at the line. Verbs there do not load: the entry lists give no tense or person. Eight forms of የግዕዝ መማሪያ whose reading is not settled are left out.
+
 Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed Kidane Wold transcription in [geezorg/data](https://github.com/geezorg/data) (CC BY-SA 4.0, commit `3904462c`).
 
 ## Unified rows
 
-`data/unified/geez_morphology_rows.jsonl` holds 24,131 labelled forms in one schema: the gold paradigm rows and the rows of six other books (ርባሐ ስም ወአንቀጽ, Kidane Wold's tables and dictionary, the typed Mesehaf Gese Wesewasew, ፍሬ ግእዝ, የግእዝ መማሪያ, ግዕዝ ቋንቋ ፪). Every row names its book and page. A row that does not load keeps its `status` and the reason. Fields, statuses and the split rule: [data/unified/README.md](data/unified/README.md).
+`data/unified/geez_morphology_rows.jsonl` holds 29,987 labelled forms in one schema: the gold paradigm rows and the rows of seven other books (ርባሐ ስም ወአንቀጽ, Kidane Wold's tables and dictionary, the typed Mesehaf Gese Wesewasew, ፍሬ ግእዝ, የግእዝ መማሪያ (Year 1), የግዕዝ መማሪያ (ለይኩን ብርሃኑ), ግዕዝ ቋንቋ ፪). Every row names its book and page. A row that does not load keeps its `status` and the reason. Fields, statuses and the split rule: [data/unified/README.md](data/unified/README.md).
 
 | Rows | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
 | gold (Merho Ges) | 8,104 | 1,165 | 1,548 | 1,128 |
-| other books | 7,897 | 392 | 464 | 3,433 |
+| other books | 8,070 | 423 | 505 | 9,044 |
 
-Not loaded, other books: `NO_ROOT` 2,443, `CHECK` 570, `EXCLUDED` 420. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
+Not loaded, other books: `NO_ROOT` 3,825, `CHECK` 4,643, `EXCLUDED` 576. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
 
 ## Sources
 

@@ -74,6 +74,11 @@ decides: the present of ኀደገ-type verbs has ኀ, the subjunctive and the im
 `dataset_loader.target_text` writes the target of every class (the shapes are in its docstring), and
 `analyzer.parse_neural_output` reads them back.
 
+## ፍሬ ግእዝ and የግዕዝ መማሪያ entry lists
+
+Rows with `source_ref` `data/books/<book>/forms.jsonl:<line>` come from the entry lists of these two books. `page` is the scan page. A verb row is `CHECK`: the lists give no tense or person. A noun or adjective loads when the entry prints its root and the form has a number; without a root it is `NO_ROOT`. A row that repeats a form and labels already in the file is `EXCLUDED`. A form that the book prints under two roots that fall in different splits is `CHECK`.
+Splits follow the rules above. A root that already has a split keeps it; a root that differs from a split root only by a twin letter (ሀ/ሐ/ኀ, ሰ/ሠ, ጸ/ፀ, አ/ዐ) or a labiovelar takes that split; the new book-only roots are split by the 8% / 8% rule among themselves and added to `book_root_splits.tsv`.
+
 ## Counts
 
-24,131 rows. Rows that load: gold 10,817 (train 8,104, val 1,165, test 1,548); other books 8,753 (train 7,897, val 392, test 464).
+29,987 rows. Rows that load: gold 10,817 (train 8,104, val 1,165, test 1,548); other books 8,998 (train 8,070, val 423, test 505).

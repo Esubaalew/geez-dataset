@@ -5,9 +5,10 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,104 / 1,165 / 1,548 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 7,897 / 392 / 464 |
-| unified rows | 24,352 | 24,131 |
-| synthetic, lexicon, parallel and corpus files | | unchanged |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 8,070 / 423 / 505 |
+| unified rows | 24,352 | 29,987 |
+| synthetic training pair (lines) | | 120,685 |
+| lexicon, parallel and corpus files | | unchanged |
 
 ## Gold
 
@@ -63,6 +64,11 @@ A form cell with two forms of different stems is split into one row per form (`s
 - Root ቈ-ጠ-ፈ corrected to ቀ-ጠ-ፈ (Kidane Wold prints ይቅጥፍ, ቃጣፍ).
 - Held out or excluded as printed slips or exercise forms: ይጸዐዹ, ይጻዕዱ (የግእዝ መማሪያ p.35); nine ወቀደሰ* forms (ግዕዝ ቋንቋ ፪ p.50); others listed in the rows' `status_reason`.
 - Of 124 roots found only in Kidane Wold, 11 roots and 11 further forms excluded (loanwords, words of another root, readings not settled).
+
+## Two more books
+
+- The entry lists of ፍሬ ግእዝ (4,039 forms) and of የግዕዝ መማሪያ by ለይኩን ብርሃኑ (1,817 forms) are in `data/books/` and in `data/unified/` (5,856 rows; 245 load: train 173, val 31, test 41). Eight forms of የግዕዝ መማሪያ whose reading is not settled are left out.
+- 82 roots found only in these books are added to `data/unified/book_root_splits.tsv` (val 7, test 7, train 68). The synthetic lines of the three of them that the generator writes (ነ-ቀ-ለ, ነ-ኀ-ለ, መ-ገ-ለ; 407 lines) moved from the training pair to `data/synthetic/`.
 
 ## README
 
