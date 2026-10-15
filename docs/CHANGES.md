@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,104 / 1,165 / 1,548 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 9,335 / 541 / 672 |
-| unified rows | 24,352 | 42,623 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 9,767 / 567 / 718 |
+| unified rows | 24,352 | 44,407 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -80,6 +80,12 @@ A form cell with two forms of different stems is split into one row per form (`s
 
 - The entries of the verb book *Mesehaf Gese Wesewasew* by Yared Shiferaw are in `data/books/yared_shiferaw/forms.jsonl` (12,633 forms of 2,659 entries) and appended to `data/unified/` (ids u029988-u042623; 12,633 rows of this book; 1,546 load: train 1,252, val 119, test 175). Forms of entries whose reading is not settled and forms that cannot be read on the scan are left out. No existing row or id changed.
 - Roots keep the book's spelling; labialized letters are distinct (ቈ-ጸ-ረ ≠ ቀ-ጸ-ረ, ኰ-ረ-ጸ ≠ ከ-ረ-ጸ). 275 roots found only in this book are added to `data/unified/book_root_splits.tsv`, all in train. Rows whose root differs from a val/test root only by a twin letter (ነ-ፀ-ፈ, ሰ-ገ-ዐ, መ-ዘ-ገ-ለ, ኈ-ሠ-ሠ, ቈ-ረ-በ) do not load.
+
+## Ge'ez verb list
+
+- The 1,784 headwords of a 25-page Ge'ez verb list (class marks and Amharic glosses; no title or author printed) are in `data/books/verb_list/forms.jsonl` and appended to `data/unified/` (ids u042624-u044407; 504 load: train 432, val 26, test 46; 1,032 are `EXCLUDED`, 1,022 of them because they repeat a row already in the file). No existing row or id changed.
+- 78 roots found only in this list are added to `data/unified/book_root_splits.tsv`, all in train.
+- Roots of the same verb in another book: ቆጰረ is ቈ-ጸ-ረ, ለንጰሰ is ለ-ነ-ጸ-ሰ, ገንጰለ is ገ-ነ-ጸ-ለ, አስፌድለወ is ፈ-ደ-ለ-ወ. ተወሕሠ, ተዋህውኀ, ጸቈሰ and አሰውሰጠ stay `CHECK`.
 
 ## README
 
