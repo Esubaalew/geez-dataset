@@ -2469,7 +2469,6 @@
 {"surface_form": "ትብዕድ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "b-a2-d"}}
 {"surface_form": "ትብዐድ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "b-a2-d"}}
 {"surface_form": "ይብዐድ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "b-a2-d"}}
-{"surface_form": "በዐደ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "b-a2-d"}}
 {"surface_form": "ይብዕድ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "b-a2-d"}}
 {"surface_form": "ተበዕደ", "analysis": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "b-a2-d"}}
 {"surface_form": "ተበዕደት", "analysis": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "b-a2-d"}}
@@ -11625,7 +11624,6 @@
 {"surface_form": "ትርምፁ", "analysis": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "r-m-S2"}}
 {"surface_form": "ይርምፁ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "r-m-S2"}}
 {"surface_form": "ረመፁ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "r-m-S2"}}
-{"surface_form": "ይረምፁ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "r-m-S2"}}
 {"surface_form": "ርምፅ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "r-m-S2"}}
 {"surface_form": "ረመፅከ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "r-m-S2"}}
 {"surface_form": "ትረምፅ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "r-m-S2"}}
