@@ -19,8 +19,8 @@ data/corpora/       prose and the phrasebook
 docs/schema.md      fields in the gold files
 docs/CHANGES.md     differences from v1
 docs/DATASHEET.md   contents, method, intended use, limits
-scripts/check_dataset.py   checks the gold files and the other data files
-scripts/check_unified.py   checks data/unified
+scripts/check_dataset.py   checks the gold files and the other data files, then runs check_unified.py
+scripts/check_unified.py   checks data/unified and data/books
 ```
 
 Three combined files sit directly under `data/`: `geez_amharic_dictionary.jsonl`, `geez_literature_corpus.txt`, and `true_parallel_pairs.jsonl`. They are separate from the split files in `data/parallel/` and `data/corpora/`. Training reads `data/paradigms/`.
@@ -206,9 +206,8 @@ Skip a row when `(split, file_line, row)` is in `flagged`.
 ## Check
 
 ```bash
-python scripts/check_dataset.py
-python scripts/check_dataset.py --list
-python scripts/check_unified.py .
+python scripts/check_dataset.py          # all checks, gold files, data/unified and data/books
+python scripts/check_dataset.py --list   # print every problem
 cd data && sha256sum -c SHA256SUMS
 ```
 

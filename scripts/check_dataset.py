@@ -148,6 +148,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--data", default=os.path.join("data", "paradigms"), help="folder with the gold files")
     ap.add_argument("--list", action="store_true", help="print every problem")
+    ap.add_argument("--no-unified", action="store_true", help="skip scripts/check_unified.py (data/unified and data/books)")
     args = ap.parse_args()
 
     errors = collections.defaultdict(list)     # check -> [message]
@@ -375,6 +376,13 @@ def main():
             print(f"        ... {len(msgs) - 20} more (use --list)")
     bad = sum(len(v) for v in errors.values())
     print("CLEAN" if not bad else f"NOT CLEAN: {bad} problem(s)")
+    ds = os.path.dirname(os.path.dirname(os.path.abspath(args.data)))
+    if not args.no_unified and os.path.exists(os.path.join(ds, "data", "unified", "geez_morphology_rows.jsonl")):
+        import subprocess
+        print("\ndata/unified and data/books (scripts/check_unified.py):", flush=True)
+        u = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "check_unified.py"), ds]).returncode
+        bad += u
+        print("ALL CLEAN" if not bad else "NOT CLEAN")
     return 1 if bad else 0
 
 

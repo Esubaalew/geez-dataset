@@ -9,6 +9,8 @@
   4 splits      a root is in one split among rows that load (the gold sets the split of its roots; a book row whose form
                 is a gold val/test form is the only exception and is listed)
   5 duplicates  no two rows that load have the same form, root, word_class and labels
+  6 books       every line of data/books/*/forms.jsonl is the source of exactly one row, with the same form, root and split
+  note          roots whose rows (loading or held back, not EXCLUDED) sit in more than one split
   python check_unified.py DATASET_DIR
 """
 import collections, json, os, re, sys
@@ -72,9 +74,34 @@ for root, sp in sorted(root_splits.items()):
             err("4 splits", f"root {root} loads in {dict(notes)}")
 for k, v in keys.items():
     if len(v) > 1 and not all(by_id[i]["source"] == "gold" for i in v): err("5 duplicates", f"{k[0]} ({k[1]}): {', '.join(v)}")
-for sec in ("1 fields", "2 labels", "3 forms", "4 splits", "5 duplicates"):
+book_lines, book_refs = {}, collections.Counter()
+books_dir = os.path.join(ds, "data", "books")
+for b in sorted(os.listdir(books_dir)) if os.path.isdir(books_dir) else []:
+    f = os.path.join("data", "books", b, "forms.jsonl")
+    if os.path.exists(os.path.join(ds, f)):
+        book_lines[f] = [json.loads(l) for l in open(os.path.join(ds, f), encoding="utf-8")]
+for r in rows:
+    ref = r["source_ref"] or ""
+    f, _, n = ref.rpartition(":")
+    if f not in book_lines: continue
+    book_refs[ref] += 1
+    if not n.isdigit() or not 1 <= int(n) <= len(book_lines[f]):
+        err("6 books", f"{r['id']}: source_ref {ref} is not a line of {f}"); continue
+    b = book_lines[f][int(n) - 1]
+    for k in ("form", "root", "split"):
+        if b.get(k) != r[k]: err("6 books", f"{r['id']}: {k} {r[k]!r} but {ref} has {b.get(k)!r}")
+for f, lines in book_lines.items():
+    for n in range(1, len(lines) + 1):
+        if book_refs[f"{f}:{n}"] != 1: err("6 books", f"{f}:{n} is the source of {book_refs[f'{f}:{n}']} rows")
+held = collections.defaultdict(set)
+for r in rows:
+    if r["root"] and r["status"] != "EXCLUDED": held[r["root"]].add(r["split"])
+for sec in ("1 fields", "2 labels", "3 forms", "4 splits", "5 duplicates", "6 books"):
     print(("FAIL " if errs[sec] else "PASS ") + f"{sec}: {len(errs[sec])} problem(s)")
     for m in errs[sec][:8]: print("   ", m)
+multi = sorted(k for k, v in held.items() if len(v) > 1)
+print(f"NOTE  roots in more than one split counting held-back rows: {len(multi)}" + (f" ({', '.join(multi[:8])})" if multi else ""))
+print("books:", ", ".join(f"{f.split('/')[2]} {len(v)}" for f, v in book_lines.items()))
 c = collections.Counter((r["split"], r["word_class"]) for r in rows if r["status"] == "")
 print("rows that load:", sum(c.values()), dict(sorted(collections.Counter(r["split"] for r in rows if r["status"] == "").items())))
 sys.exit(1 if any(errs.values()) else 0)

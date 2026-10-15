@@ -69,7 +69,7 @@ Optional fields:
 
 ## The unified file (all books)
 
-`data/unified/geez_morphology_rows.jsonl` holds the gold paradigm rows and the rows of every other book, one schema. It has more classes than the gold paradigm files above: `verb`, `noun`, `adjective`, `nominal` (Kidane Wold's headwords, which print no noun or adjective label), `infinitive`, `gerund`, `verbal_noun`, and the rootless function-word classes (`pronoun`, `preposition`, `particle`, `numeral`, `demonstrative`, `adverb`), plus the slots `possessor` and `negated`. `scripts/check_dataset.py` checks only the gold paradigm files (`verb`, `noun`, `adjective`); `scripts/check_unified.py` checks the unified file. The fields, statuses, split rule and the checked-table files are in `data/unified/README.md`.
+`data/unified/geez_morphology_rows.jsonl` holds the gold paradigm rows and the rows of every other book, one schema. It has more classes than the gold paradigm files above: `verb`, `noun`, `adjective`, `nominal` (Kidane Wold's headwords, which print no noun or adjective label), `infinitive`, `gerund`, `verbal_noun`, and the rootless function-word classes (`pronoun`, `preposition`, `particle`, `numeral`, `demonstrative`, `adverb`), plus the slots `possessor` and `negated`. `scripts/check_dataset.py` checks the gold paradigm files (`verb`, `noun`, `adjective`) and then runs `scripts/check_unified.py`, which checks the unified file and the book files under `data/books`. The fields, statuses, split rule and the checked-table files are in `data/unified/README.md`.
 
 ## Root fields in the other files
 
