@@ -72,6 +72,8 @@ A form cell with two forms of different stems is split into one row per form (`s
 - A row without a root takes the split of the rows of the same spelling (twin letters merged), so that a spelling sits in one split; gold rows keep their split. 290 rows moved. Such a row of these two books also takes the root of those rows when the entry's headword is that root (20 rows); otherwise its root stays empty. `data/lexicon/book_forms.jsonl` follows the moved rows.
 - ጌገየ: every row of this verb is written ገ-ገ-የ (it was ገ-የ-ገ-የ in the p. 69 table and in 16 rows of `data/lexicon/book_forms.jsonl`), and all of them are in train.
 - አልቦ (root አ-ለ-በ) is in train with the other forms of its entry.
+- Kidane Wold p. 403: the subjunctive of ወረወ is ይውሩ (the page breaks it across a line; it was read as ውሩ).
+- Merho Ges p. 284 (record `269827c0b68e`, ሠቀየ / ሣቀየ): class ባረከ, as ፍሬ ግእዝ p. 40 gives it.
 
 ## README
 
