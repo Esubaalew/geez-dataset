@@ -4,9 +4,9 @@ v1: tag `v1`, commit `337cdf0`.
 
 | | v1 | v2 |
 |---|---:|---:|
-| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,109 / 1,165 / 1,547 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 7,900 / 392 / 461 |
-| unified rows | 24,352 | 24,135 |
+| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,104 / 1,165 / 1,547 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 7,897 / 392 / 464 |
+| unified rows | 24,352 | 24,130 |
 | synthetic, lexicon, parallel and corpus files | | unchanged |
 
 ## Gold
@@ -18,10 +18,13 @@ Roots and forms, read on the printed page:
 | 173 | fe56fd77a429 | ዐሰበ / ተዐስበ | ዐሰበ / ተዐሰበ (the page prints ወተዐሰበ) |
 | 224 | cec6f1da85f9 | አንትዐ, መንተዕ, አንተዕ, አንተዓት, አናተዕ; root ነ-ተ-ዐ | አንጉዐ, መንጉዕ, አንጉዕ, አንጉዓት, አናጉዕ; root ነ-ጐ-ዐ |
 | 226 | e27dfa30dc1a | ተፀኀዘ / አዕኀዘ; root ፀ-ኀ-ዘ | ተፀንግዐ / አፀንግዐ; root ፀ-ነ-ገ-ዐ |
-| 34 | a8f2b85981b1 | ነስኀ, መንስኀ; root ነ-ሰ-ኀ | ነስሐ, መነስሕ; root ነ-ሰ-ሐ |
-| 98 | ffec00d9a7b4 | ትስድስት (singular) | ትስድስታት (plural, as printed after ምስድስታት) |
+| 34 | a8f2b85981b1 | ነኰነ, መንኰን | ነስኀ 'stink', መንስኅ (root ነ-ሰ-ኀ) |
+| 98 | ffec00d9a7b4 | ምስድሳታት, ትስድሳታት | ምስድስታት, ትስድስታት (plurals) |
+| 91 | a308cec52106 | separate records ፈፀመ (train) and ፈጸመ (test) | one record ፈጸመ in test; the ፀ spelling is kept in `spelling_note` |
 
 Moved to test, printed spelling kept, the other spelling noted in `spelling_note`: acc4f9cac1b0 ወፅአ (p.228, also ወጽአ) and 110f07e7667d ፀንሰ (p.109, also ጸንሰ), so ፀ/ጸ spellings of one root share a split.
+
+The ፈፀመ record of p.91 (ፈፀመ, ፍፁም, መፍፅም, ፈፀምት, ፍፅማት) is merged into ፈጸመ; ፍፅማት is not kept as a separate row.
 
 Stems, 21 rows, all `basic` in v1 (train 18, val 2, test 1). Basis `page`: the printed entry, its gloss or its neighbouring forms show the stem. Basis `form`: set from the prefix and root of the form only.
 

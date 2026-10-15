@@ -123,7 +123,7 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 | `data/corpora/phrasebook_pairs.jsonl` | 218 |
 | `data/geez_amharic_dictionary.jsonl` | 14,956 |
 | `data/geez_literature_corpus.txt` | 6,090 |
-| `data/unified/geez_morphology_rows.jsonl` | 24,135 |
+| `data/unified/geez_morphology_rows.jsonl` | 24,130 |
 | `data/unified/book_root_splits.tsv` | 254 |
 | `data/true_parallel_pairs.jsonl` | 2,997 |
 
@@ -135,12 +135,12 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 
 ## Unified rows
 
-`data/unified/geez_morphology_rows.jsonl` holds 24,135 labelled forms in one schema: the gold paradigm rows and the rows of six other books (ርባሐ ስም ወአንቀጽ, Kidane Wold's tables and dictionary, the typed Mesehaf Gese Wesewasew, ፍሬ ግእዝ, የግእዝ መማሪያ, ግዕዝ ቋንቋ ፪). Every row names its book and page. A row that does not load keeps its `status` and the reason. Fields, statuses and the split rule: [data/unified/README.md](data/unified/README.md).
+`data/unified/geez_morphology_rows.jsonl` holds 24,130 labelled forms in one schema: the gold paradigm rows and the rows of six other books (ርባሐ ስም ወአንቀጽ, Kidane Wold's tables and dictionary, the typed Mesehaf Gese Wesewasew, ፍሬ ግእዝ, የግእዝ መማሪያ, ግዕዝ ቋንቋ ፪). Every row names its book and page. A row that does not load keeps its `status` and the reason. Fields, statuses and the split rule: [data/unified/README.md](data/unified/README.md).
 
 | Rows | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
-| gold (Merho Ges) | 8,109 | 1,165 | 1,547 | 1,128 |
-| other books | 7,900 | 392 | 461 | 3,433 |
+| gold (Merho Ges) | 8,104 | 1,165 | 1,547 | 1,128 |
+| other books | 7,897 | 392 | 464 | 3,433 |
 
 Not loaded, other books: `NO_ROOT` 2,443, `CHECK` 570, `EXCLUDED` 420. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
 
