@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,104 / 1,165 / 1,548 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 9,767 / 567 / 718 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 9,777 / 568 / 719 |
 | unified rows | 24,352 | 44,407 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -83,9 +83,10 @@ A form cell with two forms of different stems is split into one row per form (`s
 
 ## Ge'ez verb list
 
-- The 1,784 headwords of a 25-page Ge'ez verb list (class marks and Amharic glosses; no title or author printed) are in `data/books/verb_list/forms.jsonl` and appended to `data/unified/` (ids u042624-u044407; 504 load: train 432, val 26, test 46; 1,032 are `EXCLUDED`, 1,022 of them because they repeat a row already in the file). No existing row or id changed.
-- 78 roots found only in this list are added to `data/unified/book_root_splits.tsv`, all in train.
+- The 1,784 headwords of a 25-page Ge'ez verb list (class marks and Amharic glosses; no title or author printed) are in `data/books/verb_list/forms.jsonl` and appended to `data/unified/` (ids u042624-u044407; 516 load: train 442, val 27, test 47; 1,034 are `EXCLUDED`, 1,024 of them because they repeat a row already in the file). No existing row or id changed.
+- 70 roots found only in this list are added to `data/unified/book_root_splits.tsv`, all in train.
 - Roots of the same verb in another book: ቆጰረ is ቈ-ጸ-ረ, ለንጰሰ is ለ-ነ-ጸ-ሰ, ገንጰለ is ገ-ነ-ጸ-ለ, አስፌድለወ is ፈ-ደ-ለ-ወ. ተወሕሠ, ተዋህውኀ, ጸቈሰ and አሰውሰጠ stay `CHECK`.
+- Roots of the same verb in another book, where the meaning matches: ወቀሰ ወ-ቀ-ሠ, ኮፈረ ከ-ፈ-ረ, ዘኮረ ዘ-ከ-ረ, መሞዐ መ-መ-ዐ, ከልኦ ከ-ለ-አ, ጠሞዐ ጠ-መ-ዐ, አስደለወ ደ-ለ-ወ, ሴሰየ ሰ-ሰ-የ, ረሞፀ ረ-መ-ፀ (a ወ or የ read from the vowel of the headword is not a radical). ተደረ, ጥሕረ, ሠነቀ, አሰበ, ተሠአነ and አስተናአወ keep their own roots. ኀለቈ, አከፈ, አስቆቀወ and አመዐርዐረ stay `CHECK`.
 
 ## README
 

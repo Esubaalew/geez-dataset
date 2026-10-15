@@ -612,7 +612,6 @@ root	stratum	rows	split
 ሀ-ነ-ጰ-ጰ	verb/nomark	1	train
 ሐ-ረ-ጰ-ጰ	verb/nomark	1	train
 መ-ለ-ገ	verb/nomark	1	train
-መ-መ-ወ-ዐ	verb/nomark	1	train
 መ-ረ-ገ	verb/nomark	1	train
 መ-ኀ-በ-ረ	verb/nomark	1	train
 መ-ነ-ገ-ነ	verb/nomark	1	train
@@ -620,7 +619,6 @@ root	stratum	rows	split
 መ-ዐ-ረ-ዐ-ረ	verb/nomark	1	train
 ሠ-ረ-ጰ	verb/nomark	2	train
 ሠ-ነ-ቀ	verb/nomark	1	train
-ረ-መ-ወ-ፀ	verb/nomark	1	train
 ሰ-ለ-ጰ	verb/nomark	1	train
 ሰ-ሐ-የ-ጸ	verb/nomark	1	train
 ሰ-ሐ-ጰ	verb/nomark	1	train
@@ -632,8 +630,6 @@ root	stratum	rows	split
 ሰ-ወ-ሰ-ጠ	verb/nomark	1	train
 ሰ-ዐ-ወ-ዘ-ዘ	verb/nomark	1	train
 ሰ-ዐ-ወ-ጠ-ጠ	verb/nomark	1	train
-ሰ-የ-ሰ-የ	verb/nomark	1	train
-ሰ-ደ-ለ-ወ	verb/nomark	1	train
 ቀ-ለ-የ-ለ-የ	verb/nomark	1	train
 ቀ-ለ-ጰ	verb/nomark	1	train
 ቀ-ለ-ጰ-ጰ	verb/nomark	1	train
@@ -660,17 +656,14 @@ root	stratum	rows	split
 ነ-ጸ-ወ-ጸ-ወ	verb/nomark	1	train
 ነ-ፈ-ነ-ፈ	verb/nomark	1	train
 አ-ከ-የ	verb/nomark	1	train
-ከ-ለ-አ-ወ	verb/nomark	1	train
 ከ-መ-ወ-ተ-ተ	verb/nomark	1	train
 ከ-ረ-ዘ	verb/nomark	1	train
 ከ-ረ-ጰ	verb/nomark	2	train
 ከ-ነ-ከ	verb/nomark	1	train
-ከ-ወ-ፈ-ረ	verb/nomark	1	train
 ወ-ሐ-የ	verb/nomark	1	train
 ወ-ፈ-ወ	verb/nomark	1	train
 ዐ-ነ-ጰ-ጰ	verb/nomark	1	train
 ዘ-ረ-ጰ	verb/nomark	1	train
-ዘ-ከ-ወ-ረ	verb/nomark	1	train
 ዘ-ፈ-ወ	verb/nomark	1	train
 ደ-ኀ-ፀ	verb/nomark	1	train
 ገ-መ-ወ-ዐ	verb/nomark	1	train
@@ -679,7 +672,6 @@ root	stratum	rows	split
 ገ-የ-ጰ	verb/nomark	1	train
 ጐ-ሐ-ጰ	verb/nomark	1	train
 ጐ-ጸ-ፈ-ረ	verb/nomark	1	train
-ጠ-መ-ወ-ዐ	verb/nomark	1	train
 ጠ-ነ-የ	verb/nomark	1	train
 ጰ-ሰ-ደ	verb/nomark	1	train
 ጰ-ነ-ገ-ለ	verb/nomark	1	train

@@ -91,8 +91,8 @@ Rows with `source_ref` `data/books/yared_shiferaw/forms.jsonl:<line>` come from 
 
 Rows with `source_ref` `data/books/verb_list/forms.jsonl:<line>` are the headwords of a 25-page Ge'ez verb list with class marks and Amharic glosses; `page` is the page of the list. A headword is read as the 3rd person masculine singular perfect; its stem follows the prefix (none: basic, ተ-: passive, አ-: causative, አስተ-: aste). The root is derived from the headword letter by letter, with the prefix stripped or kept as a radical as settled for each entry, or is the root of the same verb in another book when the meaning matches. Where the class mark of the list differs from the gold, the gold class is used when the two agree in substance; otherwise the row stays `CHECK`. Rows whose root, prefix or class is not settled stay `CHECK`.
 
-Splits: a root that already has a split keeps it; a root found only as a twin-letter variant of a val/test root takes that split; a root with no exact or twin match is in train (78 roots added to `book_root_splits.tsv`). A row whose root differs from a root of another split only by a twin letter, whose form is a gold val/test form under a root of another split, or whose spelling loads in another split stays `CHECK` or `EXCLUDED`. A headword that repeats a row already in the file is `EXCLUDED`.
+Splits: a root that already has a split keeps it; a root found only as a twin-letter variant of a val/test root takes that split; a root with no exact or twin match is in train (70 roots added to `book_root_splits.tsv`). A row whose root differs from a root of another split only by a twin letter, whose form is a gold val/test form under a root of another split, or whose spelling loads in another split stays `CHECK` or `EXCLUDED`. A headword that repeats a row already in the file is `EXCLUDED`.
 
 ## Counts
 
-44,407 rows. Rows that load: gold 10,817 (train 8,104, val 1,165, test 1,548); other books 11,052 (train 9,767, val 567, test 718).
+44,407 rows. Rows that load: gold 10,817 (train 8,104, val 1,165, test 1,548); other books 11,064 (train 9,777, val 568, test 719).
