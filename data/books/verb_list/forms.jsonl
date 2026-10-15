@@ -597,7 +597,7 @@
 {"form": "ገየረ", "root": "ገ-የ-ረ", "pos": "verb", "number": null, "gender": null, "class": "ቀደሰ", "gloss_amharic": "ቀባ፣ለሰነ፣ለቀለቀ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 7, "split": "train"}
 {"form": "ጐጽፈረ", "root": "ጐ-ጸ-ፈ-ረ", "pos": "verb", "number": null, "gender": null, "class": "ተንበለ", "gloss_amharic": "አከከ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 7, "split": "train"}
 {"form": "ጥሕረ", "root": "ጠ-ሐ-ረ", "pos": "verb", "number": null, "gender": null, "class": "ክህለ", "gloss_amharic": "ጮኸ(የአንበሳ)", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 7, "split": "train"}
-{"form": "ጦመረ", "root": "ጠ-ወ-መ-ረ", "pos": "verb", "number": null, "gender": null, "class": "ርዕስ", "gloss_amharic": "ጻፈ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 7, "split": "train"}
+{"form": "ጦመረ", "root": "ጠ-መ-ረ", "pos": "verb", "number": null, "gender": null, "class": "ርዕስ", "gloss_amharic": "ጻፈ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 7, "split": "val"}
 {"form": "ጠፈረ", "root": "ጠ-ፈ-ረ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ (ቀደሰ)", "gloss_amharic": "ታታ(የባጥ)", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 7, "split": "train"}
 {"form": "ፀምረ", "root": "ፀ-መ-ረ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "አንድ አደረገ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 7, "split": "train"}
 {"form": "ጸበረ", "root": "ጸ-በ-ረ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "ጭቃ አደረገ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 7, "split": "train"}
@@ -997,7 +997,7 @@
 {"form": "በፅዐ", "root": "በ-ፀ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "ተሳለ(የስለት)", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "val"}
 {"form": "ተማልዐ", "root": "መ-ለ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "እግር መንገድ ኼደ፣አናደ፣ወሰደ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
 {"form": "ተምዐ", "root": "ተ-መ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ቀደሰ", "gloss_amharic": "ተቆጣ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
-{"form": "ተሞዕዐ", "root": "መ-ወ-ዐ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ክህለ", "gloss_amharic": "ተበሳጨ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
+{"form": "ተሞዕዐ", "root": "መ-ዐ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ክህለ", "gloss_amharic": "ተበሳጨ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
 {"form": "ተስዐ", "root": "ተ-ሰ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ (ቀደሰ)", "gloss_amharic": "ዘጠኝ አደረገ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
 {"form": "ተሰብአ", "root": "ሰ-በ-አ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "ሰውኾነ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
 {"form": "ተሥዕዐ", "root": "ሠ-ዐ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ክህለ", "gloss_amharic": "ተገፈፈ፣ገፈፈ፣በነነ፣ተበተነ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
@@ -1030,7 +1030,7 @@
 {"form": "አንሳዕስዐ", "root": "ነ-ሰ-ዐ-ሰ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "አፈላ፣አፍለቀለቀ፣ፈላ፣ገነፈለ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
 {"form": "አንብዐ", "root": "ነ-በ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "አለቀሰ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "test"}
 {"form": "አንጕዐ", "root": "ነ-ጐ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "ቀለጠመ፣ሰበረ(የአጥንት ብቻ)", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
-{"form": "አንጦልዐ", "root": "ነ-ጠ-ወ-ለ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ጦመረ", "gloss_amharic": "ጋረደ፣ሸፈነ፣ዘረጋ፣ተጋረደ፣ተሸፈነ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
+{"form": "አንጦልዐ", "root": "ነ-ጠ-ለ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ጦመረ", "gloss_amharic": "ጋረደ፣ሸፈነ፣ዘረጋ፣ተጋረደ፣ተሸፈነ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
 {"form": "አውሥአ", "root": "ወ-ሠ-አ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "መለሰ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
 {"form": "አውክዐ", "root": "ወ-ከ-ዐ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "አስቸገረ፣አደከመ፣አሰለቸ፣አታከተ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
 {"form": "አይኅአ", "root": "የ-ኀ-አ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "ወረደ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 11, "split": "train"}
@@ -1159,7 +1159,7 @@
 {"form": "ሰካዕለወ", "root": "ሰ-ከ-ዐ-ለ-ወ", "pos": "verb", "number": null, "gender": null, "class": "ማህረከ", "gloss_amharic": "ቆጠቆጠ፣መነጠረ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 13, "split": "train"}
 {"form": "ረሰወ", "root": "ረ-ሰ-ወ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "መልሕቅ ጣለ፣ገታ፣አቆመ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 13, "split": "train"}
 {"form": "ረበወ", "root": "ረ-በ-ወ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ (ቀደሰ)", "gloss_amharic": "አሰተማረ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 13, "split": "train"}
-{"form": "ቆለወ", "root": "ቀ-ወ-ለ-ወ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "ቆላ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 13, "split": "train"}
+{"form": "ቆለወ", "root": "ቈ-ለ-ወ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "ቆላ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 13, "split": "val"}
 {"form": "ቀልጰወ", "root": "ቀ-ለ-ጰ-ወ", "pos": "verb", "number": null, "gender": null, "class": "ተንበለ", "gloss_amharic": "ዋጠ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 13, "split": "test"}
 {"form": "ቀስተወ", "root": "ቀ-ሰ-ተ-ወ", "pos": "verb", "number": null, "gender": null, "class": "ተንበለ", "gloss_amharic": "ሳበ፣ገተረ፣ለጠጠ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 13, "split": "test"}
 {"form": "ቀበወ", "root": "ቀ-በ-ወ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "ታመመ፣ሆድን ነፋ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 13, "split": "test"}
@@ -1292,7 +1292,7 @@
 {"form": "አኀዘ", "root": "አ-ኀ-ዘ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "ያዘ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 15, "split": "train"}
 {"form": "አሕዘዘ", "root": "ሐ-ዘ-ዘ", "pos": "verb", "number": null, "gender": null, "class": "ማህረከ", "gloss_amharic": "ሰርግ አደረገ፣ዋጠ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 15, "split": "train"}
 {"form": "አመንዘዘ", "root": "መ-ነ-ዘ-ዘ", "pos": "verb", "number": null, "gender": null, "class": "ተንበለ", "gloss_amharic": "አጽንቶ ያዘ፣አመነቸከ፣አስጨነቀ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 15, "split": "train"}
-{"form": "አስዖዘዘ", "root": "ሰ-ዐ-ወ-ዘ-ዘ", "pos": "verb", "number": null, "gender": null, "class": "ጦመረ", "gloss_amharic": "ስቅጥጥ ስቅጥጥ አለ/አደረገ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 15, "split": "train"}
+{"form": "አስዖዘዘ", "root": "ዐ-ዘ-ዘ", "pos": "verb", "number": null, "gender": null, "class": "ጦመረ", "gloss_amharic": "ስቅጥጥ ስቅጥጥ አለ/አደረገ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 15, "split": "train"}
 {"form": "ዐረዘ", "root": "ዐ-ረ-ዘ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "አለበሰ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 15, "split": "train"}
 {"form": "አንበዘ", "root": "ነ-በ-ዘ", "pos": "verb", "number": null, "gender": null, "class": "ተንበለ", "gloss_amharic": "ልብ አሳጣ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 15, "split": "val"}
 {"form": "አውገዘ", "root": "ወ-ገ-ዘ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "ለየ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 15, "split": "test"}
@@ -1418,7 +1418,7 @@
 {"form": "አርሰየ", "root": "ረ-ሰ-የ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "አስጠጋ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 18, "split": "train"}
 {"form": "አቃረየ", "root": "ቀ-ረ-የ", "pos": "verb", "number": null, "gender": null, "class": "ባረከ", "gloss_amharic": "ሰዋ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 18, "split": "test"}
 {"form": "አቅሌለየ", "root": "ቀ-ለ-የ-ለ-የ", "pos": "verb", "number": null, "gender": null, "class": "ሴሰየ", "gloss_amharic": "አቅላላ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 18, "split": "train"}
-{"form": "አቅዜዘየ", "root": "ቀ-ዘ-የ-ዘ-የ", "pos": "verb", "number": null, "gender": null, "class": "ሴሰየ", "gloss_amharic": "ቅዝዝ ቅዝዝ አለ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 18, "split": "train"}
+{"form": "አቅዜዘየ", "root": "ቀ-ዘ-የ", "pos": "verb", "number": null, "gender": null, "class": "ሴሰየ", "gloss_amharic": "ቅዝዝ ቅዝዝ አለ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 18, "split": "train"}
 {"form": "አበየ", "root": "አ-በ-የ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "እንቢ አለ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 18, "split": "train"}
 {"form": "ዐብየ", "root": "ዐ-በ-የ", "pos": "verb", "number": null, "gender": null, "class": "ቀተለ", "gloss_amharic": "ከፍከፍ አለ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 18, "split": "train"}
 {"form": "አናሕሰየ", "root": "ነ-ሐ-ሰ-የ", "pos": "verb", "number": null, "gender": null, "class": "ማህረከ", "gloss_amharic": "አቃለለ፣ይቅር አለ", "book": "Ge'ez verb list (class marks and Amharic glosses)", "page": 18, "split": "train"}

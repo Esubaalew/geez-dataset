@@ -129,7 +129,7 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 | `data/books/geezbook_1z/forms.jsonl` | 1,820 |
 | `data/books/yared_shiferaw/forms.jsonl` | 12,633 |
 | `data/books/verb_list/forms.jsonl` | 1,784 |
-| `data/unified/book_root_splits.tsv` | 681 |
+| `data/unified/book_root_splits.tsv` | 676 |
 | `data/true_parallel_pairs.jsonl` | 2,997 |
 
 A synthetic line is `{"features": {...}, "surface_form": "..."}`. The analyze files use `"analysis"` instead of `"features"`.
@@ -147,9 +147,9 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 | Rows | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
 | gold (Merho Ges) | 8,104 | 1,165 | 1,548 | 1,128 |
-| other books | 9,775 | 568 | 719 | 21,400 |
+| other books | 9,784 | 571 | 721 | 21,386 |
 
-Not loaded, other books: `NO_ROOT` 4,321, `CHECK` 15,333, `EXCLUDED` 1,746. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
+Not loaded, other books: `NO_ROOT` 4,321, `CHECK` 15,300, `EXCLUDED` 1,765. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
 
 ## Sources
 
