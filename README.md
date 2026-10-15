@@ -134,7 +134,7 @@ A synthetic line is `{"features": {...}, "surface_form": "..."}`. The analyze fi
 
 `data/lexicon/book_forms.jsonl` holds forms printed in the books other than the Merho Ges gold, in the gold label set: *ርባሐ ስም ወአንቀጽ* (አለቃ ደስታ ተክለ ወልድ, 1946 E.C.), the grammar tables and the dictionary of Kidane Wold, the teaching books ፍሬ ግእዝ, የግእዝ መማሪያ (Year 1) and ግዕዝ ቋንቋ ፪, and the first 14 rows (Kidane Wold triples of ወ-ቀ-የ, ወ-ረ-ወ, ወ-ረ-የ; *Mesehaf Gese Wesewasew* nouns and adjectives of መ-ከ-ለ and ሰ-ነ-ገ). Each row names its book and printed page. The root is the book's own (paradigm head, printed triple, derived-stem section), or the root of the gold record with the same headword; it is never inferred. `status` is empty for a row that loads, `CHECK` for a reading or label that is not settled or a type the training target has no slot for (infinitives, gerunds, forms with a possessive suffix), `CONFLICT` when the gold gives the same form another root, and `NO_ROOT`. `split` is `heldout` when the root or the form is a gold val/test one: those rows are never trained on and score the model on forms from other books; the rest are `train`.
 
-`data/books/<book>/forms.jsonl` lists every form of the entry lists of ፍሬ ግእዝ (4,039 forms of 2,105 entries) and የግዕዝ መማሪያ by ለይኩን ብርሃኑ (1,817 forms of 1,751 entries). A line has `form`, `root` (as printed in the entry, or null), `pos`, `number`, `gender`, `class` (the paradigm class), `book`, `page` (scan page; one scan page holds two printed pages) and `split`. The same forms are rows of `data/unified/` with `source_ref` pointing at the line. Verbs there do not load: the entry lists give no tense or person. Eight forms of የግዕዝ መማሪያ whose reading is not settled are left out.
+`data/books/<book>/forms.jsonl` lists every form of the entry lists of ፍሬ ግእዝ (4,039 forms of 2,105 entries) and የግዕዝ መማሪያ by ለይኩን ብርሃኑ (1,817 forms of 1,751 entries). A line has `form`, `root` (as printed in the entry; for a form without one, the root of a row of the same spelling when the entry's headword is that root; else null), `pos`, `number`, `gender`, `class` (the paradigm class), `book`, `page` (scan page; one scan page holds two printed pages) and `split`. The same forms are rows of `data/unified/` with `source_ref` pointing at the line. Verbs there do not load: the entry lists give no tense or person. Eight forms of የግዕዝ መማሪያ whose reading is not settled are left out.
 
 Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed Kidane Wold transcription in [geezorg/data](https://github.com/geezorg/data) (CC BY-SA 4.0, commit `3904462c`).
 
@@ -145,9 +145,9 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 | Rows | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
 | gold (Merho Ges) | 8,104 | 1,165 | 1,548 | 1,128 |
-| other books | 8,070 | 423 | 505 | 9,044 |
+| other books | 8,083 | 422 | 497 | 9,040 |
 
-Not loaded, other books: `NO_ROOT` 3,825, `CHECK` 4,643, `EXCLUDED` 576. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
+Not loaded, other books: `NO_ROOT` 3,807, `CHECK` 4,653, `EXCLUDED` 580. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
 
 ## Sources
 

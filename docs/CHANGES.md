@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,104 / 1,165 / 1,548 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 8,070 / 423 / 505 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 8,083 / 422 / 497 |
 | unified rows | 24,352 | 29,987 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -67,8 +67,11 @@ A form cell with two forms of different stems is split into one row per form (`s
 
 ## Two more books
 
-- The entry lists of ፍሬ ግእዝ (4,039 forms) and of የግዕዝ መማሪያ by ለይኩን ብርሃኑ (1,817 forms) are in `data/books/` and in `data/unified/` (5,856 rows; 245 load: train 173, val 31, test 41). Eight forms of የግዕዝ መማሪያ whose reading is not settled are left out.
+- The entry lists of ፍሬ ግእዝ (4,039 forms) and of የግዕዝ መማሪያ by ለይኩን ብርሃኑ (1,817 forms) are in `data/books/` and in `data/unified/` (5,856 rows; 249 load: train 176, val 32, test 41). Eight forms of የግዕዝ መማሪያ whose reading is not settled are left out.
 - 82 roots found only in these books are added to `data/unified/book_root_splits.tsv` (val 7, test 7, train 68). The synthetic lines of the three of them that the generator writes (ነ-ቀ-ለ, ነ-ኀ-ለ, መ-ገ-ለ; 407 lines) moved from the training pair to `data/synthetic/`.
+- A row without a root takes the split of the rows of the same spelling (twin letters merged), so that a spelling sits in one split; gold rows keep their split. 290 rows moved. Such a row of these two books also takes the root of those rows when the entry's headword is that root (20 rows); otherwise its root stays empty. `data/lexicon/book_forms.jsonl` follows the moved rows.
+- ጌገየ: every row of this verb is written ገ-ገ-የ (it was ገ-የ-ገ-የ in the p. 69 table and in 16 rows of `data/lexicon/book_forms.jsonl`), and all of them are in train.
+- አልቦ (root አ-ለ-በ) is in train with the other forms of its entry.
 
 ## README
 

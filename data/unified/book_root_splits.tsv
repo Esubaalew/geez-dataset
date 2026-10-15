@@ -319,7 +319,7 @@ root	stratum	rows	split
 ገ-በ-ጸ	nominal/nomark	1	train
 ገ-ነ-ጸ-ለ	verb/nomark	1	train
 ገ-የ-ለ	verb/nomark	1	train
-ገ-ገ-የ	verb/nomark	13	val
+ገ-ገ-የ	verb/nomark	13	train
 ጠ-መ-ረ	verb/nomark	1	val
 ጠ-መ-ጠ-መ	verb/nomark	1	train
 ጠ-ቀ-ለ-ለ	verb/nomark	1	train
