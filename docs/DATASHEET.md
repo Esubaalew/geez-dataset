@@ -8,7 +8,7 @@
 
 ## Method
 
-Gold rows were read from page scans by OCR and corrected against the page images, then compared row by row with Yared Shiferaw's typed edition of the same book; rows that do not match are flagged. Rows of the other books come from scans and typed editions. A root is the book's own or the root of the gold record with the same headword; it is not taken from a model or another analyser. Where a gold stem rests on the shape of the form and not on a printed gloss, `docs/CHANGES.md` marks it.
+Gold rows were machine-read from page scans and corrected against the page images, then compared row by row with Yared Shiferaw's typed edition of the same book; rows that do not match are flagged. Rows of the other books come from scans and typed editions. A root is the book's own or the root of the gold record with the same headword; it is not taken from a model or another analyser. Where a gold stem rests on the shape of the form and not on a printed gloss, `docs/CHANGES.md` marks it.
 
 ## Splits
 

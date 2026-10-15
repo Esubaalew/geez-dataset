@@ -1,4 +1,4 @@
 split	gold_file	file_line	record_id	rows	form	page	reason
-val	merho_ges_gold_val.jsonl	116	c7e34a68405f	0;1	ሐገገ	318	the book prints ሐገገ twice (p.306 printed, scan 318) with class marks ቀተ and ቀደ: two conjugation classes of the same spelling, so both rows are real, not an OCR copy
+val	merho_ges_gold_val.jsonl	116	c7e34a68405f	0;1	ሐገገ	318	the book prints ሐገገ twice (p.306 printed, scan 318) with class marks ቀተ and ቀደ: two conjugation classes of the same spelling, so both rows are real, not a copy made in reading
 train	merho_ges_gold_train.jsonl		f10d34272c14;5055ea8c7c7e	193:1;195:0	ርሙም	77	p.77 has two ረመመ entries and both list ርሙም
 train	merho_ges_gold_train.jsonl		8eb2091ebbc9;e4d51018a3e5	409:1;1113:1	መጽብር	137	the book prints መጽብር under both አጽበረ (p.137) and ጸበረ (p.145); typed edition T00597 and T00632 list it in both entries, so both rows are real
