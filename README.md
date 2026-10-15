@@ -34,7 +34,7 @@ Three combined files sit directly under `data/`: `geez_amharic_dictionary.jsonl`
 
 A root appears in one split. Each record keeps a `record_id`. A `geez_form` may hold more than one spelling, separated by ` / `. Noun and adjective rows have a `type` and no tense.
 
-323 rows are listed in `merho_ges_gold_flagged_rows.tsv`. They stay in the files and stay out of the pairs that load. 302 of them come from a comparison with the typed edition of the same book (Yared Shiferaw's Unicode text of መጽሐፈ ግስ ወሰዋስው): forms the book does not print, and rows whose type or gender disagrees with the book's own tag (ባዕ ቅ, በብ, ለሴ). Two repeated pairs are listed in `merho_ges_gold_allowed_duplicates.tsv` because the book prints each of them twice.
+All 323 previously flagged rows in `merho_ges_gold_flagged_rows.tsv` have been resolved against the printed *Merho Ges* scan, Yared Shiferaw's typed edition, and dual OCR passes (either corrected in place and unflagged or removed when unprinted/garbled), leaving 0 flagged rows. Three repeated pairs are listed in `merho_ges_gold_allowed_duplicates.tsv` because the book prints each of them twice.
 
 Field reference: [docs/schema.md](docs/schema.md).
 
@@ -105,10 +105,10 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 
 | File | Lines |
 |---|---:|
-| `data/paradigms/synthetic_morphology_train.jsonl` | 121,206 |
-| `data/paradigms/synthetic_morphology_analyze.jsonl` | 121,206 |
-| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 17,164 |
-| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 17,164 |
+| `data/paradigms/synthetic_morphology_train.jsonl` | 121,092 |
+| `data/paradigms/synthetic_morphology_analyze.jsonl` | 121,092 |
+| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 17,166 |
+| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 17,166 |
 | `data/lexicon/classical_dictionary_kidane_wold.jsonl` | 13,234 |
 | `data/lexicon/modern_geez_amharic_dictionary.jsonl` | 1,722 |
 | `data/lexicon/kidane_wold_verb_triples.jsonl` | 583 |
@@ -123,8 +123,8 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 | `data/corpora/phrasebook_pairs.jsonl` | 218 |
 | `data/geez_amharic_dictionary.jsonl` | 14,956 |
 | `data/geez_literature_corpus.txt` | 6,090 |
-| `data/unified/geez_morphology_rows.jsonl` | 24,299 |
-| `data/unified/book_root_splits.tsv` | 256 |
+| `data/unified/geez_morphology_rows.jsonl` | 24,135 |
+| `data/unified/book_root_splits.tsv` | 254 |
 | `data/true_parallel_pairs.jsonl` | 2,997 |
 
 A synthetic line is `{"features": {...}, "surface_form": "..."}`. The analyze files use `"analysis"` instead of `"features"`.
@@ -135,14 +135,14 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 
 ## Unified rows
 
-`data/unified/geez_morphology_rows.jsonl` holds 24,299 labelled forms in one schema: the gold paradigm rows and the rows of six other books (ርባሐ ስም ወአንቀጽ, Kidane Wold's tables and dictionary, the typed Mesehaf Gese Wesewasew, ፍሬ ግእዝ, የግእዝ መማሪያ, ግዕዝ ቋንቋ ፪). Every row names its book and page. A row that does not load keeps its `status` and the reason. Fields, statuses and the split rule: [data/unified/README.md](data/unified/README.md).
+`data/unified/geez_morphology_rows.jsonl` holds 24,135 labelled forms in one schema: the gold paradigm rows and the rows of six other books (ርባሐ ስም ወአንቀጽ, Kidane Wold's tables and dictionary, the typed Mesehaf Gese Wesewasew, ፍሬ ግእዝ, የግእዝ መማሪያ, ግዕዝ ቋንቋ ፪). Every row names its book and page. A row that does not load keeps its `status` and the reason. Fields, statuses and the split rule: [data/unified/README.md](data/unified/README.md).
 
 | Rows | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
-| gold (Merho Ges) | 8,060 | 1,154 | 1,512 | 1,381 |
-| other books | 7,904 | 393 | 461 | 3,434 |
+| gold (Merho Ges) | 8,125 | 1,165 | 1,531 | 1,128 |
+| other books | 7,910 | 392 | 451 | 3,433 |
 
-Not loaded, other books: `NO_ROOT` 2,443, `CHECK` 571, `EXCLUDED` 420. Not loaded, gold: `NO_ROOT` 1,059, `FLAGGED` 322.
+Not loaded, other books: `NO_ROOT` 2,443, `CHECK` 570, `EXCLUDED` 420. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
 
 ## Sources
 
@@ -167,7 +167,7 @@ Not loaded, other books: `NO_ROOT` 2,443, `CHECK` 571, `EXCLUDED` 420. Not loade
 - A Kidane Wold derivative whose root no other book gives is class `nominal`, in train only.
 - Spelling twins (ሐ-በ-ለ / ኀ-በ-ለ, ቀ-ጸ-ለ / ቈ-ጸ-ለ and the like) count as different roots for the split; 19 such pairs sit in different splits.
 
-- Rows with no root yet are kept in the files and do not load (1,129 pairs). No record is marked `root_unsettled`.
+- Rows with no root yet are kept in the files and do not load (1,128 pairs).
 - The rows listed in `merho_ges_gold_flagged_rows.tsv` do not load.
 - 8,095 of the 8,489 noun and adjective rows have no Amharic gloss.
 - 19 record titles still carry a parenthesis: they are book section headings printed with parentheses.

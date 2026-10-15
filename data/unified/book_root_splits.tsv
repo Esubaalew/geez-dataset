@@ -1,7 +1,7 @@
 root	stratum	rows	split
 ሀ-መ-ደ	verb/ቀደ	10	train
 ሀ-ረ-ገ	verb/nomark	9	train
-ሀ-ቀ-የ	verb/ቀተ	11	val
+ሀ-ቀ-ቀ	verb/nomark	5	train
 ሀ-በ-ነ	verb/ቀደ	3	val
 ሀ-በ-ወ	verb/nomark	4	train
 ሀ-በ-ጠ	verb/ቀተ	9	train
@@ -62,7 +62,6 @@ root	stratum	rows	split
 ሰ-የ-ፈ	verb/ቀደ	7	train
 ሰ-ጠ-ረ	verb/nomark	6	train
 ሰ-ጠ-ነ	verb/nomark	5	train
-ሰ-ፈ-ጠ	verb/nomark	9	train
 ሰ-ፈ-ፈ	verb/ቀተ	6	train
 ቀ-ሀ-መ	verb/nomark	13	val
 ቀ-ለ-መ	verb/ቀተ	15	train
@@ -78,7 +77,6 @@ root	stratum	rows	split
 ቀ-ደ-ሰ	verb/ርዕስ	61	train
 ቀ-ጠ-ቀ-ጠ	verb/ተን	10	train
 ቀ-ጠ-በ	verb/nomark	5	train
-ቀ-ጠ-ጠ	verb/nomark	5	train
 ቀ-ጠ-ፈ	verb/ቀተ	10	val
 ቀ-ጸ-ወ	verb/nomark	4	train
 ቀ-ፈ-ለ	verb/ቀደ	12	train
@@ -89,7 +87,7 @@ root	stratum	rows	split
 በ-ረ-ጸ	verb/ቀተ	6	train
 በ-ሰ-ለ	verb/ቀተ	14	train
 በ-ሰ-በ-ሰ	verb/ተን	5	train
-በ-ቀ-ጸ	verb/ቀተ	2	train
+በ-ቀ-ጸ	verb/ቀተ	2	test
 በ-ተ-ረ	verb/nomark	6	train
 በ-አ-ረ	verb/nomark	9	train
 በ-ከ-ሀ	verb/nomark	3	train
@@ -113,7 +111,6 @@ root	stratum	rows	split
 ነ-መ-ረ	verb/nomark	7	train
 ነ-ቀ-በ	verb/ቀተ	11	train
 ነ-አ-ለ	verb/ቀተ	4	train
-ነ-አ-ደ	verb/ክህ	6	train
 ነ-የ-አ	verb/nomark	1	train
 ነ-ደ-ለ	verb/ቀተ	13	train
 ነ-ደ-ፈ	verb/ቀተ	14	train
@@ -124,7 +121,7 @@ root	stratum	rows	split
 ነ-ገ-ፈ	verb/ቀተ	13	train
 ነ-ጠ-የ	verb/nomark	7	train
 ነ-ጠ-ፈ	verb/ቀተ	11	val
-ነ-ጸ-ፈ	verb/ቀተ	16	test
+ነ-ጸ-ፈ	verb/ቀተ	16	val
 ነ-ፈ-ፈ	verb/nomark	3	val
 አ-ለ-ፈ	verb/ቀደ	17	train
 አ-መ-ነ	verb/ቀተ	27	val

@@ -4,9 +4,9 @@ v1: tag `v1`, commit `337cdf0`.
 
 | | v1 | v2 |
 |---|---:|---:|
-| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,060 / 1,154 / 1,512 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 7,904 / 393 / 461 |
-| unified rows | 24,352 | 24,299 |
+| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,125 / 1,165 / 1,531 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 7,910 / 392 / 451 |
+| unified rows | 24,352 | 24,135 |
 | synthetic, lexicon, parallel and corpus files | | unchanged |
 
 ## Gold
@@ -60,3 +60,11 @@ A form cell with two forms of different stems is split into one row per form (`s
 ## README
 
 Line counts corrected to the files: synthetic files 121,206 (v1 README: 125,020); `book_forms.jsonl` 14,110 (14,118); gold test records 219 (220).
+
+## Master Flagged-Rows & Gap Cleanup (2026-10-15)
+
+- Resolved or removed all 323 flagged rows in `merho_ges_gold_flagged_rows.tsv` (`0` flagged rows remain):
+  - Removed 158 unprinted/duplicate/garbled rows across `train`, `val`, and `test` (26 flagged and 18 unflagged duplicate 3ms past headwords mislabelled as nominals, 32 Amharic glosses and `የ...` domain notes extracted as Ge'ez rows, 17 OCR book-tag fragments such as `ሰሴ`, `ሳስ`, `እብ`, `ኣብ`, `ኢብ`, `ክብ`, `ብዙ`, `ኩፋኔ`, and unprinted or merged OCR rows).
+  - Corrected labels on 52 feminine plural adjectives (`-አት`/`-ዋት`/`-ያት` tagged `በብ` after `ለሴ`/`ለስ`: `gender="m"` -> `"f"`), 17 agentive adjectives (`ባዕ ሣ ቅ`: `type="noun"` -> `"adjective"`), and 25 nominal/verb type, gender, number, stem, and object-suffix mismatches.
+  - Corrected section-mismatched OCR roots and forms verified against the printed book and Yared Shiferaw's typed edition (`ደ-ኀ-ነ` -> `ደ-ኀ-ኀ` on pp. 41-42, `ገ-ደ-ፈ` -> `ገ-የ-ረ` on p. 143, `ቀ-ጠ-ነ` -> `ቀ-ጠ-ጠ` on p. 329, `ለ-አ-ከ` -> `ለ-ከ-አ` on p. 210, `ረ-ገ-በ` -> `ረ-ገ-ዐ` on p. 214, `ጐ-ጐ-ለ` -> `ጐ-ጐ-አ` on p. 231, `ሐ-ቀ-ቀ` -> `ሐ-ቀ-የ` on p. 280, `ነ-አ-የ` -> `ነ-አ-ደ` on p. 310, `ነ-ጐ-ደ-ጐ` -> `ነ-ጐ-ደ-ጐ-ደ` on p. 312, `መ-ለ-ጠ` -> `ሰ-ፈ-ጠ` on p. 329, `አ-ከ-ተ` -> `አ-ከ-ጠ` on p. 329, `ደ-ነ-ደ-ነ` -> `ደ-ነ-ጸ` on p. 341, `ዐ-ሰ-ተ` -> `ዐ-ሰ-ቀ` on p. 156, `ሰ-ከ-ተ` -> `ሰ-ከ-ተ-የ` on p. 290, `ጠ-ጠ-በ` -> `ጠ-በ-ጠ-በ` on p. 181), plus held-back strong OCR spelling fixes.
+  - Full audit log recorded in `geez-dataset-internal/gold_changes/fix_1015_master/master_cleanup_applied.tsv`.

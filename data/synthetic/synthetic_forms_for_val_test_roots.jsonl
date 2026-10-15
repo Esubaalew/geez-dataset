@@ -1999,6 +1999,117 @@
 {"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-b-r"}, "surface_form": "ነዐብር"}
 {"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-b-r"}, "surface_form": "እዕብር"}
 {"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-b-r"}, "surface_form": "ንዕብር"}
+{"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዕስቃ"}
+{"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዐሰቅክን"}
+{"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐስቃ"}
+{"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትዕስቃ"}
+{"features": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ይዕስቃ"}
+{"features": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዐሰቃ"}
+{"features": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "የዐስቃ"}
+{"features": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዕስቂ"}
+{"features": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዐሰቅኪ"}
+{"features": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐስቂ"}
+{"features": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትዕስቂ"}
+{"features": {"gender": "f", "number": "s", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትዕስቅ"}
+{"features": {"gender": "f", "number": "s", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዐሰቀት"}
+{"features": {"gender": "f", "number": "s", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐስቅ"}
+{"features": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዕስቁ"}
+{"features": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዐሰቅክሙ"}
+{"features": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐስቁ"}
+{"features": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትዕስቁ"}
+{"features": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ይዕስቁ"}
+{"features": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዐሰቁ"}
+{"features": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "የዐስቁ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዕስቅ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዐሰቅከ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐስቅ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትዕስቅ"}
+{"features": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ይዕስቅ"}
+{"features": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "የዐስቅ"}
+{"features": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐስቀ"}
+{"features": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐስቀት"}
+{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐስቁ"}
+{"features": {"person": "3", "gender": "f", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐስቃ"}
+{"features": {"person": "2", "gender": "m", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐሰቅከ"}
+{"features": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐሰቅኪ"}
+{"features": {"person": "2", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐሰቅክሙ"}
+{"features": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐሰቅክን"}
+{"features": {"person": "1", "gender": "c", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐሰቅኩ"}
+{"features": {"person": "1", "gender": "c", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐሰቅነ"}
+{"features": {"person": "3", "gender": "m", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ይትዐሰቅ"}
+{"features": {"person": "3", "gender": "f", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትትዐሰቅ"}
+{"features": {"person": "3", "gender": "m", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ይትዐሰቁ"}
+{"features": {"person": "3", "gender": "f", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ይትዐሰቃ"}
+{"features": {"person": "2", "gender": "f", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትትዐሰቂ"}
+{"features": {"person": "2", "gender": "m", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትትዐሰቁ"}
+{"features": {"person": "2", "gender": "f", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትትዐሰቃ"}
+{"features": {"person": "1", "gender": "c", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "እትዐሰቅ"}
+{"features": {"person": "1", "gender": "c", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ንትዐሰቅ"}
+{"features": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕሰቀ"}
+{"features": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕሰቀት"}
+{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕሰቁ"}
+{"features": {"person": "3", "gender": "f", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕሰቃ"}
+{"features": {"person": "2", "gender": "m", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕሰቅከ"}
+{"features": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕሰቅኪ"}
+{"features": {"person": "2", "gender": "m", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕሰቅክሙ"}
+{"features": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕሰቅክን"}
+{"features": {"person": "1", "gender": "c", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕሰቅኩ"}
+{"features": {"person": "1", "gender": "c", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕሰቅነ"}
+{"features": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አስተዕሰቀ"}
+{"features": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አስተዕሰቀት"}
+{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አስተዕሰቁ"}
+{"features": {"person": "3", "gender": "f", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አስተዕሰቃ"}
+{"features": {"person": "2", "gender": "m", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አስተዕሰቅከ"}
+{"features": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አስተዕሰቅኪ"}
+{"features": {"person": "2", "gender": "m", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አስተዕሰቅክሙ"}
+{"features": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አስተዕሰቅክን"}
+{"features": {"person": "1", "gender": "c", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አስተዕሰቅኩ"}
+{"features": {"person": "1", "gender": "c", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አስተዕሰቅነ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትትዐሰቅ"}
+{"features": {"gender": "m", "number": "s", "person": "3", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ይትዐሰቅ"}
+{"features": {"gender": "f", "number": "s", "person": "3", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትትዐሰቅ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትትዐሰቅ"}
+{"features": {"gender": "f", "number": "s", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትትዐሰቂ"}
+{"features": {"gender": "c", "number": "s", "person": "1", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "እትዐሰቅ"}
+{"features": {"gender": "m", "number": "p", "person": "3", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ይትዐሰቁ"}
+{"features": {"gender": "f", "number": "p", "person": "3", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ይትዐሰቃ"}
+{"features": {"gender": "m", "number": "p", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትትዐሰቁ"}
+{"features": {"gender": "f", "number": "p", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ትትዐሰቃ"}
+{"features": {"gender": "c", "number": "p", "person": "1", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ንትዐሰቅ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐሰቅ"}
+{"features": {"gender": "f", "number": "s", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐሰቂ"}
+{"features": {"gender": "m", "number": "p", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐሰቁ"}
+{"features": {"gender": "f", "number": "p", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ተዐሰቃ"}
+{"features": {"gender": "m", "number": "s", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ያዐስቅ"}
+{"features": {"gender": "f", "number": "s", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ታዐስቅ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ታዐስቅ"}
+{"features": {"gender": "f", "number": "s", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ታዐስቂ"}
+{"features": {"gender": "c", "number": "s", "person": "1", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዐስቅ"}
+{"features": {"gender": "m", "number": "p", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ያዐስቁ"}
+{"features": {"gender": "f", "number": "p", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ያዐስቃ"}
+{"features": {"gender": "m", "number": "p", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ታዐስቁ"}
+{"features": {"gender": "f", "number": "p", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ታዐስቃ"}
+{"features": {"gender": "c", "number": "p", "person": "1", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ናዐስቅ"}
+{"features": {"gender": "m", "number": "s", "person": "3", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ያዕስቅ"}
+{"features": {"gender": "f", "number": "s", "person": "3", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ታዕስቅ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ታዕስቅ"}
+{"features": {"gender": "f", "number": "s", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ታዕስቂ"}
+{"features": {"gender": "c", "number": "s", "person": "1", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕስቅ"}
+{"features": {"gender": "m", "number": "p", "person": "3", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ያዕስቁ"}
+{"features": {"gender": "f", "number": "p", "person": "3", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ያዕስቃ"}
+{"features": {"gender": "m", "number": "p", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ታዕስቁ"}
+{"features": {"gender": "f", "number": "p", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ታዕስቃ"}
+{"features": {"gender": "c", "number": "p", "person": "1", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ናዕስቅ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕስቅ"}
+{"features": {"gender": "f", "number": "s", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕስቂ"}
+{"features": {"gender": "m", "number": "p", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕስቁ"}
+{"features": {"gender": "f", "number": "p", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዕስቃ"}
+{"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዐሰቅኩ"}
+{"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ዐሰቅነ"}
+{"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "አዐስቅ"}
+{"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ነዐስቅ"}
+{"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "እዕስቅ"}
+{"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q"}, "surface_form": "ንዕስቅ"}
 {"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s2-r"}, "surface_form": "ዕሥራ"}
 {"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "a2-s2-r"}, "surface_form": "ዐሠርክን"}
 {"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s2-r"}, "surface_form": "ተዐሥራ"}
@@ -4953,118 +5064,6 @@
 {"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-r-h1"}, "surface_form": "ንገርህ"}
 {"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-r-h1"}, "surface_form": "እግራህ"}
 {"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-r-h1"}, "surface_form": "ንግራህ"}
-{"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ግሥሳ"}
-{"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ገሠስክን"}
-{"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትገሥሳ"}
-{"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትግሥሳ"}
-{"features": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ይግሥሳ"}
-{"features": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ገሠሳ"}
-{"features": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ይገሥሳ"}
-{"features": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ግሥሲ"}
-{"features": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ገሠስኪ"}
-{"features": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትገሥሲ"}
-{"features": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትግሥሲ"}
-{"features": {"gender": "f", "number": "s", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትግሥስ"}
-{"features": {"gender": "f", "number": "s", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ገሠሰት"}
-{"features": {"gender": "f", "number": "s", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትገሥስ"}
-{"features": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ግሥሱ"}
-{"features": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ገሠስክሙ"}
-{"features": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትገሥሱ"}
-{"features": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትግሥሱ"}
-{"features": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ይግሥሱ"}
-{"features": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ገሠሱ"}
-{"features": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ይገሥሱ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ግሥስ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ገሠስከ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትገሥስ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትግሥስ"}
-{"features": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ይግሥስ"}
-{"features": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ገሠሰ"}
-{"features": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ይገሥስ"}
-{"features": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሥሰ"}
-{"features": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሥሰት"}
-{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሥሱ"}
-{"features": {"person": "3", "gender": "f", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሥሳ"}
-{"features": {"person": "2", "gender": "m", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሠስከ"}
-{"features": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሠስኪ"}
-{"features": {"person": "2", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሠስክሙ"}
-{"features": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሠስክን"}
-{"features": {"person": "1", "gender": "c", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሠስኩ"}
-{"features": {"person": "1", "gender": "c", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሠስነ"}
-{"features": {"person": "3", "gender": "m", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ይትገሠስ"}
-{"features": {"person": "3", "gender": "f", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትትገሠስ"}
-{"features": {"person": "3", "gender": "m", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ይትገሠሱ"}
-{"features": {"person": "3", "gender": "f", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ይትገሠሳ"}
-{"features": {"person": "2", "gender": "f", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትትገሠሲ"}
-{"features": {"person": "2", "gender": "m", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትትገሠሱ"}
-{"features": {"person": "2", "gender": "f", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትትገሠሳ"}
-{"features": {"person": "1", "gender": "c", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "እትገሠስ"}
-{"features": {"person": "1", "gender": "c", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ንትገሠስ"}
-{"features": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሠሰ"}
-{"features": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሠሰት"}
-{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሠሱ"}
-{"features": {"person": "3", "gender": "f", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሠሳ"}
-{"features": {"person": "2", "gender": "m", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሠስከ"}
-{"features": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሠስኪ"}
-{"features": {"person": "2", "gender": "m", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሠስክሙ"}
-{"features": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሠስክን"}
-{"features": {"person": "1", "gender": "c", "number": "s", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሠስኩ"}
-{"features": {"person": "1", "gender": "c", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሠስነ"}
-{"features": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አስተግሠሰ"}
-{"features": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አስተግሠሰት"}
-{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አስተግሠሱ"}
-{"features": {"person": "3", "gender": "f", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አስተግሠሳ"}
-{"features": {"person": "2", "gender": "m", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አስተግሠስከ"}
-{"features": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አስተግሠስኪ"}
-{"features": {"person": "2", "gender": "m", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አስተግሠስክሙ"}
-{"features": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አስተግሠስክን"}
-{"features": {"person": "1", "gender": "c", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አስተግሠስኩ"}
-{"features": {"person": "1", "gender": "c", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አስተግሠስነ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትትገሠስ"}
-{"features": {"gender": "m", "number": "s", "person": "3", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ይትገሠስ"}
-{"features": {"gender": "f", "number": "s", "person": "3", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትትገሠስ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትትገሠስ"}
-{"features": {"gender": "f", "number": "s", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትትገሠሲ"}
-{"features": {"gender": "c", "number": "s", "person": "1", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "እትገሠስ"}
-{"features": {"gender": "m", "number": "p", "person": "3", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ይትገሠሱ"}
-{"features": {"gender": "f", "number": "p", "person": "3", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ይትገሠሳ"}
-{"features": {"gender": "m", "number": "p", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትትገሠሱ"}
-{"features": {"gender": "f", "number": "p", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ትትገሠሳ"}
-{"features": {"gender": "c", "number": "p", "person": "1", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ንትገሠስ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሠስ"}
-{"features": {"gender": "f", "number": "s", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሠሲ"}
-{"features": {"gender": "m", "number": "p", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሠሱ"}
-{"features": {"gender": "f", "number": "p", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ተገሠሳ"}
-{"features": {"gender": "m", "number": "s", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ያገሥስ"}
-{"features": {"gender": "f", "number": "s", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ታገሥስ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ታገሥስ"}
-{"features": {"gender": "f", "number": "s", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ታገሥሲ"}
-{"features": {"gender": "c", "number": "s", "person": "1", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አገሥስ"}
-{"features": {"gender": "m", "number": "p", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ያገሥሱ"}
-{"features": {"gender": "f", "number": "p", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ያገሥሳ"}
-{"features": {"gender": "m", "number": "p", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ታገሥሱ"}
-{"features": {"gender": "f", "number": "p", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ታገሥሳ"}
-{"features": {"gender": "c", "number": "p", "person": "1", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ናገሥስ"}
-{"features": {"gender": "m", "number": "s", "person": "3", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ያግሥስ"}
-{"features": {"gender": "f", "number": "s", "person": "3", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ታግሥስ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ታግሥስ"}
-{"features": {"gender": "f", "number": "s", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ታግሥሲ"}
-{"features": {"gender": "c", "number": "s", "person": "1", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሥስ"}
-{"features": {"gender": "m", "number": "p", "person": "3", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ያግሥሱ"}
-{"features": {"gender": "f", "number": "p", "person": "3", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ያግሥሳ"}
-{"features": {"gender": "m", "number": "p", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ታግሥሱ"}
-{"features": {"gender": "f", "number": "p", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ታግሥሳ"}
-{"features": {"gender": "c", "number": "p", "person": "1", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ናግሥስ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሥስ"}
-{"features": {"gender": "f", "number": "s", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሥሲ"}
-{"features": {"gender": "m", "number": "p", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሥሱ"}
-{"features": {"gender": "f", "number": "p", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "አግሥሳ"}
-{"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ገሠስኩ"}
-{"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ገሠስነ"}
-{"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "እገሥስ"}
-{"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ንገሥስ"}
-{"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "እግሥስ"}
-{"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s"}, "surface_form": "ንግሥስ"}
 {"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "g-z-r"}, "surface_form": "ግዝራ"}
 {"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-z-r"}, "surface_form": "ገዘርክን"}
 {"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-z-r"}, "surface_form": "ትገዝራ"}
@@ -9571,6 +9570,7 @@
 {"features": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "n-g-r"}, "surface_form": "ትነግር"}
 {"features": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "n-g-r"}, "surface_form": "ትንግር"}
 {"features": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "n-g-r"}, "surface_form": "ይንግር"}
+{"features": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "n-g-r"}, "surface_form": "ነገረ"}
 {"features": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "n-g-r"}, "surface_form": "ይነግር"}
 {"features": {"person": "3", "gender": "m", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "n-g-r"}, "surface_form": "ተነግረ"}
 {"features": {"person": "3", "gender": "f", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "n-g-r"}, "surface_form": "ተነግረት"}
@@ -9702,7 +9702,6 @@
 {"features": {"person": "2", "gender": "m", "number": "s", "tense": "present", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "ትነቁ"}
 {"features": {"person": "2", "gender": "f", "number": "s", "tense": "present", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "ትነቅዊ"}
 {"features": {"person": "1", "gender": "c", "number": "s", "tense": "present", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "እነቁ"}
-{"features": {"person": "3", "gender": "m", "number": "p", "tense": "present", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "ይነቅዉ"}
 {"features": {"person": "3", "gender": "f", "number": "p", "tense": "present", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "ይነቅዋ"}
 {"features": {"person": "2", "gender": "m", "number": "p", "tense": "present", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "ትነቅዉ"}
 {"features": {"person": "2", "gender": "f", "number": "p", "tense": "present", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "ትነቅዋ"}
@@ -9712,6 +9711,7 @@
 {"features": {"person": "2", "gender": "m", "number": "s", "tense": "subjunctive", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "ትንቁ"}
 {"features": {"person": "2", "gender": "f", "number": "s", "tense": "subjunctive", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "ትንቅዊ"}
 {"features": {"person": "1", "gender": "c", "number": "s", "tense": "subjunctive", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "እንቁ"}
+{"features": {"person": "3", "gender": "m", "number": "p", "tense": "subjunctive", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "ይንቅዉ"}
 {"features": {"person": "3", "gender": "f", "number": "p", "tense": "subjunctive", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "ይንቅዋ"}
 {"features": {"person": "2", "gender": "m", "number": "p", "tense": "subjunctive", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "ትንቅዉ"}
 {"features": {"person": "2", "gender": "f", "number": "p", "tense": "subjunctive", "stem": "basic", "verb_type": "weak_final", "root": "n-q-w"}, "surface_form": "ትንቅዋ"}
@@ -14621,6 +14621,28 @@
 {"features": {"gender": "c", "number": "p", "person": "1", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-b-r", "object_suffix": "ክሙ", "object_person": "2", "object_number": "p", "object_gender": "m", "object": "2mp"}, "surface_form": "ናዐብረክሙ"}
 {"features": {"gender": "m", "number": "p", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-b-r", "object_suffix": "ነ", "object_person": "1", "object_number": "p", "object": "1cp"}, "surface_form": "ታዕብሩነ"}
 {"features": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "a2-b-r", "object_suffix": "ሆሙ", "object_person": "3", "object_number": "p", "object_gender": "m", "object": "3mp"}, "surface_form": "ዐበርናሆሙ"}
+{"features": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ኪ", "object_person": "2", "object_number": "s", "object_gender": "f", "object": "2fs"}, "surface_form": "የዐስቃኪ"}
+{"features": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ዎ", "object_person": "3", "object_number": "s", "object_gender": "m", "object": "3ms"}, "surface_form": "የዐስቃሁ"}
+{"features": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ዎ", "object_person": "3", "object_number": "s", "object_gender": "m", "object": "3ms"}, "surface_form": "ዕስቅዎ"}
+{"features": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ሆን", "object_person": "3", "object_number": "p", "object_gender": "f", "object": "3fp"}, "surface_form": "ዕስቅዎን"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ሆን", "object_person": "3", "object_number": "p", "object_gender": "f", "object": "3fp"}, "surface_form": "ዐሰቅኮን"}
+{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ሆን", "object_person": "3", "object_number": "p", "object_gender": "f", "object": "3fp"}, "surface_form": "ተዐስቅዎን"}
+{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ኒ", "object_person": "1", "object_number": "s", "object": "1cs"}, "surface_form": "ተዐስቁኒ"}
+{"features": {"person": "3", "gender": "m", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ነ", "object_person": "1", "object_number": "p", "object": "1cp"}, "surface_form": "ይትዐሰቀነ"}
+{"features": {"person": "3", "gender": "m", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ከ", "object_person": "2", "object_number": "s", "object_gender": "m", "object": "2ms"}, "surface_form": "ይትዐሰቀከ"}
+{"features": {"person": "1", "gender": "c", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ክሙ", "object_person": "2", "object_number": "p", "object_gender": "m", "object": "2mp"}, "surface_form": "ንትዐሰቀክሙ"}
+{"features": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ሆሙ", "object_person": "3", "object_number": "p", "object_gender": "m", "object": "3mp"}, "surface_form": "አዕሰቅክናሆሙ"}
+{"features": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ኒ", "object_person": "1", "object_number": "s", "object": "1cs"}, "surface_form": "አዕሰቅክናኒ"}
+{"features": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ሆሙ", "object_person": "3", "object_number": "p", "object_gender": "m", "object": "3mp"}, "surface_form": "አስተዕሰቅኪዮሙ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ሆሙ", "object_person": "3", "object_number": "p", "object_gender": "m", "object": "3mp"}, "surface_form": "ትትዐሰቆሙ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ዎ", "object_person": "3", "object_number": "s", "object_gender": "m", "object": "3ms"}, "surface_form": "ትትዐሰቆ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}, "surface_form": "ተዐሰቃ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ዎ", "object_person": "3", "object_number": "s", "object_gender": "m", "object": "3ms"}, "surface_form": "ተዐሰቆ"}
+{"features": {"gender": "c", "number": "s", "person": "1", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}, "surface_form": "አዐስቃ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}, "surface_form": "አዕስቃ"}
+{"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ነ", "object_person": "1", "object_number": "p", "object": "1cp"}, "surface_form": "አዕስቀነ"}
+{"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ክሙ", "object_person": "2", "object_number": "p", "object_gender": "m", "object": "2mp"}, "surface_form": "እዕስቅክሙ"}
+{"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s-q", "object_suffix": "ከ", "object_person": "2", "object_number": "s", "object_gender": "m", "object": "2ms"}, "surface_form": "እዕስቅከ"}
 {"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s2-r", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}, "surface_form": "ትዕሥራሃ"}
 {"features": {"gender": "f", "number": "s", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s2-r", "object_suffix": "ክሙ", "object_person": "2", "object_number": "p", "object_gender": "m", "object": "2mp"}, "surface_form": "ትዕሥርክሙ"}
 {"features": {"gender": "f", "number": "s", "person": "3", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s2-r", "object_suffix": "ከ", "object_person": "2", "object_number": "s", "object_gender": "m", "object": "2ms"}, "surface_form": "ትዕሥርከ"}
@@ -15129,27 +15151,6 @@
 {"features": {"gender": "f", "number": "p", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-r-h1", "object_suffix": "ሆን", "object_person": "3", "object_number": "p", "object_gender": "f", "object": "3fp"}, "surface_form": "ታግርሃሆን"}
 {"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-r-h1", "object_suffix": "ክሙ", "object_person": "2", "object_number": "p", "object_gender": "m", "object": "2mp"}, "surface_form": "እገርሀክሙ"}
 {"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-r-h1", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}, "surface_form": "እገርሃ"}
-{"features": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ነ", "object_person": "1", "object_number": "p", "object": "1cp"}, "surface_form": "ይገሥሳነ"}
-{"features": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ከ", "object_person": "2", "object_number": "s", "object_gender": "m", "object": "2ms"}, "surface_form": "ይገሥሳከ"}
-{"features": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ኒ", "object_person": "1", "object_number": "s", "object": "1cs"}, "surface_form": "ግሥሱኒ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ኒ", "object_person": "1", "object_number": "s", "object": "1cs"}, "surface_form": "ገሠስከኒ"}
-{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}, "surface_form": "ተገሥስዋ"}
-{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ሆሙ", "object_person": "3", "object_number": "p", "object_gender": "m", "object": "3mp"}, "surface_form": "ተገሥስዎሙ"}
-{"features": {"person": "3", "gender": "m", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ነ", "object_person": "1", "object_number": "p", "object": "1cp"}, "surface_form": "ይትገሠሰነ"}
-{"features": {"person": "3", "gender": "m", "number": "s", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ክን", "object_person": "2", "object_number": "p", "object_gender": "f", "object": "2fp"}, "surface_form": "ይትገሠሰክን"}
-{"features": {"person": "1", "gender": "c", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ሆን", "object_person": "3", "object_number": "p", "object_gender": "f", "object": "3fp"}, "surface_form": "ንትገሠሶን"}
-{"features": {"person": "1", "gender": "c", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ከ", "object_person": "2", "object_number": "s", "object_gender": "m", "object": "2ms"}, "surface_form": "ንትገሠሰከ"}
-{"features": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}, "surface_form": "አግሠስክናሃ"}
-{"features": {"person": "2", "gender": "f", "number": "s", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}, "surface_form": "አስተግሠስኪያ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ነ", "object_person": "1", "object_number": "p", "object": "1cp"}, "surface_form": "ትትገሠሰነ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}, "surface_form": "ተገሠሳ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "passive", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ሆሙ", "object_person": "3", "object_number": "p", "object_gender": "m", "object": "3mp"}, "surface_form": "ተገሠሶሙ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ሆሙ", "object_person": "3", "object_number": "p", "object_gender": "m", "object": "3mp"}, "surface_form": "ታግሥሶሙ"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ሆን", "object_person": "3", "object_number": "p", "object_gender": "f", "object": "3fp"}, "surface_form": "ታግሥሶን"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ሆን", "object_person": "3", "object_number": "p", "object_gender": "f", "object": "3fp"}, "surface_form": "አግሥሶን"}
-{"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "imperative", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ነ", "object_person": "1", "object_number": "p", "object": "1cp"}, "surface_form": "አግሥሰነ"}
-{"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ዎ", "object_person": "3", "object_number": "s", "object_gender": "m", "object": "3ms"}, "surface_form": "እግሥሶ"}
-{"features": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-s2-s", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}, "surface_form": "እግሥሳ"}
 {"features": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "g-z-r", "object_suffix": "ሃ", "object_person": "3", "object_number": "s", "object_gender": "f", "object": "3fs"}, "surface_form": "ግዝሪያ"}
 {"features": {"gender": "f", "number": "s", "person": "2", "stem": "basic", "tense": "imperative", "verb_type": "strong_A", "root": "g-z-r", "object_suffix": "ሆን", "object_person": "3", "object_number": "p", "object_gender": "f", "object": "3fp"}, "surface_form": "ግዝሪዮን"}
 {"features": {"gender": "m", "number": "p", "person": "2", "stem": "basic", "tense": "past", "verb_type": "strong_A", "root": "g-z-r", "object_suffix": "ኒ", "object_person": "1", "object_number": "s", "object": "1cs"}, "surface_form": "ገዘርክሙኒ"}
@@ -16887,6 +16888,8 @@
 {"features": {"gender": "m", "number": "s", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a-s-r", "negative": true, "polarity": "negative"}, "surface_form": "ኢያአስር"}
 {"features": {"gender": "m", "number": "p", "person": "2", "stem": "passive", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-b-r", "negative": true, "polarity": "negative"}, "surface_form": "ኢትትዐበሩ"}
 {"features": {"gender": "c", "number": "p", "person": "1", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-b-r", "negative": true, "polarity": "negative"}, "surface_form": "ኢናዐብር"}
+{"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "a2-s-q", "negative": true, "polarity": "negative"}, "surface_form": "ኢተዐስቁ"}
+{"features": {"person": "2", "gender": "f", "number": "p", "tense": "past", "stem": "causative", "verb_type": "strong_A", "root": "a2-s-q", "negative": true, "polarity": "negative"}, "surface_form": "ኢአዕሰቅክን"}
 {"features": {"gender": "f", "number": "p", "person": "2", "stem": "basic", "tense": "subjunctive", "verb_type": "strong_A", "root": "a2-s2-r", "negative": true, "polarity": "negative"}, "surface_form": "ኢትዕሥራ"}
 {"features": {"person": "3", "gender": "m", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "a2-s2-r", "negative": true, "polarity": "negative"}, "surface_form": "ኢአስተዕሠሩ"}
 {"features": {"gender": "f", "number": "s", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "a2-s2-r", "negative": true, "polarity": "negative"}, "surface_form": "ኢታዐሥር"}
@@ -16947,7 +16950,6 @@
 {"features": {"person": "1", "gender": "c", "number": "s", "tense": "past", "stem": "passive", "verb_type": "strong_A", "root": "g-r-h1", "negative": true, "polarity": "negative"}, "surface_form": "ኢተገራህኩ"}
 {"features": {"person": "3", "gender": "f", "number": "p", "tense": "past", "stem": "aste", "verb_type": "strong_A", "root": "g-r-h1", "negative": true, "polarity": "negative"}, "surface_form": "ኢአስተግርሃ"}
 {"features": {"gender": "f", "number": "p", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-r-h1", "negative": true, "polarity": "negative"}, "surface_form": "ኢታግርሃ"}
-{"features": {"gender": "f", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "strong_A", "root": "g-s2-s", "negative": true, "polarity": "negative"}, "surface_form": "ኢይገሥሳ"}
 {"features": {"gender": "m", "number": "p", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "g-z-r", "negative": true, "polarity": "negative"}, "surface_form": "ኢያገዝሩ"}
 {"features": {"gender": "f", "number": "s", "person": "2", "stem": "causative", "tense": "subjunctive", "verb_type": "strong_A", "root": "g-z-r", "negative": true, "polarity": "negative"}, "surface_form": "ኢታግዝሪ"}
 {"features": {"person": "2", "gender": "m", "number": "p", "tense": "present", "stem": "passive", "verb_type": "strong_A", "root": "gw-l-h2", "negative": true, "polarity": "negative"}, "surface_form": "ኢትትጐለሑ"}

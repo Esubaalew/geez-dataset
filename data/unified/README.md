@@ -76,4 +76,4 @@ decides: the present of ኀደገ-type verbs has ኀ, the subjunctive and the im
 
 ## Counts
 
-24,299 rows. Rows that load: gold 10,726 (train 8,060, val 1,154, test 1,512); other books 8,758 (train 7,904, val 393, test 461).
+24,135 rows. Rows that load: gold 10,821 (train 8,125, val 1,165, test 1,531); other books 8,753 (train 7,910, val 392, test 451).
