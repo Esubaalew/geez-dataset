@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,104 / 1,165 / 1,548 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 9,784 / 571 / 721 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 9,786 / 571 / 722 |
 | unified rows | 24,352 | 44,407 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -84,12 +84,13 @@ A form cell with two forms of different stems is split into one row per form (`s
 
 ## Ge'ez verb list
 
-- The 1,784 headwords of a 25-page Ge'ez verb list (class marks and Amharic glosses; no title or author printed) are in `data/books/verb_list/forms.jsonl` and appended to `data/unified/` (ids u042624-u044407; 528 load: train 449, val 30, test 49; 1,053 are `EXCLUDED`, 1,043 of them because they repeat a row already in the file). No existing row or id changed.
+- The 1,784 headwords of a 25-page Ge'ez verb list (class marks and Amharic glosses; no title or author printed) are in `data/books/verb_list/forms.jsonl` and appended to `data/unified/` (ids u042624-u044407; 531 load: train 451, val 30, test 50; 1,081 are `EXCLUDED`, 1,071 of them because they repeat a row already in the file). No existing row or id changed.
 - 65 roots found only in this list are added to `data/unified/book_root_splits.tsv`, all in train.
 - Roots of the same verb in another book: ቆጰረ is ቈ-ጸ-ረ, ለንጰሰ is ለ-ነ-ጸ-ሰ, ገንጰለ is ገ-ነ-ጸ-ለ, አስፌድለወ is ፈ-ደ-ለ-ወ. ተወሕሠ, ተዋህውኀ, ጸቈሰ and አሰውሰጠ stay `CHECK`.
 - Roots of the same verb in another book, where the meaning matches: ወቀሰ ወ-ቀ-ሠ, ኮፈረ ከ-ፈ-ረ, ዘኮረ ዘ-ከ-ረ, መሞዐ መ-መ-ዐ, ከልኦ ከ-ለ-አ, ጠሞዐ ጠ-መ-ዐ, አስደለወ ደ-ለ-ወ, ሴሰየ ሰ-ሰ-የ, ረሞፀ ረ-መ-ፀ (a ወ or የ read from the vowel of the headword is not a radical). ጥሕረ, ሠነቀ, ተሠአነ and አስተናአወ keep their own roots; ተደረ (ተ-ደ-ረ) and አሰበ (አ-ሰ-በ) stay `CHECK`, their roots not confirmed. ኀለቈ, አከፈ, አስቆቀወ and አመዐርዐረ stay `CHECK`.
 - Roots confirmed by the same verb in the Merho Ges paradigms or another book: ጦመረ ጠ-መ-ረ, ተሞዕዐ መ-ዐ-ዐ, አንጦልዐ ነ-ጠ-ለ-ዐ, ቆለወ ቈ-ለ-ወ, አስዖዘዘ ዐ-ዘ-ዘ, አቅዜዘየ ቀ-ዘ-የ (a ወ or የ read from the vowel of the headword is not a radical); መትሀ, ጐርሐ, ቈልቈለ, ርኅበ, ቈንቈነ, ለምአ, ሰጕዐ, ጐጕአ, ፃእፅአ, ምዕከ, ረጕነኰ, ቀልጰወ, ፆተወ, ዐወደ, ዐወገ, ሠበጠ, አከጠ and ፀረፈ keep their own roots.
 - A derived stem keeps the root of its base, with the prefix stripped: ተመዝጐለ መ-ዘ-ጐ-ለ, ተሠሀለ ሠ-ሀ-ለ, አንዛህለለ ነ-ዘ-ሀ-ለ-ለ, አርመስመሰ ረ-መ-ሰ-መ-ሰ, አክሞሰሰ ከ-መ-ሰ-ሰ, ተሥዕዐ ሠ-ዐ-ዐ, አንጕዐ ነ-ጐ-ዐ, አስደለወ ደ-ለ-ወ, አስፌድለወ ፈ-ደ-ለ-ወ, ተመኵሰየ መ-ኰ-ሰ-የ. ጸቈሰ, አሰውሰጠ and ሀየጰ stay `CHECK`.
+- Class marks settled against the same verb in the Merho Ges paradigms: the list class is kept for ቃሕቅሐ, ቆመሰ, ቆበረ, ተጽዕረ, አማዕዘረ, ቀስተወ, አመንሰወ, አመንተወ, አቀምጠወ, አመስከየ, አመክነየ, ዘርከየ and ደርበየ; the list class agrees with the gold for ከረመ, ለጸቀ, ተላጸቀ, ነፈቀ, አልጸቀ, ከልአ, በረከ, አስተብረከ, ሰለወ, ተደለወ, አድለወ, ደለወ, ተጋአዘ, ገአዘ, መረየ, ዐለየ, ዐረየ and አስተጋየደ. Entries whose class differs from the gold stay `CHECK`.
 
 ## README
 
