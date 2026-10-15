@@ -4,9 +4,9 @@ v1: tag `v1`, commit `337cdf0`.
 
 | | v1 | v2 |
 |---|---:|---:|
-| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,104 / 1,165 / 1,548 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 9,848 / 574 / 728 |
-| unified rows | 24,352 | 45,142 |
+| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,087 / 1,164 / 1,543 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,061 / 571 / 767 |
+| unified rows | 24,352 | 45,152 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -104,3 +104,14 @@ Line counts corrected to the files: synthetic files 121,206 (v1 README: 125,020)
   - 158 rows that the book does not print as Ge'ez forms were removed from `train`, `val` and `test`: 26 flagged and 18 unflagged repeats of 3ms past headwords that had been labelled as nouns, 32 Amharic glosses and `የ...` subject notes, 17 fragments of the book's class marks (such as `ሰሴ`, `ሳስ`, `እብ`, `ኣብ`, `ኢብ`, `ክብ`, `ብዙ`, `ኩፋኔ`), and rows that were not printed or that ran two words together.
   - Labels corrected: 52 feminine plural adjectives (`-አት`/`-ዋት`/`-ያት` marked `በብ` after `ለሴ`/`ለስ`: `gender` `m` -> `f`), 17 adjectives naming the doer (`ባዕ ሣ ቅ`: `type` `noun` -> `adjective`), and 25 other `type`, `gender`, `number`, `stem` and object-suffix labels.
   - Roots and forms that did not match their section were corrected against the printed book and the typed edition (`ደ-ኀ-ነ` -> `ደ-ኀ-ኀ` on pp. 41-42, `ገ-ደ-ፈ` -> `ገ-የ-ረ` on p. 143, `ቀ-ጠ-ነ` -> `ቀ-ጠ-ጠ` on p. 329, `ለ-አ-ከ` -> `ለ-ከ-አ` on p. 210, `ረ-ገ-በ` -> `ረ-ገ-ዐ` on p. 214, `ጐ-ጐ-ለ` -> `ጐ-ጐ-አ` on p. 231, `ሐ-ቀ-ቀ` -> `ሐ-ቀ-የ` on p. 280, `ነ-አ-የ` -> `ነ-አ-ደ` on p. 310, `ነ-ጐ-ደ-ጐ` -> `ነ-ጐ-ደ-ጐ-ደ` on p. 312, `መ-ለ-ጠ` -> `ሰ-ፈ-ጠ` on p. 329, `አ-ከ-ተ` -> `አ-ከ-ጠ` on p. 329, `ደ-ነ-ደ-ነ` -> `ደ-ነ-ጸ` on p. 341, `ዐ-ሰ-ተ` -> `ዐ-ሰ-ቀ` on p. 156, `ሰ-ከ-ተ` -> `ሰ-ከ-ተ-የ` on p. 290, `ጠ-ጠ-በ` -> `ጠ-በ-ጠ-በ` on p. 181), with a few more spelling corrections.
+
+## Gold paradigms checked against the printed page
+
+- Spellings and roots of 42 gold cells were corrected in place to match the printed page; 7 cells were added at the end of the files (ids up to u045152).
+- Record c7abd29c5acf (p.333) has root ገ-ነ-ጰ, as both books print it; its cells are spelled with ጰ (ግኑጵ, ግንጵት, ገነጵ / ገነጵት, ምጕንጳ / ምጕንጳት). The cell ምግናጽ, which the page does not print, was removed.
+- 4 more cells were removed (ፅሩፋት, መዕምድ, መሳምን, ኂርት); each removed row is kept as `EXCLUDED` with its reason.
+
+## Rows of other books
+
+- Book rows take their stem, root and class from the printed tables. Rows that the tables show to be copies of another row (same form and labels) are `EXCLUDED`, and the book and page are added to the kept row's `also_in`.
+- When a row gets a root, it moves to the split that root already has, so each root stays in one split.

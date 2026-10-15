@@ -124,7 +124,7 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 | `data/corpora/phrasebook_pairs.jsonl` | 218 |
 | `data/geez_amharic_dictionary.jsonl` | 14,956 |
 | `data/geez_literature_corpus.txt` | 6,090 |
-| `data/unified/geez_morphology_rows.jsonl` | 45,142 |
+| `data/unified/geez_morphology_rows.jsonl` | 45,152 |
 | `data/books/fre_geez/forms.jsonl` | 4,039 |
 | `data/books/geezbook_1z/forms.jsonl` | 1,820 |
 | `data/books/yared_shiferaw/forms.jsonl` | 13,368 |
@@ -142,14 +142,14 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 
 ## Unified rows
 
-`data/unified/geez_morphology_rows.jsonl` holds 45,142 labelled forms in one schema: the gold paradigm rows and the rows of seven other books (ርባሐ ስም ወአንቀጽ, Kidane Wold's tables and dictionary, Yared Shiferaw's Mesehaf Gese Wesewasew, ፍሬ ግእዝ, የግእዝ መማሪያ (Year 1), የግዕዝ መማሪያ (ለይኩን ብርሃኑ), ግዕዝ ቋንቋ ፪, and a Ge'ez verb list). Every row names its book and page. A row that does not load keeps its `status` and the reason. Fields, statuses and the split rule: [data/unified/README.md](data/unified/README.md).
+`data/unified/geez_morphology_rows.jsonl` holds 45,152 labelled forms in one schema: the gold paradigm rows and the rows of seven other books (ርባሐ ስም ወአንቀጽ, Kidane Wold's tables and dictionary, Yared Shiferaw's Mesehaf Gese Wesewasew, ፍሬ ግእዝ, የግእዝ መማሪያ (Year 1), የግዕዝ መማሪያ (ለይኩን ብርሃኑ), ግዕዝ ቋንቋ ፪, and a Ge'ez verb list). Every row names its book and page. A row that does not load keeps its `status` and the reason. Fields, statuses and the split rule: [data/unified/README.md](data/unified/README.md).
 
 | Rows | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
-| gold (Merho Ges) | 8,104 | 1,165 | 1,548 | 1,128 |
-| other books | 9,848 | 574 | 728 | 22,047 |
+| gold (Merho Ges) | 8,085 | 1,162 | 1,542 | 1,166 |
+| other books | 10,061 | 571 | 767 | 21,798 |
 
-Not loaded, other books: `NO_ROOT` 4,321, `CHECK` 15,914, `EXCLUDED` 1,812. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
+Not loaded, other books: `NO_ROOT` 4,221, `CHECK` 15,820, `EXCLUDED` 1,757. Not loaded, gold: `NO_ROOT` 1,128, `CHECK` 2, `EXCLUDED` 36.
 
 ## Sources
 
