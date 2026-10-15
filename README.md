@@ -124,10 +124,10 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 | `data/corpora/phrasebook_pairs.jsonl` | 218 |
 | `data/geez_amharic_dictionary.jsonl` | 14,956 |
 | `data/geez_literature_corpus.txt` | 6,090 |
-| `data/unified/geez_morphology_rows.jsonl` | 45,117 |
+| `data/unified/geez_morphology_rows.jsonl` | 45,142 |
 | `data/books/fre_geez/forms.jsonl` | 4,039 |
 | `data/books/geezbook_1z/forms.jsonl` | 1,820 |
-| `data/books/yared_shiferaw/forms.jsonl` | 13,343 |
+| `data/books/yared_shiferaw/forms.jsonl` | 13,368 |
 | `data/books/verb_list/forms.jsonl` | 1,784 |
 | `data/unified/book_root_splits.tsv` | 679 |
 | `data/true_parallel_pairs.jsonl` | 2,997 |
@@ -136,20 +136,20 @@ A synthetic line is `{"features": {...}, "surface_form": "..."}`. The analyze fi
 
 `data/lexicon/book_forms.jsonl` holds forms printed in the books other than the Merho Ges gold, in the gold label set: *ርባሐ ስም ወአንቀጽ* (አለቃ ደስታ ተክለ ወልድ, 1946 E.C.), the grammar tables and the dictionary of Kidane Wold, the teaching books ፍሬ ግእዝ, የግእዝ መማሪያ (Year 1) and ግዕዝ ቋንቋ ፪, and the first 14 rows (Kidane Wold triples of ወ-ቀ-የ, ወ-ረ-ወ, ወ-ረ-የ; *Mesehaf Gese Wesewasew* nouns and adjectives of መ-ከ-ለ and ሰ-ነ-ገ). Each row names its book and printed page. The root is the book's own (paradigm head, printed triple, derived-stem section), or the root of the gold record with the same headword; it is never inferred. `status` is empty for a row that loads, `CHECK` for a reading or label that is not settled or a type the training target has no slot for (infinitives, gerunds, forms with a possessive suffix), `CONFLICT` when the gold gives the same form another root, and `NO_ROOT`. `split` is `heldout` when the root or the form is a gold val/test one: those rows are never trained on and score the model on forms from other books; the rest are `train`.
 
-`data/books/<book>/forms.jsonl` lists every form of the entry lists of ፍሬ ግእዝ (4,039 forms of 2,105 entries) የግዕዝ መማሪያ by ለይኩን ብርሃኑ (1,820 forms of 1,754 entries), and the verb book *Mesehaf Gese Wesewasew* by Yared Shiferaw (13,343 forms of 2,740 entries: 13,329 forms of 2,737 entries, and 14 forms printed before a mark that the entry lists did not hold, 3 of them from 3 entries whose other forms are left out). A line has `form`, `root` (as printed in the entry; for a form without one, the root of a row of the same spelling when the entry's headword is that root; else null), `pos`, `number`, `gender`, `class` (the paradigm class), `book`, `page` (scan page; one scan page holds two printed pages) and `split`. The same forms are rows of `data/unified/` with `source_ref` pointing at the line. Verbs there do not load: the entry lists give no tense or person. Five forms of የግዕዝ መማሪያ whose reading is not settled are left out; the three forms whose reading was settled later are appended at the end of its file. Of Yared Shiferaw's book, the forms of entries whose reading is not settled (1,834) and forms that cannot be read on the scan or whose reading is not settled (176) are left out. `data/books/verb_list/forms.jsonl` holds the 1,784 headwords of a 25-page Ge'ez verb list (no title or author printed), one verb per line with its class mark (`class`, written out: ቀተ is ቀተለ) and its Amharic gloss (`gloss_amharic`). Rows and lines are only ever appended: the `id` of a unified row and the line a `source_ref` points at do not change between versions.
+`data/books/<book>/forms.jsonl` lists every form of the entry lists of ፍሬ ግእዝ (4,039 forms of 2,105 entries) የግዕዝ መማሪያ by ለይኩን ብርሃኑ (1,820 forms of 1,754 entries), and the verb book *Mesehaf Gese Wesewasew* by Yared Shiferaw (13,368 forms of 2,742 entries: 13,329 forms of 2,737 entries; 14 forms printed before a mark that the entry lists did not hold, 3 of them from 3 entries otherwise left out; and 25 forms of 3 entries whose root was settled later, ዐ-ወ-ረ on p.121, ሰ-ነ-ነ on p.180 and በ-ሐ-ተ-ወ on p.236). A line has `form`, `root` (as printed in the entry; for a form without one, the root of a row of the same spelling when the entry's headword is that root; else null), `pos`, `number`, `gender`, `class` (the paradigm class), `book`, `page` (scan page; one scan page holds two printed pages) and `split`. The same forms are rows of `data/unified/` with `source_ref` pointing at the line. Verbs there do not load: the entry lists give no tense or person. Five forms of የግዕዝ መማሪያ whose reading is not settled are left out; the three forms whose reading was settled later are appended at the end of its file. Of Yared Shiferaw's book, the forms of entries whose reading is not settled (1,800) and forms that cannot be read on the scan, whose reading is not settled, or that belong to another root than the entry's (187) are left out. `data/books/verb_list/forms.jsonl` holds the 1,784 headwords of a 25-page Ge'ez verb list (no title or author printed), one verb per line with its class mark (`class`, written out: ቀተ is ቀተለ) and its Amharic gloss (`gloss_amharic`). Rows and lines are only ever appended: the `id` of a unified row and the line a `source_ref` points at do not change between versions.
 
 Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed Kidane Wold transcription in [geezorg/data](https://github.com/geezorg/data) (CC BY-SA 4.0, commit `3904462c`).
 
 ## Unified rows
 
-`data/unified/geez_morphology_rows.jsonl` holds 45,117 labelled forms in one schema: the gold paradigm rows and the rows of seven other books (ርባሐ ስም ወአንቀጽ, Kidane Wold's tables and dictionary, Yared Shiferaw's Mesehaf Gese Wesewasew, ፍሬ ግእዝ, የግእዝ መማሪያ (Year 1), የግዕዝ መማሪያ (ለይኩን ብርሃኑ), ግዕዝ ቋንቋ ፪, and a Ge'ez verb list). Every row names its book and page. A row that does not load keeps its `status` and the reason. Fields, statuses and the split rule: [data/unified/README.md](data/unified/README.md).
+`data/unified/geez_morphology_rows.jsonl` holds 45,142 labelled forms in one schema: the gold paradigm rows and the rows of seven other books (ርባሐ ስም ወአንቀጽ, Kidane Wold's tables and dictionary, Yared Shiferaw's Mesehaf Gese Wesewasew, ፍሬ ግእዝ, የግእዝ መማሪያ (Year 1), የግዕዝ መማሪያ (ለይኩን ብርሃኑ), ግዕዝ ቋንቋ ፪, and a Ge'ez verb list). Every row names its book and page. A row that does not load keeps its `status` and the reason. Fields, statuses and the split rule: [data/unified/README.md](data/unified/README.md).
 
 | Rows | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
 | gold (Merho Ges) | 8,104 | 1,165 | 1,548 | 1,128 |
-| other books | 9,845 | 574 | 727 | 22,026 |
+| other books | 9,848 | 574 | 728 | 22,047 |
 
-Not loaded, other books: `NO_ROOT` 4,321, `CHECK` 15,895, `EXCLUDED` 1,810. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
+Not loaded, other books: `NO_ROOT` 4,321, `CHECK` 15,914, `EXCLUDED` 1,812. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
 
 ## Sources
 

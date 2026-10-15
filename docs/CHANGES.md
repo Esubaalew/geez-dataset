@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,104 / 1,165 / 1,548 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 9,845 / 574 / 727 |
-| unified rows | 24,352 | 45,117 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 9,848 / 574 / 728 |
+| unified rows | 24,352 | 45,142 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -82,6 +82,7 @@ A form cell with two forms of different stems is split into one row per form (`s
 - Roots keep the book's spelling; labialized letters are distinct (ቈ-ጸ-ረ ≠ ቀ-ጸ-ረ, ኰ-ረ-ጸ ≠ ከ-ረ-ጸ). 275 roots found only in this book are added to `data/unified/book_root_splits.tsv`: 274 in train, ቈ-ረ-በ in test. Rows whose root differs from a val/test root only by a twin letter (ነ-ፀ-ፈ, ሰ-ገ-ዐ, መ-ዘ-ገ-ለ, ኈ-ሠ-ሠ, ቈ-ረ-በ) do not load.
 - Rows held back as `CHECK` sit in the same split as the other rows of their root: ሐበለ (ሐ-በ-ለ, geezbook_1z) moves from test to train, and the 9 ቈ-ረ-በ rows of this book move from train to test, beside ቈረበ of ፍሬ ግእዝ.
 - 78 Yared Shiferaw entries whose root or stray marks were settled against the printed page are appended (696 forms, ids u044408-u045103; 67 load: train 59, val 3, test 5); the printed headword is kept, ዘመ on p.16 is `EXCLUDED` as the first half of the mark ዘመ ዘ, and 3 roots found only there (ጸ-ተ-ወ, ነ-ገ-ገ-ወ, ዘ-ረ-ጸ) are added to `book_root_splits.tsv` in train. The 20 forms of ደቀ (p.144) take the root ደ-ቀ-ቀ. The names ሙሴ, ሀዊ and ማጎግ are `CHECK`. 14 forms printed before a mark that the entry lists did not hold are appended with that mark (ids u045104-u045117, all `CHECK`): መርሕ, ቁጸል, ስሱ, ስድሱ, ርእስ, ፅረስ, አገር, ጽፈር, ፅፈር, እዘብ, ስነን, ጸፈናት, መበለት, ጋይድ; ቁጸል, ጽፈር and ስነን belong to entries that print no root.
+- Of the 14 forms printed before a mark, 6 are nouns with their entry's root (u045104, u045108, u045112, u045114, u045116, u045117; ርእስ, ፅፈር, ስነን and መበለት are singular and load, መርሕ and ጋይድ give no number), and ቁጸል (u045105) takes the root ቈ-ጸ-ለ in test; ስሱ, ስድሱ, ፅረስ, አገር, ጽፈር, እዘብ and ጸፈናት stay `CHECK`. The forms of three entries whose root was settled later are appended (ids u045118-u045142): ዖረ (ዐ-ወ-ረ, p.121, train), ተሳነነ (ሰ-ነ-ነ, p.180, test; only ስኑን, መስነን, ስነናት: the other forms printed there are of ቀ-ረ-ነ) and ትባሕተወ (በ-ሐ-ተ-ወ, p.236, test). Every root keeps the split it already had. None of the 25 appended forms loads: 2 repeat a row already in the file and are `EXCLUDED`, the rest are `CHECK`.
 
 ## Ge'ez verb list
 
