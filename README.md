@@ -107,8 +107,8 @@ Beside a form, the book uses the shorts below. The key is printed on pages 16 an
 |---|---:|
 | `data/paradigms/synthetic_morphology_train.jsonl` | 121,092 |
 | `data/paradigms/synthetic_morphology_analyze.jsonl` | 121,092 |
-| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 17,166 |
-| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 17,166 |
+| `data/synthetic/synthetic_forms_for_val_test_roots.jsonl` | 17,164 |
+| `data/synthetic/synthetic_forms_for_val_test_roots_analyze.jsonl` | 17,164 |
 | `data/lexicon/classical_dictionary_kidane_wold.jsonl` | 13,234 |
 | `data/lexicon/modern_geez_amharic_dictionary.jsonl` | 1,722 |
 | `data/lexicon/kidane_wold_verb_triples.jsonl` | 583 |
@@ -139,8 +139,8 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 
 | Rows | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
-| gold (Merho Ges) | 8,125 | 1,165 | 1,531 | 1,128 |
-| other books | 7,910 | 392 | 451 | 3,433 |
+| gold (Merho Ges) | 8,109 | 1,165 | 1,547 | 1,128 |
+| other books | 7,900 | 392 | 461 | 3,433 |
 
 Not loaded, other books: `NO_ROOT` 2,443, `CHECK` 570, `EXCLUDED` 420. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
 

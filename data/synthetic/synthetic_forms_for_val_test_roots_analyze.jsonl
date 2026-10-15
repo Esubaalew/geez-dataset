@@ -13701,8 +13701,6 @@
 {"surface_form": "ይወፅኡ", "analysis": {"gender": "m", "number": "p", "person": "3", "stem": "basic", "tense": "present", "verb_type": "weak_initial", "root": "w-S2-a"}}
 {"surface_form": "ወፃእከ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "past", "verb_type": "weak_initial", "root": "w-S2-a"}}
 {"surface_form": "ትወፅእ", "analysis": {"gender": "m", "number": "s", "person": "2", "stem": "basic", "tense": "present", "verb_type": "weak_initial", "root": "w-S2-a"}}
-{"surface_form": "ወፅአ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "past", "verb_type": "weak_initial", "root": "w-S2-a"}}
-{"surface_form": "ይወፅእ", "analysis": {"gender": "m", "number": "s", "person": "3", "stem": "basic", "tense": "present", "verb_type": "weak_initial", "root": "w-S2-a"}}
 {"surface_form": "ወፃእኩ", "analysis": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "past", "verb_type": "weak_initial", "root": "w-S2-a"}}
 {"surface_form": "ወፃእነ", "analysis": {"gender": "c", "number": "p", "person": "1", "stem": "basic", "tense": "past", "verb_type": "weak_initial", "root": "w-S2-a"}}
 {"surface_form": "እወፅእ", "analysis": {"gender": "c", "number": "s", "person": "1", "stem": "basic", "tense": "present", "verb_type": "weak_initial", "root": "w-S2-a"}}
