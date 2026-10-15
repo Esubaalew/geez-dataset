@@ -4,9 +4,9 @@ v1: tag `v1`, commit `337cdf0`.
 
 | | v1 | v2 |
 |---|---:|---:|
-| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,104 / 1,165 / 1,547 |
+| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,104 / 1,165 / 1,548 |
 | rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 7,897 / 392 / 464 |
-| unified rows | 24,352 | 24,130 |
+| unified rows | 24,352 | 24,131 |
 | synthetic, lexicon, parallel and corpus files | | unchanged |
 
 ## Gold
@@ -24,7 +24,7 @@ Roots and forms, read on the printed page:
 
 Moved to test, printed spelling kept, the other spelling noted in `spelling_note`: acc4f9cac1b0 ወፅአ (p.228, also ወጽአ) and 110f07e7667d ፀንሰ (p.109, also ጸንሰ), so ፀ/ጸ spellings of one root share a split.
 
-The ፈፀመ record of p.91 (ፈፀመ, ፍፁም, መፍፅም, ፈፀምት, ፍፅማት) is merged into ፈጸመ; ፍፅማት is not kept as a separate row.
+The ፈፀመ record of p.91 (ፈፀመ, ፍፁም, መፍፅም, ፈፀምት, ፍፅማት) is merged into ፈጸመ; ፍፅማት is kept as the plural ፍጽማት (number p).
 
 Stems, 21 rows, all `basic` in v1 (train 18, val 2, test 1). Basis `page`: the printed entry, its gloss or its neighbouring forms show the stem. Basis `form`: set from the prefix and root of the form only.
 
