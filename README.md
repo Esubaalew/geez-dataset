@@ -147,9 +147,9 @@ Headwords in `classical_dictionary_kidane_wold.jsonl` were taken from the typed 
 | Rows | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
 | gold (Merho Ges) | 8,104 | 1,165 | 1,548 | 1,128 |
-| other books | 9,777 | 568 | 719 | 21,398 |
+| other books | 9,775 | 568 | 719 | 21,400 |
 
-Not loaded, other books: `NO_ROOT` 4,321, `CHECK` 15,331, `EXCLUDED` 1,746. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
+Not loaded, other books: `NO_ROOT` 4,321, `CHECK` 15,333, `EXCLUDED` 1,746. Not loaded, gold: `NO_ROOT` 1,128, `FLAGGED` 0.
 
 ## Sources
 
