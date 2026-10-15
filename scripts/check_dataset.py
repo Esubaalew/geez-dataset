@@ -377,7 +377,9 @@ def main():
     bad = sum(len(v) for v in errors.values())
     print("CLEAN" if not bad else f"NOT CLEAN: {bad} problem(s)")
     ds = os.path.dirname(os.path.dirname(os.path.abspath(args.data)))
-    if not args.no_unified and os.path.exists(os.path.join(ds, "data", "unified", "geez_morphology_rows.jsonl")):
+    if not args.no_unified and not os.path.exists(os.path.join(ds, "data", "unified", "geez_morphology_rows.jsonl")):
+        print(f"\nNOTE  data/unified not found under {ds}; run check_unified.py DATASET_DIR yourself, or pass --data DATASET_DIR/data/paradigms")
+    elif not args.no_unified:
         import subprocess
         print("\ndata/unified and data/books (scripts/check_unified.py):", flush=True)
         u = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "check_unified.py"), ds]).returncode

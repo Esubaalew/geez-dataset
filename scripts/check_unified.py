@@ -10,7 +10,7 @@
                 is a gold val/test form is the only exception and is listed)
   5 duplicates  no two rows that load have the same form, root, word_class and labels
   6 books       every line of data/books/*/forms.jsonl is the source of exactly one row, with the same form, root and split
-  note          roots whose rows (loading or held back, not EXCLUDED) sit in more than one split
+  7 held splits a root is in one split among all its rows that are not EXCLUDED, so a held-back row can load later without a leak
   python check_unified.py DATASET_DIR
 """
 import collections, json, os, re, sys
@@ -96,11 +96,12 @@ for f, lines in book_lines.items():
 held = collections.defaultdict(set)
 for r in rows:
     if r["root"] and r["status"] != "EXCLUDED": held[r["root"]].add(r["split"])
-for sec in ("1 fields", "2 labels", "3 forms", "4 splits", "5 duplicates", "6 books"):
+for root, sp in sorted(held.items()):
+    if len(sp) > 1:
+        err("7 held splits", f"root {root} is in " + ", ".join(sorted(sp)))
+for sec in ("1 fields", "2 labels", "3 forms", "4 splits", "5 duplicates", "6 books", "7 held splits"):
     print(("FAIL " if errs[sec] else "PASS ") + f"{sec}: {len(errs[sec])} problem(s)")
     for m in errs[sec][:8]: print("   ", m)
-multi = sorted(k for k, v in held.items() if len(v) > 1)
-print(f"NOTE  roots in more than one split counting held-back rows: {len(multi)}" + (f" ({', '.join(multi[:8])})" if multi else ""))
 print("books:", ", ".join(f"{f.split('/')[2]} {len(v)}" for f, v in book_lines.items()))
 c = collections.Counter((r["split"], r["word_class"]) for r in rows if r["status"] == "")
 print("rows that load:", sum(c.values()), dict(sorted(collections.Counter(r["split"] for r in rows if r["status"] == "").items())))
