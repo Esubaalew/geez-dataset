@@ -62,7 +62,7 @@ Optional fields:
 - A row's own `root`, `stem`, `type`, and `object` override the record's.
 - A printed cell with two forms of different stems is split into one row per form (`source_variant`), each with its own `stem`; the record `stem` is the stem of the first row, and a verb row without a `stem` of its own takes the record's.
 - Nouns and adjectives carry no verb labels (`tense`, `person`, `object`).
-- Rows listed in `merho_ges_gold_flagged_rows.tsv`, rows with an empty root, and records marked `root_unsettled` are kept in the files but do not load for training or scoring.
+- Rows with an empty root, and records marked `root_unsettled` are kept in the files but do not load for training or scoring.
 - A "pair" is one form of one row with the labels the row gives it. No pair appears twice in one split or across splits, except the pairs listed in `merho_ges_gold_allowed_duplicates.tsv`.
 - No root appears in more than one split (train / val / test).
 - Variant notation: a `geez_form` cell like `ሃልሀ / ሀልሀ` holds two variants; a parenthesized note like `form (variant)` is dropped and only `form` loads.
@@ -76,6 +76,5 @@ Optional fields:
 The checker also reads the root fields of the dictionaries, the Kidane Wold tables and the synthetic files: every key named `root` or ending in `_root`. None may hold the placeholder `CHECK`.
 
 - `geez_amharic_dictionary.jsonl`, `lexicon/classical_dictionary_kidane_wold.jsonl`: `root` (Ge'ez text from the source; mostly null, sometimes empty), `inferred_root` (Latin root notation, e.g. `q-t-l`), `root_confidence`, `root_notes` (free text: how the root was inferred, or why there is none). An unsettled root is null, and `root_notes` gives the reason.
-- `lexicon/kidane_wold_root_fixes.jsonl`: `id` (dictionary entry), `headword`, `pos`, `old_root`, `new_root`, `method`, `evidence`, and on some rows `root_notes`. A null `new_root` means the entry has no root; `root_notes` says why.
 - `lexicon/book_forms.jsonl`: one printed form per line, not generated: `root` (Ge'ez letters, as in the gold files, or null), `form`, `type`, `person`, `gender`, `number`, `tense`, `stem`, `object` (the labels of the gold rows), `book`, `page` (printed page), `traditional_label` (the book's own tag as printed), `confidence` (of the reading), `status` (empty, `CHECK`, `CONFLICT` or `NO_ROOT`), `source_id` (row of the transcription), `note`, and `split` (`train`, or `heldout` when the root or form is a gold val/test one).
 - `parallel/uncertain_pairs.jsonl`: a row may carry `note`, a free-text reason why it is not a trusted pair.

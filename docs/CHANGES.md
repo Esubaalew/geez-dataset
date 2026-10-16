@@ -115,3 +115,6 @@ Line counts corrected to the files: synthetic files 121,206 (v1 README: 125,020)
 
 - Book rows take their stem, root and class from the printed tables. Rows that the tables show to be copies of another row (same form and labels) are `EXCLUDED`, and the book and page are added to the kept row's `also_in`.
 - When a row gets a root, it moves to the split that root already has, so each root stays in one split.
+
+## Layout cleanup
+- Merged root corrections into the dictionaries (`inferred_root`); removed duplicate and empty files; moved the literature corpus to `corpora/` and the Geez-Amharic dictionary to `lexicon/`. Training and evaluation data are unchanged.
