@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,087 / 1,164 / 1,543 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,061 / 571 / 766 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,065 / 572 / 767 |
 | unified rows | 24,352 | 45,152 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -23,7 +23,7 @@ Roots and forms, read on the printed page:
 | 98 | ffec00d9a7b4 | ምስድሳታት, ትስድሳታት | ምስድስታት, ትስድስታት (plurals) |
 | 91 | a308cec52106 | separate records ፈፀመ (train) and ፈጸመ (test) | one record ፈጸመ in test; the ፀ spelling is kept in `spelling_note` |
 
-Moved to test, printed spelling kept, the other spelling noted in `spelling_note`: acc4f9cac1b0 ወፅአ (p.228, also ወጽአ) and 110f07e7667d ፀንሰ (p.109, also ጸንሰ), so ፀ/ጸ spellings of one root share a split.
+Moved to test, printed spelling kept, the other spelling noted in `spelling_note`: acc4f9cac1b0 ወፅአ (p.228, also ወጽአ) and 110f07e7677d ፀንሰ (p.109, also ጸንሰ), so ፀ/ጸ spellings of one root share a split.
 
 The ፈፀመ record of p.91 (ፈፀመ, ፍፁም, መፍፅም, ፈፀምት, ፍፅማት) is merged into ፈጸመ; ፍፅማት is kept as the plural ፍጽማት (number p).
 
