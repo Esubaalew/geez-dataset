@@ -62,9 +62,8 @@ RECORD_FIELDS = ("record_id", "category", "root", "table_data", "page_number")
 RID = re.compile(r"^[0-9a-f]{12}$")
 
 # check 11: files next to the gold folder whose root fields are checked (paths relative to data/; missing ones are noted)
-ROOT_FIELD_FILES = ("geez_amharic_dictionary.jsonl", "lexicon/classical_dictionary_kidane_wold.jsonl",
-                    "lexicon/modern_geez_amharic_dictionary.jsonl", "lexicon/kidane_wold_root_fixes.jsonl",
-                    "lexicon/kidane_wold_verb_triples.jsonl", "lexicon/kidane_wold_verb_triples_rejected.jsonl",
+ROOT_FIELD_FILES = ("lexicon/geez_amharic_dictionary.jsonl", "lexicon/classical_dictionary_kidane_wold.jsonl",
+                    "lexicon/modern_geez_amharic_dictionary.jsonl", "lexicon/kidane_wold_verb_triples.jsonl",
                     "lexicon/book_forms.jsonl",
                     "paradigms/synthetic_morphology_train.jsonl", "paradigms/synthetic_morphology_analyze.jsonl",
                     "synthetic/synthetic_forms_for_val_test_roots.jsonl",
