@@ -60,8 +60,10 @@ Unified rows (45,152 in total) that load:
 
 | | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
-| gold (Merho Ges) | 8,087 | 1,164 | 1,543 | 1,166 |
-| other books | 10,065 | 572 | 767 | 21,793 |
+| gold (Merho Ges) | 8,085 | 1,162 | 1,542 | 1,166 |
+| other books | 10,025 | 568 | 760 | 21,844 |
+
+The gold loader expands spellings to 8,087 / 1,164 / 1,543 pairs; these differ from the unified-row counts above.
 
 Synthetic training forms: 120,685 lines. Synthetic forms for val/test roots: 17,571 lines.
 
