@@ -48,7 +48,7 @@ TYPES = ("verb", "noun", "adjective")
 TENSES = ("past", "present", "subjunctive", "imperative")  # jussive is written as subjunctive
 STEMS = ("basic", "passive", "causative", "reciprocal", "aste")
 GENDERS_ADJ = ("m", "f", "c", "")
-NUMBERS = ("s", "p")
+NUMBERS = ("s", "p", "sp")
 VERB_PERSONS = {("1", "c", "s"), ("1", "c", "p"), ("2", "m", "s"), ("2", "f", "s"), ("2", "m", "p"),
                 ("2", "f", "p"), ("3", "m", "s"), ("3", "f", "s"), ("3", "m", "p"), ("3", "f", "p")}
 OBJECTS = {"".join(p) for p in VERB_PERSONS}

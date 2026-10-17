@@ -35,7 +35,7 @@ Optional fields:
 |---|---|---|
 | `person` | string | `1`, `2`, or `3`. |
 | `gender` | string | `m`, `f`, or `c`. |
-| `number` | string | `s` or `p`. |
+| `number` | string | `s`, `p`, or `sp` for a noun whose one form is used as both singular and plural. |
 | `tense` | string | `past`, `present`, `subjunctive`, or `imperative`. |
 | `geez_form` | string | The Ge'ez form. `/` separates printed variants; `(...)` notes are dropped when loading. |
 | `amharic_equivalent` | string | Amharic gloss. |

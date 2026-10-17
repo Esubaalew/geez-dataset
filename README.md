@@ -60,7 +60,7 @@ Unified rows (45,152 in total) that load:
 
 | | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
-| gold (Merho Ges) | 8,085 | 1,162 | 1,542 | 1,166 |
+| gold (Merho Ges) | 8,087 | 1,164 | 1,543 | 1,166 |
 | other books | 10,065 | 572 | 767 | 21,793 |
 
 Synthetic training forms: 120,685 lines. Synthetic forms for val/test roots: 17,571 lines.
