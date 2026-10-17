@@ -121,4 +121,11 @@ Line counts corrected to the files: synthetic files 121,206 (v1 README: 125,020)
 
 ## 17 October 2026: combine reviewed corrections
 
-Preserve Gemini commit 3736e59 OCR corrections and cleared noun-list person labels together with origin/main 4bcbe02 imperative, number/gender and duplicate book-row fixes. No unsettled linguistic readings were inferred.
+Seventeen OCR errors in Kidane Wold text corrected from the printed pages; person cleared on noun-list rows; imperative person, number and gender labels and duplicate book rows fixed.
+
+## 17 October 2026: gold cleanup
+
+- Removed 42 example phrases and title abbreviations from the gold tables; fixed two person labels.
+- Part of speech set to noun on 745 rows of noun tables.
+- Roots corrected to ለ-የ-ለ-የ and ዐ-ወ-የ-ወ; one book row that repeats a gold row folded into it; root ዐ-ወ-የ-ወ added for dictionary entry አዐውየወ.
+- The two entries of አመንዘረ on p.129 kept as separate meanings and marked for checking.
