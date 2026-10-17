@@ -14,7 +14,7 @@ book-only root with its class mark.
 | `word_class` | `verb`, `noun`, `adjective`, `infinitive`, `gerund` (ቦዝ, converb), `verbal_noun`, `pronoun`, `demonstrative`, `preposition`, `particle`, `numeral`, `adverb`, `nominal` (a noun or adjective of Kidane Wold's dictionary: the book prints no class) |
 | `stem` | `basic`, `passive`, `causative`, `reciprocal`, `aste`, `aste_reciprocal` (verbs, infinitives, gerunds, verbal nouns) |
 | `tense` | `past`, `present`, `subjunctive`, `imperative` (verbs) |
-| `person`, `gender`, `number` | the subject of a verb or gerund; gender and number of a noun or adjective; the person of a pronoun |
+| `person`, `gender`, `number` | the subject of a verb or gerund; gender and number of a noun or adjective; the person of a pronoun. `number` is `s`, `p`, or `sp` for a noun used unchanged as singular and plural |
 | `object` | object suffix of a verb or gerund (`3ms`, `2fp`, `1cs` ...) |
 | `possessor` | pronominal suffix on a noun, infinitive, verbal noun, preposition or particle (same codes) |
 | `negated` | the form carries ኢ- |
