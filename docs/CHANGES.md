@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,092 / 1,164 / 1,543 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,019 / 568 / 759 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,020 / 568 / 759 |
 | unified rows | 24,352 | 45,164 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -140,3 +140,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ኀየለ: ይኄይል is the present (Kidane Wold p.475); the Year 1 p.34 rows printed with ሀ (ሀየለ, ይሄይል, የሀይል, ሀይሎ, ሀይሎት) moved to root ኀ-የ-ለ, since no book has ሀየለ as a separate word. Repeated rows are `EXCLUDED`; infinitives printed only with ሀ stay `CHECK`.
 - ኀለየ is of class ቀደሰ: present ይኄሊ added, የኀሊ is the subjunctive; the printed ይኅሊ (ፍሬ ግእዝ p.61) stays `CHECK`.
 - ተኀየየ / ይትኀየይ (ፍሬ ግእዝ pp.40, 50, 62) are under root ሀ-የ-የ 'ቸል አለ', the spelling the dictionaries give (Yared Shiferaw p.270, Kidane Wold p.368).
+- አየየ is of class ቀደሰ: ይእይይ is the present and የአይይ the subjunctive (ፍሬ ግእዝ pp.40 and 62, Kidane Wold p.214); the p.40 የአይይ now loads.
