@@ -128,4 +128,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Removed 42 example phrases and title abbreviations from the gold tables; fixed two person labels.
 - Part of speech set to noun on 745 rows of noun tables.
 - Roots corrected to ለ-የ-ለ-የ and ዐ-ወ-የ-ወ; one book row that repeats a gold row folded into it; root ዐ-ወ-የ-ወ added for dictionary entry አዐውየወ.
-- Headword on p.129 read as አመዝበረ (root መ-ዘ-በ-ረ), distinct from አመንዘረ; lemmas and forms corrected from the pages on pp.40, 320, 337 and 383; two OCR readings corrected in Kidane Wold pp.375 and 455.
+- Headword on p.129 read as አመንዘረ (root መ-ነ-ዘ-ረ), printed twice with two glosses; lemmas and forms corrected from the pages on pp.40, 320, 337 and 383; two OCR readings corrected in Kidane Wold pp.375 and 455.
