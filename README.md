@@ -20,7 +20,7 @@ Kidane Wold headwords are taken from the typed transcription in [geezorg/data](h
 
 ```
 data/paradigms/   gold train/val/test files; synthetic training forms
-data/unified/     every labelled form of every book in one row schema, with splits
+data/unified/     every labelled form of every book in one row schema, with splits; a reviewed copy (see below)
 data/clitics/     forms with proclitics (ወ, ዘ, ለ, በ, እም) and enclitics (ሰ, ኒ, ሂ, ኑ), made by rule from unified rows
 data/books/       forms of ፍሬ ግእዝ, የግዕዝ መማሪያ, Mesehaf Gese Wesewasew and the verb list, one per line
 data/synthetic/   synthetic forms whose roots are in val or test (not for training)
@@ -28,7 +28,7 @@ data/lexicon/     Kidane Wold dictionary and derived files, modern glossary, boo
 data/parallel/    Ge'ez–Amharic pairs (trusted and uncertain)
 data/corpora/     prose and phrasebook
 docs/schema.md    field reference
-scripts/          check_dataset.py, check_unified.py, build_clitic_forms.py
+scripts/          check_dataset.py, check_unified.py, build_clitic_forms.py, apply_review.py
 ```
 
 ## Row format
@@ -80,12 +80,27 @@ train = [r for r in rows if r["status"] == "" and r["split"] == "train"]
 
 Use only rows with an empty `status`. Do not train on `data/synthetic/`.
 
+`data/unified/geez_morphology_rows_reviewed.jsonl` is the same file with a review of held rows applied: 621 more
+rows load (22,763 in total: train 18,602, val 1,784, test 2,377). Rows load there only when the dataset itself
+supports the review; see [data/unified/README.md](data/unified/README.md#reviewed-rows).
+
+`data/clitics/clitic_forms.jsonl` holds 66,337 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
+made by rule from settled rows; each keeps the root, labels and split of its source row
+([data/clitics/README.md](data/clitics/README.md)).
+
 Check the data:
 
 ```bash
 python scripts/check_dataset.py
+python scripts/check_unified.py .
+python scripts/check_unified.py . data/unified/geez_morphology_rows_reviewed.jsonl
 cd data && sha256sum -c SHA256SUMS
 ```
+
+## Reporting errors
+
+Please open an issue with the row `id` (or the gold `record_id`), the book and page, and the reading you
+propose. Corrections are recorded in [docs/CHANGES.md](docs/CHANGES.md).
 
 ## License
 

@@ -11,7 +11,7 @@
   5 duplicates  no two rows that load have the same form, root, word_class and labels
   6 books       every line of data/books/*/forms.jsonl is the source of exactly one row, with the same form, root and split
   7 held splits a root is in one split among all its rows that are not EXCLUDED, so a held-back row can load later without a leak
-  python check_unified.py DATASET_DIR
+  python check_unified.py DATASET_DIR [ROWS_JSONL]   (default data/unified/geez_morphology_rows.jsonl)
 """
 import collections, json, os, re, sys
 
@@ -34,7 +34,8 @@ REQ = {"verb": ("tense", "person", "gender", "number", "stem"), "gerund": ("stem
        "infinitive": ("stem",), "verbal_noun": ("stem",), "noun": ("number",), "adjective": ("number",)}
 errs = collections.defaultdict(list)
 err = lambda k, m: errs[k].append(m)
-rows = [json.loads(l) for l in open(os.path.join(ds, "data", "unified", "geez_morphology_rows.jsonl"), encoding="utf-8")]
+ROWS = sys.argv[2] if len(sys.argv) > 2 else os.path.join(ds, "data", "unified", "geez_morphology_rows.jsonl")
+rows = [json.loads(l) for l in open(ROWS, encoding="utf-8")]
 ids = collections.Counter(r["id"] for r in rows)
 root_splits, keys = collections.defaultdict(set), collections.defaultdict(list)
 by_id = {r["id"]: r for r in rows}
@@ -74,7 +75,7 @@ for root, sp in sorted(root_splits.items()):
             err("4 splits", f"root {root} loads in {dict(notes)}")
 for k, v in keys.items():
     if len(v) > 1 and not all(by_id[i]["source"] == "gold" for i in v): err("5 duplicates", f"{k[0]} ({k[1]}): {', '.join(v)}")
-book_lines, book_refs = {}, collections.Counter()
+book_lines, book_refs, overrides = {}, collections.Counter(), collections.Counter()
 books_dir = os.path.join(ds, "data", "books")
 for b in sorted(os.listdir(books_dir)) if os.path.isdir(books_dir) else []:
     f = os.path.join("data", "books", b, "forms.jsonl")
@@ -89,7 +90,11 @@ for r in rows:
         err("6 books", f"{r['id']}: source_ref {ref} is not a line of {f}"); continue
     b = book_lines[f][int(n) - 1]
     for k in ("form", "root", "split"):
-        if b.get(k) != r[k]: err("6 books", f"{r['id']}: {k} {r[k]!r} but {ref} has {b.get(k)!r}")
+        if b.get(k) != r[k]:
+            if k != "form" and "review 2026-10-18" in (r["evidence"] or ""):
+                overrides[k] += 1        # a documented review correction of the printed root or its split
+            else:
+                err("6 books", f"{r['id']}: {k} {r[k]!r} but {ref} has {b.get(k)!r}")
 for f, lines in book_lines.items():
     for n in range(1, len(lines) + 1):
         if book_refs[f"{f}:{n}"] != 1: err("6 books", f"{f}:{n} is the source of {book_refs[f'{f}:{n}']} rows")
@@ -102,6 +107,7 @@ for root, sp in sorted(held.items()):
 for sec in ("1 fields", "2 labels", "3 forms", "4 splits", "5 duplicates", "6 books", "7 held splits"):
     print(("FAIL " if errs[sec] else "PASS ") + f"{sec}: {len(errs[sec])} problem(s)")
     for m in errs[sec][:8]: print("   ", m)
+if overrides: print("review overrides of book lines (documented in evidence):", dict(overrides))
 print("books:", ", ".join(f"{f.split('/')[2]} {len(v)}" for f, v in book_lines.items()))
 c = collections.Counter((r["split"], r["word_class"]) for r in rows if r["status"] == "")
 print("rows that load:", sum(c.values()), dict(sorted(collections.Counter(r["split"] for r in rows if r["status"] == "").items())))

@@ -70,7 +70,7 @@ decides: the present of ኀደገ-type verbs has ኀ, the subjunctive and the im
 
 ## Reading the rows for training
 
-`dataset_loader.load_unified(dataset_dir, split, sources=("book",))` returns the rows that load (status `""`) as pairs;
+In the geez-morphology repository, `dataset_loader.load_unified(dataset_dir, split, sources=("book",))` returns the rows that load (status `""`) as pairs;
 `dataset_loader.target_text` writes the target of every class (the shapes are in its docstring), and
 `analyzer.parse_neural_output` reads them back.
 
@@ -96,3 +96,20 @@ Splits: a root that already has a split keeps it; a root found only as a twin-le
 ## Counts
 
 45,164 rows. Rows that load: 22,142 (train 18,111, val 1,730, test 2,301): gold 10,794 (train 8,090, val 1,162, test 1,542); other books 11,348 (train 10,021, val 568, test 759). Not loaded: 23,022 (gold 1,166, other books 21,856).
+
+## Reviewed rows
+
+`geez_morphology_rows_reviewed.jsonl` is the unified file with a review of held rows applied. It is built by
+`python scripts/apply_review.py data/unified/review_2026-10-18.tsv` and checked with
+`python scripts/check_unified.py . data/unified/geez_morphology_rows_reviewed.jsonl`. The base file and the
+book files are not changed.
+
+The review (`review_2026-10-18.tsv`) gives a word class, a root or no root, and a note for the 1,435 held forms
+that occur in the AGE Ge'ez–Amharic corpus ([HenokB/AGE-Dataset](https://github.com/HenokB/AGE-Dataset)), most frequent first. A reviewed row loads only when the dataset supports it: a closed-class word
+(pronoun, demonstrative, preposition, particle, adverb, numeral) loads with no root; a word with a root loads
+only if that root is already the root of settled rows, and it takes that root's split; nouns and adjectives
+need a number and verbs their full labels. Other rows stay held and their `status_reason` records the
+proposal and why it does not load (root not attested, noun without a root, labels missing).
+`review_2026-10-18_applied.tsv` lists the outcome for every row. Names and primary nouns without a root are
+listed in `review_2026-10-18_rootless_nouns.tsv`. Where a reviewed row replaces a root or split printed in a
+book, its `evidence` says so, and `check_unified.py` reports these as review overrides.

@@ -140,3 +140,18 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ኀየለ: ይኄይል is the present (Kidane Wold p.475); the Year 1 p.34 rows printed with ሀ (ሀየለ, ይሄይል, የሀይል, ሀይሎ, ሀይሎት) moved to root ኀ-የ-ለ, since no book has ሀየለ as a separate word. Repeated rows are `EXCLUDED`; the infinitives are spelled ኀይሎ / ኀይሎት (printed ሀይሎ / ሀይሎት).
 - ኀለየ follows the order of ፍሬ ግእዝ p.61 (ቀተለ, with the guttural): present የኀሊ, subjunctive ይኅሊ. A present ይኄሊ read from the dictionary (Yared Shiferaw p.258 በዘይኄልዩ) is added as `CHECK`.
 - ተኀየየ / ይትኀየይ (ፍሬ ግእዝ pp.40, 50, 62) are under root ሀ-የ-የ 'ቸል አለ', the spelling the dictionaries give (Yared Shiferaw p.270, Kidane Wold p.368).
+
+## 18–19 October 2026: clitic forms and reviewed held rows
+
+- `data/clitics/clitic_forms.jsonl`: 66,337 forms with the proclitics ወ, ዘ, ለ, በ, እም (and chains such as ወለ,
+  ዘበ, ወእም) and the enclitics ሰ, ኒ, ሂ, ኑ, made by rule from settled rows (train 54,250, val 5,187, test 6,900).
+  Each copies the root, labels and split of its source row (`base_id`). Built by `scripts/build_clitic_forms.py`.
+- `data/unified/geez_morphology_rows_reviewed.jsonl`: a review of the 1,435 held forms that occur in the AGE corpus
+  (`review_2026-10-18.tsv`), applied by `scripts/apply_review.py`. 621 rows load that did not (22,763 in total);
+  they cover 28.9% of AGE tokens by exact form, against 18.3% for the base file. Closed-class words load without
+  a root (ከመ, እስመ, እለ, ኵሉ, ናሁ, ምስሌሁ ...); nouns load with roots already attested in settled rows (ሕዝብ ሐ-ዘ-በ,
+  ሰብእ ሰ-በ-አ, ምድረ መ-ደ-ረ, ሀገር ሀ-ገ-ረ). Held: 72 rows whose proposed root is not a root of settled rows, 583
+  rows of names and primary nouns without a root (422 forms, listed in `review_2026-10-18_rootless_nouns.tsv`), and rows whose number
+  or verb labels are not given. 63 printed roots and 11 splits are replaced; each such row says so in `evidence`.
+- `scripts/check_unified.py` takes an optional rows file and reports documented review overrides of book lines.
+- The base unified file and the book files are unchanged.

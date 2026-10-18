@@ -71,6 +71,12 @@ Optional fields:
 
 `data/unified/geez_morphology_rows.jsonl` holds the gold paradigm rows and the rows of every other book, one schema. It has more classes than the gold paradigm files above: `verb`, `noun`, `adjective`, `nominal` (Kidane Wold's headwords, which print no noun or adjective label), `infinitive`, `gerund`, `verbal_noun`, and the rootless function-word classes (`pronoun`, `preposition`, `particle`, `numeral`, `demonstrative`, `adverb`), plus the slots `possessor` and `negated`. `scripts/check_dataset.py` checks the gold paradigm files (`verb`, `noun`, `adjective`) and then runs `scripts/check_unified.py`, which checks the unified file and the book files under `data/books`. The fields, statuses, split rule and the checked-table files are in `data/unified/README.md`.
 
+## Clitic forms
+
+`data/clitics/clitic_forms.jsonl` has the fields of the unified rows plus `proclitic` (e.g. `ወ`, `ለ`, `ወእም`, or
+null), `enclitic` (`ሰ`, `ኒ`, `ሂ`, `ኑ`, or null) and `base_id` (the unified row the form is made from). `source` is
+`clitic_rule`; root, labels and split are those of the base row.
+
 ## Root fields in the other files
 
 The checker also reads the root fields of the dictionaries, the Kidane Wold tables and the synthetic files: every key named `root` or ending in `_root`. None may hold the placeholder `CHECK`.
