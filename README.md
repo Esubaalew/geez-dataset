@@ -61,8 +61,8 @@ Unified rows (45,164 in total) that load:
 | | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
 | gold (Merho Ges) | 8,090 | 1,162 | 1,542 | 1,166 |
-| other books | 10,019 | 568 | 759 | 21,858 |
-| total | 18,109 | 1,730 | 2,301 | 23,024 |
+| other books | 10,021 | 568 | 759 | 21,856 |
+| total | 18,111 | 1,730 | 2,301 | 23,022 |
 
 The gold loader expands spellings to 8,092 / 1,164 / 1,543 pairs; these differ from the unified-row counts above.
 
