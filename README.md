@@ -21,13 +21,14 @@ Kidane Wold headwords are taken from the typed transcription in [geezorg/data](h
 ```
 data/paradigms/   gold train/val/test files; synthetic training forms
 data/unified/     every labelled form of every book in one row schema, with splits
+data/clitics/     forms with proclitics (ወ, ዘ, ለ, በ, እም) and enclitics (ሰ, ኒ, ሂ, ኑ), made by rule from unified rows
 data/books/       forms of ፍሬ ግእዝ, የግዕዝ መማሪያ, Mesehaf Gese Wesewasew and the verb list, one per line
 data/synthetic/   synthetic forms whose roots are in val or test (not for training)
 data/lexicon/     Kidane Wold dictionary and derived files, modern glossary, book forms
 data/parallel/    Ge'ez–Amharic pairs (trusted and uncertain)
 data/corpora/     prose and phrasebook
 docs/schema.md    field reference
-scripts/          check_dataset.py, check_unified.py
+scripts/          check_dataset.py, check_unified.py, build_clitic_forms.py
 ```
 
 ## Row format
