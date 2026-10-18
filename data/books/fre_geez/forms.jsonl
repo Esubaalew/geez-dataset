@@ -1373,9 +1373,9 @@
 {"form": "ቈቊዐ", "root": "ቈ-ቈ-ዐ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
 {"form": "ይቌቊዕ", "root": "ቈ-ቈ-ዐ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
 {"form": "ይቈቊዕ", "root": "ቈ-ቈ-ዐ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
-{"form": "ጐየ", "root": null, "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
-{"form": "ይጐዪይ", "root": null, "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
-{"form": "ይጒየይ", "root": null, "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
+{"form": "ጐየ", "root": "ጐ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
+{"form": "ይጐዪይ", "root": "ጐ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
+{"form": "ይጒየይ", "root": "ጐ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
 {"form": "ጒሕቈ", "root": "ጐ-ሐ-ቈ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "val"}
 {"form": "ይጒሕቊ", "root": "ጐ-ሐ-ቈ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "val"}
 {"form": "ይጒሐቊ", "root": "ጐ-ሐ-ቈ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "val"}
@@ -4037,3 +4037,9 @@
 {"form": "ብህሉ", "root": "በ-ሀ-ለ", "pos": "verb", "number": "p", "gender": "m", "class": "ብህለ", "book": "ፍሬ ግእዝ", "page": 111, "split": "train"}
 {"form": "ብህለት", "root": "በ-ሀ-ለ", "pos": "verb", "number": "s", "gender": "f", "class": "ብህለ", "book": "ፍሬ ግእዝ", "page": 111, "split": "train"}
 {"form": "ብህላ", "root": "በ-ሀ-ለ", "pos": "verb", "number": "p", "gender": "f", "class": "ብህለ", "book": "ፍሬ ግእዝ", "page": 111, "split": "train"}
+{"form": "አየየ", "root": "አ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
+{"form": "የአይይ", "root": "አ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
+{"form": "ይእይይ", "root": "አ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
+{"form": "ተኀየየ", "root": "ሀ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
+{"form": "ይትኀየይ", "root": "ሀ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
+{"form": "ይትኀየይ", "root": "ሀ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 40, "split": "train"}
