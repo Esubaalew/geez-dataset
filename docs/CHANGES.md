@@ -138,5 +138,5 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ፍሬ ግእዝ p.40: tenses set on ጐየ and ፃህየየ (root ጐ-የ-የ for ጐየ); አየየ and ተኀየየ added. They repeat rows that already load and stay `CHECK`.
 - ፍሬ ግእዝ p.39: tenses set on ሐለየ, ይሔሊ, የሐሊ.
 - ኀየለ: ይኄይል is the present (Kidane Wold p.475); the Year 1 p.34 rows printed with ሀ (ሀየለ, ይሄይል, የሀይል, ሀይሎ, ሀይሎት) moved to root ኀ-የ-ለ, since no book has ሀየለ as a separate word. Repeated rows are `EXCLUDED`; the infinitives are spelled ኀይሎ / ኀይሎት (printed ሀይሎ / ሀይሎት).
-- ኀለየ is of class ቀደሰ: present ይኄሊ added, የኀሊ is the subjunctive; the printed ይኅሊ (ፍሬ ግእዝ p.61) stays `CHECK`.
+- ኀለየ follows the order of ፍሬ ግእዝ p.61 (ቀተለ, with the guttural): present የኀሊ, subjunctive ይኅሊ. A present ይኄሊ read from the dictionary (Yared Shiferaw p.258 በዘይኄልዩ) is added as `CHECK`.
 - ተኀየየ / ይትኀየይ (ፍሬ ግእዝ pp.40, 50, 62) are under root ሀ-የ-የ 'ቸል አለ', the spelling the dictionaries give (Yared Shiferaw p.270, Kidane Wold p.368).
