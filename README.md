@@ -84,8 +84,8 @@ Use only rows with an empty `status`. Do not train on `data/synthetic/`.
 rows load (22,763 in total: train 18,602, val 1,784, test 2,377). Rows load there only when the dataset itself
 supports the review; see [data/unified/README.md](data/unified/README.md#reviewed-rows).
 
-`data/clitics/clitic_forms.jsonl` holds 66,337 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
-made by rule from settled rows; each keeps the root, labels and split of its source row
+`data/clitics/clitic_forms.jsonl` holds 68,197 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
+made by rule from the settled reviewed rows; each keeps the root, labels and split of its source row
 ([data/clitics/README.md](data/clitics/README.md)).
 
 Check the data:

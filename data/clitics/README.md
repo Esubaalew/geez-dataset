@@ -1,7 +1,7 @@
 # Clitic forms
 
 `clitic_forms.jsonl` holds word forms with Ge'ez clitics, made by rule from the settled rows of
-`data/unified/geez_morphology_rows.jsonl` (rows with an empty `status`). It is rebuilt by
+`data/unified/geez_morphology_rows_reviewed.jsonl` (rows with an empty `status`). It is rebuilt by
 `python scripts/build_clitic_forms.py`.
 
 Ge'ez writes its proclitics joined to the next word and its enclitics joined to the end of the word:

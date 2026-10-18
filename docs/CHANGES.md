@@ -141,10 +141,10 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ኀለየ follows the order of ፍሬ ግእዝ p.61 (ቀተለ, with the guttural): present የኀሊ, subjunctive ይኅሊ. A present ይኄሊ read from the dictionary (Yared Shiferaw p.258 በዘይኄልዩ) is added as `CHECK`.
 - ተኀየየ / ይትኀየይ (ፍሬ ግእዝ pp.40, 50, 62) are under root ሀ-የ-የ 'ቸል አለ', the spelling the dictionaries give (Yared Shiferaw p.270, Kidane Wold p.368).
 
-## 18–19 October 2026: clitic forms and reviewed held rows
+## Version 2.1.0 (19 October 2026): clitic forms and reviewed held rows
 
-- `data/clitics/clitic_forms.jsonl`: 66,337 forms with the proclitics ወ, ዘ, ለ, በ, እም (and chains such as ወለ,
-  ዘበ, ወእም) and the enclitics ሰ, ኒ, ሂ, ኑ, made by rule from settled rows (train 54,250, val 5,187, test 6,900).
+- `data/clitics/clitic_forms.jsonl`: 68,197 forms with the proclitics ወ, ዘ, ለ, በ, እም (and chains such as ወለ,
+  ዘበ, ወእም) and the enclitics ሰ, ኒ, ሂ, ኑ, made by rule from the settled reviewed rows (train 55,720, val 5,349, test 7,128).
   Each copies the root, labels and split of its source row (`base_id`). Built by `scripts/build_clitic_forms.py`.
 - `data/unified/geez_morphology_rows_reviewed.jsonl`: a review of the 1,435 held forms that occur in the AGE corpus
   (`review_2026-10-18.tsv`), applied by `scripts/apply_review.py`. 621 rows load that did not (22,763 in total);

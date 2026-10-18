@@ -110,6 +110,6 @@ that occur in the AGE Ge'ez–Amharic corpus ([HenokB/AGE-Dataset](https://githu
 only if that root is already the root of settled rows, and it takes that root's split; nouns and adjectives
 need a number and verbs their full labels. Other rows stay held and their `status_reason` records the
 proposal and why it does not load (root not attested, noun without a root, labels missing).
-`review_2026-10-18_applied.tsv` lists the outcome for every row. Names and primary nouns without a root are
-listed in `review_2026-10-18_rootless_nouns.tsv`. Where a reviewed row replaces a root or split printed in a
+A held row's `status_reason` records the review's proposal and why it does not load. Names and primary nouns
+without a root are listed in `review_2026-10-18_rootless_nouns.tsv`. Where a reviewed row replaces a root or split printed in a
 book, its `evidence` says so, and `check_unified.py` reports these as review overrides.

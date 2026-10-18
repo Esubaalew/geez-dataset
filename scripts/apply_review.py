@@ -5,9 +5,9 @@
     python scripts/apply_review.py data/unified/review_2026-10-18.tsv
 
 Input: a review table with one line per form (columns form, row_ids, review_word_class, review_root, review_note).
-Output: data/unified/geez_morphology_rows_reviewed.jsonl (the base rows with the review applied) and
-data/unified/review_2026-10-18_applied.tsv (what happened to every row). The base file and the book files
-are not changed.
+Output: data/unified/geez_morphology_rows_reviewed.jsonl (the base rows with the review applied). A row that
+stays held records the review's proposal and the reason in its status_reason. The base file and the book
+files are not changed.
 
 A row of the review is settled (status "") only when the dataset itself supports it:
 
@@ -140,10 +140,6 @@ def main(review_path):
     with open(os.path.join(unified, "geez_morphology_rows_reviewed.jsonl"), "w", encoding="utf-8") as f:
         for r in out_rows:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
-    with open(os.path.join(unified, f"{stem}_applied.tsv"), "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f, delimiter="\t", lineterminator="\n")
-        w.writerow(["id", "form", "old_status", "outcome", "word_class", "root", "split", "reason"])
-        w.writerows(log)
     with open(os.path.join(unified, f"{stem}_rootless_nouns.tsv"), "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f, delimiter="\t", lineterminator="\n")
         w.writerow(["word", "word_class", "review_note"])

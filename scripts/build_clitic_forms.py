@@ -10,7 +10,7 @@ Ge'ez writes its proclitics joined to the next word (ወ "and", ዘ relative / "
 labelled rows of this repository are bare forms, so running text such as ለሕዝብ, ወገብረ or ዘለዓለም has no
 row. This script adds such forms by rule:
 
-  * The source is every row of data/unified/geez_morphology_rows.jsonl with an empty status.
+  * The source is every row of data/unified/geez_morphology_rows_reviewed.jsonl with an empty status.
   * A clitic form is the clitic string joined to the bare form, with no change of spelling.
   * The new row copies root, word class and all features from its source row. Its evidence names the
     source row, so every root still traces to a book or gold record, never to a tool or model.
@@ -28,7 +28,7 @@ import json
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC = os.path.join(ROOT, "data", "unified", "geez_morphology_rows.jsonl")
+SRC = os.path.join(ROOT, "data", "unified", "geez_morphology_rows_reviewed.jsonl")
 OUT_DIR = os.path.join(ROOT, "data", "clitics")
 OUT = os.path.join(OUT_DIR, "clitic_forms.jsonl")
 VARIANTS_PER_ROW = 3
