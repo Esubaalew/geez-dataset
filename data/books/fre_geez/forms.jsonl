@@ -2275,9 +2275,9 @@
 {"form": "ነጸርነ", "root": "ነ-ጸ-ረ", "pos": "verb", "number": "p", "gender": "c", "class": null, "book": "ፍሬ ግእዝ", "page": 49, "split": "train"}
 {"form": "ንኔጽር", "root": "ነ-ጸ-ረ", "pos": "verb", "number": "p", "gender": "c", "class": null, "book": "ፍሬ ግእዝ", "page": 49, "split": "train"}
 {"form": "ንነጽር", "root": "ነ-ጸ-ረ", "pos": "verb", "number": "p", "gender": "c", "class": null, "book": "ፍሬ ግእዝ", "page": 49, "split": "train"}
-{"form": "ተኀየየ", "root": "ኀ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 50, "split": "train"}
-{"form": "ይትኄየይ", "root": "ኀ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 50, "split": "train"}
-{"form": "ይትኀየይ", "root": "ኀ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 50, "split": "train"}
+{"form": "ተኀየየ", "root": "ሀ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 50, "split": "train"}
+{"form": "ይትኄየይ", "root": "ሀ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 50, "split": "train"}
+{"form": "ይትኀየይ", "root": "ሀ-የ-የ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 50, "split": "train"}
 {"form": "ተፅዕረ", "root": "ፀ-ዐ-ረ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 50, "split": "train"}
 {"form": "ይፄዐር", "root": "ፀ-ዐ-ረ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 50, "split": "train"}
 {"form": "ይፀዓር", "root": "ፀ-ዐ-ረ", "pos": "verb", "number": "s", "gender": "m", "class": null, "book": "ፍሬ ግእዝ", "page": 50, "split": "train"}

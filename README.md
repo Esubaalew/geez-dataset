@@ -56,16 +56,17 @@ A root appears in only one of train, val and test. Book rows follow the split of
 
 Gold records: train 1,113, val 136, test 221.
 
-Unified rows (45,152 in total) that load:
+Unified rows (45,164 in total) that load:
 
 | | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
-| gold (Merho Ges) | 8,085 | 1,162 | 1,542 | 1,166 |
-| other books | 10,023 | 568 | 759 | 21,847 |
+| gold (Merho Ges) | 8,090 | 1,162 | 1,542 | 1,166 |
+| other books | 10,019 | 568 | 759 | 21,858 |
+| total | 18,109 | 1,730 | 2,301 | 23,024 |
 
-The gold loader expands spellings to 8,087 / 1,164 / 1,543 pairs; these differ from the unified-row counts above.
+The gold loader expands spellings to 8,092 / 1,164 / 1,543 pairs; these differ from the unified-row counts above.
 
-Synthetic training forms: 120,685 lines. Synthetic forms for val/test roots: 17,571 lines.
+Synthetic training forms: 120,685 lines. Synthetic forms for val/test roots: 17,569 lines.
 
 ## Loading
 
