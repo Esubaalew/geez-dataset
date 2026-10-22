@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,621 / 640 / 848 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,622 / 640 / 848 |
 | unified rows | 24,352 | 45,348 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -384,3 +384,8 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ኵሊቱ u012960 gets root ከ-ለ-አ and possessor 3ms, and ሊቃውንት u021827 (root ለ-የ-ቀ) passes; both load in both files.
 - ኩልያት u012044, u028668 and u042121 (plural, root ከ-ለ-አ) stay unloaded with no root: they are in val and ከ-ለ-አ is a train root.
 - Counts: 22,914 unified rows load (train 18,720, val 1,791, test 2,403); reviewed rows 22,952 load (train 18,751, val 1,795, test 2,406); 68,755 clitic forms.
+
+## 23 October 2026: ኩልያት in train
+
+- ኩልያት 'kidneys', plural of ኩሊት (Merho ከልአ), gets root ከ-ለ-አ and number p, and moves from val to train so ከ-ለ-አ is in one split. u012044 loads in both files; u028668 and u042121 repeat it and are excluded. The book line of u028668 follows.
+- Counts: 22,915 unified rows load (train 18,721, val 1,791, test 2,403); reviewed rows 22,953 load (train 18,752, val 1,795, test 2,406); 68,758 clitic forms (train 56,161, val 5,381, test 7,216).
