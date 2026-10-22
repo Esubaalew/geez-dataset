@@ -311,3 +311,12 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Counts: 45,310 unified rows, 22,285 load (train 18,219, val 1,742, test 2,324); reviewed rows 22,897 load (train
   18,701, val 1,796, test 2,400); 68,585 clitic forms (train 56,008, val 5,379, test 7,198); gold pairs train 8,091,
   val 1,153, test 1,554. No root is in more than one split.
+
+## 22 October 2026: fix-ups of the Dillmann corrections
+
+- ስን (u035659) back to ወ-ሰ-ነ ('boundary'), test; stays `CHECK`.
+- ማዕሌት (u038912, ዐ-ለ-የ, val): number s; it then repeats gold row u009889 and is `EXCLUDED`.
+- ዕውድ (u039712): class adjective (participle); stays `CHECK` (no number). The other rows of its entry
+  (u039710, u039711, u039713–u039719, u039721–u039723, u039725) አ-ደ to ዐ-ወ-ደ (printed root kept in `evidence`),
+  train to test, the split of ዐ-ወ-ደ; the book file carries the new root and split. ዑድ (u039724) stays `CHECK`.
+- Counts unchanged. No root is in more than one split.
