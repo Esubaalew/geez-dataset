@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,174 / 594 / 775 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,601 / 638 / 844 |
 | unified rows | 24,352 | 45,348 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -367,3 +367,11 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   take the Merho root. Rows move to the split of their root where needed. ዕጣነ, ደመ, ደሞ, ደም, ርስት/ርስተ and ማእከል are not changed.
 - ግብረ (u014846) is `EXCLUDED` in the reviewed file too, as a repeat of u028596, as in the main file.
 - Number (and part of speech) filled in for 12 rows from Language and for ስሞ u015275 from the reviewed file; they load unless they repeat a row.
+
+## 22 October 2026: main file in step with the reviewed file
+
+- 563 of the 601 rows that loaded only in `geez_morphology_rows_reviewed.jsonl` (all but 38 gold rows, which are not changed) take the review's root, class, number, gender, split and
+  note in the main file. 542 now load; 21 fail a check (root letters, gold root, repeat, split, held-out
+  chapter) and do not load in either file.
+- እሙንቱ u019564 and እማንቱ u019565 are `EXCLUDED` in both files as repeats of u014816 and u014817.
+- The main file is the training file. `--unified_file` of train_tpu.py must not point at the reviewed file.
