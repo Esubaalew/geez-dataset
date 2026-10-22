@@ -1440,7 +1440,7 @@
 {"form": "ረቀመ", "root": "ረ-ቀ-መ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 48, "split": "train"}
 {"form": "ረአመ", "root": "ረ-አ-መ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 48, "split": "train"}
 {"form": "ረየመ", "root": "ረ-የ-መ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 48, "split": "train"}
-{"form": "ረገመ", "root": "ረ-ዐ-መ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 48, "split": "train"}
+{"form": "ረገመ", "root": "ረ-ገ-መ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 48, "split": "train"}
 {"form": "ቀለመ", "root": "ቀ-ለ-መ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 48, "split": "train"}
 {"form": "ቀሰመ", "root": "ቀ-ሰ-መ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 48, "split": "train"}
 {"form": "ቀረመ", "root": "ቀ-ረ-መ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 48, "split": "train"}

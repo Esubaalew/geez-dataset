@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,091 / 1,153 / 1,555 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,004 / 576 / 761 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,005 / 579 / 761 |
 | unified rows | 24,352 | 45,170 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -236,3 +236,16 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   changes: gold records train 1,112, val 136, test 223; gold pairs that load 8,091 / 1,153 / 1,555.
 - Counts unchanged: 45,170 unified rows, 22,137 load (train 18,095, val 1,727, test 2,315); reviewed rows 22,752
   load; 68,165 clitic forms.
+
+## 22 October 2026: fourteen root merges and seven corrected rows
+
+- Fourteen forms printed under two spellings of one root take the root of their other rows (book rows only; gold
+  rows already have it): ሊሉይ ለ-የ-ለ-የ, ስቁር ሰ-ቈ-ረ, ተንባል and ትንቡል ተ-ነ-በ-ለ, ንጽብሩቅ ጸ-በ-ረ-ቀ, አብሐ በ-ወ-ሐ, ዋርስ and
+  ውሩስ ወ-ረ-ሰ, ውርዝው ወ-ረ-ዘ-ወ, ዲጉን, ዴግኖ and ዴግኖት ደ-የ-ገ-ነ, ጸሎት ጸ-ለ-የ, ጽልሙት ጸ-ለ-መ. No row changes split.
+- Seven rows checked against Dillmann and the Bible: መዝገበ is a noun (root ዘ-ገ-በ); እምነ is a preposition and
+  እሙንቱ, እማንቱ are pronouns 3mp and 3fp, all with no root; these four load. ረገመ takes root ረ-ገ-መ and ማሕምም
+  ሐ-መ-መ; both stay `CHECK` (no tense and person, no number). መካን keeps መ-ከ-ነ, adjective, unchanged.
+- The printed root is kept in `evidence`; the book files (`data/books/*/forms.jsonl`) carry the new root.
+- Counts: 45,170 unified rows, 22,141 load (train 18,096, val 1,730, test 2,315); reviewed rows 22,754 load (train
+  18,579, val 1,784, test 2,391); 68,166 clitic forms (train 55,651, val 5,344, test 7,171). No root is in more
+  than one split.
