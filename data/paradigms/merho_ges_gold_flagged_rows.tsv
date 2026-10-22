@@ -1,2 +1,3 @@
 split	file_line	row	form	reason
 test	191	13	ጸዓድው	after root correction ጸ-ዐ-ደ -> ጸ-ዐ-ደ-ወ repeats gold row u011393
+train	1113	43	መርሶ	with root ረ-ሰ-ወ repeats row 40 of the same record (gold row u011757)

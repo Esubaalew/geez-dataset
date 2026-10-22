@@ -331,3 +331,5 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Counts: gold records train 1,113, val 136, test 222; gold pairs 8,092 / 1,153 / 1,554; 22,286 unified rows load
   (train 18,220, val 1,742, test 2,324); reviewed rows 22,897 load (train 18,701, val 1,796, test 2,400); 68,585
   clitic forms (train 56,008, val 5,379, test 7,198).
+- The second መርሶ of the record (row 43, u011760, ወደብ, pl. መራሰው) takes the row root ረ-ሰ-ወ; it then repeats row 40
+  (u011757), so it is listed in `merho_ges_gold_flagged_rows.tsv` and is `EXCLUDED` in the unified rows. Counts unchanged.
