@@ -365,3 +365,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   take that root (29 rows: 5 now load, 12 repeat a row and are `EXCLUDED`, 12 stay `CHECK`); gold rows are not changed.
   Rows whose printed root was cut or carried a prefix (ማሕምም ሐ-መ, መዋርስት ወ-ሰ, ምስብዒት/መግዝእ/መጋዝእ with መ-, ተንተነ ነ-ተ-ነ)
   take the Merho root. Rows move to the split of their root where needed. ዕጣነ, ደመ, ደሞ, ደም, ርስት/ርስተ and ማእከል are not changed.
+- ግብረ (u014846) is `EXCLUDED` in the reviewed file too, as a repeat of u028596, as in the main file.

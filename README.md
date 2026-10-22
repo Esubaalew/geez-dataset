@@ -80,11 +80,11 @@ train = [r for r in rows if r["status"] == "" and r["split"] == "train"]
 
 Use only rows with an empty `status`. Do not train on `data/synthetic/`.
 
-`data/unified/geez_morphology_rows_reviewed.jsonl` is the same file with a review of held rows applied: 604 more
-rows load (22,943 in total: train 18,740, val 1,797, test 2,406). Rows load there only when the dataset itself
+`data/unified/geez_morphology_rows_reviewed.jsonl` is the same file with a review of held rows applied: 603 more
+rows load (22,942 in total: train 18,740, val 1,797, test 2,405). Rows load there only when the dataset itself
 supports the review; see [data/unified/README.md](data/unified/README.md#reviewed-rows).
 
-`data/clitics/clitic_forms.jsonl` holds 68,723 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
+`data/clitics/clitic_forms.jsonl` holds 68,720 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
 made by rule from the settled reviewed rows; each keeps the root, labels and split of its source row
 ([data/clitics/README.md](data/clitics/README.md)).
 
