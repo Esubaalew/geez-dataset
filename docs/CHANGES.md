@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,165 / 594 / 775 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,174 / 594 / 775 |
 | unified rows | 24,352 | 45,348 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -366,3 +366,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   Rows whose printed root was cut or carried a prefix (ማሕምም ሐ-መ, መዋርስት ወ-ሰ, ምስብዒት/መግዝእ/መጋዝእ with መ-, ተንተነ ነ-ተ-ነ)
   take the Merho root. Rows move to the split of their root where needed. ዕጣነ, ደመ, ደሞ, ደም, ርስት/ርስተ and ማእከል are not changed.
 - ግብረ (u014846) is `EXCLUDED` in the reviewed file too, as a repeat of u028596, as in the main file.
+- Number (and part of speech) filled in for 12 rows from Language and for ስሞ u015275 from the reviewed file; they load unless they repeat a row.
