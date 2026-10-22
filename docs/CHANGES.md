@@ -320,3 +320,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   (u039710, u039711, u039713–u039719, u039721–u039723, u039725) አ-ደ to ዐ-ወ-ደ (printed root kept in `evidence`),
   train to test, the split of ዐ-ወ-ደ; the book file carries the new root and split. ዑድ (u039724) stays `CHECK`.
 - Counts unchanged. No root is in more than one split.
+- ዕውድ (u039712): number s (gender f as printed, unresolved); it then repeats gold row u011170 and is `EXCLUDED`. Counts unchanged.
