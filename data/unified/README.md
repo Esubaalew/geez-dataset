@@ -97,17 +97,17 @@ Splits: a root that already has a split keeps it; a root found only as a twin-le
 
 45,561 rows. Rows that load: 23,171 (train 18,927, val 1,810, test 2,434): gold 10,848 (train 8,134, val 1,155, test 1,559); other books 12,323 (train 10,793, val 655, test 875). Not loaded: 22,390 (gold 1,112, other books 21,278).
 
-## Reviewed rows
+## Corrected rows file
 
-`geez_morphology_rows_reviewed.jsonl` is the unified file with a review of held rows applied. It is checked with
+`geez_morphology_rows_reviewed.jsonl` is the unified file with corrections to held rows applied. It is checked with
 `python scripts/check_unified.py . data/unified/geez_morphology_rows_reviewed.jsonl`. The base file and the
 book files are not changed.
 
-The review gives a word class, a root or no root, and a note for the 1,435 held forms
-that occur in the AGE Ge'ez–Amharic corpus ([HenokB/AGE-Dataset](https://github.com/HenokB/AGE-Dataset)), most frequent first. A reviewed row loads only when the dataset supports it: a closed-class word
+The corrections give a word class, a root or no root, and a note for the 1,435 held forms
+that occur in the AGE Ge'ez–Amharic corpus ([HenokB/AGE-Dataset](https://github.com/HenokB/AGE-Dataset)), most frequent first. A corrected row loads only when the dataset supports it: a closed-class word
 (pronoun, demonstrative, preposition, particle, adverb) loads with no root, and so may a `proper_noun` (a name); a numeral loads with its root; a word with a root loads
 only if that root is already the root of settled rows, and it takes that root's split; nouns and adjectives
 need a number and verbs their full labels. Other rows stay held and their `status_reason` records the
 proposal and why it does not load (root not attested, noun without a root, labels missing).
-A held row's `status_reason` records the review's proposal and why it does not load. Where a reviewed row replaces a root or split printed in a
-book, its `evidence` says so (`Settled: ...`), and `check_unified.py` reports these as review overrides.
+A held row's `status_reason` records the proposed correction and why it does not load. Where a corrected row replaces a root or split printed in a
+book, its `evidence` says so (`Settled: ...`), and `check_unified.py` reports these as overrides.

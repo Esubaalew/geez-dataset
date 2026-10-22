@@ -73,7 +73,7 @@ A form cell with two forms of different stems is split into one row per form (`s
 - ጌገየ: every row of this verb is written ገ-ገ-የ (it was ገ-የ-ገ-የ in the p. 69 table and in 16 rows of `data/lexicon/book_forms.jsonl`), and all of them are in train.
 - አልቦ (root አ-ለ-በ) is in train with the other forms of its entry.
 - Kidane Wold p. 403: the subjunctive of ወረወ is ይውሩ (the page breaks it across a line; it was read as ውሩ).
-- Merho Ges p. 284 (record `269827c0b68e`, ሠቀየ / ሣቀየ): class ባረከ, as ፍሬ ግእዝ p. 40 gives it.
+- Gold p. 284 (record `269827c0b68e`, ሠቀየ / ሣቀየ): class ባረከ, as ፍሬ ግእዝ p. 40 gives it.
 - የግዕዝ መማሪያ: three readings settled on the scan and added at the end of its file (lines 1,818-1,820): ኮጱ (p. 25), ኤኀ (p. 37) and ዘኅዝኀ (p. 37, fourth letter ኀ). Five forms whose reading is not settled are still left out.
 
 ## Yared Shiferaw's Mesehaf Gese Wesewasew
@@ -90,9 +90,9 @@ A form cell with two forms of different stems is split into one row per form (`s
 - 65 roots found only in this list are added to `data/unified/book_root_splits.tsv`, all in train.
 - Roots of the same verb in another book: ቆጰረ is ቈ-ጸ-ረ, ለንጰሰ is ለ-ነ-ጸ-ሰ, ገንጰለ is ገ-ነ-ጸ-ለ, አስፌድለወ is ፈ-ደ-ለ-ወ. ተወሕሠ, ተዋህውኀ, ጸቈሰ and አሰውሰጠ stay `CHECK`.
 - Roots of the same verb in another book, where the meaning matches: ወቀሰ ወ-ቀ-ሠ, ኮፈረ ከ-ፈ-ረ, ዘኮረ ዘ-ከ-ረ, መሞዐ መ-መ-ዐ, ከልኦ ከ-ለ-አ, ጠሞዐ ጠ-መ-ዐ, አስደለወ ደ-ለ-ወ, ሴሰየ ሰ-ሰ-የ, ረሞፀ ረ-መ-ፀ (a ወ or የ read from the vowel of the headword is not a radical). ጥሕረ, ሠነቀ, ተሠአነ and አስተናአወ keep their own roots; ተደረ (ተ-ደ-ረ) and አሰበ (አ-ሰ-በ) stay `CHECK`, their roots not confirmed. ኀለቈ, አከፈ, አስቆቀወ and አመዐርዐረ stay `CHECK`.
-- Roots confirmed by the same verb in the Merho Ges paradigms or another book: ጦመረ ጠ-መ-ረ, ተሞዕዐ መ-ዐ-ዐ, አንጦልዐ ነ-ጠ-ለ-ዐ, ቆለወ ቈ-ለ-ወ, አስዖዘዘ ዐ-ዘ-ዘ, አቅዜዘየ ቀ-ዘ-የ (a ወ or የ read from the vowel of the headword is not a radical); መትሀ, ጐርሐ, ቈልቈለ, ርኅበ, ቈንቈነ, ለምአ, ሰጕዐ, ጐጕአ, ፃእፅአ, ምዕከ, ረጕነኰ, ቀልጰወ, ፆተወ, ዐወደ, ዐወገ, ሠበጠ, አከጠ and ፀረፈ keep their own roots.
+- Roots confirmed by the same verb in the gold paradigms or another book: ጦመረ ጠ-መ-ረ, ተሞዕዐ መ-ዐ-ዐ, አንጦልዐ ነ-ጠ-ለ-ዐ, ቆለወ ቈ-ለ-ወ, አስዖዘዘ ዐ-ዘ-ዘ, አቅዜዘየ ቀ-ዘ-የ (a ወ or የ read from the vowel of the headword is not a radical); መትሀ, ጐርሐ, ቈልቈለ, ርኅበ, ቈንቈነ, ለምአ, ሰጕዐ, ጐጕአ, ፃእፅአ, ምዕከ, ረጕነኰ, ቀልጰወ, ፆተወ, ዐወደ, ዐወገ, ሠበጠ, አከጠ and ፀረፈ keep their own roots.
 - A derived stem keeps the root of its base, with the prefix stripped: ተመዝጐለ መ-ዘ-ጐ-ለ, ተሠሀለ ሠ-ሀ-ለ, አንዛህለለ ነ-ዘ-ሀ-ለ-ለ, አርመስመሰ ረ-መ-ሰ-መ-ሰ, አክሞሰሰ ከ-መ-ሰ-ሰ, ተሥዕዐ ሠ-ዐ-ዐ, አንጕዐ ነ-ጐ-ዐ, አስደለወ ደ-ለ-ወ, አስፌድለወ ፈ-ደ-ለ-ወ, ተመኵሰየ መ-ኰ-ሰ-የ. ጸቈሰ, አሰውሰጠ and ሀየጰ stay `CHECK`.
-- Class marks settled against the same verb in the Merho Ges paradigms: the list class is kept for ቃሕቅሐ, ቆመሰ, ቆበረ, ተጽዕረ, አማዕዘረ, ቀስተወ, አመንሰወ, አመንተወ, አቀምጠወ, አመስከየ, አመክነየ, ዘርከየ and ደርበየ; the list class agrees with the gold for ከረመ, ለጸቀ, ተላጸቀ, ነፈቀ, አልጸቀ, ከልአ, በረከ, አስተብረከ, ሰለወ, ተደለወ, አድለወ, ደለወ, ተጋአዘ, ገአዘ, መረየ, ዐለየ, ዐረየ and አስተጋየደ. Entries whose class differs from the gold stay `CHECK`.
+- Class marks settled against the same verb in the gold paradigms: the list class is kept for ቃሕቅሐ, ቆመሰ, ቆበረ, ተጽዕረ, አማዕዘረ, ቀስተወ, አመንሰወ, አመንተወ, አቀምጠወ, አመስከየ, አመክነየ, ዘርከየ and ደርበየ; the list class agrees with the gold for ከረመ, ለጸቀ, ተላጸቀ, ነፈቀ, አልጸቀ, ከልአ, በረከ, አስተብረከ, ሰለወ, ተደለወ, አድለወ, ደለወ, ተጋአዘ, ገአዘ, መረየ, ዐለየ, ዐረየ and አስተጋየደ. Entries whose class differs from the gold stay `CHECK`.
 
 ## README
 
@@ -100,7 +100,7 @@ Line counts corrected to the files: synthetic files 121,206 (v1 README: 125,020)
 
 ## Flagged gold rows (2026-10-15)
 
-- All 323 rows listed in `merho_ges_gold_flagged_rows.tsv` were checked against the printed *Merho Ges* pages and Yared Shiferaw's typed edition. Each was corrected or removed; no flagged rows remain.
+- All 323 rows listed in `merho_ges_gold_flagged_rows.tsv` were checked against the printed gold pages and Yared Shiferaw's typed edition. Each was corrected or removed; no flagged rows remain.
   - 158 rows that the book does not print as Ge'ez forms were removed from `train`, `val` and `test`: 26 flagged and 18 unflagged repeats of 3ms past headwords that had been labelled as nouns, 32 Amharic glosses and `የ...` subject notes, 17 fragments of the book's class marks (such as `ሰሴ`, `ሳስ`, `እብ`, `ኣብ`, `ኢብ`, `ክብ`, `ብዙ`, `ኩፋኔ`), and rows that were not printed or that ran two words together.
   - Labels corrected: 52 feminine plural adjectives (`-አት`/`-ዋት`/`-ያት` marked `በብ` after `ለሴ`/`ለስ`: `gender` `m` -> `f`), 17 adjectives naming the doer (`ባዕ ሣ ቅ`: `type` `noun` -> `adjective`), and 25 other `type`, `gender`, `number`, `stem` and object-suffix labels.
   - Roots and forms that did not match their section were corrected against the printed book and the typed edition (`ደ-ኀ-ነ` -> `ደ-ኀ-ኀ` on pp. 41-42, `ገ-ደ-ፈ` -> `ገ-የ-ረ` on p. 143, `ቀ-ጠ-ነ` -> `ቀ-ጠ-ጠ` on p. 329, `ለ-አ-ከ` -> `ለ-ከ-አ` on p. 210, `ረ-ገ-በ` -> `ረ-ገ-ዐ` on p. 214, `ጐ-ጐ-ለ` -> `ጐ-ጐ-አ` on p. 231, `ሐ-ቀ-ቀ` -> `ሐ-ቀ-የ` on p. 280, `ነ-አ-የ` -> `ነ-አ-ደ` on p. 310, `ነ-ጐ-ደ-ጐ` -> `ነ-ጐ-ደ-ጐ-ደ` on p. 312, `መ-ለ-ጠ` -> `ሰ-ፈ-ጠ` on p. 329, `አ-ከ-ተ` -> `አ-ከ-ጠ` on p. 329, `ደ-ነ-ደ-ነ` -> `ደ-ነ-ጸ` on p. 341, `ዐ-ሰ-ተ` -> `ዐ-ሰ-ቀ` on p. 156, `ሰ-ከ-ተ` -> `ሰ-ከ-ተ-የ` on p. 290, `ጠ-ጠ-በ` -> `ጠ-በ-ጠ-በ` on p. 181), with a few more spelling corrections.
@@ -119,7 +119,7 @@ Line counts corrected to the files: synthetic files 121,206 (v1 README: 125,020)
 ## Layout cleanup
 - Merged root corrections into the dictionaries (`inferred_root`); removed duplicate and empty files; moved the literature corpus to `corpora/` and the Geez-Amharic dictionary to `lexicon/`. Training and evaluation data are unchanged.
 
-## 17 October 2026: combine reviewed corrections
+## 17 October 2026: corrections combined
 
 Seventeen OCR errors in Kidane Wold text corrected from the printed pages; person cleared on noun-list rows; imperative person, number and gender labels and duplicate book rows fixed.
 
@@ -141,18 +141,18 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ኀለየ follows the order of ፍሬ ግእዝ p.61 (ቀተለ, with the guttural): present የኀሊ, subjunctive ይኅሊ. A present ይኄሊ read from the dictionary (Yared Shiferaw p.258 በዘይኄልዩ) is added as `CHECK`.
 - ተኀየየ / ይትኀየይ (ፍሬ ግእዝ pp.40, 50, 62) are under root ሀ-የ-የ 'ቸል አለ', the spelling the dictionaries give (Yared Shiferaw p.270, Kidane Wold p.368).
 
-## Version 2.1.0 (19 October 2026): clitic forms and reviewed held rows
+## Version 2.1.0 (19 October 2026): clitic forms and an alternate rows file
 
 - `data/clitics/clitic_forms.jsonl`: 68,197 forms with the proclitics ወ, ዘ, ለ, በ, እም (and chains such as ወለ,
-  ዘበ, ወእም) and the enclitics ሰ, ኒ, ሂ, ኑ, made by rule from the settled reviewed rows (train 55,720, val 5,349, test 7,128).
-  Each copies the root, labels and split of its source row (`base_id`). Built by `scripts/build_clitic_forms.py`.
-- `data/unified/geez_morphology_rows_reviewed.jsonl`: a review of the 1,435 held forms that occur in the AGE corpus. 621 rows load that did not (22,763 in total);
+  ዘበ, ወእም) and the enclitics ሰ, ኒ, ሂ, ኑ, made by rule from the settled rows of `geez_morphology_rows_reviewed.jsonl` (train 55,720, val 5,349, test 7,128).
+  Each copies the root, labels and split of its source row (`base_id`).
+- `data/unified/geez_morphology_rows_reviewed.jsonl`: the 1,435 held forms that occur in the AGE corpus, each given a word class, root and note. 621 rows load that did not (22,763 in total);
   they cover 28.9% of AGE tokens by exact form, against 18.3% for the base file. Closed-class words load without
   a root (ከመ, እስመ, እለ, ኵሉ, ናሁ, ምስሌሁ ...); nouns load with roots already attested in settled rows (ሕዝብ ሐ-ዘ-በ,
   ሰብእ ሰ-በ-አ, ምድረ መ-ደ-ረ, ሀገር ሀ-ገ-ረ). Held: 72 rows whose proposed root is not a root of settled rows, 583
   rows of names and primary nouns without a root (422 forms), and rows whose number
   or verb labels are not given. 63 printed roots and 11 splits are replaced; each such row says so in `evidence`.
-- `scripts/check_unified.py` takes an optional rows file and reports documented review overrides of book lines.
+- The unified check takes an optional rows file and reports documented overrides of book lines.
 - The base unified file and the book files are unchanged.
 
 ## 22 October 2026: word classes and roots of some common words
@@ -170,7 +170,7 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   ይቤ (3ms), ትቤ (3fs and 2ms), ይቤሉ (3mp), ይቤላ (3fp), root በ-ሀ-ለ, train; and the particle ከማሁ (no root).
 - Names: a word class `proper_noun` for personal and place names, which take no root (a root may be kept
   where a book gives one). ሙሴ (Yared Shiferaw p.79) is a `proper_noun` with no root and loads (train).
-- Counts: 45,170 unified rows; 22,154 load (train 18,124, val 1,730, test 2,300); reviewed rows 22,770 load
+- Counts: 45,170 unified rows; 22,154 load (train 18,124, val 1,730, test 2,300); `geez_morphology_rows_reviewed.jsonl`: 22,770 load
   (train 18,610, val 1,784, test 2,376); 68,219 clitic forms (train 55,744, val 5,349, test 7,126). No root is in
   more than one split.
 
@@ -188,28 +188,28 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   to train, with ወ-ኀ-ደ); 3 `EXCLUDED` rows of these roots moved with them. Gold records d18e088c3d7e and
   8a40e5b926fa moved from train to test, be17bc2433de from val to train.
 - The book row ሥኡን (Yared Shiferaw p.180) repeats the gold row of ሰ-አ-ነ after the merge and is `EXCLUDED`.
-- ቀ-ረ-ጸ is merged into ቀ-ረ-ፀ (Merho Ges lists ቀረጸ inside the ቀረፀ entry); its one row (Ge'ez verb list p.23) was
+- ቀ-ረ-ጸ is merged into ቀ-ረ-ፀ (the gold book lists ቀረጸ inside the ቀረፀ entry); its one row (Ge'ez verb list p.23) was
   already in train with ቀ-ረ-ፀ, so no row changes split.
 - Four book rows of Yared Shiferaw repeat a gold row in everything except an empty gender and are `EXCLUDED`: ሕዩስ
   (p.82, gold row u001807), እድው (p.237, u005592), ሳንይ (p.265, u006317), በራሕ (p.22, u010282).
 - `book_root_splits.tsv`: the merged-away roots ሠ-ለ-ጠ, ነ-ፀ-ፈ and ከ-ሐ-ለ are removed (the 9 rows of ነ-ፀ-ፈ are
   added to ነ-ጸ-ፈ).
 - Counts: gold records train 1,112, val 135, test 223; gold pairs that load 8,091 / 1,153 / 1,555; 45,170 unified
-  rows, 22,149 load (train 18,119, val 1,718, test 2,312); reviewed rows 22,765 load (train 18,605, val 1,772, test
+  rows, 22,149 load (train 18,119, val 1,718, test 2,312); `geez_morphology_rows_reviewed.jsonl`: 22,765 load (train 18,605, val 1,772, test
   2,388); 68,204 clitic forms (train 55,729, val 5,313, test 7,162). No root is in more than one split.
 
 ## 22 October 2026: numerals take their root
 
-- A numeral now loads only with a root, like a noun (`check_unified.py`); `proper_noun` still loads with no root.
+- A numeral now loads only with a root, like a noun; `proper_noun` still loads with no root.
 - Cardinals, tens, ordinals and fractions take the root of their unit: ወ-ሐ-ደ (1), ሠ-ለ-ሰ (3), ረ-በ-ዐ (4), ኀ-መ-ሰ (5),
   ሰ-ደ-ሰ (6), ሰ-በ-ዐ (7), ሰ-መ-ነ (8), ተ-ሰ-ዐ (9), ዐ-ሠ-ረ (10 and 20). The earlier note is kept in `evidence`.
-- Forms of "two" (ክልኤቱ, ካልእ), ምእት, እምአት, ሺሕ, እልፍ, አእላፍ and እልፈ are `CHECK` (numeral root pending ruling).
+- Forms of "two" (ክልኤቱ, ካልእ), ምእት, እምአት, ሺሕ, እልፍ, አእላፍ and እልፈ are `CHECK` (numeral root not settled).
 - Each numeral row takes the split of its root: 13 book rows move (ዐ-ሠ-ረ train to val: ዐሠርት, ዐሥሩ, ዕሥራ, ዓሥር,
   ዓሥርት, ዓሥረ, ዓሥሬት, ዓሥራን, ዓሥራት, ዓሥራነ, ዓሥራተ; ተስዑ and አሐዳን val to train). Book rows whose root is on the
   other side of the test split are `CHECK` and keep their split: ሰብዑ, አሐደ (test; root in train), ሰመንት, ሳምን,
-  ሳምንት, ሳምናን, ሳምናት (train; ሰ-መ-ነ is in test). In the reviewed rows the gold row ዐሠርቱ (train; ዐ-ሠ-ረ is in val)
+  ሳምንት, ሳምናን, ሳምናት (train; ሰ-መ-ነ is in test). In `geez_morphology_rows_reviewed.jsonl` the gold row ዐሠርቱ (train; ዐ-ሠ-ረ is in val)
   is unchanged and still loads with no root.
-- Counts: 45,170 unified rows, 22,130 load (train 18,093, val 1,727, test 2,310); reviewed rows 22,745 load (train
+- Counts: 45,170 unified rows, 22,130 load (train 18,093, val 1,727, test 2,310); `geez_morphology_rows_reviewed.jsonl`: 22,745 load (train
   18,578, val 1,781, test 2,386); 68,144 clitic forms (train 55,648, val 5,340, test 7,156). No root is in more than
   one split among the unified rows.
 
@@ -217,11 +217,11 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 
 - Seven book rows now load with their root and move to its split: ሰብዑ (ሰ-በ-ዐ) and አሐደ (ወ-ሐ-ደ) test to train;
   ሰመንት, ሳምን, ሳምንት, ሳምናን, ሳምናት (ሰ-መ-ነ) train to test.
-- Gold row ዐሠርቱ moves train to val, the split of ዐ-ሠ-ረ. In the reviewed rows it is a numeral with root ዐ-ሠ-ረ and
+- Gold row ዐሠርቱ moves train to val, the split of ዐ-ሠ-ረ. In `geez_morphology_rows_reviewed.jsonl` it is a numeral with root ዐ-ሠ-ረ and
   loads; in the unified rows it keeps its class and status (`NO_ROOT`) and only its split changes. The gold record
   of the numeral table stays in `merho_ges_gold_train.jsonl`: it holds the other numerals, whose roots are in train.
   The move is noted in `evidence`.
-- Counts: 45,170 unified rows, 22,137 load (train 18,095, val 1,727, test 2,315); reviewed rows 22,752 load (train
+- Counts: 45,170 unified rows, 22,137 load (train 18,095, val 1,727, test 2,315); `geez_morphology_rows_reviewed.jsonl`: 22,752 load (train
   18,579, val 1,782, test 2,391); 68,165 clitic forms (train 55,651, val 5,343, test 7,171). No root is in more than
   one split.
 
@@ -233,7 +233,7 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   first 12 hex digits of sha1(`page_number|title_or_lemma|raw_transcription`) with the title suffixed by the form.
 - `source_ref` of the 19 unified rows follows the new row positions. The record has no root, so no gold pair
   changes: gold records train 1,112, val 136, test 223; gold pairs that load 8,091 / 1,153 / 1,555.
-- Counts unchanged: 45,170 unified rows, 22,137 load (train 18,095, val 1,727, test 2,315); reviewed rows 22,752
+- Counts unchanged: 45,170 unified rows, 22,137 load (train 18,095, val 1,727, test 2,315); `geez_morphology_rows_reviewed.jsonl`: 22,752
   load; 68,165 clitic forms.
 
 ## 22 October 2026: fourteen root merges and seven corrected rows
@@ -245,7 +245,7 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   እሙንቱ, እማንቱ are pronouns 3mp and 3fp, all with no root; these four load. ረገመ takes root ረ-ገ-መ and ማሕምም
   ሐ-መ-መ; both stay `CHECK` (no tense and person, no number). መካን keeps መ-ከ-ነ, adjective, unchanged.
 - The printed root is kept in `evidence`; the book files (`data/books/*/forms.jsonl`) carry the new root.
-- Counts: 45,170 unified rows, 22,141 load (train 18,096, val 1,730, test 2,315); reviewed rows 22,754 load (train
+- Counts: 45,170 unified rows, 22,141 load (train 18,096, val 1,730, test 2,315); `geez_morphology_rows_reviewed.jsonl`: 22,754 load (train
   18,579, val 1,784, test 2,391); 68,166 clitic forms (train 55,651, val 5,344, test 7,171). No root is in more
   than one split.
 
@@ -259,7 +259,7 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Split: a fixed hash of the form (sha256) in the proportions of the rows that load (train 82, val 17, test 17).
   A split that already holds a row of the same form is not used, so 28 names are in a split other than their
   held rows of the same form; names have no root, so no root crosses splits.
-- Counts: 45,286 unified rows, 22,257 load (train 18,178, val 1,747, test 2,332); reviewed rows 22,870 load (train
+- Counts: 45,286 unified rows, 22,257 load (train 18,178, val 1,747, test 2,332); `geez_morphology_rows_reviewed.jsonl`: 22,870 load (train
   18,661, val 1,801, test 2,408); 68,505 clitic forms (train 55,894, val 5,393, test 7,218). No root is in more
   than one split.
 
@@ -276,7 +276,7 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - 27 of the 116 New Testament names (`proper_noun`) had a form already present in earlier book rows of another
   split; each moves to that split, so every form sits in one split (for example ኢየሱስ val to train, ሄሮድስ train to
   val, ኢሳይያስ train to test). ሰሎሞን stays in val: its earlier rows are in train and in test.
-- Counts: 45,286 unified rows, 22,257 load (train 18,195, val 1,741, test 2,321); reviewed rows 22,870 load (train
+- Counts: 45,286 unified rows, 22,257 load (train 18,195, val 1,741, test 2,321); `geez_morphology_rows_reviewed.jsonl`: 22,870 load (train
   18,678, val 1,795, test 2,397); 68,504 clitic forms (train 55,939, val 5,376, test 7,189).
 
 ## 22 October 2026: roots of rootless rows, three root corrections, 23 forms of the Bible text
@@ -284,16 +284,16 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - 49 rows with no root whose word has exactly one root in other rows (forms of ቃል, ስም, ቤት,
   አብ, ብእሲ, ግብር, ልብስ, ጽድቅ, ሰላም, ኀይል, ወልድ, and the verbs አምጽአ, ቦኡ, ይበውእ) take that root and the split
   it sits in (e.g. ብእሴ train to val, ግብረ val to test, ስሙ test to train). Rows that lack the number, tense or
-  stem stay `CHECK`; ወልድ, አልባስ, አቡሁ and ቃል now load (one ቃል row repeats a loading row in the reviewed file
+  stem stay `CHECK`; ወልድ, አልባስ, አቡሁ and ቃል now load (one ቃል row repeats a loading row in `geez_morphology_rows_reviewed.jsonl`
   and is `EXCLUDED` there). Rows whose letters do not hold the root, a gold row, an `EXCLUDED` row and ኵሎ (a
-  rootless pronoun in the reviewed rows) are not changed. Book files carry the new root and split.
+  rootless pronoun in `geez_morphology_rows_reviewed.jsonl`) are not changed. Book files carry the new root and split.
 - Roots corrected against Dillmann (printed root kept in `evidence`): ወርቅ ኀ-በ-ረ to ወ-ረ-ቀ; ዐውድ አ-ደ to ዐ-ወ-ደ
   (train to test, the split of ዐ-ወ-ደ); እፎ 'how' is an `adverb` with no root and now loads.
 - እምነ (u019563): possessor 1cp.
 - 23 new rows from the Bible verse text with a full analysis in a verse outside the held-out chapters (e.g.
   እንተ relative pronoun f sg, አምጽኡ causative past 3mp, ተጋብኡ reciprocal past 3mp, ደቂቁ, ውሉደ, ሰባዕቱ, በበ,
   ስምዖን, ልያ). A rooted row takes the split of its root; a rootless one a fixed hash of the form.
-- Counts: 45,309 unified rows, 22,285 load (train 18,218, val 1,742, test 2,325); reviewed rows 22,897 load (train
+- Counts: 45,309 unified rows, 22,285 load (train 18,218, val 1,742, test 2,325); `geez_morphology_rows_reviewed.jsonl`: 22,897 load (train
   18,700, val 1,796, test 2,401); 68,585 clitic forms (train 56,005, val 5,379, test 7,201). No root is in more
   than one split.
 
@@ -304,10 +304,10 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   gold row u011393, so it is listed in `merho_ges_gold_flagged_rows.tsv` and is `EXCLUDED` in the unified rows.
 - Book rows ጸዓዳ (u039762) and ጸዓድው (u039763) ጸ-ዐ-ደ-ወ-ደ to ጸ-ዐ-ደ-ወ, printed root kept in `evidence`, train to
   test (the split of ጸ-ዐ-ደ-ወ); ጸዓድው repeats u037882 and is `EXCLUDED`. The book file carries the new root and split.
-- New row መርዓ 'wedding' (u045310), noun singular, root መ-ረ-ዐ-ወ (Merho s.v. አመርዐወ, p.243; Hos 4:13), train,
+- New row መርዓ 'wedding' (u045310), noun singular, root መ-ረ-ዐ-ወ (a dictionary entry, s.v. አመርዐወ; Hos 4:13), train,
   the split of መ-ረ-ዐ-ወ. Gold መርዓ (u010647, መ-ረ-ዐ) is unchanged.
 - መርሶ (u011757) is not changed: ረ-ሰ-ወ is a train root in the gold and the gold row is in test.
-- Counts: 45,310 unified rows, 22,285 load (train 18,219, val 1,742, test 2,324); reviewed rows 22,897 load (train
+- Counts: 45,310 unified rows, 22,285 load (train 18,219, val 1,742, test 2,324); `geez_morphology_rows_reviewed.jsonl`: 22,897 load (train
   18,701, val 1,796, test 2,400); 68,585 clitic forms (train 56,008, val 5,379, test 7,198); gold pairs train 8,091,
   val 1,153, test 1,554. No root is in more than one split.
 
@@ -328,20 +328,20 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   (noun m sg); the old root is kept in `evidence`. The record root stays empty: the other 55 rows are unrelated names
   with no root; their unified rows move from test to train with the record. መ-ረ-ሰ stays in train only.
 - Counts: gold records train 1,113, val 136, test 222; gold pairs 8,092 / 1,153 / 1,554; 22,286 unified rows load
-  (train 18,220, val 1,742, test 2,324); reviewed rows 22,897 load (train 18,701, val 1,796, test 2,400); 68,585
+  (train 18,220, val 1,742, test 2,324); `geez_morphology_rows_reviewed.jsonl`: 22,897 load (train 18,701, val 1,796, test 2,400); 68,585
   clitic forms (train 56,008, val 5,379, test 7,198).
 - The second መርሶ of the record (row 43, u011760, ወደብ, pl. መራሰው) takes the row root ረ-ሰ-ወ; it then repeats row 40
   (u011757), so it is listed in `merho_ges_gold_flagged_rows.tsv` and is `EXCLUDED` in the unified rows. Counts unchanged.
 
 ## 22 October 2026: class and root of nine rootless gold rows
 
-- Place names ሴይር, ሲና, ፋርስ, ባቢሎን, አሞሬዎን (Merho 'የሀ ስ'; አሞሬዎን Gen 15:16) and the person name ሳራ (አረገት ሳራ,
+- Place names ሴይር, ሲና, ፋርስ, ባቢሎን, አሞሬዎን (a dictionary entry 'የሀ ስ'; አሞሬዎን Gen 15:16) and the person name ሳራ (አረገት ሳራ,
   Synaxarium Nahase) are `proper_noun` with no root, as the New Testament names; ናሁ 'now, behold' is an `adverb`
   with no root (Isa 49:16 ናሁ በእደውየ). They load in the unified rows; in the gold files the row type is set and,
   with no root, they do not load as gold pairs.
-- ሀገር: noun, root ሀ-ገ-ረ; ወልድ: noun, root ወ-ለ-ደ (Merho s.v. ወለደ). Both roots are train, as the gold rows; both load.
+- ሀገር: noun, root ሀ-ገ-ረ; ወልድ: noun, root ወ-ለ-ደ (a dictionary entry, s.v. ወለደ). Both roots are train, as the gold rows; both load.
 - The rows were tagged verb; tense and person are cleared, gender and number kept. Gold splits are unchanged.
-- Counts: 22,295 unified rows load (train 18,227, val 1,742, test 2,326); reviewed rows 22,903 load (train 18,705,
+- Counts: 22,295 unified rows load (train 18,227, val 1,742, test 2,326); `geez_morphology_rows_reviewed.jsonl`: 22,903 load (train 18,705,
   val 1,796, test 2,402); 68,603 clitic forms (train 56,020, val 5,379, test 7,204); gold pairs 8,094 / 1,153 / 1,554.
 - ሴይር (u008147): evidence adds 'proper name of a person (Gen 36:20) and the mountain of Edom (Gen 14:6)'.
 
@@ -352,30 +352,30 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - 38 rootless rows of other books take the root of their word (e.g. ርእስ, ልብ, ምድር, ብእሲ, ስም, ሰላም, ዓለም); ብእሲ
   (u028486) train to val, the split of በ-አ-ሰ. 2 now load, 8 repeat a loading row and are `EXCLUDED`, 28 stay `CHECK`.
 - 36 new rows from the verse text with a full analysis (e.g. ላዕለ, እንዘ, ዲበ, ሶበ, ፈርዖን, አሮን, አበዊሆሙ, አልባሲሁ).
-- Two forms of the Merho paradigm of መ-ረ-ዐ-ወ, ተመራዐወ and አመርዓዌ, are new rows in train; they stay `CHECK`.
+- Two forms of the gold paradigm of መ-ረ-ዐ-ወ, ተመራዐወ and አመርዓዌ, are new rows in train; they stay `CHECK`.
   Gold rows are not changed.
 
 - ተመራዐወ (u045347) now has its features (perfect, 3rd person masculine singular, reciprocal stem) and loads.
   አመርዓዌ (u045348) stays `CHECK`.
 
-## 22 October 2026: roots confirmed by Merho
+## 22 October 2026: roots confirmed by the dictionary
 
-- Rows still open whose root Merho confirms, plus ሰማየ under ሰ-መ-የ and አንቀጽ/አንቀጸ under ነ-ቀ-ጸ,
+- Rows still open whose root the dictionary confirms, plus ሰማየ under ሰ-መ-የ and አንቀጽ/አንቀጸ under ነ-ቀ-ጸ,
   take that root (29 rows: 5 now load, 12 repeat a row and are `EXCLUDED`, 12 stay `CHECK`); gold rows are not changed.
   Rows whose printed root was cut or carried a prefix (ማሕምም ሐ-መ, መዋርስት ወ-ሰ, ምስብዒት/መግዝእ/መጋዝእ with መ-, ተንተነ ነ-ተ-ነ)
-  take the Merho root. Rows move to the split of their root where needed. ዕጣነ, ደመ, ደሞ, ደም, ርስት/ርስተ and ማእከል are not changed.
-- ግብረ (u014846) is `EXCLUDED` in the reviewed file too, as a repeat of u028596, as in the main file.
-- Number (and part of speech) filled in for 12 rows from Language and for ስሞ u015275 from the reviewed file; they load unless they repeat a row.
+  take the dictionary root. Rows move to the split of their root where needed. ዕጣነ, ደመ, ደሞ, ደም, ርስት/ርስተ and ማእከል are not changed.
+- ግብረ (u014846) is `EXCLUDED` in `geez_morphology_rows_reviewed.jsonl` too, as a repeat of u028596, as in the main file.
+- Number (and part of speech) filled in for 12 rows and for ስሞ u015275 from `geez_morphology_rows_reviewed.jsonl`; they load unless they repeat a row.
 
-## 22 October 2026: main file in step with the reviewed file
+## 22 October 2026: main file in step with `geez_morphology_rows_reviewed.jsonl`
 
-- 563 of the 601 rows that loaded only in `geez_morphology_rows_reviewed.jsonl` (all but 38 gold rows, which are not changed) take the review's root, class, number, gender, split and
+- 563 of the 601 rows that loaded only in `geez_morphology_rows_reviewed.jsonl` (all but 38 gold rows, which are not changed) take its root, class, number, gender, split and
   note in the main file. 542 now load; 21 fail a check (root letters, gold root, repeat, split, held-out
   chapter) and do not load in either file.
 - እሙንቱ u019564 and እማንቱ u019565 are `EXCLUDED` in both files as repeats of u014816 and u014817.
-- The main file is the training file. `--unified_file` of train_tpu.py must not point at the reviewed file.
-- Letter check: ሠ/ሰ, ጸ/ፀ, ሀ/ሐ/ኀ and አ/ዐ count as one series (Language). Roots keep Merho's spelling. EXCLUDED gold rows are no gold conflict. 13 rows held back by c12 now load in both files (e.g. ሰኑይ, ሥልጣን, ፆም, ነፍስ u021719).
-- ነፍስ u028700 and ነፍሰ u015074 get root ነ-ፈ-ሰ. ሊቃውንት u021827 gets root ለ-የ-ቀ and stays unloaded for review. እብላ u022584 is the noun 'moon', with no root, and does not load (a noun needs a root to load). The rootless እድ 'hand' rows get root ዐ-ደ-ወ (Merho p.246); repeats are excluded.
+- The main file is the training file. Training must not use `geez_morphology_rows_reviewed.jsonl`.
+- Letter check: ሠ/ሰ, ጸ/ፀ, ሀ/ሐ/ኀ and አ/ዐ count as one series. Roots keep the gold book's spelling. EXCLUDED gold rows are no gold conflict. 13 rows held back earlier now load in both files (e.g. ሰኑይ, ሥልጣን, ፆም, ነፍስ u021719).
+- ነፍስ u028700 and ነፍሰ u015074 get root ነ-ፈ-ሰ. ሊቃውንት u021827 gets root ለ-የ-ቀ and stays unloaded. እብላ u022584 is the noun 'moon', with no root, and does not load (a noun needs a root to load). The rootless እድ 'hand' rows get root ዐ-ደ-ወ (a dictionary entry); repeats are excluded.
 - Personal, women's and place names (ሴም, ካም, ብንያም, ንፍታሌም, ኢያቄም, ሴሎም, ማርያም, ሐና, ሳሌም, ኢየሩሳሌም, ሮም) are `proper_noun` with no root in both files; the earlier root stays in the evidence. Repeats of loading rows are excluded.
 
 ## 23 October 2026: weak root letters
@@ -383,12 +383,12 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Letter check: one root letter of the አ, ወ or የ series, as written in the root, may be absent from the word; every other root letter, including ዐ, must appear, with ሠ/ሰ, ጸ/ፀ, ሀ/ሐ/ኀ and አ/ዐ counted as one series.
 - ኵሊቱ u012960 gets root ከ-ለ-አ and possessor 3ms, and ሊቃውንት u021827 (root ለ-የ-ቀ) passes; both load in both files.
 - ኩልያት u012044, u028668 and u042121 (plural, root ከ-ለ-አ) stay unloaded with no root: they are in val and ከ-ለ-አ is a train root.
-- Counts: 22,914 unified rows load (train 18,720, val 1,791, test 2,403); reviewed rows 22,952 load (train 18,751, val 1,795, test 2,406); 68,755 clitic forms.
+- Counts: 22,914 unified rows load (train 18,720, val 1,791, test 2,403); `geez_morphology_rows_reviewed.jsonl`: 22,952 load (train 18,751, val 1,795, test 2,406); 68,755 clitic forms.
 
 ## 23 October 2026: ኩልያት in train
 
-- ኩልያት 'kidneys', plural of ኩሊት (Merho ከልአ), gets root ከ-ለ-አ and number p, and moves from val to train so ከ-ለ-አ is in one split. u012044 loads in both files; u028668 and u042121 repeat it and are excluded. The book line of u028668 follows.
-- Counts: 22,915 unified rows load (train 18,721, val 1,791, test 2,403); reviewed rows 22,953 load (train 18,752, val 1,795, test 2,406); 68,758 clitic forms (train 56,161, val 5,381, test 7,216).
+- ኩልያት 'kidneys', plural of ኩሊት (a dictionary entry, ከልአ), gets root ከ-ለ-አ and number p, and moves from val to train so ከ-ለ-አ is in one split. u012044 loads in both files; u028668 and u042121 repeat it and are excluded. The book line of u028668 follows.
+- Counts: 22,915 unified rows load (train 18,721, val 1,791, test 2,403); `geez_morphology_rows_reviewed.jsonl`: 22,953 load (train 18,752, val 1,795, test 2,406); 68,758 clitic forms (train 56,161, val 5,381, test 7,216).
 - ልብ and its possessed forms are back under ለ-በ-በ (the dictionary lists ልብ under ለበበ; plural አልባብ), and the ለ-በ-በ rows are back in their earlier split. ጽዩእ (u036678) and ጽዩኣን (u036679) are masculine; they repeat gold rows u005083 and u005084 and are `EXCLUDED`.
 - Bible labels, third set: 10 rootless rows get the root of the other rows of their word; 60 new forms from the verse text. አሐዱ, አሐቲ and አሐደ are under ወ-ሐ-ደ.
 - Class of gold rows: ውእቱ pronoun; ዛቲ demonstrative; ኖኅ, ይሁዳ and ጳውሎስ proper nouns with no root; እኅት, ውሉድ, ብእሲት, ኑኅ, አባግዕ, ቍልዔ and ምት nouns (አባግዕ, ቍልዔ and ምት have no root and do not load).

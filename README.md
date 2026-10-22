@@ -20,7 +20,7 @@ Kidane Wold headwords are taken from the typed transcription in [geezorg/data](h
 
 ```
 data/paradigms/   gold train/val/test files; synthetic training forms
-data/unified/     every labelled form of every book in one row schema, with splits; a reviewed copy (see below)
+data/unified/     every labelled form of every book in one row schema, with splits; a corrected copy (see below)
 data/clitics/     forms with proclitics (ወ, ዘ, ለ, በ, እም) and enclitics (ሰ, ኒ, ሂ, ኑ), made by rule from unified rows
 data/books/       forms of ፍሬ ግእዝ, የግዕዝ መማሪያ, Mesehaf Gese Wesewasew and the verb list, one per line
 data/synthetic/   synthetic forms whose roots are in val or test (not for training)
@@ -80,12 +80,12 @@ train = [r for r in rows if r["status"] == "" and r["split"] == "train"]
 
 Use only rows with an empty `status`. Do not train on `data/synthetic/`.
 
-`data/unified/geez_morphology_rows_reviewed.jsonl` is the same file with a review of held rows applied: 0 more
+`data/unified/geez_morphology_rows_reviewed.jsonl` is the same file with corrections to held rows applied: 0 more
 rows load (23,171 in total: train 18,927, val 1,810, test 2,434). Rows load there only when the dataset itself
-supports the review; see [data/unified/README.md](data/unified/README.md#reviewed-rows).
+supports the correction; see [data/unified/README.md](data/unified/README.md#corrected-rows-file).
 
 `data/clitics/clitic_forms.jsonl` holds 69,405 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
-made by rule from the settled reviewed rows; each keeps the root, labels and split of its source row
+made by rule from the settled corrected rows; each keeps the root, labels and split of its source row
 ([data/clitics/README.md](data/clitics/README.md)).
 
 Check the data:
