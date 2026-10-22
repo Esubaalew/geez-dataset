@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,619 / 640 / 848 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,621 / 640 / 848 |
 | unified rows | 24,352 | 45,348 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -377,3 +377,10 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Letter check: ሠ/ሰ, ጸ/ፀ, ሀ/ሐ/ኀ and አ/ዐ count as one series (Language). Roots keep Merho's spelling. EXCLUDED gold rows are no gold conflict. 13 rows held back by c12 now load in both files (e.g. ሰኑይ, ሥልጣን, ፆም, ነፍስ u021719).
 - ነፍስ u028700 and ነፍሰ u015074 get root ነ-ፈ-ሰ. ሊቃውንት u021827 gets root ለ-የ-ቀ and stays unloaded for review. እብላ u022584 is the noun 'moon', with no root, and does not load (a noun needs a root to load). The rootless እድ 'hand' rows get root ዐ-ደ-ወ (Merho p.246); repeats are excluded.
 - Personal, women's and place names (ሴም, ካም, ብንያም, ንፍታሌም, ኢያቄም, ሴሎም, ማርያም, ሐና, ሳሌም, ኢየሩሳሌም, ሮም) are `proper_noun` with no root in both files; the earlier root stays in the evidence. Repeats of loading rows are excluded.
+
+## 23 October 2026: weak root letters
+
+- Letter check: one root letter of the አ, ወ or የ series, as written in the root, may be absent from the word; every other root letter, including ዐ, must appear, with ሠ/ሰ, ጸ/ፀ, ሀ/ሐ/ኀ and አ/ዐ counted as one series.
+- ኵሊቱ u012960 gets root ከ-ለ-አ and possessor 3ms, and ሊቃውንት u021827 (root ለ-የ-ቀ) passes; both load in both files.
+- ኩልያት u012044, u028668 and u042121 (plural, root ከ-ለ-አ) stay unloaded with no root: they are in val and ከ-ለ-አ is a train root.
+- Counts: 22,914 unified rows load (train 18,720, val 1,791, test 2,403); reviewed rows 22,952 load (train 18,751, val 1,795, test 2,406); 68,755 clitic forms.
