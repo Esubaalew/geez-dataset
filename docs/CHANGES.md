@@ -4,7 +4,7 @@ v1: tag `v1`, commit `337cdf0`.
 
 | | v1 | v2 |
 |---|---:|---:|
-| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,091 / 1,153 / 1,554 |
+| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,092 / 1,153 / 1,554 |
 | rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,128 / 591 / 771 |
 | unified rows | 24,352 | 45,310 |
 | synthetic training pair (lines) | | 120,685 |
@@ -321,3 +321,13 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   train to test, the split of ዐ-ወ-ደ; the book file carries the new root and split. ዑድ (u039724) stays `CHECK`.
 - Counts unchanged. No root is in more than one split.
 - ዕውድ (u039712): number s (gender f as printed, unresolved); it then repeats gold row u011170 and is `EXCLUDED`. Counts unchanged.
+
+## 22 October 2026: መርሶ 'harbor' to ረ-ሰ-ወ
+
+- Gold record 1544b0c3ef6e (p.382, nouns ending in ስ/ሶ) moved from the test to the train gold file (appended), so
+  that ረ-ሰ-ወ, a train root, is in one split. Its row 40 መርሶ (u011757, pl. መራሰው) takes the row root ረ-ሰ-ወ and loads
+  (noun m sg); the old root is kept in `evidence`. The record root stays empty: the other 55 rows are unrelated names
+  with no root; their unified rows move from test to train with the record. መ-ረ-ሰ stays in train only.
+- Counts: gold records train 1,113, val 136, test 222; gold pairs 8,092 / 1,153 / 1,554; 22,286 unified rows load
+  (train 18,220, val 1,742, test 2,324); reviewed rows 22,897 load (train 18,701, val 1,796, test 2,400); 68,585
+  clitic forms (train 56,008, val 5,379, test 7,198).

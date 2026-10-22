@@ -55,17 +55,17 @@ Gold files (`data/paradigms/merho_ges_gold_*.jsonl`) hold one record per entry w
 
 A root appears in only one of train, val and test. Book rows follow the split of the gold form or root they match, otherwise a fixed hash rule.
 
-Gold records: train 1,112, val 136, test 223.
+Gold records: train 1,113, val 136, test 222.
 
 Unified rows (45,310 in total) that load:
 
 | | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
-| gold (Merho Ges) | 8,091 | 1,151 | 1,553 | 1,165 |
+| gold (Merho Ges) | 8,092 | 1,151 | 1,553 | 1,164 |
 | other books | 10,128 | 591 | 771 | 21,860 |
-| total | 18,219 | 1,742 | 2,324 | 23,025 |
+| total | 18,220 | 1,742 | 2,324 | 23,024 |
 
-The gold loader expands spellings to 8,091 / 1,153 / 1,554 pairs; these differ from the unified-row counts above.
+The gold loader expands spellings to 8,092 / 1,153 / 1,554 pairs; these differ from the unified-row counts above.
 
 Synthetic training forms: 120,685 lines. Synthetic forms for val/test roots: 17,569 lines.
 
