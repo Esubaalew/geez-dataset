@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,612 / 639 / 846 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,614 / 639 / 846 |
 | unified rows | 24,352 | 45,348 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -146,12 +146,11 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - `data/clitics/clitic_forms.jsonl`: 68,197 forms with the proclitics ወ, ዘ, ለ, በ, እም (and chains such as ወለ,
   ዘበ, ወእም) and the enclitics ሰ, ኒ, ሂ, ኑ, made by rule from the settled reviewed rows (train 55,720, val 5,349, test 7,128).
   Each copies the root, labels and split of its source row (`base_id`). Built by `scripts/build_clitic_forms.py`.
-- `data/unified/geez_morphology_rows_reviewed.jsonl`: a review of the 1,435 held forms that occur in the AGE corpus
-  (`review_2026-10-18.tsv`), applied by `scripts/apply_review.py`. 621 rows load that did not (22,763 in total);
+- `data/unified/geez_morphology_rows_reviewed.jsonl`: a review of the 1,435 held forms that occur in the AGE corpus. 621 rows load that did not (22,763 in total);
   they cover 28.9% of AGE tokens by exact form, against 18.3% for the base file. Closed-class words load without
   a root (ከመ, እስመ, እለ, ኵሉ, ናሁ, ምስሌሁ ...); nouns load with roots already attested in settled rows (ሕዝብ ሐ-ዘ-በ,
   ሰብእ ሰ-በ-አ, ምድረ መ-ደ-ረ, ሀገር ሀ-ገ-ረ). Held: 72 rows whose proposed root is not a root of settled rows, 583
-  rows of names and primary nouns without a root (422 forms, listed in `review_2026-10-18_rootless_nouns.tsv`), and rows whose number
+  rows of names and primary nouns without a root (422 forms), and rows whose number
   or verb labels are not given. 63 printed roots and 11 splits are replaced; each such row says so in `evidence`.
 - `scripts/check_unified.py` takes an optional rows file and reports documented review overrides of book lines.
 - The base unified file and the book files are unchanged.

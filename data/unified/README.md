@@ -95,21 +95,19 @@ Splits: a root that already has a split keeps it; a root found only as a twin-le
 
 ## Counts
 
-45,348 rows. Rows that load: 22,902 (train 18,711, val 1,790, test 2,401): gold 10,805 (train 8,099, val 1,151, test 1,555); other books 12,097 (train 10,612, val 639, test 846). Not loaded: 22,446 (gold 1,155, other books 21,291).
+45,348 rows. Rows that load: 22,904 (train 18,713, val 1,790, test 2,401): gold 10,805 (train 8,099, val 1,151, test 1,555); other books 12,099 (train 10,614, val 639, test 846). Not loaded: 22,444 (gold 1,155, other books 21,289).
 
 ## Reviewed rows
 
-`geez_morphology_rows_reviewed.jsonl` is the unified file with a review of held rows applied. It is built by
-`python scripts/apply_review.py data/unified/review_2026-10-18.tsv` and checked with
+`geez_morphology_rows_reviewed.jsonl` is the unified file with a review of held rows applied. It is checked with
 `python scripts/check_unified.py . data/unified/geez_morphology_rows_reviewed.jsonl`. The base file and the
 book files are not changed.
 
-The review (`review_2026-10-18.tsv`) gives a word class, a root or no root, and a note for the 1,435 held forms
+The review gives a word class, a root or no root, and a note for the 1,435 held forms
 that occur in the AGE Ge'ez–Amharic corpus ([HenokB/AGE-Dataset](https://github.com/HenokB/AGE-Dataset)), most frequent first. A reviewed row loads only when the dataset supports it: a closed-class word
 (pronoun, demonstrative, preposition, particle, adverb) loads with no root, and so may a `proper_noun` (a name); a numeral loads with its root; a word with a root loads
 only if that root is already the root of settled rows, and it takes that root's split; nouns and adjectives
 need a number and verbs their full labels. Other rows stay held and their `status_reason` records the
 proposal and why it does not load (root not attested, noun without a root, labels missing).
-A held row's `status_reason` records the review's proposal and why it does not load. Names and primary nouns
-without a root are listed in `review_2026-10-18_rootless_nouns.tsv`. Where a reviewed row replaces a root or split printed in a
-book, its `evidence` says so, and `check_unified.py` reports these as review overrides.
+A held row's `status_reason` records the review's proposal and why it does not load. Where a reviewed row replaces a root or split printed in a
+book, its `evidence` says so (`Settled: ...`), and `check_unified.py` reports these as review overrides.

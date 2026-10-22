@@ -91,7 +91,7 @@ for r in rows:
     b = book_lines[f][int(n) - 1]
     for k in ("form", "root", "split"):
         if b.get(k) != r[k]:
-            if k != "form" and "review 2026-10-18" in (r["evidence"] or ""):
+            if k != "form" and "Settled:" in (r["evidence"] or ""):
                 overrides[k] += 1        # a documented review correction of the printed root or its split
             else:
                 err("6 books", f"{r['id']}: {k} {r[k]!r} but {ref} has {b.get(k)!r}")
