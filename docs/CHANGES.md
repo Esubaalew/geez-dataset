@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,162 / 592 / 775 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,165 / 594 / 775 |
 | unified rows | 24,352 | 45,348 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -358,3 +358,10 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 
 - ተመራዐወ (u045347) now has its features (perfect, 3rd person masculine singular, reciprocal stem) and loads.
   አመርዓዌ (u045348) stays `CHECK`.
+
+## 22 October 2026: roots confirmed by Merho
+
+- Rows still open whose root Merho confirms (merho_check_1022.tsv), plus ሰማየ under ሰ-መ-የ and አንቀጽ/አንቀጸ under ነ-ቀ-ጸ,
+  take that root (29 rows: 5 now load, 12 repeat a row and are `EXCLUDED`, 12 stay `CHECK`); gold rows are not changed.
+  Rows whose printed root was cut or carried a prefix (ማሕምም ሐ-መ, መዋርስት ወ-ሰ, ምስብዒት/መግዝእ/መጋዝእ with መ-, ተንተነ ነ-ተ-ነ)
+  take the Merho root. Rows move to the split of their root where needed. ዕጣነ, ደመ, ደሞ, ደም, ርስት/ርስተ and ማእከል are not changed.
