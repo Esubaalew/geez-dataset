@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,091 / 1,153 / 1,555 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,002 / 576 / 756 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,004 / 576 / 761 |
 | unified rows | 24,352 | 45,170 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -213,3 +213,15 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Counts: 45,170 unified rows, 22,130 load (train 18,093, val 1,727, test 2,310); reviewed rows 22,745 load (train
   18,578, val 1,781, test 2,386); 68,144 clitic forms (train 55,648, val 5,340, test 7,156). No root is in more than
   one split among the unified rows.
+
+## 22 October 2026: numeral rows moved to the split of their root
+
+- Seven book rows now load with their root and move to its split: ሰብዑ (ሰ-በ-ዐ) and አሐደ (ወ-ሐ-ደ) test to train;
+  ሰመንት, ሳምን, ሳምንት, ሳምናን, ሳምናት (ሰ-መ-ነ) train to test.
+- Gold row ዐሠርቱ moves train to val, the split of ዐ-ሠ-ረ. In the reviewed rows it is a numeral with root ዐ-ሠ-ረ and
+  loads; in the unified rows it keeps its class and status (`NO_ROOT`) and only its split changes. The gold record
+  of the numeral table stays in `merho_ges_gold_train.jsonl`: it holds the other numerals, whose roots are in train.
+  The move is noted in `evidence`.
+- Counts: 45,170 unified rows, 22,137 load (train 18,095, val 1,727, test 2,315); reviewed rows 22,752 load (train
+  18,579, val 1,782, test 2,391); 68,165 clitic forms (train 55,651, val 5,343, test 7,171). No root is in more than
+  one split.
