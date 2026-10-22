@@ -11,7 +11,7 @@ book-only root with its class mark.
 | `id` | `u000001`, in file order; new rows are appended and existing ids never change |
 | `form` | one Ge'ez word |
 | `root` | first-order letters joined by `-`; `null` for words without a root |
-| `word_class` | `verb`, `noun`, `adjective`, `infinitive`, `gerund` (ቦዝ, converb), `verbal_noun`, `pronoun`, `demonstrative`, `preposition`, `particle`, `numeral`, `adverb`, `nominal` (a noun or adjective of Kidane Wold's dictionary: the book prints no class), `proper_noun` (a name, which needs no root) |
+| `word_class` | `verb`, `noun`, `adjective`, `infinitive`, `gerund` (ቦዝ, converb), `verbal_noun`, `pronoun`, `demonstrative`, `preposition`, `particle`, `numeral` (with its root), `adverb`, `nominal` (a noun or adjective of Kidane Wold's dictionary: the book prints no class), `proper_noun` (a name, which needs no root) |
 | `stem` | `basic`, `passive`, `causative`, `reciprocal`, `aste`, `aste_reciprocal` (verbs, infinitives, gerunds, verbal nouns) |
 | `tense` | `past`, `present`, `subjunctive`, `imperative` (verbs) |
 | `person`, `gender`, `number` | the subject of a verb or gerund; gender and number of a noun or adjective; the person of a pronoun. `number` is `s`, `p`, or `sp` for a noun used unchanged as singular and plural |
@@ -32,7 +32,7 @@ book-only root with its class mark.
 - Book-only roots: grouped by (verb or nominal, class mark of the verb index), sorted by sha256 of the folded
   consonants; the first 8% of a group go to val, the next 8% to test, the rest to train; a group of fewer than 7 roots is all
   train. A root is never in two splits among the rows that load.
-- Words without a root (pronouns, prepositions, particles, numerals, demonstratives): the same 8% / 8% rule by a hash
+- Words without a root (pronouns, prepositions, particles, demonstratives): the same 8% / 8% rule by a hash
   of the folded form, per word class.
 
 ## Roots of the teaching-book verbs
@@ -95,7 +95,7 @@ Splits: a root that already has a split keeps it; a root found only as a twin-le
 
 ## Counts
 
-45,170 rows. Rows that load: 22,149 (train 18,119, val 1,718, test 2,312): gold 10,796 (train 8,091, val 1,151, test 1,554); other books 11,353 (train 10,028, val 567, test 758). Not loaded: 23,021 (gold 1,164, other books 21,857).
+45,170 rows. Rows that load: 22,130 (train 18,093, val 1,727, test 2,310): gold 10,796 (train 8,091, val 1,151, test 1,554); other books 11,334 (train 10,002, val 576, test 756). Not loaded: 23,040 (gold 1,164, other books 21,876).
 
 ## Reviewed rows
 
@@ -106,7 +106,7 @@ book files are not changed.
 
 The review (`review_2026-10-18.tsv`) gives a word class, a root or no root, and a note for the 1,435 held forms
 that occur in the AGE Ge'ez–Amharic corpus ([HenokB/AGE-Dataset](https://github.com/HenokB/AGE-Dataset)), most frequent first. A reviewed row loads only when the dataset supports it: a closed-class word
-(pronoun, demonstrative, preposition, particle, adverb, numeral) loads with no root, and so may a `proper_noun` (a name); a word with a root loads
+(pronoun, demonstrative, preposition, particle, adverb) loads with no root, and so may a `proper_noun` (a name); a numeral loads with its root; a word with a root loads
 only if that root is already the root of settled rows, and it takes that root's split; nouns and adjectives
 need a number and verbs their full labels. Other rows stay held and their `status_reason` records the
 proposal and why it does not load (root not attested, noun without a root, labels missing).

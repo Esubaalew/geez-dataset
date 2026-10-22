@@ -23,7 +23,7 @@ COLS = ["id", "form", "root", "word_class", "stem", "tense", "person", "gender",
         "book", "page", "source_ref", "evidence", "also_in", "status", "status_reason", "split"]
 CLASSES = {"verb", "noun", "adjective", "nominal", "infinitive", "gerund", "verbal_noun", "pronoun", "demonstrative", "preposition", "particle",
            "numeral", "adverb", "proper_noun", "unknown"}
-ROOTED = {"verb", "noun", "adjective", "nominal", "infinitive", "gerund", "verbal_noun"}
+ROOTED = {"verb", "noun", "adjective", "nominal", "infinitive", "gerund", "verbal_noun", "numeral"}
 STEMS = {"basic", "passive", "causative", "reciprocal", "aste", "aste_reciprocal"}
 TENSES = {"past", "present", "subjunctive", "imperative"}
 PERSONS = {("1", "c", "s"), ("1", "c", "p"), ("2", "m", "s"), ("2", "f", "s"), ("2", "m", "p"), ("2", "f", "p"), ("3", "m", "s"),

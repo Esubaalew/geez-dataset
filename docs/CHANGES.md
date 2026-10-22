@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,091 / 1,153 / 1,555 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,028 / 567 / 758 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,002 / 576 / 756 |
 | unified rows | 24,352 | 45,170 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -198,3 +198,18 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Counts: gold records train 1,112, val 135, test 223; gold pairs that load 8,091 / 1,153 / 1,555; 45,170 unified
   rows, 22,149 load (train 18,119, val 1,718, test 2,312); reviewed rows 22,765 load (train 18,605, val 1,772, test
   2,388); 68,204 clitic forms (train 55,729, val 5,313, test 7,162). No root is in more than one split.
+
+## 22 October 2026: numerals take their root
+
+- A numeral now loads only with a root, like a noun (`check_unified.py`); `proper_noun` still loads with no root.
+- Cardinals, tens, ordinals and fractions take the root of their unit: ወ-ሐ-ደ (1), ሠ-ለ-ሰ (3), ረ-በ-ዐ (4), ኀ-መ-ሰ (5),
+  ሰ-ደ-ሰ (6), ሰ-በ-ዐ (7), ሰ-መ-ነ (8), ተ-ሰ-ዐ (9), ዐ-ሠ-ረ (10 and 20). The earlier note is kept in `evidence`.
+- Forms of "two" (ክልኤቱ, ካልእ), ምእት, እምአት, ሺሕ, እልፍ, አእላፍ and እልፈ are `CHECK` (numeral root pending ruling).
+- Each numeral row takes the split of its root: 13 book rows move (ዐ-ሠ-ረ train to val: ዐሠርት, ዐሥሩ, ዕሥራ, ዓሥር,
+  ዓሥርት, ዓሥረ, ዓሥሬት, ዓሥራን, ዓሥራት, ዓሥራነ, ዓሥራተ; ተስዑ and አሐዳን val to train). Book rows whose root is on the
+  other side of the test split are `CHECK` and keep their split: ሰብዑ, አሐደ (test; root in train), ሰመንት, ሳምን,
+  ሳምንት, ሳምናን, ሳምናት (train; ሰ-መ-ነ is in test). In the reviewed rows the gold row ዐሠርቱ (train; ዐ-ሠ-ረ is in val)
+  is unchanged and still loads with no root.
+- Counts: 45,170 unified rows, 22,130 load (train 18,093, val 1,727, test 2,310); reviewed rows 22,745 load (train
+  18,578, val 1,781, test 2,386); 68,144 clitic forms (train 55,648, val 5,340, test 7,156). No root is in more than
+  one split among the unified rows.
