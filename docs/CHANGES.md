@@ -4,7 +4,7 @@ v1: tag `v1`, commit `337cdf0`.
 
 | | v1 | v2 |
 |---|---:|---:|
-| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,092 / 1,153 / 1,554 |
+| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
 | rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,128 / 591 / 771 |
 | unified rows | 24,352 | 45,310 |
 | synthetic training pair (lines) | | 120,685 |
@@ -333,3 +333,14 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   clitic forms (train 56,008, val 5,379, test 7,198).
 - The second መርሶ of the record (row 43, u011760, ወደብ, pl. መራሰው) takes the row root ረ-ሰ-ወ; it then repeats row 40
   (u011757), so it is listed in `merho_ges_gold_flagged_rows.tsv` and is `EXCLUDED` in the unified rows. Counts unchanged.
+
+## 22 October 2026: class and root of nine rootless gold rows
+
+- Place names ሴይር, ሲና, ፋርስ, ባቢሎን, አሞሬዎን (Merho 'የሀ ስ'; አሞሬዎን Gen 15:16) and the person name ሳራ (አረገት ሳራ,
+  Synaxarium Nahase) are `proper_noun` with no root, as the New Testament names; ናሁ 'now, behold' is an `adverb`
+  with no root (Isa 49:16 ናሁ በእደውየ). They load in the unified rows; in the gold files the row type is set and,
+  with no root, they do not load as gold pairs.
+- ሀገር: noun, root ሀ-ገ-ረ; ወልድ: noun, root ወ-ለ-ደ (Merho s.v. ወለደ). Both roots are train, as the gold rows; both load.
+- The rows were tagged verb; tense and person are cleared, gender and number kept. Gold splits are unchanged.
+- Counts: 22,295 unified rows load (train 18,227, val 1,742, test 2,326); reviewed rows 22,903 load (train 18,705,
+  val 1,796, test 2,402); 68,603 clitic forms (train 56,020, val 5,379, test 7,204); gold pairs 8,094 / 1,153 / 1,554.
