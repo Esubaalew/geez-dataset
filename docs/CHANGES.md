@@ -263,3 +263,11 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Counts: 45,286 unified rows, 22,257 load (train 18,178, val 1,747, test 2,332); reviewed rows 22,870 load (train
   18,661, val 1,801, test 2,408); 68,505 clitic forms (train 55,894, val 5,393, test 7,218). No root is in more
   than one split.
+
+## 22 October 2026: six roots corrected against Dillmann
+
+- Roots of six book rows corrected (printed root kept in `evidence`; book files carry the new root): ስን ወ-ሰ-ነ to
+  ሰ-ነ-ነ; መንጦላዕት ነ-ጠ-ለ-ዐ to ጠ-ለ-ዐ; ጾታ ጸ-ተ-ወ to ጸ-ወ-ተ; ማዕሌት መ-ዐ-ለ-የ to ዐ-ለ-የ (train to val, the split of
+  ዐ-ለ-የ); ዕውድ and ዑድ አ-ደ to ዐ-ወ-ደ (train to test, the split of ዐ-ወ-ደ).
+- Corrections that would repeat an existing row (ይዴግን, መዐልት, ጽልመት, ምስፍና, መጽያሕት, ጸበል, ተንተነ, ድቀት) are not applied.
+- The six rows stay `CHECK`, so counts are unchanged. No root is in more than one split.
