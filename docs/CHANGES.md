@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,665 / 643 / 862 |
-| unified rows | 24,352 | 45,408 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,793 / 655 / 875 |
+| unified rows | 24,352 | 45,561 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -392,3 +392,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ልብ and its possessed forms are back under ለ-በ-በ (the dictionary lists ልብ under ለበበ; plural አልባብ), and the ለ-በ-በ rows are back in their earlier split. ጽዩእ (u036678) and ጽዩኣን (u036679) are masculine; they repeat gold rows u005083 and u005084 and are `EXCLUDED`.
 - Bible labels, third set: 10 rootless rows get the root of the other rows of their word; 60 new forms from the verse text. አሐዱ, አሐቲ and አሐደ are under ወ-ሐ-ደ.
 - Class of gold rows: ውእቱ pronoun; ዛቲ demonstrative; ኖኅ, ይሁዳ and ጳውሎስ proper nouns with no root; እኅት, ውሉድ, ብእሲት, ኑኅ, አባግዕ, ቍልዔ and ምት nouns (አባግዕ, ቍልዔ and ምት have no root and do not load).
+- Bible labels, third set, remaining forms: 153 new forms from the verse text with full labels; ሰሚዐ and ሐዊረ as infinitives with their roots.
