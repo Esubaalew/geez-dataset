@@ -1438,7 +1438,7 @@
 {"form": "ቀትል", "root": "ቀ-ተ-ለ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "train"}
 {"form": "ጥበብ", "root": "ጠ-በ-በ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "val"}
 {"form": "ንባብ", "root": "ነ-በ-በ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "train"}
-{"form": "ልብ", "root": "ለ-በ-በ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "train"}
+{"form": "ልብ", "root": "ለ-በ-ወ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "test"}
 {"form": "ቈጽል", "root": "ቈ-ጸ-ለ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "test"}
 {"form": "ዐውድ", "root": "ዐ-ወ-ደ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "test"}
 {"form": "ዘርዕ", "root": "ዘ-ረ-ዐ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "test"}
