@@ -207,7 +207,7 @@
 {"form": "ላዕሌክሙ", "root": "ለ-ዐ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 28, "split": "train"}
 {"form": "ላዕሌኪ", "root": "ለ-ዐ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 28, "split": "train"}
 {"form": "ላዕሌክን", "root": "ለ-ዐ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 28, "split": "train"}
-{"form": "ላዕሌሁ", "root": "ለ-ዐ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 28, "split": "train"}
+{"form": "ላዕሌሁ", "root": null, "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 28, "split": "train"}
 {"form": "ላዕሌሆሙ", "root": "ለ-ዐ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 28, "split": "train"}
 {"form": "ላዕሌሃ", "root": "ለ-ዐ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 28, "split": "train"}
 {"form": "ላዕሌሆን", "root": "ለ-ዐ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 28, "split": "train"}
@@ -256,7 +256,7 @@
 {"form": "ውስቴክን", "root": "ወ-ሰ-ተ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
 {"form": "ውስቴቱ", "root": "ወ-ሰ-ተ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
 {"form": "ውስቴቶሙ", "root": "ወ-ሰ-ተ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
-{"form": "ውስቴታ", "root": "ወ-ሰ-ተ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
+{"form": "ውስቴታ", "root": null, "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
 {"form": "ውስቴቶን", "root": "ወ-ሰ-ተ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
 {"form": "ውሳጤየ", "root": "ወ-ሰ-ጠ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
 {"form": "ውሳጤነ", "root": "ወ-ሰ-ጠ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
@@ -320,11 +320,11 @@
 {"form": "መንገሌሆን", "root": "መ-ነ-ገ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "test"}
 {"form": "ምስሌየ", "root": "መ-ሰ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
 {"form": "ምስሌነ", "root": "መ-ሰ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
-{"form": "ምስሌከ", "root": "መ-ሰ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
+{"form": "ምስሌከ", "root": null, "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
 {"form": "ምስሌክሙ", "root": "መ-ሰ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
 {"form": "ምስሌኪ", "root": "መ-ሰ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
 {"form": "ምስሌክን", "root": "መ-ሰ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
-{"form": "ምስሌሁ", "root": "መ-ሰ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
+{"form": "ምስሌሁ", "root": null, "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
 {"form": "ምስሌሆሙ", "root": "መ-ሰ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
 {"form": "ምስሌሃ", "root": "መ-ሰ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
 {"form": "ምስሌሆን", "root": "መ-ሰ-ለ", "pos": null, "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 29, "split": "train"}
@@ -1438,7 +1438,7 @@
 {"form": "ቀትል", "root": "ቀ-ተ-ለ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "train"}
 {"form": "ጥበብ", "root": "ጠ-በ-በ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "val"}
 {"form": "ንባብ", "root": "ነ-በ-በ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "train"}
-{"form": "ልብ", "root": "ለ-በ-ወ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "test"}
+{"form": "ልብ", "root": "ለ-በ-በ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "train"}
 {"form": "ቈጽል", "root": "ቈ-ጸ-ለ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "test"}
 {"form": "ዐውድ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "val"}
 {"form": "ዘርዕ", "root": "ዘ-ረ-ዐ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "test"}
