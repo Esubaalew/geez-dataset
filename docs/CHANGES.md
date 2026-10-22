@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,091 / 1,153 / 1,555 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,104 / 590 / 767 |
-| unified rows | 24,352 | 45,286 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,127 / 591 / 771 |
+| unified rows | 24,352 | 45,309 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -279,3 +279,21 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   val, ኢሳይያስ train to test). ሰሎሞን stays in val: its earlier rows are in train and in test.
 - Counts: 45,286 unified rows, 22,257 load (train 18,195, val 1,741, test 2,321); reviewed rows 22,870 load (train
   18,678, val 1,795, test 2,397); 68,504 clitic forms (train 55,939, val 5,376, test 7,189).
+
+## 22 October 2026: roots of rootless rows, three root corrections, 23 forms of the Bible text
+
+- 49 rows with no root whose word has exactly one root in other rows (forms of ቃል, ስም, ቤት,
+  አብ, ብእሲ, ግብር, ልብስ, ጽድቅ, ሰላም, ኀይል, ወልድ, and the verbs አምጽአ, ቦኡ, ይበውእ) take that root and the split
+  it sits in (e.g. ብእሴ train to val, ግብረ val to test, ስሙ test to train). Rows that lack the number, tense or
+  stem stay `CHECK`; ወልድ, አልባስ, አቡሁ and ቃል now load (one ቃል row repeats a loading row in the reviewed file
+  and is `EXCLUDED` there). Rows whose letters do not hold the root, a gold row, an `EXCLUDED` row and ኵሎ (a
+  rootless pronoun in the reviewed rows) are not changed. Book files carry the new root and split.
+- Roots corrected against Dillmann (printed root kept in `evidence`): ወርቅ ኀ-በ-ረ to ወ-ረ-ቀ; ዐውድ አ-ደ to ዐ-ወ-ደ
+  (train to test, the split of ዐ-ወ-ደ); እፎ 'how' is an `adverb` with no root and now loads.
+- እምነ (u019563): possessor 1cp.
+- 23 new rows from the Bible verse text with a full analysis in a verse outside the held-out chapters (e.g.
+  እንተ relative pronoun f sg, አምጽኡ causative past 3mp, ተጋብኡ reciprocal past 3mp, ደቂቁ, ውሉደ, ሰባዕቱ, በበ,
+  ስምዖን, ልያ). A rooted row takes the split of its root; a rootless one a fixed hash of the form.
+- Counts: 45,309 unified rows, 22,285 load (train 18,218, val 1,742, test 2,325); reviewed rows 22,897 load (train
+  18,700, val 1,796, test 2,401); 68,585 clitic forms (train 56,005, val 5,379, test 7,201). No root is in more
+  than one split.
