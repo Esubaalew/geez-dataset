@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,601 / 638 / 844 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,611 / 639 / 846 |
 | unified rows | 24,352 | 45,348 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -375,3 +375,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   chapter) and do not load in either file.
 - እሙንቱ u019564 and እማንቱ u019565 are `EXCLUDED` in both files as repeats of u014816 and u014817.
 - The main file is the training file. `--unified_file` of train_tpu.py must not point at the reviewed file.
+- Letter check: ሠ/ሰ, ጸ/ፀ, ሀ/ሐ/ኀ and አ/ዐ count as one series (Language). Roots keep Merho's spelling. EXCLUDED gold rows are no gold conflict. 13 rows held back by c12 now load in both files (e.g. ሰኑይ, ሥልጣን, ፆም, ነፍስ u021719).
