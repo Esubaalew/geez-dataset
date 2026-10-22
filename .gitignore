@@ -27,3 +27,6 @@ _probe*
 # Generator output. The published copies live under data/.
 output/
 organize_data.py
+
+# Internal review files (never published)
+a2_review/

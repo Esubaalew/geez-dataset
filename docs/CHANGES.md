@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,611 / 639 / 846 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,612 / 639 / 846 |
 | unified rows | 24,352 | 45,348 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -346,10 +346,10 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   val 1,796, test 2,402); 68,603 clitic forms (train 56,020, val 5,379, test 7,204); gold pairs 8,094 / 1,153 / 1,554.
 - ሴይር (u008147): evidence adds 'proper name of a person (Gen 36:20) and the mountain of Edom (Gen 14:6)'.
 
-## 22 October 2026: Bible labels, batch 2
+## 22 October 2026: Bible labels, second set
 
-- SURE labels of 429 forms checked (root letters in the word, gold rows, other labels of the form, held-out
-  verses, duplicates): 413 pass, 16 do not. ይቤ and other በ-ሀ-ለ forms are not changed beyond batch 1.
+- Labels of 429 forms checked (root letters in the word, gold rows, other labels of the form, held-out
+  verses, duplicates): 413 pass, 16 do not. ይቤ and other በ-ሀ-ለ forms are not changed beyond the first set.
 - 38 rootless rows of other books take the root of their word (e.g. ርእስ, ልብ, ምድር, ብእሲ, ስም, ሰላም, ዓለም); ብእሲ
   (u028486) train to val, the split of በ-አ-ሰ. 2 now load, 8 repeat a loading row and are `EXCLUDED`, 28 stay `CHECK`.
 - 36 new rows from the verse text with a full analysis (e.g. ላዕለ, እንዘ, ዲበ, ሶበ, ፈርዖን, አሮን, አበዊሆሙ, አልባሲሁ).
@@ -361,7 +361,7 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 
 ## 22 October 2026: roots confirmed by Merho
 
-- Rows still open whose root Merho confirms (merho_check_1022.tsv), plus ሰማየ under ሰ-መ-የ and አንቀጽ/አንቀጸ under ነ-ቀ-ጸ,
+- Rows still open whose root Merho confirms, plus ሰማየ under ሰ-መ-የ and አንቀጽ/አንቀጸ under ነ-ቀ-ጸ,
   take that root (29 rows: 5 now load, 12 repeat a row and are `EXCLUDED`, 12 stay `CHECK`); gold rows are not changed.
   Rows whose printed root was cut or carried a prefix (ማሕምም ሐ-መ, መዋርስት ወ-ሰ, ምስብዒት/መግዝእ/መጋዝእ with መ-, ተንተነ ነ-ተ-ነ)
   take the Merho root. Rows move to the split of their root where needed. ዕጣነ, ደመ, ደሞ, ደም, ርስት/ርስተ and ማእከል are not changed.
@@ -376,3 +376,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - እሙንቱ u019564 and እማንቱ u019565 are `EXCLUDED` in both files as repeats of u014816 and u014817.
 - The main file is the training file. `--unified_file` of train_tpu.py must not point at the reviewed file.
 - Letter check: ሠ/ሰ, ጸ/ፀ, ሀ/ሐ/ኀ and አ/ዐ count as one series (Language). Roots keep Merho's spelling. EXCLUDED gold rows are no gold conflict. 13 rows held back by c12 now load in both files (e.g. ሰኑይ, ሥልጣን, ፆም, ነፍስ u021719).
+- ነፍስ u028700 and ነፍሰ u015074 get root ነ-ፈ-ሰ. ሊቃውንት u021827 gets root ለ-የ-ቀ and stays unloaded for review. እብላ u022584 is the noun 'moon', with no root, and does not load (a noun needs a root to load). The rootless እድ 'hand' rows get root ዐ-ደ-ወ (Merho p.246); repeats are excluded.
