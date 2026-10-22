@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,614 / 640 / 853 |
-| unified rows | 24,352 | 45,348 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,665 / 643 / 862 |
+| unified rows | 24,352 | 45,408 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -390,3 +390,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ኩልያት 'kidneys', plural of ኩሊት (Merho ከልአ), gets root ከ-ለ-አ and number p, and moves from val to train so ከ-ለ-አ is in one split. u012044 loads in both files; u028668 and u042121 repeat it and are excluded. The book line of u028668 follows.
 - Counts: 22,915 unified rows load (train 18,721, val 1,791, test 2,403); reviewed rows 22,953 load (train 18,752, val 1,795, test 2,406); 68,758 clitic forms (train 56,161, val 5,381, test 7,216).
 - ልብ and its possessed forms are back under ለ-በ-በ (the dictionary lists ልብ under ለበበ; plural አልባብ), and the ለ-በ-በ rows are back in their earlier split. ጽዩእ (u036678) and ጽዩኣን (u036679) are masculine; they repeat gold rows u005083 and u005084 and are `EXCLUDED`.
+- Bible labels, third set: 10 rootless rows get the root of the other rows of their word; 60 new forms from the verse text. አሐዱ, አሐቲ and አሐደ are under ወ-ሐ-ደ.
