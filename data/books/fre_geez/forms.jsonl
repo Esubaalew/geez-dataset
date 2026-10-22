@@ -1518,7 +1518,7 @@
 {"form": "ቀርናይ", "root": "ቀ-ረ-ነ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "test"}
 {"form": "አይሁዳይ", "root": "የ-ሀ-ደ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
 {"form": "የማናይ", "root": "የ-መ-ነ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
-{"form": "አበው", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
+{"form": "አበው", "root": "አ-በ-ወ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
 {"form": "ኪሩቤል", "root": "ከ-ረ-በ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "val"}
 {"form": "አብሠረ", "root": "በ-ሠ-ረ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
 {"form": "ቈረበ", "root": "ቈ-ረ-በ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "test"}

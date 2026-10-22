@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,128 / 591 / 771 |
-| unified rows | 24,352 | 45,310 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,161 / 592 / 775 |
+| unified rows | 24,352 | 45,348 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -345,3 +345,13 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Counts: 22,295 unified rows load (train 18,227, val 1,742, test 2,326); reviewed rows 22,903 load (train 18,705,
   val 1,796, test 2,402); 68,603 clitic forms (train 56,020, val 5,379, test 7,204); gold pairs 8,094 / 1,153 / 1,554.
 - ሴይር (u008147): evidence adds 'proper name of a person (Gen 36:20) and the mountain of Edom (Gen 14:6)'.
+
+## 22 October 2026: Bible labels, batch 2
+
+- SURE labels of 429 forms checked (root letters in the word, gold rows, other labels of the form, held-out
+  verses, duplicates): 413 pass, 16 do not. ይቤ and other በ-ሀ-ለ forms are not changed beyond batch 1.
+- 38 rootless rows of other books take the root of their word (e.g. ርእስ, ልብ, ምድር, ብእሲ, ስም, ሰላም, ዓለም); ብእሲ
+  (u028486) train to val, the split of በ-አ-ሰ. 2 now load, 8 repeat a loading row and are `EXCLUDED`, 28 stay `CHECK`.
+- 36 new rows from the verse text with a full analysis (e.g. ላዕለ, እንዘ, ዲበ, ሶበ, ፈርዖን, አሮን, አበዊሆሙ, አልባሲሁ).
+- Two forms of the Merho paradigm of መ-ረ-ዐ-ወ, ተመራዐወ and አመርዓዌ, are new rows in train; they stay `CHECK`.
+  Gold rows are not changed.
