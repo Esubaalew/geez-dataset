@@ -391,3 +391,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Counts: 22,915 unified rows load (train 18,721, val 1,791, test 2,403); reviewed rows 22,953 load (train 18,752, val 1,795, test 2,406); 68,758 clitic forms (train 56,161, val 5,381, test 7,216).
 - ልብ and its possessed forms are back under ለ-በ-በ (the dictionary lists ልብ under ለበበ; plural አልባብ), and the ለ-በ-በ rows are back in their earlier split. ጽዩእ (u036678) and ጽዩኣን (u036679) are masculine; they repeat gold rows u005083 and u005084 and are `EXCLUDED`.
 - Bible labels, third set: 10 rootless rows get the root of the other rows of their word; 60 new forms from the verse text. አሐዱ, አሐቲ and አሐደ are under ወ-ሐ-ደ.
+- Class of gold rows: ውእቱ pronoun; ዛቲ demonstrative; ኖኅ, ይሁዳ and ጳውሎስ proper nouns with no root; እኅት, ውሉድ, ብእሲት, ኑኅ, አባግዕ, ቍልዔ and ምት nouns (አባግዕ, ቍልዔ and ምት have no root and do not load).
