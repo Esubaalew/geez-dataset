@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,092 / 1,164 / 1,543 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,021 / 568 / 759 |
-| unified rows | 24,352 | 45,164 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,031 / 568 / 758 |
+| unified rows | 24,352 | 45,170 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -155,3 +155,20 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   or verb labels are not given. 63 printed roots and 11 splits are replaced; each such row says so in `evidence`.
 - `scripts/check_unified.py` takes an optional rows file and reports documented review overrides of book lines.
 - The base unified file and the book files are unchanged.
+
+## 22 October 2026: word classes and roots of some common words
+
+- Gold rows: እግዚእ is a noun with root ገ-ዘ-አ (was verb, no root); እሳት is a noun with no root (was verb); ሠለስቱ is a
+  numeral with no root (was verb; numerals take no root, its root ሠ-ለ-ሰ is noted in `evidence`); ምድር (p.386) is a
+  noun (was verb) and stays `CHECK`: its root መ-ደ-ረ is a test root and the row is in train.
+- ልብ: three book rows printed under ለ-በ-ወ take root ለ-በ-በ, the root of the gold row, and its split (train); the
+  ፍሬ ግእዝ row that repeats the gold row is `EXCLUDED`.
+- ገጽ (Yared Shiferaw p.246) and ሙሴ (p.79, a personal name, now a noun) lose the printed roots ገ-ወ and ኀ-መ-ሰ.
+- ውስቴታ, ምስሌከ, ምስሌሁ, ላዕሌሁ (ፍሬ ግእዝ) are prepositions with a pronoun suffix (possessor 3fs, 2ms, 3ms, 3ms) and no
+  root; repeated rows are `EXCLUDED`. እስመ is a particle with no root. ሠለስቱ of የግዕዝ መማሪያ p.33 repeats the gold row
+  and is `EXCLUDED`.
+- New rows from Dillmann, *Lexicon Linguae Aethiopicae* (1865), col. 482-483: the short perfect forms of ብህለ
+  ይቤ (3ms), ትቤ (3fs and 2ms), ይቤሉ (3mp), ይቤላ (3fp), root በ-ሀ-ለ, train; and the particle ከማሁ (no root).
+- Counts: 45,170 unified rows; 22,153 load (train 18,123, val 1,730, test 2,300); reviewed rows 22,769 load
+  (train 18,609, val 1,784, test 2,376); 68,216 clitic forms (train 55,741, val 5,349, test 7,126). No root is in
+  more than one split.
