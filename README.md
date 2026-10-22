@@ -55,17 +55,17 @@ Gold files (`data/paradigms/merho_ges_gold_*.jsonl`) hold one record per entry w
 
 A root appears in only one of train, val and test. Book rows follow the split of the gold form or root they match, otherwise a fixed hash rule.
 
-Gold records: train 1,113, val 136, test 221.
+Gold records: train 1,112, val 135, test 223.
 
 Unified rows (45,170 in total) that load:
 
 | | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
-| gold (Merho Ges) | 8,092 | 1,162 | 1,542 | 1,164 |
-| other books | 10,032 | 568 | 758 | 21,852 |
-| total | 18,124 | 1,730 | 2,300 | 23,016 |
+| gold (Merho Ges) | 8,091 | 1,151 | 1,554 | 1,164 |
+| other books | 10,031 | 567 | 759 | 21,853 |
+| total | 18,122 | 1,718 | 2,313 | 23,017 |
 
-The gold loader expands spellings to 8,092 / 1,164 / 1,543 pairs; these differ from the unified-row counts above.
+The gold loader expands spellings to 8,091 / 1,153 / 1,555 pairs; these differ from the unified-row counts above.
 
 Synthetic training forms: 120,685 lines. Synthetic forms for val/test roots: 17,569 lines.
 
@@ -81,10 +81,10 @@ train = [r for r in rows if r["status"] == "" and r["split"] == "train"]
 Use only rows with an empty `status`. Do not train on `data/synthetic/`.
 
 `data/unified/geez_morphology_rows_reviewed.jsonl` is the same file with a review of held rows applied: 616 more
-rows load (22,770 in total: train 18,610, val 1,784, test 2,376). Rows load there only when the dataset itself
+rows load (22,769 in total: train 18,608, val 1,772, test 2,389). Rows load there only when the dataset itself
 supports the review; see [data/unified/README.md](data/unified/README.md#reviewed-rows).
 
-`data/clitics/clitic_forms.jsonl` holds 68,219 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
+`data/clitics/clitic_forms.jsonl` holds 68,216 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
 made by rule from the settled reviewed rows; each keeps the root, labels and split of its source row
 ([data/clitics/README.md](data/clitics/README.md)).
 

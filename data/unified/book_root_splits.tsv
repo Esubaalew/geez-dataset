@@ -121,7 +121,7 @@ root	stratum	rows	split
 ነ-ገ-ፈ	verb/ቀተ	13	train
 ነ-ጠ-የ	verb/nomark	7	train
 ነ-ጠ-ፈ	verb/ቀተ	11	val
-ነ-ጸ-ፈ	verb/ቀተ	16	val
+ነ-ጸ-ፈ	verb/ቀተ	25	val
 ነ-ፈ-ፈ	verb/nomark	3	val
 አ-ለ-ፈ	verb/ቀደ	17	train
 አ-መ-ነ	verb/ቀተ	27	val
@@ -404,7 +404,6 @@ root	stratum	rows	split
 መ-ጸ-ወ	nominal/nomark	5	train
 መ-ፀ-ገ-ዐ	nominal/nomark	8	train
 መ-ፈ-ደ	nominal/nomark	4	train
-ሠ-ለ-ጠ	nominal/nomark	10	train
 ሠ-ሐ-ቀ	nominal/nomark	7	train
 ሠ-ቀ-ሠ-ቀ	nominal/nomark	2	train
 ሠ-ዘ-የ	nominal/nomark	6	train
@@ -515,7 +514,6 @@ root	stratum	rows	split
 ነ-ጸ-ጸ-ወ	nominal/nomark	3	train
 ነ-ጸ-ፈ-ጸ-ፈ	nominal/nomark	9	train
 ነ-ፀ-ወ	nominal/nomark	8	train
-ነ-ፀ-ፈ	nominal/nomark	9	train
 ነ-ፈ-ረ-ዐ-ጸ	nominal/nomark	5	train
 ነ-ፈ-ጸ	nominal/nomark	10	train
 አ-ኀ-ረ	nominal/nomark	10	train
@@ -527,7 +525,6 @@ root	stratum	rows	split
 አ-ገ	nominal/nomark	10	train
 ከ-ሀ-ነ	nominal/nomark	9	train
 ከ-ለ-ተ-ፈ	nominal/nomark	5	train
-ከ-ሐ-ለ	nominal/nomark	7	train
 ከ-ሐ-ሰ	nominal/nomark	1	train
 ከ-ረ-ጸ	nominal/nomark	7	train
 ከ-በ-ከ-በ	nominal/nomark	2	train

@@ -4,8 +4,8 @@ v1: tag `v1`, commit `337cdf0`.
 
 | | v1 | v2 |
 |---|---:|---:|
-| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,092 / 1,164 / 1,543 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,032 / 568 / 758 |
+| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,091 / 1,153 / 1,555 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,031 / 567 / 759 |
 | unified rows | 24,352 | 45,170 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -174,3 +174,23 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Counts: 45,170 unified rows; 22,154 load (train 18,124, val 1,730, test 2,300); reviewed rows 22,770 load
   (train 18,610, val 1,784, test 2,376); 68,219 clitic forms (train 55,744, val 5,349, test 7,126). No root is in
   more than one split.
+
+## 22 October 2026: spelling variants of one root merged
+
+- 48 pairs of roots that differ only by a sound-alike letter (ሀ/ሐ/ኀ, ሰ/ሠ, ጸ/ፀ, አ/ዐ) and are one root spelled two ways
+  are merged under one spelling, chosen by the Bible frequency of the forms and the number of rows (for example ኀ-ለ-ወ
+  into ሀ-ለ-ወ, ነ-ፀ-ረ into ነ-ጸ-ረ, በ-አ-ለ into በ-ዐ-ለ, ሠ-አ-ነ into ሰ-አ-ነ). Pairs with different meanings (ሰ-በ-ሐ
+  'praise' and ሠ-በ-ሐ, ሰ-ረ-ቀ 'steal' and ሠ-ረ-ቀ 'rise', ...) and pairs with too little evidence stay apart; ጸ-መ-አ /
+  ጸ-መ-ዐ stays open.
+- Every changed row keeps the printed root in `evidence` (book rows: `note` in `lexicon/book_forms.jsonl`; gold
+  records: `spelling_note`). The book files (`data/books/*/forms.jsonl`) carry the merged root.
+- Four merged roots had their spellings in two splits; all rows now share one split: ሀ-ለ-ወ (12 train rows of ኀ-ለ-ወ
+  to test), ለ-ሐ-የ (5 train rows to test, with ለ-ሀ-የ), ነ-ጸ-ፈ (10 train rows of ነ-ፀ-ፈ to val), ወ-ሐ-ደ (21 val rows
+  to train, with ወ-ኀ-ደ); 3 `EXCLUDED` rows of these roots moved with them. Gold records d18e088c3d7e and
+  8a40e5b926fa moved from train to test, be17bc2433de from val to train.
+- The book row ሥኡን (Yared Shiferaw p.180) repeats the gold row of ሰ-አ-ነ after the merge and is `EXCLUDED`.
+- `book_root_splits.tsv`: the merged-away roots ሠ-ለ-ጠ, ነ-ፀ-ፈ and ከ-ሐ-ለ are removed (the 9 rows of ነ-ፀ-ፈ are
+  added to ነ-ጸ-ፈ).
+- Counts: gold records train 1,112, val 135, test 223; gold pairs that load 8,091 / 1,153 / 1,555; 45,170 unified
+  rows, 22,153 load (train 18,122, val 1,718, test 2,313); reviewed rows 22,769 load (train 18,608, val 1,772, test
+  2,389); 68,216 clitic forms (train 55,738, val 5,313, test 7,165). No root is in more than one split.
