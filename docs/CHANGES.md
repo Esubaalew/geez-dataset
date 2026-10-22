@@ -4,9 +4,9 @@ v1: tag `v1`, commit `337cdf0`.
 
 | | v1 | v2 |
 |---|---:|---:|
-| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,091 / 1,153 / 1,555 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,127 / 591 / 771 |
-| unified rows | 24,352 | 45,309 |
+| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,091 / 1,153 / 1,554 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,128 / 591 / 771 |
+| unified rows | 24,352 | 45,310 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -297,3 +297,17 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Counts: 45,309 unified rows, 22,285 load (train 18,218, val 1,742, test 2,325); reviewed rows 22,897 load (train
   18,700, val 1,796, test 2,401); 68,585 clitic forms (train 56,005, val 5,379, test 7,201). No root is in more
   than one split.
+
+## 22 October 2026: roots of two gold rows, two ጸዓዳ rows, a መርዓ row
+
+- Gold rows (row-level root in the gold file; the record root is unchanged): በዳ (u006430, p.289) በ-ደ-የ to
+  በ-ደ-ወ (train, the split of በ-ደ-ወ); ጸዓድው (u011550, p.313) ጸ-ዐ-ደ to ጸ-ዐ-ደ-ወ. With its new root ጸዓድው repeats
+  gold row u011393, so it is listed in `merho_ges_gold_flagged_rows.tsv` and is `EXCLUDED` in the unified rows.
+- Book rows ጸዓዳ (u039762) and ጸዓድው (u039763) ጸ-ዐ-ደ-ወ-ደ to ጸ-ዐ-ደ-ወ, printed root kept in `evidence`, train to
+  test (the split of ጸ-ዐ-ደ-ወ); ጸዓድው repeats u037882 and is `EXCLUDED`. The book file carries the new root and split.
+- New row መርዓ 'wedding' (u045310), noun singular, root መ-ረ-ዐ-ወ (Merho s.v. አመርዐወ, p.243; Hos 4:13), train,
+  the split of መ-ረ-ዐ-ወ. Gold መርዓ (u010647, መ-ረ-ዐ) is unchanged.
+- መርሶ (u011757) is not changed: ረ-ሰ-ወ is a train root in the gold and the gold row is in test.
+- Counts: 45,310 unified rows, 22,285 load (train 18,219, val 1,742, test 2,324); reviewed rows 22,897 load (train
+  18,701, val 1,796, test 2,400); 68,585 clitic forms (train 56,008, val 5,379, test 7,198); gold pairs train 8,091,
+  val 1,153, test 1,554. No root is in more than one split.
