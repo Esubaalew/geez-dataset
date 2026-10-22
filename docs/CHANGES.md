@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,091 / 1,153 / 1,555 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,005 / 579 / 761 |
-| unified rows | 24,352 | 45,170 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,087 / 596 / 778 |
+| unified rows | 24,352 | 45,286 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -248,4 +248,18 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - The printed root is kept in `evidence`; the book files (`data/books/*/forms.jsonl`) carry the new root.
 - Counts: 45,170 unified rows, 22,141 load (train 18,096, val 1,730, test 2,315); reviewed rows 22,754 load (train
   18,579, val 1,784, test 2,391); 68,166 clitic forms (train 55,651, val 5,344, test 7,171). No root is in more
+  than one split.
+
+## 22 October 2026: 116 names from the New Testament text
+
+- 116 word types of the New Testament verse text that are personal or place names, confirmed in a verse, are new
+  rows u045171-u045286: `proper_noun`, no root, `status` empty, `source_ref` the first verse. The form is the word
+  as written; `evidence` gives its analysis with the proclitics (ለ, ወ, በ, እም, ዘ, ኦ, ኢ) and enclitics split off,
+  e.g. ለ + ዮሐንስ. One word with the negative ኢ has `negated` true. Names that are gold verb rows and አዳም are not
+  added.
+- Split: a fixed hash of the form (sha256) in the proportions of the rows that load (train 82, val 17, test 17).
+  A split that already holds a row of the same form is not used, so 28 names are in a split other than their
+  held rows of the same form; names have no root, so no root crosses splits.
+- Counts: 45,286 unified rows, 22,257 load (train 18,178, val 1,747, test 2,332); reviewed rows 22,870 load (train
+  18,661, val 1,801, test 2,408); 68,505 clitic forms (train 55,894, val 5,393, test 7,218). No root is in more
   than one split.

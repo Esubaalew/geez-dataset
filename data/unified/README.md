@@ -95,7 +95,7 @@ Splits: a root that already has a split keeps it; a root found only as a twin-le
 
 ## Counts
 
-45,170 rows. Rows that load: 22,141 (train 18,096, val 1,730, test 2,315): gold 10,796 (train 8,091, val 1,151, test 1,554); other books 11,345 (train 10,005, val 579, test 761). Not loaded: 23,029 (gold 1,164, other books 21,865).
+45,286 rows. Rows that load: 22,257 (train 18,178, val 1,747, test 2,332): gold 10,796 (train 8,091, val 1,151, test 1,554); other books 11,461 (train 10,087, val 596, test 778). Not loaded: 23,029 (gold 1,164, other books 21,865).
 
 ## Reviewed rows
 
