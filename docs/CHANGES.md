@@ -344,3 +344,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - The rows were tagged verb; tense and person are cleared, gender and number kept. Gold splits are unchanged.
 - Counts: 22,295 unified rows load (train 18,227, val 1,742, test 2,326); reviewed rows 22,903 load (train 18,705,
   val 1,796, test 2,402); 68,603 clitic forms (train 56,020, val 5,379, test 7,204); gold pairs 8,094 / 1,153 / 1,554.
+- ሴይር (u008147): evidence adds 'proper name of a person (Gen 36:20) and the mountain of Edom (Gen 14:6)'.
