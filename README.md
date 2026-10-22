@@ -62,8 +62,8 @@ Unified rows (45,286 in total) that load:
 | | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
 | gold (Merho Ges) | 8,091 | 1,151 | 1,554 | 1,164 |
-| other books | 10,087 | 596 | 778 | 21,865 |
-| total | 18,178 | 1,747 | 2,332 | 23,029 |
+| other books | 10,104 | 590 | 767 | 21,865 |
+| total | 18,195 | 1,741 | 2,321 | 23,029 |
 
 The gold loader expands spellings to 8,091 / 1,153 / 1,555 pairs; these differ from the unified-row counts above.
 
@@ -81,10 +81,10 @@ train = [r for r in rows if r["status"] == "" and r["split"] == "train"]
 Use only rows with an empty `status`. Do not train on `data/synthetic/`.
 
 `data/unified/geez_morphology_rows_reviewed.jsonl` is the same file with a review of held rows applied: 613 more
-rows load (22,870 in total: train 18,661, val 1,801, test 2,408). Rows load there only when the dataset itself
+rows load (22,870 in total: train 18,678, val 1,795, test 2,397). Rows load there only when the dataset itself
 supports the review; see [data/unified/README.md](data/unified/README.md#reviewed-rows).
 
-`data/clitics/clitic_forms.jsonl` holds 68,505 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
+`data/clitics/clitic_forms.jsonl` holds 68,504 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
 made by rule from the settled reviewed rows; each keeps the root, labels and split of its source row
 ([data/clitics/README.md](data/clitics/README.md)).
 

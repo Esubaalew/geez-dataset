@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,091 / 1,153 / 1,555 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,087 / 596 / 778 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,104 / 590 / 767 |
 | unified rows | 24,352 | 45,286 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -271,3 +271,11 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   ዐ-ለ-የ); ዕውድ and ዑድ አ-ደ to ዐ-ወ-ደ (train to test, the split of ዐ-ወ-ደ).
 - Corrections that would repeat an existing row (ይዴግን, መዐልት, ጽልመት, ምስፍና, መጽያሕት, ጸበል, ተንተነ, ድቀት) are not applied.
 - The six rows stay `CHECK`, so counts are unchanged. No root is in more than one split.
+
+## 22 October 2026: names share the split of their earlier rows
+
+- 27 of the 116 New Testament names (`proper_noun`) had a form already present in earlier book rows of another
+  split; each moves to that split, so every form sits in one split (for example ኢየሱስ val to train, ሄሮድስ train to
+  val, ኢሳይያስ train to test). ሰሎሞን stays in val: its earlier rows are in train and in test.
+- Counts: 45,286 unified rows, 22,257 load (train 18,195, val 1,741, test 2,321); reviewed rows 22,870 load (train
+  18,678, val 1,795, test 2,397); 68,504 clitic forms (train 55,939, val 5,376, test 7,189).
