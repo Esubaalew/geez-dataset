@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,091 / 1,153 / 1,555 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,031 / 567 / 759 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,028 / 567 / 758 |
 | unified rows | 24,352 | 45,170 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -189,8 +189,12 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   to train, with ወ-ኀ-ደ); 3 `EXCLUDED` rows of these roots moved with them. Gold records d18e088c3d7e and
   8a40e5b926fa moved from train to test, be17bc2433de from val to train.
 - The book row ሥኡን (Yared Shiferaw p.180) repeats the gold row of ሰ-አ-ነ after the merge and is `EXCLUDED`.
+- ቀ-ረ-ጸ is merged into ቀ-ረ-ፀ (Merho Ges lists ቀረጸ inside the ቀረፀ entry); its one row (Ge'ez verb list p.23) was
+  already in train with ቀ-ረ-ፀ, so no row changes split.
+- Four book rows of Yared Shiferaw repeat a gold row in everything except an empty gender and are `EXCLUDED`: ሕዩስ
+  (p.82, gold row u001807), እድው (p.237, u005592), ሳንይ (p.265, u006317), በራሕ (p.22, u010282).
 - `book_root_splits.tsv`: the merged-away roots ሠ-ለ-ጠ, ነ-ፀ-ፈ and ከ-ሐ-ለ are removed (the 9 rows of ነ-ፀ-ፈ are
   added to ነ-ጸ-ፈ).
 - Counts: gold records train 1,112, val 135, test 223; gold pairs that load 8,091 / 1,153 / 1,555; 45,170 unified
-  rows, 22,153 load (train 18,122, val 1,718, test 2,313); reviewed rows 22,769 load (train 18,608, val 1,772, test
-  2,389); 68,216 clitic forms (train 55,738, val 5,313, test 7,165). No root is in more than one split.
+  rows, 22,149 load (train 18,119, val 1,718, test 2,312); reviewed rows 22,765 load (train 18,605, val 1,772, test
+  2,388); 68,204 clitic forms (train 55,729, val 5,313, test 7,162). No root is in more than one split.
