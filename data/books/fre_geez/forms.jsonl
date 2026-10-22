@@ -1576,7 +1576,7 @@
 {"form": "ተሰፈወ", "root": "ሰ-ፈ-ወ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
 {"form": "አንገለገ", "root": "ነ-ገ-ለ-ገ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
 {"form": "አስተጋብአ", "root": "ገ-በ-አ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
-{"form": "ዐፀወ", "root": "ዐ-ጸ-ወ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
+{"form": "ዐፀወ", "root": "ዐ-ፀ-ወ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
 {"form": "አርኀወ", "root": "ረ-ኀ-ወ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
 {"form": "ኀያል", "root": "ኀ-የ-ለ", "pos": "adjective", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
 {"form": "ጠቢብ", "root": "ጠ-በ-በ", "pos": "adjective", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "val"}
