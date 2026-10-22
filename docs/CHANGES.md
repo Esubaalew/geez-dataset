@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,094 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,161 / 592 / 775 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,162 / 592 / 775 |
 | unified rows | 24,352 | 45,348 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -355,3 +355,6 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - 36 new rows from the verse text with a full analysis (e.g. ላዕለ, እንዘ, ዲበ, ሶበ, ፈርዖን, አሮን, አበዊሆሙ, አልባሲሁ).
 - Two forms of the Merho paradigm of መ-ረ-ዐ-ወ, ተመራዐወ and አመርዓዌ, are new rows in train; they stay `CHECK`.
   Gold rows are not changed.
+
+- ተመራዐወ (u045347) now has its features (perfect, 3rd person masculine singular, reciprocal stem) and loads.
+  አመርዓዌ (u045348) stays `CHECK`.
