@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,092 / 1,164 / 1,543 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,031 / 568 / 758 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,032 / 568 / 758 |
 | unified rows | 24,352 | 45,170 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -169,6 +169,8 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
   and is `EXCLUDED`.
 - New rows from Dillmann, *Lexicon Linguae Aethiopicae* (1865), col. 482-483: the short perfect forms of ብህለ
   ይቤ (3ms), ትቤ (3fs and 2ms), ይቤሉ (3mp), ይቤላ (3fp), root በ-ሀ-ለ, train; and the particle ከማሁ (no root).
-- Counts: 45,170 unified rows; 22,153 load (train 18,123, val 1,730, test 2,300); reviewed rows 22,769 load
-  (train 18,609, val 1,784, test 2,376); 68,216 clitic forms (train 55,741, val 5,349, test 7,126). No root is in
+- Names: a word class `proper_noun` for personal and place names, which take no root (a root may be kept
+  where a book gives one). ሙሴ (Yared Shiferaw p.79) is a `proper_noun` with no root and loads (train).
+- Counts: 45,170 unified rows; 22,154 load (train 18,124, val 1,730, test 2,300); reviewed rows 22,770 load
+  (train 18,610, val 1,784, test 2,376); 68,219 clitic forms (train 55,744, val 5,349, test 7,126). No root is in
   more than one split.

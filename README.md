@@ -44,7 +44,7 @@ Unified rows (`data/unified/geez_morphology_rows.jsonl`), one JSON object per li
 ```
 
 - `root`: 2–5 first-order letters joined by `-`; `null` for words without a root.
-- `word_class`: `verb`, `noun`, `adjective`, `nominal`, `infinitive`, `gerund`, `verbal_noun`, `pronoun`, `demonstrative`, `preposition`, `particle`, `numeral`, `adverb`.
+- `word_class`: `verb`, `noun`, `adjective`, `nominal`, `infinitive`, `gerund`, `verbal_noun`, `pronoun`, `demonstrative`, `preposition`, `particle`, `numeral`, `adverb`, `proper_noun` (a name; no root).
 - `stem`: `basic`, `passive`, `causative`, `reciprocal`, `aste`, `aste_reciprocal`.
 - `tense`: `past`, `present`, `subjunctive`, `imperative`.
 - `status`: `""` means the row loads; otherwise `CHECK`, `CONFLICT`, `NO_ROOT`, `FLAGGED` or `EXCLUDED`, with `status_reason`.
@@ -62,8 +62,8 @@ Unified rows (45,170 in total) that load:
 | | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
 | gold (Merho Ges) | 8,092 | 1,162 | 1,542 | 1,164 |
-| other books | 10,031 | 568 | 758 | 21,853 |
-| total | 18,123 | 1,730 | 2,300 | 23,017 |
+| other books | 10,032 | 568 | 758 | 21,852 |
+| total | 18,124 | 1,730 | 2,300 | 23,016 |
 
 The gold loader expands spellings to 8,092 / 1,164 / 1,543 pairs; these differ from the unified-row counts above.
 
@@ -81,10 +81,10 @@ train = [r for r in rows if r["status"] == "" and r["split"] == "train"]
 Use only rows with an empty `status`. Do not train on `data/synthetic/`.
 
 `data/unified/geez_morphology_rows_reviewed.jsonl` is the same file with a review of held rows applied: 616 more
-rows load (22,769 in total: train 18,609, val 1,784, test 2,376). Rows load there only when the dataset itself
+rows load (22,770 in total: train 18,610, val 1,784, test 2,376). Rows load there only when the dataset itself
 supports the review; see [data/unified/README.md](data/unified/README.md#reviewed-rows).
 
-`data/clitics/clitic_forms.jsonl` holds 68,216 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
+`data/clitics/clitic_forms.jsonl` holds 68,219 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
 made by rule from the settled reviewed rows; each keeps the root, labels and split of its source row
 ([data/clitics/README.md](data/clitics/README.md)).
 

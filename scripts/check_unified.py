@@ -22,7 +22,7 @@ from check_dataset import is_ethiopic_word, is_first_order, form_variants   # no
 COLS = ["id", "form", "root", "word_class", "stem", "tense", "person", "gender", "number", "object", "possessor", "negated", "source",
         "book", "page", "source_ref", "evidence", "also_in", "status", "status_reason", "split"]
 CLASSES = {"verb", "noun", "adjective", "nominal", "infinitive", "gerund", "verbal_noun", "pronoun", "demonstrative", "preposition", "particle",
-           "numeral", "adverb", "unknown"}
+           "numeral", "adverb", "proper_noun", "unknown"}
 ROOTED = {"verb", "noun", "adjective", "nominal", "infinitive", "gerund", "verbal_noun"}
 STEMS = {"basic", "passive", "causative", "reciprocal", "aste", "aste_reciprocal"}
 TENSES = {"past", "present", "subjunctive", "imperative"}
@@ -56,7 +56,7 @@ for r in rows:
         for k in REQ.get(r["word_class"], ()):
             if not r[k]: err("2 labels", f"{w} {r['form']}: {r['word_class']} loads without {k}")
         if r["word_class"] in ROOTED and not r["root"]: err("2 labels", f"{w} {r['form']}: no root")
-        if r["word_class"] not in ROOTED and r["root"]: err("2 labels", f"{w} {r['form']}: {r['word_class']} has a root")
+        if r["word_class"] not in ROOTED | {"proper_noun"} and r["root"]: err("2 labels", f"{w} {r['form']}: {r['word_class']} has a root")
         if r["word_class"] == "unknown": err("2 labels", f"{w}: class unknown loads")
     if r["status"] not in ("EXCLUDED",) and not is_ethiopic_word(r["form"] or "") and r["status"] == "":
         err("3 forms", f"{w}: {r['form']!r} is not one Ge'ez word")

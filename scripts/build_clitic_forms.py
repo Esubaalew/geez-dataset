@@ -33,7 +33,7 @@ OUT_DIR = os.path.join(ROOT, "data", "clitics")
 OUT = os.path.join(OUT_DIR, "clitic_forms.jsonl")
 VARIANTS_PER_ROW = 3
 
-NOMINAL = {"noun", "adjective", "nominal", "infinitive", "verbal_noun", "gerund", "numeral"}
+NOMINAL = {"noun", "adjective", "nominal", "infinitive", "verbal_noun", "gerund", "numeral", "proper_noun"}
 CLOSED = {"particle", "preposition", "pronoun", "demonstrative", "adverb"}
 PRO_NOMINAL = ["ወ", "ለ", "በ", "እም", "ዘ", "ወለ", "ወበ", "ወእም", "ዘበ", "ዘእም"]
 PRO_VERB = ["ወ", "ዘ", "ወዘ"]
