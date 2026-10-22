@@ -225,3 +225,14 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Counts: 45,170 unified rows, 22,137 load (train 18,095, val 1,727, test 2,315); reviewed rows 22,752 load (train
   18,579, val 1,782, test 2,391); 68,165 clitic forms (train 55,651, val 5,343, test 7,171). No root is in more than
   one split.
+
+## 22 October 2026: the numeral table split by root
+
+- Gold record `056fc8ed75e6` (p.449, the numeral table) keeps 18 forms in `merho_ges_gold_train.jsonl`. The form
+  ዐሠርቱ, whose unified row has root ዐ-ሠ-ረ (val), moves to a new record `9f6a3f914c87` in
+  `merho_ges_gold_val.jsonl` (same page and raw reading; `source_record_id` names the old record). The id is the
+  first 12 hex digits of sha1(`page_number|title_or_lemma|raw_transcription`) with the title suffixed by the form.
+- `source_ref` of the 19 unified rows follows the new row positions. The record has no root, so no gold pair
+  changes: gold records train 1,112, val 136, test 223; gold pairs that load 8,091 / 1,153 / 1,555.
+- Counts unchanged: 45,170 unified rows, 22,137 load (train 18,095, val 1,727, test 2,315); reviewed rows 22,752
+  load; 68,165 clitic forms.

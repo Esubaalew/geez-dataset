@@ -55,7 +55,7 @@ Gold files (`data/paradigms/merho_ges_gold_*.jsonl`) hold one record per entry w
 
 A root appears in only one of train, val and test. Book rows follow the split of the gold form or root they match, otherwise a fixed hash rule.
 
-Gold records: train 1,112, val 135, test 223.
+Gold records: train 1,112, val 136, test 223.
 
 Unified rows (45,170 in total) that load:
 
