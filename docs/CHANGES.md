@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,133 / 1,153 / 1,526 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 17,518 / 1,503 / 1,877 |
-| unified rows | 24,352 | 53,980 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 18,852 / 1,596 / 2,063 |
+| unified rows | 24,352 | 55,593 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -442,3 +442,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Clitic forms: no second preposition (ለ, በ, ከ, እም) is added to a row that already starts with one; ወ and ዘ may still stand before it.
 - Clitic forms: a rooted row whose leading preposition is not part of its root gets no second preposition, with or without a bare-form row.
 - Rootless nouns አገዳ (Merho p.412) and አርዑት (Merho p.386): ወአገዳ, ወአገዳኒ, አገዳሆን and አርዑቶ load from Bible verses.
+- 1,613 Bible word forms ruled SURE load (new roots split with their twin-letter roots); forms already built by the clitic step, an exact repeat and forms whose root has twins in two splits are not loaded.
