@@ -19,6 +19,9 @@ row. This script adds such forms by rule:
     ወ and ዘ join any word; enclitics join any word.
   * A noun with no root receives every proclitic of PRO_ROOTLESS_NOUN (no enclitics); a form made this way
     is dropped if it is a row of the books or is made from a row of another split.
+  * A source row whose leading ወ is the conjunction proclitic (form starts with ወ, root does not, and the
+    evidence notes proclitic ወ- or the form without ወ is a row of the same root) gets no proclitic: ወ is
+    always the outermost proclitic, so nothing can stand before it. Enclitics still join.
   * Every other source row receives at most VARIANTS_PER_ROW forms. The choice is a fixed hash of the row id, so
     the file is the same on every run.
 
@@ -74,13 +77,29 @@ def main():
                 r = json.loads(line)
                 bare_forms.add(r["form"])
                 rows.append(r)
+    roots_of_form = {}
+    for r in rows:
+        roots_of_form.setdefault(r["form"], set()).add(r.get("root"))
+
+    def leading_wa(r):
+        f, root, ev = r["form"], r.get("root") or "", r.get("evidence") or ""
+        if not f.startswith("ወ") or len(f) < 3 or root.startswith("ወ"):
+            return False
+        if "proclitic ወ-" in ev or "ወ-" in ev.split(";")[0]:
+            return True
+        return r.get("root") in roots_of_form.get(f[1:], set())
+
     def rootless_noun(r):
         return r.get("word_class") == "noun" and not r.get("root")
 
     def combos_of(r):
         if rootless_noun(r):
-            return [(p, "") for p in PRO_ROOTLESS_NOUN]
-        return pick(r["id"], options(r.get("word_class")), VARIANTS_PER_ROW)
+            combos = [(p, "") for p in PRO_ROOTLESS_NOUN]
+        else:
+            combos = pick(r["id"], options(r.get("word_class")), VARIANTS_PER_ROW)
+        if leading_wa(r):
+            combos = [(p, e) for p, e in combos if not p]
+        return combos
 
     # forms made from rows of more than one split: such a rootless-noun form is not written
     form_splits = {}
