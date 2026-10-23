@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,133 / 1,153 / 1,526 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 17,323 / 1,491 / 1,831 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 17,374 / 1,491 / 1,875 |
 | unified rows | 24,352 | 53,969 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -422,3 +422,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - 30 Bible label rows whose root ruling is not settled (among them ሐሤት, ሥራይ, ኀሳር, ጽዕለት, ማሕሌት, ወአሥዋክ) are `CHECK` and do not load.
 - 17 more Bible label rows on the same bases and roots (ሥራይ, ማሕሌት, ኀሳር, ጽዕለት, ስራሕ, ሕብል, አሥዋክ and others) are `CHECK` (root ruling not settled) and do not load; every root keeps other rows that load.
 - 286 more Bible label rows whose base or root ruling is not settled (base held, a soundalike group held, or a base with two readings) are `CHECK` (root ruling not settled) and do not load; every root keeps the split entry it had.
+- 95 of those rows load again: their base is ruled SURE on the same root (train 51, test 44).
