@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,133 / 1,153 / 1,526 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 16,003 / 1,304 / 1,674 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 15,939 / 1,294 / 1,671 |
 | unified rows | 24,352 | 51,893 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -413,3 +413,5 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ማይ 'water' and its plural ማያት load as nouns with no root.
 - Bible labels, sixth set: 26 rows that did not load now load (SURE labels with full analyses).
 - Bible labels, further rows: 20 rows whose root had no split load. Roots corrected: ዐ-ደ-መ to አ-ደ-መ (Merho, entry አደመ: እዳሜ, እድሜ) and ኰ-ለ-ለ to ከ-ለ-ለ (Dillmann col. 814); both keep the split their root has. New roots added to `book_root_splits.tsv` by the standard rule (no exact or twin match: train; twin of a val/test root: that split): ወ-ረ-ኀ train, አ-ረ-መ train, ዐ-ዘ-ነ test (twin of አ-ዘ-ነ). ቀ-በ-አ (twin of the train root ቀ-በ-ዐ) has no row that loads, so it is not added.
+- The 4 rows of አ-ረ-መ (ወአረሚ, ለአረሚ, ወለአረሚ, እምአረሚ; 'Gentile, Greek') are `CHECK` until a dictionary settles the root, and do not load; አ-ረ-መ is removed from `book_root_splits.tsv`.
+- 77 of these Bible label rows whose base form label is not certain (among them ማዕዘንተ and the 4 rows of አ-ረ-መ) are `CHECK` and do not load; ዐ-ዘ-ነ then has no row that loads and is removed from `book_root_splits.tsv`.
