@@ -427,3 +427,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - One audit-flagged row (አጋረ, root አ-ገ-ረ) restored to load after its base ruling was settled.
 - Merho page corrected to 121 for one row (አጋረ, root አ-ገ-ረ).
 - 136 rows on settled back-list and root-entry bases restored to load; 13 of them take the root given by the ruling (5 to ደ-የ-ነ, 1 to አ-ረ-ረ, 7 ሀገር forms load without a root as stand-alone words).
+- Merho pages corrected for the released ዳን rows (p.190) and ዓመት rows (p.171).
