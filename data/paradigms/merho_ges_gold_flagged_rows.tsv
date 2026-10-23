@@ -3,3 +3,6 @@ test	191	2b1a8f1d7669	13	ጸዓድው	after root correction ጸ-ዐ-ደ -> ጸ-�
 train	1113	1544b0c3ef6e	43	መርሶ	with root ረ-ሰ-ወ repeats row 40 of the same record (gold row u011757)
 train	304	ea10429f3dd0	1	ጌራ	Amharic gloss of ገረሠ; the Ge'ez noun ጌራ has no root (gold row u002215)
 train	1067	364eb1618096	18	ከፈር	root ከ-ፈ-ረ is a test root; the form loads in test as gold row u008409
+test	19	326bb423d3e6	2	ማዕበል	after root correction መ-ዐ-በ-ለ -> ዐ-በ-ለ repeats gold row u010403
+train	160	79fa3452c755	4	ደሊላ	name with no root, not ደ-ለ-ለ; loads as gold row u008856
+train	1059	e0ca76dfd9d7	2	ትካት	with root ተ-ከ-ተ repeats gold row u003929

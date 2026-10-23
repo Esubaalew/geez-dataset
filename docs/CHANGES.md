@@ -4,7 +4,7 @@ v1: tag `v1`, commit `337cdf0`.
 
 | | v1 | v2 |
 |---|---:|---:|
-| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,097 / 1,153 / 1,554 |
+| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,096 / 1,153 / 1,553 |
 | rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,910 / 664 / 883 |
 | unified rows | 24,352 | 45,696 |
 | synthetic training pair (lines) | | 120,685 |
@@ -405,3 +405,8 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Some nouns with no root move to validation and test so the no-root answer is measured.
 - Nouns with no root get every common proclitic form (ወ-, ለ-, በ-, ከ-, እም-, ዘ- and their combinations).
 - Forms with endings of nouns with no root (from Bible verses) load with no root.
+
+## 23 October 2026: gold word classes, names and numerals
+- Fourteen gold rows printed as verbs are nouns (ኦሪት, ትካት, አፍራስ, ገነት, ሐመር, መና, ንስር, ኆኅት, ፍና, ገራህት, አውራኅ, ያክንት, ማዕበል, መስቀል); ትካት takes the root ተ-ከ-ተ and repeats an existing row.
+- Fourteen gold names load as nouns with no root (ጴጥሮስ, አሴር, ሎጥ, ኤርትራ, ጲላጦስ, ገሊላ, ሶራ, ማኪር, አሶር, ፋሬስ, ደሊላ, ታራ, ገልገላ, ናቡከደነጾር).
+- Gold ሠላሳ, ኀምሳ, ስሳ, ሰብዓ are numerals; ኅብረ and ሰንበተ are nouns; ማዕበል takes the root ዐ-በ-ለ.
