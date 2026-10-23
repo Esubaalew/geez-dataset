@@ -400,3 +400,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Four gold noun spellings corrected to the printed Merho form (በጉሬማ, ዕጉሥታር, ድልጉማ, ኤጥሞጶሞር); they load as nouns with no root.
 - Gold ከፈር gets root ከ-ፈ-ረ (Merho, ከፈረ entry) and moves to test with that root.
 - Gold ቃማ, አውቴዝራማ and ብሄማ (spelling fixes to Merho) load as nouns with no root.
+- Gold ራግማ (spelling fix to Merho) loads as a noun with no root; both ዜማ rows are held for review.
