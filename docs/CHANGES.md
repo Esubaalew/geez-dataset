@@ -432,5 +432,5 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ወንጉሥሰ loaded as a noun (Merho p.88), per a ruling on its part of speech.
 - ቀዳሚየ and ቀዳሚከ restored to load as nouns; ለቀዳሚ restored to load as an adjective, per rulings.
 - ቀዳሚ gets a second row as an adjective ('first'), next to its noun reading; ለቀዳሚ evidence now says adjective.
-- Added the woman's name አጀር (Merho p.121, root አ-ገ-ረ) as a proper noun.
+- Added the woman's name አጋር (Merho p.121, root አ-ገ-ረ) as a proper noun.
 - ወቀዳሚ added as an adjective (Eph 6:2), next to its noun reading.
