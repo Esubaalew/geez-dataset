@@ -4,6 +4,6 @@ train	1111	1544b0c3ef6e	43	መርሶ	with root ረ-ሰ-ወ repeats row 40 of the
 train	303	ea10429f3dd0	1	ጌራ	Amharic gloss of ገረሠ; the Ge'ez noun ጌራ has no root (gold row u002215)
 train	1065	364eb1618096	18	ከፈር	root ከ-ፈ-ረ is a test root; the form loads in test as gold row u008409
 train	1112	326bb423d3e6	2	ማዕበል	after root correction መ-ዐ-በ-ለ -> ዐ-በ-ለ repeats gold row u010403
-train	159	79fa3452c755	4	ደሊላ	name with no root, not ደ-ለ-ለ; loads as gold row u008856
+train	159	79fa3452c755	4	ደሊላ	name (proper_noun) under ደ-ለ-ለ; the same reading loads as gold row u008856
 train	1057	e0ca76dfd9d7	2	ትካት	with root ተ-ከ-ተ repeats gold row u003929
 val	51	ba7368a455c6	15	መርብብ	root not settled (row u009421 is CHECK): printed under ረበበ, which is in train; loading it in val under ረ-ሐ-በ puts the spelling in two splits
