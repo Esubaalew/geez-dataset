@@ -423,3 +423,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - 17 more Bible label rows on the same bases and roots (ሥራይ, ማሕሌት, ኀሳር, ጽዕለት, ስራሕ, ሕብል, አሥዋክ and others) are `CHECK` (root ruling not settled) and do not load; every root keeps other rows that load.
 - 286 more Bible label rows whose base or root ruling is not settled (base held, a soundalike group held, or a base with two readings) are `CHECK` (root ruling not settled) and do not load; every root keeps the split entry it had.
 - 95 of those rows load again: their base is ruled SURE on the same root (train 51, test 44).
+- Merho pages filled for 128 loading rows from the Bible labels (chunks 10 and 11) that had no page; page field only.
