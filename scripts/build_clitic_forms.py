@@ -22,6 +22,11 @@ row. This script adds such forms by rule:
   * A source row whose leading ወ is the conjunction proclitic (form starts with ወ, root does not, and the
     evidence notes proclitic ወ- or the form without ወ, or without ወ and one enclitic, is a row of the same root) gets no proclitic: ወ is
     always the outermost proclitic, so nothing can stand before it. Enclitics still join.
+  * A source row that already starts with a preposition proclitic (በ, ለ, ከ, ከመ, እም) gets no second
+    preposition (a proclitic containing ለ, በ, ከ or እም); ወ, ዘ and ወዘ may still stand before it. The row
+    counts as prefixed when it has a root whose first letters are not the prefix and the form without the
+    prefix is a row of the same root, or when it has no root, the prefix is በ, ለ or እም, and the form
+    without the prefix is a row with no root.
   * Every other source row receives at most VARIANTS_PER_ROW forms. The choice is a fixed hash of the row id, so
     the file is the same on every run.
 
@@ -46,6 +51,8 @@ PRO_CLOSED = ["ወ"]
 # full proclitic set for nouns with no root (the sample of 3 is too thin to teach 'root: none')
 PRO_ROOTLESS_NOUN = ["ወ", "ለ", "በ", "ከ", "እም", "ዘ", "ወለ", "ወበ", "ወከ", "ወእም", "ዘእም", "ወዘ"]
 ENCLITICS = ["ሰ", "ኒ", "ሂ", "ኑ"]
+# preposition proclitics a row may already carry, longest first
+PREP_PREFIXES = ["ከመ", "እም", "በ", "ለ", "ከ"]
 
 
 def options(word_class):
@@ -94,6 +101,22 @@ def main():
         return any(bare.endswith(e) and len(bare) > len(e) and r.get("root") in roots_of_form.get(bare[:-len(e)], set())
                    for e in ENCLITICS)
 
+    def first_order(c):
+        return chr(ord(c) - (ord(c) - 0x1200) % 8)
+
+    def leading_prep(r):
+        f, root = r["form"], r.get("root")
+        for p in PREP_PREFIXES:
+            if not f.startswith(p) or len(f) <= len(p) + 1:
+                continue
+            bare = f[len(p):]
+            if root:
+                if root.split("-")[:len(p)] == [first_order(c) for c in p]:
+                    continue
+                return root in roots_of_form.get(bare, set())
+            return p in ("በ", "ለ", "እም") and None in roots_of_form.get(bare, set())
+        return False
+
     def rootless_noun(r):
         return r.get("word_class") == "noun" and not r.get("root")
 
@@ -104,6 +127,8 @@ def main():
             combos = pick(r["id"], options(r.get("word_class")), VARIANTS_PER_ROW)
         if leading_wa(r):
             combos = [(p, e) for p, e in combos if not p]
+        elif leading_prep(r):
+            combos = [(p, e) for p, e in combos if not any(x in p for x in ("ለ", "በ", "ከ", "እም"))]
         return combos
 
     # forms made from rows of more than one split: such a rootless-noun form is not written

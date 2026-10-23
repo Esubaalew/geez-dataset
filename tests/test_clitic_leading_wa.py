@@ -50,3 +50,22 @@ def test_wa_row_with_enclitic_gets_no_prefix(tmp_path):
     assert "ወወገሰሰኒ" not in {r["form"] for r in out}
     # a root that starts with ወ keeps its proclitics even if the rest looks like a form
     assert any(r["proclitic"] for r in out if r["base_id"] == "u000006")
+
+
+def test_no_second_preposition_but_wa_and_za_allowed(tmp_path):
+    rows = [row(1, "ዐራት", "noun", None), row(52232, "በዐራት", "noun", None)]
+    out = build(tmp_path, rows)
+    forms = {r["form"] for r in out if r["base_id"] == "u052232"}
+    assert "ዘበዐራት" in forms and "ወዘበዐራት" in forms
+    assert "ወበዐራት" in {r["form"] for r in out}  # also ወበ + ዐራት
+    assert not {"ለበዐራት", "በበዐራት", "ከበዐራት", "እምበዐራት", "ወለበዐራት", "ዘእምበዐራት"} & forms
+
+
+def test_second_preposition_rooted_and_root_letters(tmp_path):
+    rows = [row(1, "ጽድቅከ", "noun", "ጸ-ደ-ቀ"), row(20, "በጽድቅከ", "noun", "ጸ-ደ-ቀ"),
+            row(2, "ረከት", "noun", "በ-ረ-ከ"), row(21, "በረከት", "noun", "በ-ረ-ከ")]
+    out = build(tmp_path, rows)
+    assert all(not any(x in (r["proclitic"] or "") for x in "ለበከ") and "እም" not in (r["proclitic"] or "")
+               for r in out if r["base_id"] == "u000020")
+    # a root that starts with በ keeps its prepositions
+    assert any(r["proclitic"] and any(x in r["proclitic"] for x in ("ለ", "በ", "እም")) for r in out if r["base_id"] == "u000021")
