@@ -1,5 +1,5 @@
-split	file_line	row	form	reason
-test	191	13	ጸዓድው	after root correction ጸ-ዐ-ደ -> ጸ-ዐ-ደ-ወ repeats gold row u011393
-train	1113	43	መርሶ	with root ረ-ሰ-ወ repeats row 40 of the same record (gold row u011757)
-train	304	1	ጌራ	Amharic gloss of ገረሠ; the Ge'ez noun ጌራ has no root (gold row u002215)
-train	1067	18	ከፈር	root ከ-ፈ-ረ is a test root; the form loads in test as gold row u008409
+split	file_line	record_id	row	form	reason
+test	191	2b1a8f1d7669	13	ጸዓድው	after root correction ጸ-ዐ-ደ -> ጸ-ዐ-ደ-ወ repeats gold row u011393
+train	1113	1544b0c3ef6e	43	መርሶ	with root ረ-ሰ-ወ repeats row 40 of the same record (gold row u011757)
+train	304	ea10429f3dd0	1	ጌራ	Amharic gloss of ገረሠ; the Ge'ez noun ጌራ has no root (gold row u002215)
+train	1067	364eb1618096	18	ከፈር	root ከ-ፈ-ረ is a test root; the form loads in test as gold row u008409
