@@ -69,3 +69,16 @@ def test_second_preposition_rooted_and_root_letters(tmp_path):
                for r in out if r["base_id"] == "u000020")
     # a root that starts with በ keeps its prepositions
     assert any(r["proclitic"] and any(x in r["proclitic"] for x in ("ለ", "በ", "እም")) for r in out if r["base_id"] == "u000021")
+
+
+def test_rooted_prefix_blocked_without_bare_row(tmp_path):
+    # ለምድሩ (root መ-ደ-ረ) has no bare ምድሩ row; still no second preposition
+    forms = {r["form"] for r in build(tmp_path, [row(51119, "ለምድሩ", "noun", "መ-ደ-ረ")])}
+    assert "ለለምድሩሰ" not in forms
+    assert not any(f.startswith(("ለለ", "በለ", "ከለ", "እምለ", "ወለለ", "ወበለ", "ወእምለ", "ዘእምለ")) for f in forms)
+
+
+def test_rootless_ka_prefix_not_blocked(tmp_path):
+    rows = [row(1, "በሎ", "noun", None), row(29579, "ከበሎ", "noun", None)]
+    forms = {r["form"] for r in build(tmp_path, rows) if r["base_id"] == "u029579"}
+    assert "ለከበሎ" in forms and "ወለከበሎ" in forms

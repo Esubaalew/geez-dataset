@@ -440,3 +440,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Added two settled readings: ዐራት 'bed' (no root, Merho p.386) and ጽላት as a variant of ጸሎት (ጸ-ለ-የ, Merho p.286).
 - ዐራት 'bed' (no root, Merho p.386): seven inflected forms and the plural ዐራታት now load; the 'tablets' row of ጽላት is held until that reading is settled.
 - Clitic forms: no second preposition (ለ, በ, ከ, እም) is added to a row that already starts with one; ወ and ዘ may still stand before it.
+- Clitic forms: a rooted row whose leading preposition is not part of its root gets no second preposition, with or without a bare-form row.

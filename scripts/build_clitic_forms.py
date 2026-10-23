@@ -24,8 +24,7 @@ row. This script adds such forms by rule:
     always the outermost proclitic, so nothing can stand before it. Enclitics still join.
   * A source row that already starts with a preposition proclitic (በ, ለ, ከ, ከመ, እም) gets no second
     preposition (a proclitic containing ለ, በ, ከ or እም); ወ, ዘ and ወዘ may still stand before it. The row
-    counts as prefixed when it has a root whose first letters are not the prefix and the form without the
-    prefix is a row of the same root, or when it has no root, the prefix is በ, ለ or እም, and the form
+    counts as prefixed when it has a root whose first letters are not the prefix, or when it has no root, the prefix is በ, ለ or እም, and the form
     without the prefix is a row with no root.
   * Every other source row receives at most VARIANTS_PER_ROW forms. The choice is a fixed hash of the row id, so
     the file is the same on every run.
@@ -113,7 +112,7 @@ def main():
             if root:
                 if root.split("-")[:len(p)] == [first_order(c) for c in p]:
                     continue
-                return root in roots_of_form.get(bare, set())
+                return True
             return p in ("በ", "ለ", "እም") and None in roots_of_form.get(bare, set())
         return False
 
