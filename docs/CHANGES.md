@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,133 / 1,153 / 1,526 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 19,347 / 1,629 / 2,139 |
-| unified rows | 24,352 | 56,197 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 19,352 / 1,629 / 2,139 |
+| unified rows | 24,352 | 56,202 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -445,3 +445,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - 1,613 Bible word forms ruled SURE load (new roots split with their twin-letter roots); forms already built by the clitic step, an exact repeat and forms whose root has twins in two splits are not loaded.
 - 590 more Bible word forms ruled SURE load: the ኀ-ለ-የ 'think', ሐ-ለ-የ 'sing' and ሐ-በ-ለ (ሕብል 'deceit') readings and a second pass over word stems; forms built by the clitic step, repeats and forms with an unsettled root are not loaded.
 - 14 Bible word forms load on settled roots: ሊቃነ forms on ለ-የ-ቀ, ሙታን forms on መ-ወ-ተ, ምጽአት on መ-ጸ-አ, and መሓልይ/መኃልይ 'song' forms on ሐ-ለ-የ.
+- Plurals of ኄር 'good' (ለኄራን, ኄራነ, ወኄራን, ወኄራነ, ወለኄራተ) load on root ኀ-የ-ረ-ወ, Merho p.230.
