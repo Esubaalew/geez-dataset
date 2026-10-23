@@ -17,7 +17,8 @@ What "clean" means here (one line per check; ERROR fails the run, NOTE is inform
   5. every label is from the documented list below (type, tense, person/gender/number, stem, object);
   6. nouns and adjectives carry no verb labels (tense, person, object);
   7. no pair (form + all labels) appears twice, in one split or across splits;
-  8. no root appears in more than one split (train / val / test);
+  8. no root appears in more than one split (train / val / test), and no spelling with its roots (form + root union;
+     groups listed in data/unified/held_split_groups.tsv are reported only);
   9. every row in merho_ges_gold_flagged_rows.tsv points at a real row holding that form;
  10. if data/paradigms/SHA256SUMS exists, every file matches its hash;
  11. no root field holds the placeholder "CHECK" (case-sensitive): the gold files and, next to the gold folder,
@@ -197,6 +198,7 @@ def main():
 
     pairs = collections.defaultdict(list)          # pair key -> [where]
     root_splits = collections.defaultdict(set)
+    form_rows = []                                 # (form, root, split) of every pair that loads
     found_flagged = set()
     loaded = collections.Counter()
 
@@ -291,6 +293,7 @@ def main():
                     key = (v, root, typ, labels["number"])
                 pairs[key].append((split, where))
                 root_splits[root].add(split)
+                form_rows.append((v, root, split))
                 loaded[split] += 1
 
     allowed = set()                                # (split, file line, form, rows) from the allowed-duplicates file
@@ -319,6 +322,32 @@ def main():
     for root, splits in sorted(root_splits.items()):
         if len(splits) > 1:
             err("8 splits", f"root {root} is in {', '.join(sorted(splits))}")
+    # a spelling and every root it reads as are in one split (form + root union); groups listed in
+    # data/unified/held_split_groups.tsv are known and reported only
+    parent = {}
+    def find(x):
+        parent.setdefault(x, x)
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+    for v, root, split in form_rows:
+        parent[find("f:" + v)] = find("r:" + root)
+    gsplits, gforms = collections.defaultdict(set), collections.defaultdict(set)
+    for v, root, split in form_rows:
+        g = find("f:" + v); gsplits[g].add(split); gforms[g].add(v)
+    held = set()
+    hpath = os.path.join(os.path.dirname(os.path.abspath(args.data)), "unified", "held_split_groups.tsv")
+    if os.path.exists(hpath):
+        with open(hpath, encoding="utf-8") as f:
+            next(f, None)
+            held = {find("f:" + line.split("\t")[0]) for line in f if line.strip()}
+    for g, splits in gsplits.items():
+        if len(splits) > 1:
+            if g in held:
+                notes["spelling groups in two splits, listed in held_split_groups.tsv"] += 1
+            else:
+                err("8 splits", f"spelling {', '.join(sorted(gforms[g])[:3])} and its roots are in {', '.join(sorted(splits))}")
     for k in sorted(allowed - used_allowed):
         where = f"line {k[1]} rows {k[3]}" if k[1] is not None else "rows " + ";".join(f"{a}:{b}" for a, b in k[3])
         err("7 duplicates", f"{ALLOWED}: {k[0]} {where} {k[2]!r} is not a duplicate in the files")

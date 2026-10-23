@@ -11,6 +11,9 @@
   5 duplicates  no two rows that load have the same form, root, word_class and labels
   6 books       every line of data/books/*/forms.jsonl is the source of exactly one row, with the same form, root and split
   7 held splits a root is in one split among all its rows that are not EXCLUDED, so a held-back row can load later without a leak
+  8 form splits the rows that load and share a spelling, joined through their roots (a spelling with two readings and
+                every root it reads as), are in one split; a group listed in data/unified/held_split_groups.tsv is
+                reported, not failed, and a listed group that is in one split fails (take it off the list)
   python check_unified.py DATASET_DIR [ROWS_JSONL]   (default data/unified/geez_morphology_rows.jsonl)
 """
 import collections, json, os, re, sys
@@ -111,7 +114,42 @@ for r in rows:
 for root, sp in sorted(held.items()):
     if len(sp) > 1:
         err("7 held splits", f"root {root} is in " + ", ".join(sorted(sp)))
-for sec in ("1 fields", "2 labels", "3 forms", "4 splits", "5 duplicates", "6 books", "7 held splits"):
+# 8 form splits: union of spellings and roots over the rows that load
+parent = {}
+def find(x):
+    parent.setdefault(x, x)
+    while parent[x] != x:
+        parent[x] = parent[parent[x]]
+        x = parent[x]
+    return x
+loading = [r for r in rows if r["status"] == ""]
+for r in loading:
+    a = find("f:" + r["form"])
+    if r["root"]:
+        parent[a] = find("r:" + r["root"])
+group_splits, group_forms = collections.defaultdict(set), collections.defaultdict(set)
+for r in loading:
+    g = find("f:" + r["form"])
+    group_splits[g].add(r["split"]); group_forms[g].add(r["form"])
+held_path = os.path.join(ds, "data", "unified", "held_split_groups.tsv")
+held_groups = {}
+if os.path.exists(held_path):
+    with open(held_path, encoding="utf-8") as f:
+        next(f, None)
+        for line in f:
+            if line.strip():
+                form = line.split("\t")[0]
+                held_groups[form] = find("f:" + form)
+listed = set(held_groups.values())
+for g, sp in group_splits.items():
+    if len(sp) > 1 and g not in listed:
+        err("8 form splits", f"{', '.join(sorted(group_forms[g])[:4])}: the spelling and its roots load in {', '.join(sorted(sp))}")
+for form, g in held_groups.items():
+    if len(group_splits.get(g, ())) <= 1:
+        err("8 form splits", f"{form} is listed in held_split_groups.tsv but loads in one split")
+    else:
+        print(f"held split group (listed): {form} loads in {', '.join(sorted(group_splits[g]))}")
+for sec in ("1 fields", "2 labels", "3 forms", "4 splits", "5 duplicates", "6 books", "7 held splits", "8 form splits"):
     print(("FAIL " if errs[sec] else "PASS ") + f"{sec}: {len(errs[sec])} problem(s)")
     for m in errs[sec][:8]: print("   ", m)
 if overrides: print("review overrides of book lines (documented in evidence):", dict(overrides))

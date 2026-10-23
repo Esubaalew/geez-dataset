@@ -6,3 +6,4 @@ train	1065	364eb1618096	18	ከፈር	root ከ-ፈ-ረ is a test root; the form l
 train	1112	326bb423d3e6	2	ማዕበል	after root correction መ-ዐ-በ-ለ -> ዐ-በ-ለ repeats gold row u010403
 train	159	79fa3452c755	4	ደሊላ	name with no root, not ደ-ለ-ለ; loads as gold row u008856
 train	1057	e0ca76dfd9d7	2	ትካት	with root ተ-ከ-ተ repeats gold row u003929
+val	51	ba7368a455c6	15	መርብብ	root not settled (row u009421 is CHECK): printed under ረበበ, which is in train; loading it in val under ረ-ሐ-በ puts the spelling in two splits

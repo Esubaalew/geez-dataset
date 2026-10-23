@@ -1,0 +1,3 @@
+form	reason
+መኄርው	reads ኀ-የ-ረ-ወ (train gold) and ኀ-ረ-ወ (test gold); the test gold record also holds rows of other roots, so the group cannot move as a whole yet
+ጽሙት	reads ጸ-መ-ወ (train gold) and ጸ-መ-ተ (test book); the test gold record of ጸ-መ-ተ also holds ደ-መ-ተ rows, so the group cannot move as a whole yet
