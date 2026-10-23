@@ -7,3 +7,5 @@ train	1112	326bb423d3e6	2	ማዕበል	after root correction መ-ዐ-በ-ለ -> 
 train	159	79fa3452c755	4	ደሊላ	name (proper_noun) under ደ-ለ-ለ; the same reading loads as gold row u008856
 train	1057	e0ca76dfd9d7	2	ትካት	with root ተ-ከ-ተ repeats gold row u003929
 val	51	ba7368a455c6	15	መርብብ	root not settled (row u009421 is CHECK): printed under ረበበ, which is in train; loading it in val under ረ-ሐ-በ puts the spelling in two splits
+val	131	499487316b73	3	ናህ	moved to train record 3e5291641c6f under root ተ-ነ-ሀ (Merho printed p.344)
+val	131	499487316b73	4	ናህው	moved to train record 3e5291641c6f under root ተ-ነ-ሀ (Merho printed p.344)
