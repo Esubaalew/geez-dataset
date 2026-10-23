@@ -55,17 +55,17 @@ Gold files (`data/paradigms/merho_ges_gold_*.jsonl`) hold one record per entry w
 
 A root appears in only one of train, val and test. Book rows follow the split of the gold form or root they match, otherwise a fixed hash rule.
 
-Gold records: train 1,118, val 136, test 218.
+Gold records: train 1,118, val 137, test 219.
 
 Unified rows (46,186 in total) that load:
 
 | | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
-| gold (Merho Ges) | 8,247 | 1,158 | 1,536 | 1,019 |
-| other books | 11,593 | 735 | 945 | 20,953 |
-| total | 19,840 | 1,893 | 2,481 | 21,972 |
+| gold (Merho Ges) | 8,267 | 1,159 | 1,537 | 997 |
+| other books | 11,592 | 735 | 945 | 20,954 |
+| total | 19,859 | 1,894 | 2,482 | 21,951 |
 
-The gold loader expands spellings to 8,126 / 1,152 / 1,525 pairs; these differ from the unified-row counts above.
+The gold loader expands spellings to 8,133 / 1,153 / 1,526 pairs; these differ from the unified-row counts above.
 
 Synthetic training forms: 120,685 lines. Synthetic forms for val/test roots: 17,569 lines.
 
@@ -81,10 +81,10 @@ train = [r for r in rows if r["status"] == "" and r["split"] == "train"]
 Use only rows with an empty `status`. Do not train on `data/synthetic/`.
 
 `data/unified/geez_morphology_rows_reviewed.jsonl` is the same file with corrections to held rows applied: 0 more
-rows load (24,214 in total: train 19,840, val 1,893, test 2,481). Rows load there only when the dataset itself
+rows load (24,235 in total: train 19,859, val 1,894, test 2,482). Rows load there only when the dataset itself
 supports the correction; see [data/unified/README.md](data/unified/README.md#corrected-rows-file).
 
-`data/clitics/clitic_forms.jsonl` holds 75,662 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
+`data/clitics/clitic_forms.jsonl` holds 75,779 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
 made by rule from the settled corrected rows; each keeps the root, labels and split of its source row
 ([data/clitics/README.md](data/clitics/README.md)).
 

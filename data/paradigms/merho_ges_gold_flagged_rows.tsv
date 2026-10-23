@@ -9,3 +9,6 @@ train	1057	e0ca76dfd9d7	2	ትካት	with root ተ-ከ-ተ repeats gold row u0039
 val	51	ba7368a455c6	15	መርብብ	root not settled (row u009421 is CHECK): printed under ረበበ, which is in train; loading it in val under ረ-ሐ-በ puts the spelling in two splits
 val	131	499487316b73	3	ናህ	moved to train record 3e5291641c6f under root ተ-ነ-ሀ (Merho printed p.344)
 val	131	499487316b73	4	ናህው	moved to train record 3e5291641c6f under root ተ-ነ-ሀ (Merho printed p.344)
+train	950	229620ff1e8e	9	ምክያድ	after root correction አ-ከ-ደ -> ከ-የ-ደ repeats gold row u006872
+train	1066	9cba5636771f	12	ገሐፍት	moved to val record e2350ddb3b4c under root ገ-ሐ-ፈ
+train	1060	451d2ab1e34a	7	እምድሩ	moved to test record 319e01962c23 under root መ-ደ-ረ
