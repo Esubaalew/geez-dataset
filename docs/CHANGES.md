@@ -395,3 +395,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Bible labels, third set, remaining forms: 153 new forms from the verse text with full labels; ሰሚዐ and ሐዊረ as infinitives with their roots.
 - Bible labels, fourth set: 55 new forms from the verse text (54 load).
 - Bible labels, fifth set: 48 new forms from the verse text (46 load).
+- Nouns with no root: 29 gold nouns that Merho lists among its stand-alone words now load with an empty root. The list is `data/unified/rootless_nouns.tsv`; only nouns on it may load without a root.

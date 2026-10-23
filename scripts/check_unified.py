@@ -39,6 +39,13 @@ rows = [json.loads(l) for l in open(ROWS, encoding="utf-8")]
 ids = collections.Counter(r["id"] for r in rows)
 root_splits, keys = collections.defaultdict(set), collections.defaultdict(list)
 by_id = {r["id"]: r for r in rows}
+# nouns that have no root (data/unified/rootless_nouns.tsv) load with an empty root
+ROOTLESS = set()
+for _p in (os.path.join(sys.argv[1] if len(sys.argv) > 1 else ".", "data/unified/rootless_nouns.tsv"),):
+    if os.path.exists(_p):
+        ROOTLESS = {l.split("\t")[0] for l in open(_p, encoding="utf-8").read().splitlines()[1:] if l.strip()}
+for _f in sorted(ROOTLESS - {r["form"] for r in rows if r["word_class"] == "noun"}):
+    err("2 labels", f"rootless_nouns.tsv: {_f} is not a noun row")
 for r in rows:
     w = r.get("id")
     if list(r) != COLS: err("1 fields", f"{w}: fields {list(r)}")
@@ -55,7 +62,7 @@ for r in rows:
     if r["status"] == "": 
         for k in REQ.get(r["word_class"], ()):
             if not r[k]: err("2 labels", f"{w} {r['form']}: {r['word_class']} loads without {k}")
-        if r["word_class"] in ROOTED and not r["root"]: err("2 labels", f"{w} {r['form']}: no root")
+        if r["word_class"] in ROOTED and not r["root"] and not (r["word_class"] == "noun" and r["form"] in ROOTLESS): err("2 labels", f"{w} {r['form']}: no root")
         if r["word_class"] not in ROOTED | {"proper_noun"} and r["root"]: err("2 labels", f"{w} {r['form']}: {r['word_class']} has a root")
         if r["word_class"] == "unknown": err("2 labels", f"{w}: class unknown loads")
     if r["status"] not in ("EXCLUDED",) and not is_ethiopic_word(r["form"] or "") and r["status"] == "":
