@@ -17,7 +17,9 @@ row. This script adds such forms by rule:
   * The new row keeps the split of its source row, so no root crosses splits.
   * Which clitics a row receives depends on its word class: the prepositions ለ, በ, እም join nominals only;
     ወ and ዘ join any word; enclitics join any word.
-  * Each source row receives at most VARIANTS_PER_ROW forms. The choice is a fixed hash of the row id, so
+  * A noun with no root receives every proclitic of PRO_ROOTLESS_NOUN (no enclitics); a form made this way
+    is dropped if it is a row of the books or is made from a row of another split.
+  * Every other source row receives at most VARIANTS_PER_ROW forms. The choice is a fixed hash of the row id, so
     the file is the same on every run.
 
 The output has the fields of the unified rows plus `proclitic`, `enclitic` and `base_id`.
@@ -38,6 +40,8 @@ CLOSED = {"particle", "preposition", "pronoun", "demonstrative", "adverb"}
 PRO_NOMINAL = ["ወ", "ለ", "በ", "እም", "ዘ", "ወለ", "ወበ", "ወእም", "ዘበ", "ዘእም"]
 PRO_VERB = ["ወ", "ዘ", "ወዘ"]
 PRO_CLOSED = ["ወ"]
+# full proclitic set for nouns with no root (the sample of 3 is too thin to teach 'root: none')
+PRO_ROOTLESS_NOUN = ["ወ", "ለ", "በ", "ከ", "እም", "ዘ", "ወለ", "ወበ", "ወከ", "ወእም", "ዘእም", "ወዘ"]
 ENCLITICS = ["ሰ", "ኒ", "ሂ", "ኑ"]
 
 
@@ -70,13 +74,29 @@ def main():
                 r = json.loads(line)
                 bare_forms.add(r["form"])
                 rows.append(r)
+    def rootless_noun(r):
+        return r.get("word_class") == "noun" and not r.get("root")
+
+    def combos_of(r):
+        if rootless_noun(r):
+            return [(p, "") for p in PRO_ROOTLESS_NOUN]
+        return pick(r["id"], options(r.get("word_class")), VARIANTS_PER_ROW)
+
+    # forms made from rows of more than one split: such a rootless-noun form is not written
+    form_splits = {}
+    for r in rows:
+        if not r.get("status"):
+            for pro, enc in combos_of(r):
+                form_splits.setdefault(pro + r["form"] + enc, set()).add(r["split"])
     n_out = 0
     counts = {}
     with open(OUT, "w", encoding="utf-8") as out:
         for r in rows:
             if r.get("status"):
                 continue
-            for pro, enc in pick(r["id"], options(r.get("word_class")), VARIANTS_PER_ROW):
+            for pro, enc in combos_of(r):
+                if rootless_noun(r) and len(form_splits[pro + r["form"] + enc]) > 1:
+                    continue
                 form = pro + r["form"] + enc
                 # a string that is already a form of the books is left to the books
                 if form in bare_forms:
