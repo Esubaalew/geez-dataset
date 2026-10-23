@@ -310,7 +310,7 @@
 {"form": "ተለዓለ", "root": null, "pos": "verb", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 31, "split": "test"}
 {"form": "ልዕልት", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 31, "split": "train"}
 {"form": "ራስ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 31, "split": "train"}
-{"form": "ክቡር", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 31, "split": "test"}
+{"form": "ክቡር", "root": "ከ-በ-ረ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 31, "split": "test"}
 {"form": "ክብርት", "root": "ከ-በ-ረ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 31, "split": "test"}
 {"form": "እቶ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 31, "split": "train"}
 {"form": "ብእሲ", "root": "በ-አ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 31, "split": "val"}
@@ -339,7 +339,7 @@
 {"form": "መርዓዊ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 32, "split": "train"}
 {"form": "ወራሲት", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 32, "split": "val"}
 {"form": "ወራሲ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 32, "split": "train"}
-{"form": "መስተሐምው", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 32, "split": "val"}
+{"form": "መስተሐምው", "root": "ሐ-መ-ወ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 32, "split": "val"}
 {"form": "አኀማት", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 32, "split": "train"}
 {"form": "ተሐማይ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 32, "split": "train"}
 {"form": "ኦሪት", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
@@ -357,7 +357,7 @@
 {"form": "ሳሙኤል", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
 {"form": "ካልዕ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
 {"form": "ነገሥት", "root": "ነ-ገ-ሠ", "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
-{"form": "ቀዳማዊ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
+{"form": "ቀዳማዊ", "root": "ቀ-ደ-መ", "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
 {"form": "ዜና", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
 {"form": "መዋዕል", "root": "ወ-ዐ-ለ", "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
 {"form": "ቀዳማዊ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
@@ -401,7 +401,7 @@
 {"form": "መቃብያን", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
 {"form": "ቀዳማዊ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
 {"form": "ሚራክ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
-{"form": "ጸሎተ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
+{"form": "ጸሎተ", "root": "ጸ-ለ-የ", "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
 {"form": "ምናሴ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
 {"form": "መጽሐፈ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
 {"form": "ሦስና", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 33, "split": "train"}
@@ -469,9 +469,9 @@
 {"form": "ኀፅን", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 34, "split": "train"}
 {"form": "እድ", "root": "ዐ-ደ-ወ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 34, "split": "train"}
 {"form": "አእዳው", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 34, "split": "train"}
-{"form": "የማነ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 34, "split": "train"}
+{"form": "የማነ", "root": "የ-መ-ነ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 34, "split": "train"}
 {"form": "እድ", "root": "ዐ-ደ-ወ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 34, "split": "train"}
-{"form": "ፀጋም", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 34, "split": "train"}
+{"form": "ፀጋም", "root": "ፀ-ገ-መ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 34, "split": "test"}
 {"form": "ዕድ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 34, "split": "train"}
 {"form": "አጽቅ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 34, "split": "test"}
 {"form": "መዝርእ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 34, "split": "test"}
@@ -774,7 +774,7 @@
 {"form": "መድቅሕ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 39, "split": "train"}
 {"form": "መድቅ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 39, "split": "train"}
 {"form": "መጋዝህ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 39, "split": "train"}
-{"form": "መጽብሕ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 39, "split": "train"}
+{"form": "መጽብሕ", "root": "ጸ-በ-ሐ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 39, "split": "train"}
 {"form": "መጽንሕ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 39, "split": "test"}
 {"form": "መፍጽሕ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 39, "split": "train"}
 {"form": "ሙናኅ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 39, "split": "test"}
@@ -1185,7 +1185,7 @@
 {"form": "ሐይከል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
 {"form": "ጎንጸዋል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
 {"form": "ኀየል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
-{"form": "ኀያል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
+{"form": "ኀያል", "root": "ኀ-የ-ለ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
 {"form": "ኀይል", "root": "ኀ-የ-ለ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
 {"form": "ኀይከል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
 {"form": "ኀግል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
@@ -1236,7 +1236,7 @@
 {"form": "ምጽላል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
 {"form": "ሞሪል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
 {"form": "ሰማየል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "val"}
-{"form": "ሰቅል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
+{"form": "ሰቅል", "root": "ሰ-ቀ-ለ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
 {"form": "ሠናስል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
 {"form": "ሰንበል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
 {"form": "ሰንቢል", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "የግዕዝ መማሪያ (ለይኩን ብርሃኑ)", "page": 45, "split": "train"}
