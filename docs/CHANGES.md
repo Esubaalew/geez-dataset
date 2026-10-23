@@ -4,8 +4,8 @@ v1: tag `v1`, commit `337cdf0`.
 
 | | v1 | v2 |
 |---|---:|---:|
-| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,133 / 1,153 / 1,526 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 19,352 / 1,629 / 2,139 |
+| gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,034 / 1,178 / 1,600 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 19,234 / 1,660 / 2,226 |
 | unified rows | 24,352 | 56,202 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -446,3 +446,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - 590 more Bible word forms ruled SURE load: the ኀ-ለ-የ 'think', ሐ-ለ-የ 'sing' and ሐ-በ-ለ (ሕብል 'deceit') readings and a second pass over word stems; forms built by the clitic step, repeats and forms with an unsettled root are not loaded.
 - 14 Bible word forms load on settled roots: ሊቃነ forms on ለ-የ-ቀ, ሙታን forms on መ-ወ-ተ, ምጽአት on መ-ጸ-አ, and መሓልይ/መኃልይ 'song' forms on ሐ-ለ-የ.
 - Plurals of ኄር 'good' (ለኄራን, ኄራነ, ወኄራን, ወኄራነ, ወለኄራተ) load on root ኀ-የ-ረ-ወ, Merho p.230.
+- Train roots whose folded twin root (twin letters merged, labiovelars plain) is in val or test move to that twin's split, so folded twin roots share a split: ኀ-ለ-የ, ሐ-መ-የ, ሐ-በ-ለ, ሰ-ሐ-የ, ሰ-ረ-የ, ቀ-ጸ-ለ, ከ-ተ-በ, ገ-ረ-ሀ and ጸ-መ-አ to test, አ-ሰ-ረ and መ-ሐ-ጸ to val; each keeps its own spelling and pages. 11 gold records, 335 rows, their book entries and 590 clitic forms move; no root is merged and nothing moves out of val or test.

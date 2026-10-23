@@ -85487,7 +85487,6 @@
 {"features": {"gender": "f", "number": "s", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "s-r-t"}, "surface_form": "ታሰርት"}
 {"features": {"gender": "m", "number": "s", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "s-r-t"}, "surface_form": "ታሰርት"}
 {"features": {"gender": "f", "number": "s", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "s-r-t"}, "surface_form": "ታሰርቲ"}
-{"features": {"gender": "c", "number": "s", "person": "1", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "s-r-t"}, "surface_form": "አሰርት"}
 {"features": {"gender": "m", "number": "p", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "s-r-t"}, "surface_form": "ያሰርቱ"}
 {"features": {"gender": "f", "number": "p", "person": "3", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "s-r-t"}, "surface_form": "ያሰርታ"}
 {"features": {"gender": "m", "number": "p", "person": "2", "stem": "causative", "tense": "present", "verb_type": "strong_A", "root": "s-r-t"}, "surface_form": "ታሰርቱ"}

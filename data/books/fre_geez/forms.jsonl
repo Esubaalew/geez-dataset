@@ -1504,7 +1504,7 @@
 {"form": "ኃጢአት", "root": "ኀ-ጠ-አ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "val"}
 {"form": "ጸሎት", "root": "ጸ-ለ-የ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "train"}
 {"form": "ቅድስና", "root": "ቀ-ደ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "train"}
-{"form": "ሐሜት", "root": "ሐ-መ-የ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "train"}
+{"form": "ሐሜት", "root": "ሐ-መ-የ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "test"}
 {"form": "ቀኖት", "root": "ቀ-ነ-ወ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "train"}
 {"form": "ቅድምና", "root": "ቀ-ደ-መ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "train"}
 {"form": "ፍልጣን", "root": "ፈ-ለ-ጠ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 42, "split": "train"}
@@ -1539,7 +1539,7 @@
 {"form": "ሐለየ", "root": "ሐ-ለ-የ", "pos": "verb", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "test"}
 {"form": "ትምህርት", "root": "መ-ሀ-ረ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "val"}
 {"form": "መቅሠፍት", "root": "ቀ-ሠ-ፈ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
-{"form": "ማኅሌት", "root": "ኀ-ለ-የ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
+{"form": "ማኅሌት", "root": "ኀ-ለ-የ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "test"}
 {"form": "ማኅቶት", "root": "ኀ-ተ-ወ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
 {"form": "መጥባሕት", "root": "ጠ-በ-ሐ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
 {"form": "ማዕዶት", "root": "ዐ-ደ-ወ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "ፍሬ ግእዝ", "page": 43, "split": "train"}
