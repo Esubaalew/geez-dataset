@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,124 / 1,152 / 1,525 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 11,554 / 730 / 937 |
-| unified rows | 24,352 | 46,185 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 11,556 / 730 / 937 |
+| unified rows | 24,352 | 46,186 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 

@@ -4,7 +4,8 @@
 
   1 fields      every row has exactly the documented fields, ids are unique
   2 labels      word_class, stem, tense, person/gender/number, object, possessor, status, split are from the documented lists,
-                and a row that loads has the labels its word_class needs
+                and a row that loads has the labels its word_class needs; a rootless adjective loads only when
+                data/unified/rootless_derived.tsv gives its rootless base (see derived_problem)
   3 forms       form is one Ge'ez word; root is 2-5 first-order Ge'ez letters joined by "-" (none for the rootless classes)
   4 splits      a root is in one split among rows that load (the gold sets the split of its roots; a book row whose form
                 is a gold val/test form is the only exception and is listed)
@@ -49,6 +50,28 @@ for _p in (os.path.join(sys.argv[1] if len(sys.argv) > 1 else ".", "data/unified
         ROOTLESS = {l.split("\t")[0] for l in open(_p, encoding="utf-8").read().splitlines()[1:] if l.strip()}
 for _f in sorted(ROOTLESS - {r["form"] for r in rows if r["word_class"] == "noun"}):
     err("2 labels", f"rootless_nouns.tsv: {_f} is not a noun row")
+# adjectives with no root that are derived from a rootless word (data/unified/rootless_derived.tsv: form, base, ref):
+# one loads only if it ends in -ዊ, -ዊት or -ውያን and its base loads, with no root, as a listed noun or a name, in the same split
+DERIVED_ENDINGS = ("ዊ", "ዊት", "ውያን")
+DERIVED = {}
+_p = os.path.join(ds, "data/unified/rootless_derived.tsv")
+if os.path.exists(_p):
+    for l in open(_p, encoding="utf-8").read().splitlines()[1:]:
+        if l.strip():
+            _c = l.split("\t")
+            DERIVED[_c[0]] = _c[1] if len(_c) > 1 else ""
+base_splits = collections.defaultdict(set)
+for r in rows:
+    if r["status"] == "" and not r["root"] and (r["word_class"] == "proper_noun" or (r["word_class"] == "noun" and r["form"] in ROOTLESS)):
+        base_splits[r["form"]].add(r["split"])
+def derived_problem(r):
+    """Why a rootless adjective may not load, or None."""
+    if r["form"] not in DERIVED: return "not in rootless_derived.tsv"
+    if not r["form"].endswith(DERIVED_ENDINGS): return "does not end in -ዊ, -ዊት or -ውያን"
+    b = DERIVED[r["form"]]
+    if not base_splits.get(b): return f"its base {b!r} does not load as a rootless noun or name"
+    if base_splits[b] != {r["split"]}: return f"its base {b} loads in {', '.join(sorted(base_splits[b]))}, not {r['split']}"
+    return None
 for r in rows:
     w = r.get("id")
     if list(r) != COLS: err("1 fields", f"{w}: fields {list(r)}")
@@ -65,7 +88,9 @@ for r in rows:
     if r["status"] == "": 
         for k in REQ.get(r["word_class"], ()):
             if not r[k]: err("2 labels", f"{w} {r['form']}: {r['word_class']} loads without {k}")
-        if r["word_class"] in ROOTED and not r["root"] and not (r["word_class"] == "noun" and r["form"] in ROOTLESS): err("2 labels", f"{w} {r['form']}: no root")
+        if r["word_class"] == "adjective" and not r["root"]:
+            if derived_problem(r): err("2 labels", f"{w} {r['form']}: no root ({derived_problem(r)})")
+        elif r["word_class"] in ROOTED and not r["root"] and not (r["word_class"] == "noun" and r["form"] in ROOTLESS): err("2 labels", f"{w} {r['form']}: no root")
         if r["word_class"] not in ROOTED | {"proper_noun"} and r["root"]: err("2 labels", f"{w} {r['form']}: {r['word_class']} has a root")
         if r["word_class"] == "unknown": err("2 labels", f"{w}: class unknown loads")
     if r["status"] not in ("EXCLUDED",) and not is_ethiopic_word(r["form"] or "") and r["status"] == "":
