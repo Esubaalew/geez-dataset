@@ -2446,7 +2446,7 @@
 {"form": "መመርስስ", "root": "መ-ረ-ሰ-ሰ", "pos": "adjective", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 91, "split": "train"}
 {"form": "መርሰስት", "root": "መ-ረ-ሰ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 91, "split": "train"}
 {"form": "መርስ", "root": "መ-ረ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 91, "split": "train"}
-{"form": "መርሶ", "root": "መ-ረ-ሰ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 91, "split": "train"}
+{"form": "መርሶ", "root": "ረ-ሰ-ወ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 91, "split": "train"}
 {"form": "መራስው", "root": "መ-ረ-ሰ-ሰ", "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 91, "split": "train"}
 {"form": "ንፉስ", "root": "ነ-ፈ-ሰ", "pos": "adjective", "number": "s", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 91, "split": "train"}
 {"form": "እስትንፋስ", "root": "ነ-ፈ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 91, "split": "train"}
@@ -2522,7 +2522,7 @@
 {"form": "መወርስ", "root": "ወ-ሰ", "pos": "adjective", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 93, "split": "train"}
 {"form": "መዋርስት", "root": "ወ-ረ-ሰ", "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 93, "split": "train"}
 {"form": "ወረስት", "root": "ወ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 93, "split": "train"}
-{"form": "ርስት", "root": "ወ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 93, "split": "train"}
+{"form": "ርስት", "root": "ወ-ረ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 93, "split": "train"}
 {"form": "ርስታት", "root": "ወ-ሰ", "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 93, "split": "train"}
 {"form": "ሙራስ", "root": "ወ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 93, "split": "train"}
 {"form": "ሞረስ", "root": "ወ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 93, "split": "train"}
@@ -8449,7 +8449,7 @@
 {"form": "ሉኩይ", "root": "ለ-ኰ-የ", "pos": "adjective", "number": "s", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 262, "split": "train"}
 {"form": "መላኩይ", "root": "ለ-ኰ-የ", "pos": "adjective", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 262, "split": "train"}
 {"form": "ላኰይት", "root": "ለ-ኰ-የ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 262, "split": "train"}
-{"form": "ላኳ", "root": "ለ-ኰ-የ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 262, "split": "train"}
+{"form": "ላኳ", "root": "ለ-ከ-የ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 262, "split": "train"}
 {"form": "ለኳት", "root": "ለ-ኰ-የ", "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 262, "split": "train"}
 {"form": "ልውይ", "root": "ለ-ወ-የ", "pos": "adjective", "number": "s", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 262, "split": "train"}
 {"form": "መለውይ", "root": "ለ-ወ-የ", "pos": "adjective", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 262, "split": "train"}
@@ -11741,7 +11741,7 @@
 {"form": "አክይስት", "root": null, "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 356, "split": "test"}
 {"form": "ብሕንሳ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 356, "split": "train"}
 {"form": "ተካይስ", "root": null, "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 356, "split": "test"}
-{"form": "ዓሣት", "root": null, "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 356, "split": "train"}
+{"form": "ዓሣት", "root": "ዐ-የ-ሰ", "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 356, "split": "train"}
 {"form": "አብሳ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 356, "split": "train"}
 {"form": "አናብስት", "root": null, "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 356, "split": "train"}
 {"form": "ዮሰ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 356, "split": "train"}
@@ -13329,7 +13329,7 @@
 {"form": "ፅርፈታት", "root": "ፀ-ረ-ፈ", "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 337, "split": "train"}
 {"form": "መርሕ", "root": "መ-ረ-ሐ", "pos": "noun", "number": null, "gender": "f", "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 16, "split": "train"}
 {"form": "ቁጸል", "root": "ቈ-ጸ-ለ", "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 52, "split": "test"}
-{"form": "ስሱ", "root": null, "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 85, "split": "train"}
+{"form": "ስሱ", "root": "ሰ-ደ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 85, "split": "train"}
 {"form": "ስድሱ", "root": "ሰ-ደ-ሰ", "pos": "noun", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 85, "split": "train"}
 {"form": "ርእስ", "root": "ረ-አ-ሰ", "pos": "noun", "number": "s", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 86, "split": "train"}
 {"form": "ፅረስ", "root": "ፀ-ረ-ሰ", "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 97, "split": "train"}
