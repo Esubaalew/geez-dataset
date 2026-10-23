@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,133 / 1,153 / 1,526 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 16,708 / 1,389 / 1,766 |
-| unified rows | 24,352 | 52,855 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 16,723 / 1,389 / 1,766 |
+| unified rows | 24,352 | 52,870 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -416,3 +416,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - The 4 rows of አ-ረ-መ (ወአረሚ, ለአረሚ, ወለአረሚ, እምአረሚ; 'Gentile, Greek') are `CHECK` until a dictionary settles the root, and do not load; አ-ረ-መ is removed from `book_root_splits.tsv`.
 - 77 of these Bible label rows whose base form label is not certain (among them ማዕዘንተ and the 4 rows of አ-ረ-መ) are `CHECK` and do not load; ዐ-ዘ-ነ then has no row that loads and is removed from `book_root_splits.tsv`.
 - ቀዳሚየ, ለቀዳሚ and ቀዳሚከ (base ቀዳሚ, label not certain) are `CHECK` and do not load.
+- 15 nouns of Merho's lists of stand-alone words (pp.348-423) in the Bible labels load with no root and are added to `rootless_nouns.tsv` with their page; 5 more are already made by the clitic step.
