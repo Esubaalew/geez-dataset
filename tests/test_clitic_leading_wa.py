@@ -37,3 +37,16 @@ def test_suffix_forms_of_wa_row_still_build(tmp_path):
     rows = [row(1, "ቀዳሚ", "noun", "ቀ-ደ-መ"), row(53976, "ወቀዳሚ", "noun", "ቀ-ደ-መ", "proclitic ወ-")]
     forms = {r["form"] for r in build(tmp_path, rows) if r["base_id"] == "u053976"}
     assert {"ወቀዳሚሂ", "ወቀዳሚኑ"} <= forms, forms
+
+
+def test_wa_row_with_enclitic_gets_no_prefix(tmp_path):
+    rows = [row(10, "ገሰሰ", "verb", "ገ-ሰ-ሰ"), row(50266, "ወገሰሰኒ", "verb", "ገ-ሰ-ሰ"),
+            row(11, "ምድርነ", "noun", "መ-ደ-ረ"), row(52178, "ወምድርነኒ", "noun", "መ-ደ-ረ"),
+            row(12, "አልዓዛር", "proper_noun", None), row(52663, "ወአልዓዛርሰ", "proper_noun", None),
+            row(13, "ለደ", "verb", "ወ-ለ-ደ"), row(6, "ወለደኒ", "verb", "ወ-ለ-ደ")]
+    out = build(tmp_path, rows)
+    for uid in ("u050266", "u052178", "u052663"):
+        assert all(not r["proclitic"] for r in out if r["base_id"] == uid), uid
+    assert "ወወገሰሰኒ" not in {r["form"] for r in out}
+    # a root that starts with ወ keeps its proclitics even if the rest looks like a form
+    assert any(r["proclitic"] for r in out if r["base_id"] == "u000006")

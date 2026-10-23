@@ -20,7 +20,7 @@ row. This script adds such forms by rule:
   * A noun with no root receives every proclitic of PRO_ROOTLESS_NOUN (no enclitics); a form made this way
     is dropped if it is a row of the books or is made from a row of another split.
   * A source row whose leading ወ is the conjunction proclitic (form starts with ወ, root does not, and the
-    evidence notes proclitic ወ- or the form without ወ is a row of the same root) gets no proclitic: ወ is
+    evidence notes proclitic ወ- or the form without ወ, or without ወ and one enclitic, is a row of the same root) gets no proclitic: ወ is
     always the outermost proclitic, so nothing can stand before it. Enclitics still join.
   * Every other source row receives at most VARIANTS_PER_ROW forms. The choice is a fixed hash of the row id, so
     the file is the same on every run.
@@ -87,7 +87,12 @@ def main():
             return False
         if "proclitic ወ-" in ev or "ወ-" in ev.split(";")[0]:
             return True
-        return r.get("root") in roots_of_form.get(f[1:], set())
+        bare = f[1:]
+        if r.get("root") in roots_of_form.get(bare, set()):
+            return True
+        # the bare form may still carry one enclitic (ወምድርነኒ: ምድርነ + ኒ)
+        return any(bare.endswith(e) and len(bare) > len(e) and r.get("root") in roots_of_form.get(bare[:-len(e)], set())
+                   for e in ENCLITICS)
 
     def rootless_noun(r):
         return r.get("word_class") == "noun" and not r.get("root")

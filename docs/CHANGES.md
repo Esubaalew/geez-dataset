@@ -436,3 +436,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ወቀዳሚ added as an adjective (Eph 6:2), next to its noun reading.
 - ወቀዳሚ noun reading restored as its own row, next to the adjective reading.
 - Clitic forms: no proclitic is added in front of a row whose leading ወ is the conjunction (ወ stays the outermost proclitic); enclitics still join.
+- Clitic forms: the conjunction-ወ rule also recognises rows that carry an enclitic (ወምድርነኒ, ወአልዓዛርሰ).
