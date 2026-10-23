@@ -57,13 +57,13 @@ A root appears in only one of train, val and test. Book rows follow the split of
 
 Gold records: train 1,117, val 136, test 218.
 
-Unified rows (46,169 in total) that load:
+Unified rows (46,168 in total) that load:
 
 | | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
 | gold (Merho Ges) | 8,244 | 1,158 | 1,536 | 1,022 |
-| other books | 11,528 | 728 | 937 | 21,016 |
-| total | 19,772 | 1,886 | 2,473 | 22,038 |
+| other books | 11,528 | 728 | 937 | 21,015 |
+| total | 19,772 | 1,886 | 2,473 | 22,037 |
 
 The gold loader expands spellings to 8,124 / 1,152 / 1,525 pairs; these differ from the unified-row counts above.
 

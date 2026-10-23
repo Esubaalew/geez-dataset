@@ -12507,7 +12507,7 @@
 {"form": "ቴዎግ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 412, "split": "train"}
 {"form": "ዓራይግ", "root": null, "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 413, "split": "train"}
 {"form": "አናጉግ", "root": null, "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 413, "split": "train"}
-{"form": "ዐንጉጓት", "root": null, "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 413, "split": "test"}
+{"form": "ዐንጉጓት", "root": null, "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 413, "split": "train"}
 {"form": "አዕኑግ", "root": null, "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 413, "split": "train"}
 {"form": "አውሎግ", "root": null, "pos": "name", "number": null, "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 413, "split": "train"}
 {"form": "አእዱግ", "root": null, "pos": null, "number": "p", "gender": null, "class": null, "book": "Mesehaf Gese Wesewasew (Yared Shiferaw)", "page": 413, "split": "train"}
