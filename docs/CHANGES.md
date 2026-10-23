@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,133 / 1,153 / 1,526 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 17,505 / 1,503 / 1,877 |
-| unified rows | 24,352 | 53,974 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 17,507 / 1,503 / 1,877 |
+| unified rows | 24,352 | 53,976 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -437,3 +437,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ወቀዳሚ noun reading restored as its own row, next to the adjective reading.
 - Clitic forms: no proclitic is added in front of a row whose leading ወ is the conjunction (ወ stays the outermost proclitic); enclitics still join.
 - Clitic forms: the conjunction-ወ rule also recognises rows that carry an enclitic (ወምድርነኒ, ወአልዓዛርሰ).
+- Added two settled readings: ዐራት 'bed' (no root, Merho p.386) and ጽላት as a variant of ጸሎት (ጸ-ለ-የ, Merho p.286).
