@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,133 / 1,153 / 1,526 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 17,504 / 1,503 / 1,877 |
-| unified rows | 24,352 | 53,973 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 17,505 / 1,503 / 1,877 |
+| unified rows | 24,352 | 53,974 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -434,3 +434,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ቀዳሚ gets a second row as an adjective ('first'), next to its noun reading; ለቀዳሚ evidence now says adjective.
 - Added the woman's name አጋር (Merho p.121, root አ-ገ-ረ) as a proper noun.
 - ወቀዳሚ added as an adjective (Eph 6:2), next to its noun reading.
+- ወቀዳሚ noun reading restored as its own row, next to the adjective reading.
