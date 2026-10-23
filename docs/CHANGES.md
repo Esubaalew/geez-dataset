@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,097 / 1,153 / 1,554 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,882 / 663 / 883 |
-| unified rows | 24,352 | 45,667 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 10,910 / 664 / 883 |
+| unified rows | 24,352 | 45,696 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -404,3 +404,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Both gold ዜማ rows load under ዘ-መ-ረ (Merho, ዘመረ entry, printed p.125, plural ዜማት). This is a named exception: the ረ of the root does not appear in ዜማ or ዜማት. The rule that a root's letters appear in the word is otherwise unchanged.
 - Some nouns with no root move to validation and test so the no-root answer is measured.
 - Nouns with no root get every common proclitic form (ወ-, ለ-, በ-, ከ-, እም-, ዘ- and their combinations).
+- Forms with endings of nouns with no root (from Bible verses) load with no root.
