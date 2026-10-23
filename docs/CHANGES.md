@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,133 / 1,153 / 1,526 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 17,502 / 1,503 / 1,877 |
-| unified rows | 24,352 | 53,971 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 17,503 / 1,503 / 1,877 |
+| unified rows | 24,352 | 53,972 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -432,3 +432,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ወንጉሥሰ loaded as a noun (Merho p.88), per a ruling on its part of speech.
 - ቀዳሚየ and ቀዳሚከ restored to load as nouns; ለቀዳሚ restored to load as an adjective, per rulings.
 - ቀዳሚ gets a second row as an adjective ('first'), next to its noun reading; ለቀዳሚ evidence now says adjective.
+- Added the woman's name አጀር (Merho p.121, root አ-ገ-ረ) as a proper noun.
