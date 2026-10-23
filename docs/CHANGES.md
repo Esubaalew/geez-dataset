@@ -398,3 +398,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Nouns with no root: 29 gold nouns that Merho lists among its stand-alone words now load with an empty root. The list is `data/unified/rootless_nouns.tsv`; only nouns on it may load without a root.
 - Four gold nouns get the root of the Merho entry they appear in: ራማ (ረ-የ-መ), አስኬማ (ሰ-ከ-መ), እገር (አ-ገ-ረ), ቍልዔ (ቀ-ለ-ዐ).
 - Four gold noun spellings corrected to the printed Merho form (በጉሬማ, ዕጉሥታር, ድልጉማ, ኤጥሞጶሞር); they load as nouns with no root.
+- Gold ከፈር gets root ከ-ፈ-ረ (Merho, ከፈረ entry) and moves to test with that root.
