@@ -400,4 +400,5 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Four gold noun spellings corrected to the printed Merho form (በጉሬማ, ዕጉሥታር, ድልጉማ, ኤጥሞጶሞር); they load as nouns with no root.
 - Gold ከፈር gets root ከ-ፈ-ረ (Merho, ከፈረ entry) and moves to test with that root.
 - Gold ቃማ, አውቴዝራማ and ብሄማ (spelling fixes to Merho) load as nouns with no root.
-- Gold ራግማ (spelling fix to Merho) loads as a noun with no root; both ዜማ rows are held for review.
+- Gold ራግማ (spelling fix to Merho) loads as a noun with no root.
+- Both gold ዜማ rows load under ዘ-መ-ረ (Merho, ዘመረ entry, printed p.125, plural ዜማት). This is a named exception: the ረ of the root does not appear in ዜማ or ዜማት. The rule that a root's letters appear in the word is otherwise unchanged.
