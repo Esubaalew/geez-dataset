@@ -425,3 +425,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - 95 of those rows load again: their base is ruled SURE on the same root (train 51, test 44).
 - Merho pages filled for 128 loading rows from the Bible labels (chunks 10 and 11) that had no page; page field only.
 - One audit-flagged row (አጋረ, root አ-ገ-ረ) restored to load after its base ruling was settled.
+- Merho page corrected to 121 for one row (አጋረ, root አ-ገ-ረ).
