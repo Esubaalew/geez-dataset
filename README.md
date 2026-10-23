@@ -55,17 +55,17 @@ Gold files (`data/paradigms/merho_ges_gold_*.jsonl`) hold one record per entry w
 
 A root appears in only one of train, val and test. Book rows follow the split of the gold form or root they match, otherwise a fixed hash rule.
 
-Gold records: train 1,113, val 136, test 222.
+Gold records: train 1,117, val 136, test 218.
 
 Unified rows (46,153 in total) that load:
 
 | | train | val | test | not loaded |
 |---|---:|---:|---:|---:|
-| gold (Merho Ges) | 8,212 | 1,158 | 1,564 | 1,026 |
+| gold (Merho Ges) | 8,240 | 1,158 | 1,536 | 1,026 |
 | other books | 11,508 | 725 | 937 | 21,023 |
-| total | 19,720 | 1,883 | 2,501 | 22,049 |
+| total | 19,748 | 1,883 | 2,473 | 22,049 |
 
-The gold loader expands spellings to 8,096 / 1,153 / 1,553 pairs; these differ from the unified-row counts above.
+The gold loader expands spellings to 8,124 / 1,153 / 1,525 pairs; these differ from the unified-row counts above.
 
 Synthetic training forms: 120,685 lines. Synthetic forms for val/test roots: 17,569 lines.
 
@@ -81,7 +81,7 @@ train = [r for r in rows if r["status"] == "" and r["split"] == "train"]
 Use only rows with an empty `status`. Do not train on `data/synthetic/`.
 
 `data/unified/geez_morphology_rows_reviewed.jsonl` is the same file with corrections to held rows applied: 0 more
-rows load (24,104 in total: train 19,720, val 1,883, test 2,501). Rows load there only when the dataset itself
+rows load (24,104 in total: train 19,748, val 1,883, test 2,473). Rows load there only when the dataset itself
 supports the correction; see [data/unified/README.md](data/unified/README.md#corrected-rows-file).
 
 `data/clitics/clitic_forms.jsonl` holds 74,955 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
