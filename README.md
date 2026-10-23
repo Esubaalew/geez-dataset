@@ -65,7 +65,7 @@ Unified rows (45,667 in total) that load:
 | other books | 10,882 | 663 | 883 | 21,279 |
 | total | 19,014 | 1,818 | 2,442 | 22,393 |
 
-The gold loader expands spellings to 8,094 / 1,153 / 1,554 pairs; these differ from the unified-row counts above.
+The gold loader expands spellings to 8,093 / 1,153 / 1,554 pairs; these differ from the unified-row counts above.
 
 Synthetic training forms: 120,685 lines. Synthetic forms for val/test roots: 17,569 lines.
 
