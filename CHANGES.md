@@ -4,3 +4,4 @@
 - 23 October 2026: five forms of ትካት (ተ-ከ-ተ) from the Bible text; ታቦታት loads as a noun with no root, and ታቦታተ is added.
 - 23 October 2026: ንቁበት, ንቁበታት and ተውት load as nouns with no root. ዓመት, ዓመታት, ታቦት, አመት, አእማት and ናዝሬት already loaded.
 - 23 October 2026: 90 rows of roots merged on 22 October whose forms are spelled with the other letter (አ or ዐ) go back to the printed root, among them አመልዐ under መ-ለ-ዐ. Each root stays in one split.
+- 23 October 2026: አመት and አእማት are nouns with no root (Merho has no root entry አመተ); the book row u024052 repeats the gold row and is EXCLUDED.
