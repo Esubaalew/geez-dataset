@@ -5,7 +5,7 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,133 / 1,153 / 1,526 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 17,375 / 1,491 / 1,875 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 17,497 / 1,503 / 1,877 |
 | unified rows | 24,352 | 53,969 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
@@ -426,3 +426,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Merho pages filled for 128 loading rows from the Bible labels (chunks 10 and 11) that had no page; page field only.
 - One audit-flagged row (አጋረ, root አ-ገ-ረ) restored to load after its base ruling was settled.
 - Merho page corrected to 121 for one row (አጋረ, root አ-ገ-ረ).
+- 136 rows on settled back-list and root-entry bases restored to load; 13 of them take the root given by the ruling (5 to ደ-የ-ነ, 1 to አ-ረ-ረ, 7 ሀገር forms load without a root as stand-alone words).
