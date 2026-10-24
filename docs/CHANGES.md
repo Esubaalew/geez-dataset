@@ -460,4 +460,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ወለሔዋን loads as a name with no root, like ለሔዋን. ወእምሔዋን, also a name, no longer carries plural.
 - The 14 Bible ተባዕት rows move from ተ-በ-አ to ተ-በ-ዐ (headword ተብዐ, p.204), all masculine, with their clitic forms; the family stays in train. ወዕጹታ becomes a singular noun (ዕጹት, p.247).
 - 50 more Bible word forms ruled SURE load (49 forms plus 1 second reading; 46 train, 4 test).
-- ሔርማ (the place Hormah) keeps proper_noun and takes root ሐ-ረ-መ.
+- ሔርማ is Hermas (Shepherd of Hermas): rootless proper_noun, not from ሐ-ረ-መ / Hormah (Esube + Language, 24 Oct 2026).
