@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "geez-dataset"
+version: "2.1.0"
+date-released: "2026-10-19"
+abstract: "Classical Ge'ez morphology: gold verb paradigms from Merho Ges Wesewasew Ze-Yared, labelled forms from six other books in one schema, lexicon, Ge'ez-Amharic pairs and synthetic paradigms. Roots are split so that no root is in two of train, val and test."
+type: dataset
+authors:
+  - given-names: Esubalew
+    family-names: Chekol
+repository-code: "https://github.com/Esubaalew/geez-dataset"
+license: CC-BY-SA-4.0

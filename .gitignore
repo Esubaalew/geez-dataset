@@ -1,0 +1,32 @@
+# OS and editor files
+.DS_Store
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.playwright-cli/
+.venv/
+
+# Extraction checkpoints (SQLite, local only)
+*.db
+
+# Source PDFs (two are over GitHub's 100 MB limit; kept locally)
+*.pdf
+
+# Page scans of the source books (not distributed)
+scans/
+
+# Scratch and backups
+*.tmp
+_probe*
+*chunk*
+*.bak*
+*.log
+
+# Generator output. The published copies live under data/.
+output/
+organize_data.py
+
+# Internal review files (never published)
+.local_review_scratch/
