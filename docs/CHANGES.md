@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,034 / 1,178 / 1,600 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,753 / 1,771 / 2,406 |
-| unified rows | 24,352 | 58,012 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,760 / 1,771 / 2,406 |
+| unified rows | 24,352 | 58,019 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -476,3 +476,5 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - b16 rows u058003-u058014 (12 loaded): possessive suffixes filled from a2_review/b16_possessor_fill_1024.tsv; ሌዊሂ left without possessor (PN + discourse -ሂ).
 - Re-rooted bridal twin መ-ረ-አ-ወ→መ-ረ-ዐ-ወ (7 rows: መራዕወ u055988 and 6 መርዓት* forms; Language 24 Oct 2026, Merho p.244). Held b16 መራዕወ now loads through u055988.
 - እሴይ u045396: rootless proper_noun → root ዐ-ሰ-የ (Merho ዕሴይ under ዐሰየ p.278); split train→test to match the gold root. ለእሴይ stays a clitic of the base.
+- Loaded 7 more Bible word forms ruled SURE (mixed_pass b17): war-noun ፀብእ/ጸብእ family on ጸ-በ-አ (Merho p.218); surface ፀ kept where the verse has it. All 7 load in train with the gold root.
+- b17 rows u058015-u058021: possessive suffixes filled from a2_review/b17_possessor_fill_1024.tsv.
