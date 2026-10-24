@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,034 / 1,178 / 1,600 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,487 / 1,761 / 2,376 |
-| unified rows | 24,352 | 57,706 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,488 / 1,761 / 2,376 |
+| unified rows | 24,352 | 57,707 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -453,4 +453,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Held forms ruled and loaded: ሄር as an adjective on ኀ-የ-ረ-ወ (p.230), ለሐዱ as ለ- + ሐዱ on ወ-ሐ-ደ (no page), መሰረት on ሠ-ረ-ተ (p.167, new root, train), and ተባዕቶ, ተባዕቱ, እምተባዕቱ on ተ-በ-አ in train as masculine; the 7 Bible ተባዕት rows already loaded change from feminine to masculine. The other ተባዕት forms already load.
 - 114 more Bible word forms ruled SURE load (109 forms plus 5 second readings). New roots ሰ-በ-ሰ-በ, ገ-አ-ተ-የ and ሀ-ለ-የ-ነ go to train and ሀ-ረ-ወ to test, following their twin roots.
 - Root fixes: ለሐዱ gets page 295; በኅርወት moves to ኀ-የ-ረ-ወ (p.230, train) and ኅልያን to ሐ-ለ-የ-ነ (p.174).
-- 302 more Bible word forms ruled SURE load (279 forms plus 23 second readings). One is held: ወሲሩክ (read as an adjective, but the verse has the name Serug). New roots ሀ-ደ-ፈ, ደ-ገ-ረ and ጸ-መ-ረ go to train, following their twin roots.
+- 302 more Bible word forms ruled SURE load (279 forms plus 23 second readings). ወሲሩክ loads as the name Serug on ሰ-ረ-ገ (p.303). ዘሐዳፍ, ድጕር and ፀምሮን take the roots ኀ-ደ-ፈ, ደ-ጐ-ረ and ፀ-መ-ረ (train).
