@@ -471,3 +471,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Re-rooted whole families (130 rows; Language 24 Oct 2026): ሀ-ሰ-ረ→ኀ-ሰ-ረ, ሀ-የ-ሰ→ሐ-የ-ሰ, ረ-ተ-አ→ረ-ተ-ዐ, ደ-መ-ጸ→ደ-መ-ፀ, ገ-አ-ረ→ገ-ዐ-ረ, አ-በ-የ→ዐ-በ-የ, ሰ-አ-ረ→ሠ-ዐ-ረ, ረ-አ-ደ→ረ-ዐ-ደ. The 23 held b14 forms now load through these existing rows.
 - b14 rows u057926-u057984 (59 loaded): possessive suffixes filled from a2_review/b14_possessor_fill_1024.tsv.
 - Loaded 18 more Bible word forms ruled SURE (mixed_pass b15); 12 already load; 2 held (መሥገርቶሙ, መሥገርታ: b15 root ሠ-ገ-ረ vs loading ሰ-ገ-ረ). Suffixes not yet filled.
+- Re-rooted ሰ-ገ-ረ→ሠ-ገ-ረ (5 rows, መሥገርት family; Language 24 Oct 2026); the 2 held b15 forms now load through these rows. b15 rows u057985-u058002: possessive suffixes filled from a2_review/b15_possessor_fill_1024.tsv.
