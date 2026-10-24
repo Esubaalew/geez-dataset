@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,034 / 1,178 / 1,600 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,650 / 1,762 / 2,391 |
-| unified rows | 24,352 | 57,885 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,669 / 1,762 / 2,392 |
+| unified rows | 24,352 | 57,905 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -461,3 +461,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - The 14 Bible ተባዕት rows move from ተ-በ-አ to ተ-በ-ዐ (headword ተብዐ, p.204), all masculine, with their clitic forms; the family stays in train. ወዕጹታ becomes a singular noun (ዕጹት, p.247).
 - 50 more Bible word forms ruled SURE load (49 forms plus 1 second reading; 46 train, 4 test).
 - ሔርማ is Hermas (Shepherd of Hermas): rootless proper_noun, not from ሐ-ረ-መ / Hormah (Esube + Language, 24 Oct 2026).
+- Loaded 20 more Bible word forms ruled SURE (mixed_pass b12): ጽልመት family (ጸ-ለ-መ), መጽያሕት family (ጸ-የ-ሐ), ወደሊላ/ወደሊላሰ (ደ-ለ-ለ, proper_noun), ተያፍኒሁ (ተ-ፈ-የ), ጸበለኪ (ጸ-በ-ለ; acc, suffix 2fs).
