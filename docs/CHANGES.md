@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,034 / 1,178 / 1,600 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,745 / 1,770 / 2,403 |
-| unified rows | 24,352 | 58,000 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,754 / 1,771 / 2,405 |
+| unified rows | 24,352 | 58,012 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -472,3 +472,5 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - b14 rows u057926-u057984 (59 loaded): possessive suffixes filled from a2_review/b14_possessor_fill_1024.tsv.
 - Loaded 18 more Bible word forms ruled SURE (mixed_pass b15); 12 already load; 2 held (መሥገርቶሙ, መሥገርታ: b15 root ሠ-ገ-ረ vs loading ሰ-ገ-ረ). Suffixes not yet filled.
 - Re-rooted ሰ-ገ-ረ→ሠ-ገ-ረ (5 rows, መሥገርት family; Language 24 Oct 2026); the 2 held b15 forms now load through these rows. b15 rows u057985-u058002: possessive suffixes filled from a2_review/b15_possessor_fill_1024.tsv.
+- Loaded 12 more Bible word forms ruled SURE (mixed_pass b16); 1 already loads via the clitic step (ለእሴይ from rootless እሴይ); 1 held (መራዕወ: b16 root መ-ረ-ዐ-ወ vs loading መ-ረ-አ-ወ on u055988).
+- b16 rows u058003-u058014 (12 loaded): possessive suffixes filled from a2_review/b16_possessor_fill_1024.tsv; ሌዊሂ left without possessor (PN + discourse -ሂ).
