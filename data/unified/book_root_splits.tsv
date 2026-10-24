@@ -678,7 +678,6 @@ root	stratum	rows	split
 ሀ-ለ-መ	nominal/nomark	4	train
 ሀ-ለ-ቀ	nominal/nomark	1	train
 ሀ-ለ-ፈ	verb/nomark	3	train
-ሀ-መ-ሰ	nominal/nomark	6	train
 ሀ-መ-ተ	nominal/nomark	1	train
 ሀ-መ-ወ	nominal/nomark	4	val
 ሀ-ረ-መ	nominal/nomark	8	train
@@ -874,3 +873,6 @@ root	stratum	rows	split
 ሰ-ነ-ገ-ገ	nominal/nomark	1	train
 ሀ-ለ-ተ	nominal/nomark	1	train
 ሀ-ዘ-በ	nominal/nomark	3	train
+አ-ጸ-በ	nominal/nomark	1	train
+መ-አ-ረ-ረ	nominal/nomark	2	train
+አ-በ-ረ	nominal/nomark	1	val
