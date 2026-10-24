@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,034 / 1,178 / 1,600 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,603 / 1,762 / 2,387 |
-| unified rows | 24,352 | 57,834 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,604 / 1,762 / 2,387 |
+| unified rows | 24,352 | 57,835 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -457,3 +457,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - The 12 nine-family rows on ተ-ሰ-አ (ታስዕ, ታስዕት, ትስዑ, ተሱዑ…) move to ተ-ሰ-ዐ (p.203), with their clitic forms; ተ-ሰ-አ is no longer used.
 - 121 more Bible word forms ruled SURE load (109 train, 1 val, 11 test); ወቍልዔሁ goes on ቀ-ለ-ዐ, the root of its ዐ-spelled family.
 - 6 more Bible word forms ruled SURE load (5 ሰ-መ-ዐ verbs and አእጋሪሁ). 37 rows that already load take the ruled root: ሀ-ፈ-ረ→ኀ-ፈ-ረ, ሀ-በ-ረ→ኀ-በ-ረ, አ-ጸ-ወ→ዐ-ጸ-ወ, ፈ-ሀ-መ→ፈ-ሐ-መ, ሀ-በ-ጠ→ሐ-በ-ጠ, ሀ-የ-ሰ→ሐ-የ-ሰ. 34 of these rows change from nominal to noun: singular for ኀፍረት, ማኅበር, ፍሕም, ሒስ, ኅብረት, ሕበጥ and ዕጽው forms, plural for ዐጸውት forms.
+- ወለሔዋን loads as a name with no root, like ለሔዋን.
