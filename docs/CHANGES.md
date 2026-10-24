@@ -466,3 +466,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ደሊላ u001173 and u029309: proper_noun, root ደ-ለ-ለ (Merho, under ደለለ, "የሴ ስም"), not rootless; both stay EXCLUDED as duplicates of u008856.
 - Loaded 18 more Bible word forms ruled SURE (mixed_pass b13): መላእክት family (ለ-አ-ከ), ጽልመት family (ጸ-ለ-መ), መርዓሁ (መ-ረ-ዐ-ወ), ፍሕሙ (ፈ-ሐ-መ), ጸበሎ/ጸበሎሙ (ጸ-በ-ለ), ወደይኖሙሰ (ደ-የ-ነ).
 - b13 rows: possessive suffixes filled (Language 24 Oct 2026); ጸበሎሙ acc + suffix 3mp, ጸበሎ stays acc.
+- ጸበሎ u057923: acc; suffix 3ms (kebra-nagast 99:1 ነገፎ ጸበሎ, "brushed the dust off him").
