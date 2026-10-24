@@ -454,3 +454,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - 114 more Bible word forms ruled SURE load (109 forms plus 5 second readings). New roots ሰ-በ-ሰ-በ, ገ-አ-ተ-የ and ሀ-ለ-የ-ነ go to train and ሀ-ረ-ወ to test, following their twin roots.
 - Root fixes: ለሐዱ gets page 295; በኅርወት moves to ኀ-የ-ረ-ወ (p.230, train) and ኅልያን to ሐ-ለ-የ-ነ (p.174).
 - 302 more Bible word forms ruled SURE load (279 forms plus 23 second readings). ወሲሩክ loads as the name Serug on ሰ-ረ-ገ (p.303). ዘሐዳፍ, ድጕር and ፀምሮን take the roots ኀ-ደ-ፈ, ደ-ጐ-ረ and ፀ-መ-ረ (train).
+- The 12 nine-family rows on ተ-ሰ-አ (ታስዕ, ታስዕት, ትስዑ, ተሱዑ…) move to ተ-ሰ-ዐ (p.203), with their clitic forms; ተ-ሰ-አ is no longer used.
