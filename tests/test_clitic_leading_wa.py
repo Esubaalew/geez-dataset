@@ -102,3 +102,45 @@ def test_bare_za_always_kept(tmp_path):
         assert len(kids) <= 3
         assert any(o["form"] == "ዘ" + r["form"] and o["proclitic"] == "ዘ" and not o["enclitic"] for o in kids), kids
         assert any(o["form"] == "ወ" + r["form"] and not o["enclitic"] for o in kids), kids
+
+
+def test_generated_spellings_never_cross_splits(tmp_path):
+    rows = [row(1, "ቀተለ", "verb", "ቀ-ተ-ለ"),
+            dict(row(2, "ቀተለ", "verb", "ቀ-ተ-ረ"), split="test"),
+            row(3, "አንትሙ", "pronoun", None),
+            dict(row(4, "አንትሙ", "pronoun", None), split="val"),
+            row(5, "ንጉሥ", "noun", "ነ-ገ-ሠ")]
+    out = build(tmp_path, rows)
+    forms = {r["form"] for r in out}
+    assert "ወቀተለ" not in forms and "ዘቀተለ" not in forms
+    assert "ወአንትሙ" not in forms
+    assert "ወንጉሥ" in forms
+    by_form = {}
+    for r in out:
+        by_form.setdefault(r["form"], set()).add(r["split"])
+    assert all(len(splits) == 1 for splits in by_form.values())
+
+
+def test_negated_and_positive_analyses_are_distinct(tmp_path):
+    # Different analyses of a homograph must both survive deduplication.
+    rows = [row(1, "ቀተለ", "verb", "ቀ-ተ-ለ"),
+            dict(row(2, "ቀተለ", "verb", "ቀ-ተ-ለ"), negated=True)]
+    out = build(tmp_path, rows)
+    assert {r["negated"] for r in out if r["form"] == "ወቀተለ"} == {False, True}
+
+
+def test_clitic_checker_rejects_stale_source_metadata_and_split_leaks(tmp_path):
+    rows = [row(1, "ቀተለ", "verb", "ቀ-ተ-ለ")]
+    out = build(tmp_path, rows)
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("check_clitics", os.path.join(DS, "scripts/check_clitics.py"))
+    checker = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(checker)
+    assert checker.check(tmp_path) == []
+    path = tmp_path / "data/clitics/clitic_forms.jsonl"
+    out[0]["page"] = 999
+    other = dict(out[0], id="other", split="test")
+    path.write_text("".join(json.dumps(r) + "\n" for r in out + [other]), encoding="utf-8")
+    errors = checker.check(tmp_path)
+    assert any("page differs" in e for e in errors)
+    assert any("crosses splits" in e for e in errors)

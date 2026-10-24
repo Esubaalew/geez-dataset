@@ -219,7 +219,30 @@ for form, g in held_groups.items():
         err("8 form splits", f"{form} is listed in held_split_groups.tsv but loads in one split")
     else:
         print(f"held split group (listed): {form} loads in {', '.join(sorted(group_splits[g]))}")
-for sec in ("1 fields", "2 labels", "3 forms", "4 splits", "5 duplicates", "6 books", "7 held splits", "8 form splits"):
+# Plain gold-derived rows follow their current source root. Explicit later review rulings
+# carry extra evidence and may intentionally override the original gold annotation.
+gold_sources = {}
+for split in ("train", "val", "test"):
+    path = os.path.join(ds, "data", "paradigms", f"merho_ges_gold_{split}.jsonl")
+    if os.path.exists(path):
+        for line in open(path, encoding="utf-8"):
+            rec = json.loads(line)
+            for n, cell in enumerate(rec.get("table_data", [])):
+                gold_sources[f"{rec['record_id']}:{n}"] = (rec, cell)
+for row in loading:
+    if row["source"] != "gold" or row["evidence"] != "gold paradigm":
+        continue
+    entry = gold_sources.get(row["source_ref"])
+    if entry is None:
+        if gold_sources:
+            err("9 gold sources", f"{row['id']}: source_ref has no gold row")
+        continue
+    rec, cell = entry
+    root = cell.get("root", rec.get("root")) or None
+    if row["root"] != root:
+        err("9 gold sources", f"{row['id']}: root {row['root']} differs from source root {root}")
+
+for sec in ("1 fields", "2 labels", "3 forms", "4 splits", "5 duplicates", "6 books", "7 held splits", "8 form splits", "9 gold sources"):
     print(("FAIL " if errs[sec] else "PASS ") + f"{sec}: {len(errs[sec])} problem(s)")
     for m in errs[sec][:8]: print("   ", m)
 if overrides: print("review overrides of book lines (documented in evidence):", dict(overrides))

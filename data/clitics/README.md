@@ -21,9 +21,10 @@ Chains of two proclitics (ወለ, ወበ, ወእም, ወዘ, ዘበ, ዘእም) 
 
 Each row copies the root, word class and features of its source row (`base_id`) and keeps its split.
 `evidence` names the clitics and the source row, so every root still comes from a book or gold record.
-The fields `proclitic` and `enclitic` give the clitics (null when absent). Each source row has at most three
+The fields `proclitic` and `enclitic` give the clitics (null when absent). Rootless nouns receive all eligible proclitics; other source rows have at most three
 clitic forms; the choice is a fixed hash of the row id. A string that is already a form of the books is
-not added.
+not added. A generated spelling shared by different splits is dropped for every word class.
+Run `python scripts/check_clitics.py .` to check source metadata, joins, duplicates and split isolation.
 
 Train only on rows with `split` = `train`. The spelling of the bare form is not changed; contractions
 and sound changes at the join are not modelled.

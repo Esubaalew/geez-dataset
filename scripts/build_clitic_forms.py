@@ -18,7 +18,8 @@ row. This script adds such forms by rule:
   * Which clitics a row receives depends on its word class: the prepositions ለ, በ, እም join nominals only;
     ወ and ዘ join any word; enclitics join any word.
   * A noun with no root receives every proclitic of PRO_ROOTLESS_NOUN (no enclitics); a form made this way
-    is dropped if it is a row of the books or is made from a row of another split.
+    is dropped if it is a row of the books. Every generated spelling shared by source rows
+    of different splits is dropped, for every word class.
   * A source row whose leading ወ is the conjunction proclitic (form starts with ወ, root does not, and the
     evidence notes proclitic ወ- or the form without ወ, or without ወ and one enclitic, is a row of the same root) gets no proclitic: ወ is
     always the outermost proclitic, so nothing can stand before it. Enclitics still join.
@@ -134,7 +135,7 @@ def main():
             combos = [(p, e) for p, e in combos if not any(x in p for x in ("ለ", "በ", "ከ", "እም"))]
         return combos
 
-    # forms made from rows of more than one split: such a rootless-noun form is not written
+    # Generated spellings must not cross splits, including homographs and closed-class words.
     form_splits = {}
     for r in rows:
         if not r.get("status"):
@@ -147,6 +148,7 @@ def main():
             if r.get("status"):
                 continue
             for pro, enc in combos_of(r):
+                # Keep the original rootless-noun prefilter so existing candidate IDs stay stable.
                 if rootless_noun(r) and len(form_splits[pro + r["form"] + enc]) > 1:
                     continue
                 form = pro + r["form"] + enc
@@ -154,7 +156,7 @@ def main():
                 if form in bare_forms:
                     continue
                 key = (form, r.get("root"), r.get("word_class"), r.get("stem"), r.get("tense"), r.get("person"),
-                       r.get("gender"), r.get("number"), r.get("object"), r.get("possessor"), r["split"])
+                       r.get("gender"), r.get("number"), r.get("object"), r.get("possessor"), r.get("negated"), r["split"])
                 if key in seen:
                     continue
                 seen.add(key)
@@ -163,10 +165,12 @@ def main():
                            base_id=r["id"], source="clitic_rule",
                            evidence=f"rule: {pro or '-'} + form of {r['id']} + {enc or '-'}; root and features of {r['id']}",
                            also_in=None)
+                n_out += 1  # Reserve IDs for removed candidates rather than renumbering later rows.
+                if len(form_splits[form]) > 1:
+                    continue
                 out.write(json.dumps(new, ensure_ascii=False) + "\n")
-                n_out += 1
                 counts[r["split"]] = counts.get(r["split"], 0) + 1
-    print(f"{n_out} clitic forms written to {os.path.relpath(OUT, ROOT)} by split: {counts}")
+    print(f"{sum(counts.values())} clitic forms written to {os.path.relpath(OUT, ROOT)} by split: {counts}")
 
 
 if __name__ == "__main__":

@@ -54,3 +54,14 @@ def test_plain_multi_split_root_fails(tmp_path):
     rows = [row(1, "ቀተለ", split="train"), row(2, "ቀተሉ", split="val")]
     p = run_check(tmp_path, rows)
     assert "FAIL 4 splits" in p.stdout
+
+
+def test_plain_gold_row_cannot_keep_a_stale_source_root(tmp_path):
+    p = tmp_path / "data/paradigms"
+    p.mkdir(parents=True)
+    rec = dict(record_id="source", root="ቀ-ተ-ለ", table_data=[dict(geez_form="ቀተለ")])
+    (p / "merho_ges_gold_train.jsonl").write_text(json.dumps(rec) + "\n", encoding="utf-8")
+    result = run_check(tmp_path, [row(1, "ቀተለ", root="ቀ-ተ-ረ", source="gold",
+                                     source_ref="source:0", evidence="gold paradigm")])
+    assert "FAIL 9 gold sources" in result.stdout
+    assert "differs from source root" in result.stdout

@@ -67,7 +67,7 @@ Unified rows (58,185 in total) that load:
 
 The gold loader expands spellings to 8,034 / 1,178 / 1,600 pairs; these differ from the unified-row counts above.
 
-Synthetic training forms: 120,685 lines. Synthetic forms for val/test roots: 17,569 lines.
+Synthetic training forms: 120,684 lines. Synthetic forms for val/test roots: 17,560 lines.
 
 ## Loading
 
@@ -84,7 +84,7 @@ Use only rows with an empty `status`. Do not train on `data/synthetic/`.
 rows load (36,107 in total: train 29,090, val 2,983, test 4,034). Rows load there only when the dataset itself
 supports the correction; see [data/unified/README.md](data/unified/README.md#corrected-rows-file).
 
-`data/clitics/clitic_forms.jsonl` holds 100,704 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
+`data/clitics/clitic_forms.jsonl` holds 100,691 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
 made by rule from the settled corrected rows; each keeps the root, labels and split of its source row
 ([data/clitics/README.md](data/clitics/README.md)).
 

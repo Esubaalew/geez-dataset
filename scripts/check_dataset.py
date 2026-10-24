@@ -391,12 +391,19 @@ def main():
                     if not os.path.exists(p) or sha256(p) != h:
                         err("10 hashes", f"{name} does not match SHA256SUMS")
 
+    # The merged dictionary shares typed source fields with the canonical Kidane transcription.
+    if all(os.path.exists(os.path.join(data_dir, "lexicon", name)) for name in
+           ("classical_dictionary_kidane_wold.jsonl", "geez_amharic_dictionary.jsonl")):
+        from check_dictionary_mirrors import check as check_dictionary_mirrors
+        for problem in check_dictionary_mirrors(os.path.dirname(data_dir)):
+            err("12 dictionary mirrors", problem)
+
     # report
     print("pairs that load: " + ", ".join(f"{s} {loaded[s]}" for s in GOLD) + f" (records {len(records)})")
     for k, c in sorted(notes.items()):
         print(f"NOTE  {k}: {c}")
     checks = ["1 records", "2 forms", "3 roots", "4 Latin", "5 labels", "6 nominal", "7 duplicates",
-              "8 splits", "9 flagged", "10 hashes", "11 root placeholders"]
+              "8 splits", "9 flagged", "10 hashes", "11 root placeholders", "12 dictionary mirrors"]
     for c in checks:
         msgs = errors.get(c, [])
         print(f"{'PASS ' if not msgs else 'ERROR'} {c}: {len(msgs)} problem(s)")
@@ -414,6 +421,15 @@ def main():
         print("\ndata/unified and data/books (scripts/check_unified.py):", flush=True)
         u = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "check_unified.py"), ds]).returncode
         bad += u
+        reviewed = os.path.join(ds, "data", "unified", "geez_morphology_rows_reviewed.jsonl")
+        if os.path.exists(reviewed):
+            print("\nCorrected unified rows:", flush=True)
+            bad += subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                   "check_unified.py"), ds, reviewed]).returncode
+        if os.path.exists(os.path.join(ds, "data", "clitics", "clitic_forms.jsonl")):
+            print("\nGenerated clitic forms:", flush=True)
+            bad += subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                   "check_clitics.py"), ds]).returncode
         print("ALL CLEAN" if not bad else "NOT CLEAN")
     return 1 if bad else 0
 

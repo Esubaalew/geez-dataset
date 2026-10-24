@@ -7,7 +7,7 @@ v1: tag `v1`, commit `337cdf0`.
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,034 / 1,178 / 1,600 |
 | rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,885 / 1,799 / 2,419 |
 | unified rows | 24,352 | 58,185 |
-| synthetic training pair (lines) | | 120,685 |
+| synthetic training pair (lines) | | 120,684 |
 | lexicon, parallel and corpus files | | unchanged |
 
 ## Gold
@@ -483,3 +483,17 @@ chapter) and do not load in either file.
 - b18 rows u058022-u058039 (18 loaded): possessive suffixes filled from review notes; four ሰማርያ PN forms left without possessor.
 - Loaded 13 more Bible word forms ruled SURE: Merho መድ -ት plurals (ቀተልት) on ጸ-ረ-በ, ጸ-ሐ-ፈ, ወ-ቀ-ረ, ገ-ነ-ወ, ኀ-ደ-ረ, ወ-ጠ-ነ, ሐ-ረ-ሰ, ነ-ደ-ቀ, ፈ-ፀ-ነ; 4 already load via the clitic step.
 - b19 rows u058040-u058052 (13 loaded): possessive suffixes filled from review notes; bare/construct plurals left without possessor.
+
+## Source mirror integrity (24 October 2026)
+
+- The Kidane Wold portion of `geez_amharic_dictionary.jsonl` now shares the corrected headwords,
+  definitions, form lists and page numbers of `classical_dictionary_kidane_wold.jsonl`. Those source fields
+  were corrected from the typed `geezorg/data` transcription at commit `3904462c` in dataset commit
+  `47a773a`; the merged copy had retained older OCR. Other morphology annotations,
+  entry IDs and the other source dictionary are preserved. The dataset checker now checks these source mirrors.
+- Generated clitics no longer repeat a spelling in different splits (13 rows removed), and 30 stale source-page
+  values are refreshed from the settled base rows. The checker now validates both unified files and clitic integrity.
+- The merged dictionary also receives the root correction for entry 5944 (`አዐውየወ`, root `ዐ-ወ-የ-ወ`)
+  explicitly recorded in dataset commit `40b3e24`; the mirror check includes inferred roots.
+- Unified gold row `u000563` (`መከልተትሕ`, Merho p.40) and its clitic forms now follow the corrected
+  source record `2554e89611c2`: root `ከ-ለ-ተ-ሐ`, as corrected in `8ac6b2c`/`d570c9e`.
