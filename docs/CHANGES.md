@@ -465,3 +465,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - CHECK bases aligned to b12 labels (ruling 24 Oct 2026): ጽልመት u035206 ጸ-ለ-መ noun, መጽያሕት u039258 ጸ-የ-ሐ noun, ደሊላ u041595 ደ-ለ-ለ proper_noun, ጸበል u039305 ጸ-በ-ለ noun, ተያፍን u042197 ተ-ፈ-የ noun. Each duplicates a row that already loads (u001710, u030655, u008856, u010427, u006578), so it is marked as that duplicate instead of loading twice.
 - ደሊላ u001173 and u029309: proper_noun, root ደ-ለ-ለ (Merho, under ደለለ, "የሴ ስም"), not rootless; both stay EXCLUDED as duplicates of u008856.
 - Loaded 18 more Bible word forms ruled SURE (mixed_pass b13): መላእክት family (ለ-አ-ከ), ጽልመት family (ጸ-ለ-መ), መርዓሁ (መ-ረ-ዐ-ወ), ፍሕሙ (ፈ-ሐ-መ), ጸበሎ/ጸበሎሙ (ጸ-በ-ለ), ወደይኖሙሰ (ደ-የ-ነ).
+- b13 rows: possessive suffixes filled (Language 24 Oct 2026); ጸበሎሙ acc + suffix 3mp, ጸበሎ stays acc.
