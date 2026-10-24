@@ -84,7 +84,7 @@ Use only rows with an empty `status`. Do not train on `data/synthetic/`.
 rows load (35,756 in total: train 28,808, val 2,946, test 4,002). Rows load there only when the dataset itself
 supports the correction; see [data/unified/README.md](data/unified/README.md#corrected-rows-file).
 
-`data/clitics/clitic_forms.jsonl` holds 100,620 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
+`data/clitics/clitic_forms.jsonl` holds 100,621 forms with Ge'ez proclitics and enclitics (ወገብረ, ለሕዝብ, ገብረሰ),
 made by rule from the settled corrected rows; each keeps the root, labels and split of its source row
 ([data/clitics/README.md](data/clitics/README.md)).
 
