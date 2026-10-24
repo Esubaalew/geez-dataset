@@ -469,3 +469,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ጸበሎ u057923: acc; suffix 3ms (kebra-nagast 99:1 ነገፎ ጸበሎ, "brushed the dust off him").
 - Loaded 59 more Bible word forms ruled SURE (mixed_pass b14, nouns from perfect-verb competes); 34 already load; 23 held where the form already loads under a differently spelled root (e.g. ሀ-ሰ-ረ vs ኀ-ሰ-ረ). Suffixes not yet filled.
 - Re-rooted whole families (130 rows; Language 24 Oct 2026): ሀ-ሰ-ረ→ኀ-ሰ-ረ, ሀ-የ-ሰ→ሐ-የ-ሰ, ረ-ተ-አ→ረ-ተ-ዐ, ደ-መ-ጸ→ደ-መ-ፀ, ገ-አ-ረ→ገ-ዐ-ረ, አ-በ-የ→ዐ-በ-የ, ሰ-አ-ረ→ሠ-ዐ-ረ, ረ-አ-ደ→ረ-ዐ-ደ. The 23 held b14 forms now load through these existing rows.
+- b14 rows u057926-u058007 (59 loaded): possessive suffixes filled from a2_review/b14_possessor_fill_1024.tsv.
