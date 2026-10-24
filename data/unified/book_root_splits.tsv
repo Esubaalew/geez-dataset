@@ -776,7 +776,7 @@ root	stratum	rows	split
 አ-ጸ-ወ	nominal/nomark	7	train
 አ-ጸ-ደ	nominal/nomark	1	train
 አ-ጸ-ፈ	nominal/nomark	1	test
-ከ-ሀ-ደ	nominal/nomark	9	val
+ከ-ሐ-ደ	nominal/nomark	15	val
 ከ-ሰ-ተ	nominal/nomark	5	train
 ከ-ነ-ነ	nominal/nomark	12	test
 ከ-አ-ወ	verb/nomark	2	train
