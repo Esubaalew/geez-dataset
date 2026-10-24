@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,034 / 1,178 / 1,600 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,727 / 1,770 / 2,403 |
-| unified rows | 24,352 | 57,982 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,745 / 1,770 / 2,403 |
+| unified rows | 24,352 | 58,000 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -469,4 +469,5 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ጸበሎ u057923: acc; suffix 3ms (kebra-nagast 99:1 ነገፎ ጸበሎ, "brushed the dust off him").
 - Loaded 59 more Bible word forms ruled SURE (mixed_pass b14, nouns from perfect-verb competes); 34 already load; 23 held where the form already loads under a differently spelled root (e.g. ሀ-ሰ-ረ vs ኀ-ሰ-ረ). Suffixes not yet filled.
 - Re-rooted whole families (130 rows; Language 24 Oct 2026): ሀ-ሰ-ረ→ኀ-ሰ-ረ, ሀ-የ-ሰ→ሐ-የ-ሰ, ረ-ተ-አ→ረ-ተ-ዐ, ደ-መ-ጸ→ደ-መ-ፀ, ገ-አ-ረ→ገ-ዐ-ረ, አ-በ-የ→ዐ-በ-የ, ሰ-አ-ረ→ሠ-ዐ-ረ, ረ-አ-ደ→ረ-ዐ-ደ. The 23 held b14 forms now load through these existing rows.
-- b14 rows u057926-u058007 (59 loaded): possessive suffixes filled from a2_review/b14_possessor_fill_1024.tsv.
+- b14 rows u057926-u057984 (59 loaded): possessive suffixes filled from a2_review/b14_possessor_fill_1024.tsv.
+- Loaded 18 more Bible word forms ruled SURE (mixed_pass b15); 12 already load; 2 held (መሥገርቶሙ, መሥገርታ: b15 root ሠ-ገ-ረ vs loading ሰ-ገ-ረ). Suffixes not yet filled.
