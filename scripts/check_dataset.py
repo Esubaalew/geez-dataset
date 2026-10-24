@@ -20,7 +20,7 @@ What "clean" means here (one line per check; ERROR fails the run, NOTE is inform
   8. no root appears in more than one split (train / val / test), and no spelling with its roots (form + root union;
      groups listed in data/unified/held_split_groups.tsv are reported only);
   9. every row in merho_ges_gold_flagged_rows.tsv points at a real row holding that form;
- 10. if data/paradigms/SHA256SUMS exists, every file matches its hash;
+ 10. data/SHA256SUMS is present and every listed file matches its hash;
  11. no root field holds the placeholder "CHECK" (case-sensitive): the gold files and, next to the gold folder,
      the dictionaries, the Kidane Wold tables and the synthetic files. A root field is a
      key named "root" or ending in "_root" (inferred_root, new_root, old_root, ...), at any depth. An unsettled
@@ -378,14 +378,16 @@ def main():
     for (rel, key, v), c in sorted(odd.items()):
         notes[f"root field {key} = {v!r} in {rel} (placeholder-like, reported only)"] += c
 
-    sums = os.path.join(args.data, "SHA256SUMS")
-    if os.path.exists(sums):
+    sums = os.path.join(data_dir, "SHA256SUMS")
+    if not os.path.exists(sums):
+        err("10 hashes", "SHA256SUMS is missing")
+    else:
         with open(sums, encoding="utf-8") as f:
             for line in f:
                 if line.strip():
                     h, name = line.split(None, 1)
                     name = name.strip().lstrip("*")
-                    p = os.path.join(args.data, name)
+                    p = os.path.join(data_dir, name)
                     if not os.path.exists(p) or sha256(p) != h:
                         err("10 hashes", f"{name} does not match SHA256SUMS")
 

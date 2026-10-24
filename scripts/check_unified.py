@@ -17,11 +17,19 @@
                 reported, not failed, and a listed group that is in one split fails (take it off the list)
   python check_unified.py DATASET_DIR [ROWS_JSONL]   (default data/unified/geez_morphology_rows.jsonl)
 """
-import collections, json, os, re, sys
+import argparse, collections, json, os, re, sys
 
-ds = sys.argv[1]
+def _parse_args(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap.add_argument("dataset_dir", help="repository root that contains data/ and scripts/")
+    ap.add_argument("rows_jsonl", nargs="?", default=None,
+                    help="unified rows file (default: DATASET_DIR/data/unified/geez_morphology_rows.jsonl)")
+    return ap.parse_args(argv)
+
+args = _parse_args()
+ds = args.dataset_dir
 sys.path.insert(0, os.path.join(ds, "scripts"))
-from check_dataset import is_ethiopic_word, is_first_order, form_variants   # noqa: E402
+from check_dataset import is_ethiopic_word, form_variants, root_problem   # noqa: E402
 
 COLS = ["id", "form", "root", "word_class", "stem", "tense", "person", "gender", "number", "object", "possessor", "negated", "source",
         "book", "page", "source_ref", "evidence", "also_in", "status", "status_reason", "split"]
@@ -38,16 +46,16 @@ REQ = {"verb": ("tense", "person", "gender", "number", "stem"), "gerund": ("stem
        "infinitive": ("stem",), "verbal_noun": ("stem",), "noun": ("number",), "adjective": ("number",)}
 errs = collections.defaultdict(list)
 err = lambda k, m: errs[k].append(m)
-ROWS = sys.argv[2] if len(sys.argv) > 2 else os.path.join(ds, "data", "unified", "geez_morphology_rows.jsonl")
+ROWS = args.rows_jsonl or os.path.join(ds, "data", "unified", "geez_morphology_rows.jsonl")
 rows = [json.loads(l) for l in open(ROWS, encoding="utf-8")]
 ids = collections.Counter(r["id"] for r in rows)
 root_splits, keys = collections.defaultdict(set), collections.defaultdict(list)
 by_id = {r["id"]: r for r in rows}
 # nouns that have no root (data/unified/rootless_nouns.tsv) load with an empty root
 ROOTLESS = set()
-for _p in (os.path.join(sys.argv[1] if len(sys.argv) > 1 else ".", "data/unified/rootless_nouns.tsv"),):
-    if os.path.exists(_p):
-        ROOTLESS = {l.split("\t")[0] for l in open(_p, encoding="utf-8").read().splitlines()[1:] if l.strip()}
+_p = os.path.join(ds, "data/unified/rootless_nouns.tsv")
+if os.path.exists(_p):
+    ROOTLESS = {l.split("\t")[0] for l in open(_p, encoding="utf-8").read().splitlines()[1:] if l.strip()}
 for _f in sorted(ROOTLESS - {r["form"] for r in rows if r["word_class"] == "noun"}):
     err("2 labels", f"rootless_nouns.tsv: {_f} is not a noun row")
 # adjectives with no root that are derived from a rootless word (data/unified/rootless_derived.tsv: form, base, ref):
@@ -95,18 +103,24 @@ for r in rows:
         if r["word_class"] == "unknown": err("2 labels", f"{w}: class unknown loads")
     if r["status"] not in ("EXCLUDED",) and not is_ethiopic_word(r["form"] or "") and r["status"] == "":
         err("3 forms", f"{w}: {r['form']!r} is not one Ge'ez word")
-    if r["root"]:
-        parts = r["root"].split("-")
-        if not 2 <= len(parts) <= 5 or not all(is_first_order(p) for p in parts) and r["status"] == "":
-            err("3 forms", f"{w}: root {r['root']!r}")
+    if r["root"] and r["status"] == "" and root_problem(r["root"]):
+        err("3 forms", f"{w}: root {r['root']!r}")
     if r["status"] == "" and r["root"]:
         root_splits[r["root"]].add(r["split"])
         keys[(r["form"], r["root"], r["word_class"], r["tense"], r["person"], r["gender"], r["number"], r["stem"], r["object"], r["possessor"])].append(w)
+# gold val/test spellings may pull a book row into another split than its root; list those, do not fail
+gold_val_test_forms = {r["form"] for r in rows if r["source"] == "gold" and r["status"] == "" and r["split"] in ("val", "test")}
 for root, sp in sorted(root_splits.items()):
     if len(sp) > 1:
         gold = {r["split"] for r in rows if r["root"] == root and r["source"] == "gold" and r["status"] == ""}
-        if gold or True:
-            notes = collections.Counter(r["split"] for r in rows if r["root"] == root and r["status"] == "")
+        loading = [r for r in rows if r["root"] == root and r["status"] == ""]
+        notes = collections.Counter(r["split"] for r in loading)
+        extras = [r for r in loading if r["split"] not in gold] if gold else loading
+        listed = gold and len(gold) == 1 and extras and all(
+            r["source"] != "gold" and r["form"] in gold_val_test_forms for r in extras)
+        if listed:
+            print(f"gold split exception (listed): root {root} loads in {dict(notes)}")
+        else:
             err("4 splits", f"root {root} loads in {dict(notes)}")
 for k, v in keys.items():
     if len(v) > 1 and not all(by_id[i]["source"] == "gold" for i in v): err("5 duplicates", f"{k[0]} ({k[1]}): {', '.join(v)}")
