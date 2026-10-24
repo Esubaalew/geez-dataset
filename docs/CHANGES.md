@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,034 / 1,178 / 1,600 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,136 / 1,728 / 2,338 |
-| unified rows | 24,352 | 57,284 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,239 / 1,734 / 2,349 |
+| unified rows | 24,352 | 57,404 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -450,3 +450,5 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - 856 more Bible word forms ruled SURE load (774 forms plus 82 second readings kept as their own rows), each with its Merho page and verse references. Seven-family numerals use root ሰ-በ-ዐ; Moses forms are names with no root; the five family uses ኀ-መ-ሰ; ማሕሌት/ማኅሌት 'song' uses ሐ-ለ-የ and ሐለየ 'think' uses ኀ-ለ-የ. 15 rows are held (ተ-በ-አ forms, ሔዋን, ሔርማ, ኀሣሤ, ሲራክ, በሑረት). Forms that repeat a loaded row, that already load, or that are built by the clitic step are not added. 29 new roots take their twin root's split (ሀ-መ-የ, ሀ-በ-ተ, አ-ሰ-የ, ጸ-ገ-መ and ፈ-ቀ-አ test; አ-ሰ-ቀ, መ-ሰ-ጠ and መ-ሀ-ጸ val), or train when no twin is in val or test.
 - 220 more Bible word forms ruled SURE load (193 forms plus 27 second readings). Three are held: ሄር (root ሀ-ረ conflicts with ኄር on ኀ-የ-ረ-ወ), ለሐዱ (root ለ-ሀ-ደ unsettled) and መሰረት (root መ-ተ unsettled). New roots አ-ጸ-በ and መ-አ-ረ-ረ go to train and አ-በ-ረ to val, following their twin roots.
 - Root rulings: the 11 seven-family rows spelled with ዐ (ሰብዓ, ሰቡዕ, ስብዑ…) move from ሰ-በ-አ to ሰ-በ-ዐ; the ሰብእ 'man' rows and the ተሰብአ gold record stay on ሰ-በ-አ. The 11 five-family rows (ኃምስ, ኀሙስ) move from ሀ-መ-ሰ to ኀ-መ-ሰ. ሔዋን, ለሔዋን, ሔርማ and ሲራክ load as names with no root, ኀሣሤ on ኀ-ሠ-ሠ (p.77, test) and በሑረት on ሐ-ወ-ረ (p.97, val). The ተባዕት forms (ተ-በ-አ) stay held: the root and its twin have only train rows.
+- Held forms ruled and loaded: ሄር as an adjective on ኀ-የ-ረ-ወ (p.230), ለሐዱ as ለ- + ሐዱ on ወ-ሐ-ደ (no page), መሰረት on ሠ-ረ-ተ (p.167, new root, train), and ተባዕቶ, ተባዕቱ, እምተባዕቱ on ተ-በ-አ in train as masculine; the 7 Bible ተባዕት rows already loaded change from feminine to masculine. The other ተባዕት forms already load.
+- 114 more Bible word forms ruled SURE load (109 forms plus 5 second readings). New roots ሰ-በ-ሰ-በ, ገ-አ-ተ-የ and ሀ-ለ-የ-ነ go to train and ሀ-ረ-ወ to test, following their twin roots.

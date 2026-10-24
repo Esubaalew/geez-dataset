@@ -876,3 +876,8 @@ root	stratum	rows	split
 አ-ጸ-በ	nominal/nomark	1	train
 መ-አ-ረ-ረ	nominal/nomark	2	train
 አ-በ-ረ	nominal/nomark	1	val
+ሠ-ረ-ተ	nominal/nomark	1	train
+ሰ-በ-ሰ-በ	nominal/nomark	1	train
+ገ-አ-ተ-የ	nominal/nomark	1	train
+ሀ-ለ-የ-ነ	nominal/nomark	1	train
+ሀ-ረ-ወ	nominal/nomark	1	test
