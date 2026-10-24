@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,034 / 1,178 / 1,600 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,772 / 1,777 / 2,406 |
-| unified rows | 24,352 | 58,037 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,784 / 1,778 / 2,406 |
+| unified rows | 24,352 | 58,050 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -481,3 +481,5 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Re-rooted ከ-ሀ-ደ→ከ-ሐ-ደ (11 rows; Language 24 Oct 2026, Merho ከሐድ p.297). Six b18 ክሕድ forms now load through these existing val rows.
 - Loaded 18 more Bible word forms ruled SURE (mixed_pass b18); 8 already load (6 remapped ክሕድ*, ተላህያ, ዘዐቀቦ via clitics). New ክሕድ adjectives forced to val with the gold root.
 - b18 rows u058022-u058039 (18 loaded): possessive suffixes filled from a2_review/b18_possessor_fill_1024.tsv; four ሰማርያ PN forms left without possessor.
+- Loaded 13 more Bible word forms ruled SURE (mixed_pass b19): Merho መድ -ት plurals (ቀተልት) on ጸ-ረ-በ, ጸ-ሐ-ፈ, ወ-ቀ-ረ, ገ-ነ-ወ, ኀ-ደ-ረ, ወ-ጠ-ነ, ሐ-ረ-ሰ, ነ-ደ-ቀ, ፈ-ፀ-ነ; 4 already load via the clitic step.
+- b19 rows u058040-u058052 (13 loaded): possessive suffixes filled from a2_review/b19_possessor_fill_1024.tsv; bare/construct plurals left without possessor.
