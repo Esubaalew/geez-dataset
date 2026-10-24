@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,034 / 1,178 / 1,600 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 19,234 / 1,660 / 2,226 |
-| unified rows | 24,352 | 56,202 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 19,946 / 1,716 / 2,314 |
+| unified rows | 24,352 | 57,058 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -447,3 +447,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - 14 Bible word forms load on settled roots: ሊቃነ forms on ለ-የ-ቀ, ሙታን forms on መ-ወ-ተ, ምጽአት on መ-ጸ-አ, and መሓልይ/መኃልይ 'song' forms on ሐ-ለ-የ.
 - Plurals of ኄር 'good' (ለኄራን, ኄራነ, ወኄራን, ወኄራነ, ወለኄራተ) load on root ኀ-የ-ረ-ወ, Merho p.230.
 - Train roots whose folded twin root (twin letters merged, labiovelars plain) is in val or test move to that twin's split, so folded twin roots share a split: ኀ-ለ-የ, ሐ-መ-የ, ሐ-በ-ለ, ሰ-ሐ-የ, ሰ-ረ-የ, ቀ-ጸ-ለ, ከ-ተ-በ, ገ-ረ-ሀ and ጸ-መ-አ to test, አ-ሰ-ረ and መ-ሐ-ጸ to val; each keeps its own spelling and pages. 11 gold records, 335 rows, their book entries and 590 clitic forms move; no root is merged and nothing moves out of val or test.
+- 856 more Bible word forms ruled SURE load (774 forms plus 82 second readings kept as their own rows), each with its Merho page and verse references. Seven-family numerals use root ሰ-በ-ዐ; Moses forms are names with no root; the five family uses ኀ-መ-ሰ; ማሕሌት/ማኅሌት 'song' uses ሐ-ለ-የ and ሐለየ 'think' uses ኀ-ለ-የ. 15 rows are held (ተ-በ-አ forms, ሔዋን, ሔርማ, ኀሣሤ, ሲራክ, በሑረት). Forms that repeat a loaded row, that already load, or that are built by the clitic step are not added. 29 new roots take their twin root's split (ሀ-መ-የ, ሀ-በ-ተ, አ-ሰ-የ, ጸ-ገ-መ and ፈ-ቀ-አ test; አ-ሰ-ቀ, መ-ሰ-ጠ and መ-ሀ-ጸ val), or train when no twin is in val or test.
