@@ -10,6 +10,8 @@
   4 splits      a root is in one split among rows that load (the gold sets the split of its roots; a book row whose form
                 is a gold val/test form is the only exception and is listed)
   5 duplicates  no two rows that load have the same form, root, word_class and labels
+                (all-gold groups, or a set of ids listed in data/unified/allowed_duplicates.tsv, are kept;
+                a listed set that is no longer a loading duplicate fails)
   6 books       every line of data/books/*/forms.jsonl is the source of exactly one row, with the same form, root and split
   7 held splits a root is in one split among all its rows that are not EXCLUDED, so a held-back row can load later without a leak
   8 form splits the rows that load and share a spelling, joined through their roots (a spelling with two readings and
@@ -122,8 +124,37 @@ for root, sp in sorted(root_splits.items()):
             print(f"gold split exception (listed): root {root} loads in {dict(notes)}")
         else:
             err("4 splits", f"root {root} loads in {dict(notes)}")
+# intentional multi-reading twins (same form+root+labels, different evidence), like gold አመንዘረ
+allowed_dup_path = os.path.join(ds, "data", "unified", "allowed_duplicates.tsv")
+allowed_dup_sets = {}  # frozenset(ids) -> reason
+if os.path.exists(allowed_dup_path):
+    with open(allowed_dup_path, encoding="utf-8") as f:
+        next(f, None)
+        for line in f:
+            if not line.strip():
+                continue
+            cols = line.rstrip("\n").split("\t")
+            if len(cols) < 4:
+                err("5 duplicates", f"allowed_duplicates.tsv: bad line {line!r}"); continue
+            idset = frozenset(i for i in cols[0].split(";") if i)
+            if len(idset) < 2:
+                err("5 duplicates", f"allowed_duplicates.tsv: need two or more ids, got {cols[0]!r}"); continue
+            allowed_dup_sets[idset] = cols[3]
+seen_allowed = set()
 for k, v in keys.items():
-    if len(v) > 1 and not all(by_id[i]["source"] == "gold" for i in v): err("5 duplicates", f"{k[0]} ({k[1]}): {', '.join(v)}")
+    if len(v) <= 1:
+        continue
+    idset = frozenset(v)
+    if all(by_id[i]["source"] == "gold" for i in v):
+        continue
+    if idset in allowed_dup_sets:
+        seen_allowed.add(idset)
+        print(f"allowed duplicate (listed): {k[0]} ({k[1]}): {', '.join(v)}")
+        continue
+    err("5 duplicates", f"{k[0]} ({k[1]}): {', '.join(v)}")
+for idset, reason in allowed_dup_sets.items():
+    if idset not in seen_allowed:
+        err("5 duplicates", f"allowed_duplicates.tsv: {', '.join(sorted(idset))} is not a loading duplicate")
 book_lines, book_refs, overrides = {}, collections.Counter(), collections.Counter()
 books_dir = os.path.join(ds, "data", "books")
 for b in sorted(os.listdir(books_dir)) if os.path.isdir(books_dir) else []:
