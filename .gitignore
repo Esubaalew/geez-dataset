@@ -29,4 +29,4 @@ output/
 organize_data.py
 
 # Internal review files (never published)
-a2_review/
+.local_review_scratch/

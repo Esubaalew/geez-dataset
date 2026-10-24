@@ -460,26 +460,26 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - ወለሔዋን loads as a name with no root, like ለሔዋን. ወእምሔዋን, also a name, no longer carries plural.
 - The 14 Bible ተባዕት rows move from ተ-በ-አ to ተ-በ-ዐ (headword ተብዐ, p.204), all masculine, with their clitic forms; the family stays in train. ወዕጹታ becomes a singular noun (ዕጹት, p.247).
 - 50 more Bible word forms ruled SURE load (49 forms plus 1 second reading; 46 train, 4 test).
-- ሔርማ is Hermas (Shepherd of Hermas): rootless proper_noun, not from ሐ-ረ-መ / Hormah (Esube + Language, 24 Oct 2026).
-- Loaded 20 more Bible word forms ruled SURE (mixed_pass b12): ጽልመት family (ጸ-ለ-መ), መጽያሕት family (ጸ-የ-ሐ), ወደሊላ/ወደሊላሰ (ደ-ለ-ለ, proper_noun), ተያፍኒሁ (ተ-ፈ-የ), ጸበለኪ (ጸ-በ-ለ; acc, suffix 2fs).
-- CHECK bases aligned to b12 labels (ruling 24 Oct 2026): ጽልመት u035206 ጸ-ለ-መ noun, መጽያሕት u039258 ጸ-የ-ሐ noun, ደሊላ u041595 ደ-ለ-ለ proper_noun, ጸበል u039305 ጸ-በ-ለ noun, ተያፍን u042197 ተ-ፈ-የ noun. Each duplicates a row that already loads (u001710, u030655, u008856, u010427, u006578), so it is marked as that duplicate instead of loading twice.
+- ሔርማ is Hermas (Shepherd of Hermas): rootless proper_noun, not from ሐ-ረ-መ / Hormah (24 Oct 2026).
+- Loaded 20 more Bible word forms ruled SURE: ጽልመት family (ጸ-ለ-መ), መጽያሕት family (ጸ-የ-ሐ), ወደሊላ/ወደሊላሰ (ደ-ለ-ለ, proper_noun), ተያፍኒሁ (ተ-ፈ-የ), ጸበለኪ (ጸ-በ-ለ; acc, suffix 2fs).
+- CHECK bases aligned to settled labels (24 Oct 2026): ጽልመት u035206 ጸ-ለ-መ noun, መጽያሕት u039258 ጸ-የ-ሐ noun, ደሊላ u041595 ደ-ለ-ለ proper_noun, ጸበል u039305 ጸ-በ-ለ noun, ተያፍን u042197 ተ-ፈ-የ noun. Each duplicates a row that already loads (u001710, u030655, u008856, u010427, u006578), so it is marked as that duplicate instead of loading twice.
 - ደሊላ u001173 and u029309: proper_noun, root ደ-ለ-ለ (Merho, under ደለለ, "የሴ ስም"), not rootless; both stay EXCLUDED as duplicates of u008856.
-- Loaded 18 more Bible word forms ruled SURE (mixed_pass b13): መላእክት family (ለ-አ-ከ), ጽልመት family (ጸ-ለ-መ), መርዓሁ (መ-ረ-ዐ-ወ), ፍሕሙ (ፈ-ሐ-መ), ጸበሎ/ጸበሎሙ (ጸ-በ-ለ), ወደይኖሙሰ (ደ-የ-ነ).
-- b13 rows: possessive suffixes filled (Language 24 Oct 2026); ጸበሎሙ acc + suffix 3mp, ጸበሎ stays acc.
+- Loaded 18 more Bible word forms ruled SURE: መላእክት family (ለ-አ-ከ), ጽልመት family (ጸ-ለ-መ), መርዓሁ (መ-ረ-ዐ-ወ), ፍሕሙ (ፈ-ሐ-መ), ጸበሎ/ጸበሎሙ (ጸ-በ-ለ), ወደይኖሙሰ (ደ-የ-ነ).
+- Rows: possessive suffixes filled (24 Oct 2026); ጸበሎሙ acc + suffix 3mp, ጸበሎ stays acc.
 - ጸበሎ u057923: acc; suffix 3ms (kebra-nagast 99:1 ነገፎ ጸበሎ, "brushed the dust off him").
-- Loaded 59 more Bible word forms ruled SURE (mixed_pass b14, nouns from perfect-verb competes); 34 already load; 23 held where the form already loads under a differently spelled root (e.g. ሀ-ሰ-ረ vs ኀ-ሰ-ረ). Suffixes not yet filled.
-- Re-rooted whole families (130 rows; Language 24 Oct 2026): ሀ-ሰ-ረ→ኀ-ሰ-ረ, ሀ-የ-ሰ→ሐ-የ-ሰ, ረ-ተ-አ→ረ-ተ-ዐ, ደ-መ-ጸ→ደ-መ-ፀ, ገ-አ-ረ→ገ-ዐ-ረ, አ-በ-የ→ዐ-በ-የ, ሰ-አ-ረ→ሠ-ዐ-ረ, ረ-አ-ደ→ረ-ዐ-ደ. The 23 held b14 forms now load through these existing rows.
-- b14 rows u057926-u057984 (59 loaded): possessive suffixes filled from a2_review/b14_possessor_fill_1024.tsv.
-- Loaded 18 more Bible word forms ruled SURE (mixed_pass b15); 12 already load; 2 held (መሥገርቶሙ, መሥገርታ: b15 root ሠ-ገ-ረ vs loading ሰ-ገ-ረ). Suffixes not yet filled.
-- Re-rooted ሰ-ገ-ረ→ሠ-ገ-ረ (5 rows, መሥገርት family; Language 24 Oct 2026); the 2 held b15 forms now load through these rows. b15 rows u057985-u058002: possessive suffixes filled from a2_review/b15_possessor_fill_1024.tsv.
-- Loaded 12 more Bible word forms ruled SURE (mixed_pass b16); 1 already loads via the clitic step (ለእሴይ from rootless እሴይ); 1 held (መራዕወ: b16 root መ-ረ-ዐ-ወ vs loading መ-ረ-አ-ወ on u055988).
-- b16 rows u058003-u058014 (12 loaded): possessive suffixes filled from a2_review/b16_possessor_fill_1024.tsv; ሌዊሂ left without possessor (PN + discourse -ሂ).
-- Re-rooted bridal twin መ-ረ-አ-ወ→መ-ረ-ዐ-ወ (7 rows: መራዕወ u055988 and 6 መርዓት* forms; Language 24 Oct 2026, Merho p.244). Held b16 መራዕወ now loads through u055988.
+- Loaded 59 more Bible word forms ruled SURE; 34 already load; 23 held where the form already loads under a differently spelled root (e.g. ሀ-ሰ-ረ vs ኀ-ሰ-ረ). Suffixes not yet filled.
+- Re-rooted whole families (130 rows): ሀ-ሰ-ረ→ኀ-ሰ-ረ, ሀ-የ-ሰ→ሐ-የ-ሰ, ረ-ተ-አ→ረ-ተ-ዐ, ደ-መ-ጸ→ደ-መ-ፀ, ገ-አ-ረ→ገ-ዐ-ረ, አ-በ-የ→ዐ-በ-የ, ሰ-አ-ረ→ሠ-ዐ-ረ, ረ-አ-ደ→ረ-ዐ-ደ. The 23 held forms now load through these existing rows.
+- Rows u057926-u057984 (59 loaded): possessive suffixes filled from review notes.
+- Loaded 18 more Bible word forms ruled SURE; 12 already load; 2 held (መሥገርቶሙ, መሥገርታ: settled root ሠ-ገ-ረ vs loading ሰ-ገ-ረ). Suffixes not yet filled.
+- Re-rooted ሰ-ገ-ረ→ሠ-ገ-ረ (5 rows, መሥገርት family); the 2 held forms now load through these rows. Rows u057985-u058002: possessive suffixes filled from review notes.
+- Loaded 12 more Bible word forms ruled SURE; 1 already loads via the clitic step (ለእሴይ from rootless እሴይ); 1 held (መራዕወ: settled root መ-ረ-ዐ-ወ vs loading መ-ረ-አ-ወ on u055988).
+- Rows u058003-u058014 (12 loaded): possessive suffixes filled from review notes. ሌዊሂ left without possessor (PN + discourse -ሂ).
+- Re-rooted bridal twin መ-ረ-አ-ወ→መ-ረ-ዐ-ወ (7 rows: መራዕወ u055988 and 6 መርዓት* forms, Merho p.244). Held መራዕወ now loads through u055988.
 - እሴይ u045396: rootless proper_noun → root ዐ-ሰ-የ (Merho ዕሴይ under ዐሰየ p.278); split train→test to match the gold root. ለእሴይ stays a clitic of the base.
-- Loaded 7 more Bible word forms ruled SURE (mixed_pass b17): war-noun ፀብእ/ጸብእ family on ጸ-በ-አ (Merho p.218); surface ፀ kept where the verse has it. All 7 load in train with the gold root.
-- b17 rows u058015-u058021: possessive suffixes filled from a2_review/b17_possessor_fill_1024.tsv.
-- Re-rooted ከ-ሀ-ደ→ከ-ሐ-ደ (11 rows; Language 24 Oct 2026, Merho ከሐድ p.297). Six b18 ክሕድ forms now load through these existing val rows.
-- Loaded 18 more Bible word forms ruled SURE (mixed_pass b18); 8 already load (6 remapped ክሕድ*, ተላህያ, ዘዐቀቦ via clitics). New ክሕድ adjectives forced to val with the gold root.
-- b18 rows u058022-u058039 (18 loaded): possessive suffixes filled from a2_review/b18_possessor_fill_1024.tsv; four ሰማርያ PN forms left without possessor.
-- Loaded 13 more Bible word forms ruled SURE (mixed_pass b19): Merho መድ -ት plurals (ቀተልት) on ጸ-ረ-በ, ጸ-ሐ-ፈ, ወ-ቀ-ረ, ገ-ነ-ወ, ኀ-ደ-ረ, ወ-ጠ-ነ, ሐ-ረ-ሰ, ነ-ደ-ቀ, ፈ-ፀ-ነ; 4 already load via the clitic step.
-- b19 rows u058040-u058052 (13 loaded): possessive suffixes filled from a2_review/b19_possessor_fill_1024.tsv; bare/construct plurals left without possessor.
+- Loaded 7 more Bible word forms ruled SURE: war-noun ፀብእ/ጸብእ family on ጸ-በ-አ (Merho p.218); surface ፀ kept where the verse has it. All 7 load in train with the gold root.
+- Rows u058015-u058021: possessive suffixes filled from review notes.
+- Re-rooted ከ-ሀ-ደ→ከ-ሐ-ደ (11 rows, Merho ከሐድ p.297). Six ክሕድ forms now load through these existing val rows.
+- Loaded 18 more Bible word forms ruled SURE; 8 already load (6 remapped ክሕድ*, ተላህያ, ዘዐቀቦ via clitics). New ክሕድ adjectives forced to val with the gold root.
+- Rows u058022-u058039 (18 loaded): possessive suffixes filled from review notes. Four ሰማርያ PN forms left without possessor.
+- Loaded 13 more Bible word forms ruled SURE: Merho መድ -ት plurals (ቀተልት) on ጸ-ረ-በ, ጸ-ሐ-ፈ, ወ-ቀ-ረ, ገ-ነ-ወ, ኀ-ደ-ረ, ወ-ጠ-ነ, ሐ-ረ-ሰ, ነ-ደ-ቀ, ፈ-ፀ-ነ; 4 already load via the clitic step.
+- Rows u058040-u058052 (13 loaded): possessive suffixes filled from review notes. Bare/construct plurals left without possessor.
