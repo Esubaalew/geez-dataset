@@ -5,8 +5,8 @@ v1: tag `v1`, commit `337cdf0`.
 | | v1 | v2 |
 |---|---:|---:|
 | gold pairs that load (train / val / test) | 8,060 / 1,154 / 1,514 | 8,034 / 1,178 / 1,600 |
-| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,685 / 1,762 / 2,394 |
-| unified rows | 24,352 | 57,923 |
+| rows of other books that load (train / val / test) | 7,599 / 388 / 454 | 20,727 / 1,770 / 2,403 |
+| unified rows | 24,352 | 57,982 |
 | synthetic training pair (lines) | | 120,685 |
 | lexicon, parallel and corpus files | | unchanged |
 
@@ -467,3 +467,4 @@ Seventeen OCR errors in Kidane Wold text corrected from the printed pages; perso
 - Loaded 18 more Bible word forms ruled SURE (mixed_pass b13): መላእክት family (ለ-አ-ከ), ጽልመት family (ጸ-ለ-መ), መርዓሁ (መ-ረ-ዐ-ወ), ፍሕሙ (ፈ-ሐ-መ), ጸበሎ/ጸበሎሙ (ጸ-በ-ለ), ወደይኖሙሰ (ደ-የ-ነ).
 - b13 rows: possessive suffixes filled (Language 24 Oct 2026); ጸበሎሙ acc + suffix 3mp, ጸበሎ stays acc.
 - ጸበሎ u057923: acc; suffix 3ms (kebra-nagast 99:1 ነገፎ ጸበሎ, "brushed the dust off him").
+- Loaded 59 more Bible word forms ruled SURE (mixed_pass b14, nouns from perfect-verb competes); 34 already load; 23 held where the form already loads under a differently spelled root (e.g. ሀ-ሰ-ረ vs ኀ-ሰ-ረ). Suffixes not yet filled.
